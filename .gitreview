@@ -1,0 +1,8 @@
+
+[gerrit]
+
+host=gerrit.acumos.org
+
+port=29418
+
+project=documentation.git
