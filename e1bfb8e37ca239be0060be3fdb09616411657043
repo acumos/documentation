@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c39a23a_e49060e9",
+        "filename": "docs/SettingUpAcumos/Index.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-12-03T22:29:55Z",
+      "side": 1,
+      "message": "Who is going to write this document?  What is the timeline?",
+      "revId": "e1bfb8e37ca239be0060be3fdb09616411657043",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0afc3dc7_2d82d961",
+        "filename": "docs/guzzle_sphinx_theme/.DS_Store",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-12-03T22:29:55Z",
+      "side": 1,
+      "message": "Please remove mac-specific metadata file .DS_Store",
+      "revId": "e1bfb8e37ca239be0060be3fdb09616411657043",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca080310_39f04599",
+        "filename": "docs/guzzle_sphinx_theme/static/.DS_Store",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-12-03T22:29:55Z",
+      "side": 1,
+      "message": "Remove",
+      "revId": "e1bfb8e37ca239be0060be3fdb09616411657043",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "313d9a34_9c74c184",
+        "filename": "docs/make.bat",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-12-03T22:29:55Z",
+      "side": 1,
+      "message": "Why is a windows batch file here, but no linux shell script?",
+      "revId": "e1bfb8e37ca239be0060be3fdb09616411657043",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
