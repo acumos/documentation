@@ -13,7 +13,7 @@ Development Guides
       common-dataservice/index
       design-studio/index
       face-privacy-filter/index
-      federated-cognita/index
+      federation/index
       generic-model-runner/index
       image-classification/index
       image-mood-classifier/index

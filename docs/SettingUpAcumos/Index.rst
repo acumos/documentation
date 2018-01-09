@@ -2,8 +2,10 @@
 Setting Up Acumos
 ==================
 
-Installing and Running
-----------------------
+Setting Up Acumos Documentation
 
-Setting Up Peer Acumos for Federation
----------------------------------------
+.. toctree::
+   :maxdepth: 2
+
+   InstallRun
+   FederationSetUp
