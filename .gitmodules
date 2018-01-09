@@ -23,11 +23,6 @@
 	url = ../acumos-python-client.git
 	branch = .
 	ignore = dirty
-[submodule "docs/submodules/acumos-r-client"]
-	path = docs/submodules/acumos-r-client
-	url = ../acumos-r-client.git
-	branch = .
-	ignore = dirty
 [submodule "docs/submodules/common-dataservice"]
 	path = docs/submodules/common-dataservice
 	url = ../common-dataservice.git

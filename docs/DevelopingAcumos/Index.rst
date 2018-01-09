@@ -2,7 +2,7 @@
 Developing Acumos
 ==================
 
-Developing Acumos Documentation comes here
+Developing Acumos Documentation
 
 .. toctree::
    :maxdepth: 2
