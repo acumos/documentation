@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d94b9ae0_ee8ddf7d",
+        "filename": "docs/SettingUpAcumos/FederationSetUp.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-01-15T15:14:57Z",
+      "side": 1,
+      "message": "Why add an empty file?",
+      "revId": "28f606961907f4b4712940ac93843802847b3a8a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
