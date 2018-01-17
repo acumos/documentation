@@ -1,0 +1,4 @@
+# Test
+.tox/
+# Sphinx documentation
+docs/_build/
