@@ -1,10 +1,7 @@
-.. Acumos documentation master file, created by
-   sphinx-quickstart on Fri Sep 15 21:46:33 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Acumos documentation master file
 
-Welcome to Acumos documentation!
-===================================
+Welcome to Acumos Documentation!
+================================
 
 
 .. toctree::
@@ -20,8 +17,7 @@ Welcome to Acumos documentation!
    OpenSource/Index
 
 
-
-Indices and tables
+Indices and Tables
 ==================
 
 * :ref:`genindex`
