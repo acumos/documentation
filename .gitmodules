@@ -78,6 +78,11 @@
 	url = ../model-schema.git
 	branch = .
 	ignore = dirty
+[submodule "docs/submodules/validation-security"]
+	path = docs/submodules/validation-security
+	url = ../validation-security.git
+	branch = .
+	ignore = dirty
 [submodule "docs/submodules/vm-predictor"]
 	path = docs/submodules/vm-predictor
 	url = ../vm-predictor.git
