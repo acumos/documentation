@@ -48,8 +48,3 @@ A consistent formatting syntax across components will allow the doc team more fl
 The doc team can easily re-organize the documentation.
 Wiki articles tend to grow stale over time as the people who write them change positions or projects.
 
-Templates
----------
-
-Confluence Help
----------------

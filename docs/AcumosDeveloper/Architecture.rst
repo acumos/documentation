@@ -1,12 +1,12 @@
 Architecture
 ==============
 
-**AcumosArchitecture image**
+**AcumosArchitecture**
 
 .. image:: ../_static/images/AcumosArchitecture.png
-   :width: 250px
+   :width: 1000px
    
-**DesignStudio image**
+**DesignStudio**
 
 .. image:: ../_static/images/DesignStudio.png
-   :width: 250px
+   :width: 1000px

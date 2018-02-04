@@ -76,7 +76,7 @@ db-vm setup
                 
                 create tables and data ( DDLs and DMLs)
                 
-                goto https://bitbucket.org/cognita_dev/common-dataservice/ goto sources → cmn-data-svr-server → db-scripts 
+                goto https://://gerrit.acumos.org/r/gitweb?p=common-dataservice.git; goto sources cmn-data-svr-server db-scripts 
                 
                 click on cmn-data-svc-ddl-dml-mysql-\*.sql where \* is DB version, click RAW control-A Control-C to copy
                 
@@ -116,7 +116,7 @@ core-vm setup
 
         Login to the Application server eg: core-vm with ubuntu 16.04 pre-installed and become root
         
-        Create working user id (eg. acumosopr) 
+        Create working user id (eg. acumosopr)
 
     **install docker**
 
@@ -146,7 +146,3 @@ core-vm setup
 
 login to acumos
 ---------------
-
-Old Unstructured Instructions
------------------------------
-

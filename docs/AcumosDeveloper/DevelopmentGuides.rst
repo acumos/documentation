@@ -1,14 +1,13 @@
 Development Guides
 ==================
 
-Development Guides
-
 .. toctree::
       :maxdepth: 2
 
       ../submodules/acumos-azure-client/docs/index
       ../submodules/acumos-hippo-cms/docs/index
       ../submodules/acumos-java-client/docs/index
+      ../submodules/acumos-nexus-client/docs/index
       ../submodules/acumos-python-client/docs/index
       ../submodules/common-dataservice/docs/index
       ../submodules/design-studio/docs/index

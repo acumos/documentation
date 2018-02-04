@@ -1,5 +1,9 @@
 Releases
 ========
+
+Summary
+-------
+
 Acumos is developed and released around 6 month cycles.   After an initial major release, additional
 stable point releases may be created.
 
@@ -14,6 +18,3 @@ Major Releases
 
    "R1.0.0", "Under Development", "TBD",   "",  ""
 
-   
-References
-----------
