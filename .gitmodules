@@ -88,3 +88,8 @@
 	url = ../vm-predictor.git
 	branch = .
 	ignore = dirty
+[submodule "docs/submodules/platform-oam"]
+	path = docs/submodules/platform-oam
+	url = ../platform-oam.git
+	branch = .
+	ignore = dirty
