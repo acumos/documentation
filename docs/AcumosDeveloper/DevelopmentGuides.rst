@@ -18,6 +18,7 @@ Development Guides
       ../submodules/image-mood-classifier/docs/index
       ../submodules/model-schema/docs/index
       ../submodules/on-boarding/docs/index
+      ../submodules/platform-oam/docs/index
       ../submodules/portal-marketplace/docs/index
       ../submodules/runtime-orchestrator/docs/index
       ../submodules/validation-security/docs/index
