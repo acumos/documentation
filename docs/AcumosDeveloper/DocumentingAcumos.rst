@@ -58,6 +58,9 @@ Example 1: API documentation is often stored literally as code in the form of fo
 
 Example 2: A high-level document that describes in general how a particular component interacts with other Acumos components with charts. The wiki would be a better choice for this.
 
+.. image:: ../_static/images/DocTypes.png
+      :width: 1000px
+
 The doc team encourages component teams to store as much documentation as reStructuredText as possible because:
 
 The doc team can more easily edit component documentation for grammar, spelling, clarity, and consistency.
