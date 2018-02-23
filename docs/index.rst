@@ -24,7 +24,7 @@ Welcome to Acumos Documentation!
 .. toctree::
    :maxdepth: 2
    
-   Release/Releases   
+   Release/Releases
    AcumosDeveloper/index
    AcumosUser/index
 
