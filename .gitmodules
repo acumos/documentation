@@ -93,3 +93,8 @@
 	url = ../platform-oam.git
 	branch = .
 	ignore = dirty
+[submodule "docs/submodules/python-dcae-model-runner"]
+	path = docs/submodules/python-dcae-model-runner
+	url = ../python-dcae-model-runner.git
+	branch = .
+	ignore = dirty
