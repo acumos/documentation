@@ -98,3 +98,8 @@
 	url = ../python-dcae-model-runner.git
 	branch = .
 	ignore = dirty
+[submodule "docs/submodules/test-automation"]
+	path = docs/submodules/test-automation
+	url = ../test-automation.git
+	branch = .
+	ignore = dirty

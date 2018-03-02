@@ -26,4 +26,5 @@ Acumos User
    ../submodules/platform-oam/docs/User_Guide
    ../submodules/on-boarding/docs/OnboardingUserGuide
    ../submodules/portal-marketplace/docs/UserGuide
+   ../submodules/test-automation/docs/UserGuide
 

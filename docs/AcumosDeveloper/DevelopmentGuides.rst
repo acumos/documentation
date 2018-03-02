@@ -39,5 +39,6 @@ Development Guides
       ../submodules/portal-marketplace/docs/index
       ../submodules/python-dcae-model-runner/docs/index
       ../submodules/runtime-orchestrator/docs/index
+      ../submodules/test-automation/docs/index
       ../submodules/validation-security/docs/index
       ../submodules/vm-predictor/docs/index
