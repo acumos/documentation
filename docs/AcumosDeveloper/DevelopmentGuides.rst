@@ -42,3 +42,4 @@ Development Guides
       ../submodules/test-automation/docs/index
       ../submodules/validation-security/docs/index
       ../submodules/vm-predictor/docs/index
+      ../submodules/proto-viewer/docs/index
