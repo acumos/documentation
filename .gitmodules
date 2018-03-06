@@ -103,3 +103,8 @@
 	url = ../test-automation.git
 	branch = .
 	ignore = dirty
+[submodule "docs/submodules/proto-viewer"]
+	path = docs/submodules/proto-viewer
+	url = ../proto-viewer.git
+	branch = .
+	ignore = dirty
