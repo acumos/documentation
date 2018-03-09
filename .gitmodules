@@ -108,3 +108,6 @@
 	url = ../proto-viewer
 	branch = .
 	ignore = dirty
+[submodule "docs/submodules/system-integration"]
+	path = docs/submodules/system-integration
+	url = ../system-integration
