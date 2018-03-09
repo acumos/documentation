@@ -37,9 +37,11 @@ Development Guides
       ../submodules/on-boarding/docs/index
       ../submodules/platform-oam/docs/index
       ../submodules/portal-marketplace/docs/index
+      ../submodules/proto-viewer/docs/index
       ../submodules/python-dcae-model-runner/docs/index
       ../submodules/runtime-orchestrator/docs/index
+      ../submodules/system-integration/docs/index
       ../submodules/test-automation/docs/index
       ../submodules/validation-security/docs/index
       ../submodules/vm-predictor/docs/index
-      ../submodules/proto-viewer/docs/index
+      
