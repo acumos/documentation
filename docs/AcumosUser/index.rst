@@ -22,9 +22,10 @@ Acumos User
 .. toctree::
    :maxdepth: 1
 
-   ../submodules/design-studio/docs/UserGuide
-   ../submodules/platform-oam/docs/User_Guide
-   ../submodules/on-boarding/docs/OnboardingUserGuide
    ../submodules/portal-marketplace/docs/UserGuide
+   ../submodules/on-boarding/docs/OnboardingUserGuide
+   ../submodules/design-studio/docs/UserGuide   
+   ../submodules/platform-oam/docs/user-guide
+   ../submodules/system-integration/docs/user-guide   
    ../submodules/test-automation/docs/UserGuide
 
