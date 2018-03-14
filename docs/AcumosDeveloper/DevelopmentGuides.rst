@@ -43,4 +43,4 @@ Development Guides
       ../submodules/validation-security/docs/index
       ../submodules/vm-predictor/docs/index
       ../submodules/proto-viewer/docs/index
-      ../submodules/system-integration/index
+      ../submodules/system-integration/docs/index
