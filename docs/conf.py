@@ -69,8 +69,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Acumos'
-copyright = u'2017, AT&T Intellectual Property & Tech Mahindra. All rights reserved.'
-author = u'AT&T Intellectual Property & Tech Mahindra. All rights reserved.'
+copyright = u'2017, The Acumos Project. Licensed under CC BY 4.0.'
+author = u'The Acumos Project. Licensed under CC BY 4.0.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -173,7 +173,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Acumos.tex', u'Acumos Documentation',
-     u'AT&T Intellectual Property & Tech Mahindra. All rights reserved.', 'manual'),
+     u'The Acumos Project. Licensed under CC BY 4.0.', 'manual'),
 ]
 
 
