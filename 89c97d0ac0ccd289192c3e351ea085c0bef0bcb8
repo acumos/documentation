@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "562588e3_12d78e21",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-19T18:43:24Z",
+      "side": 1,
+      "message": "Please fix indentation - tabs vs spaces",
+      "revId": "89c97d0ac0ccd289192c3e351ea085c0bef0bcb8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
