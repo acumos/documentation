@@ -15,8 +15,8 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
-Development Guides
-==================
+Component Guides
+================
 
 .. toctree::
       :maxdepth: 2
@@ -26,6 +26,7 @@ Development Guides
       ../submodules/acumos-java-client/docs/index
       ../submodules/acumos-nexus-client/docs/index
       ../submodules/acumos-python-client/docs/index
+      ../submodules/acumos-r-client/docs/index
       ../submodules/common-dataservice/docs/index
       ../submodules/design-studio/docs/index
       ../submodules/face-privacy-filter/docs/index

@@ -113,3 +113,8 @@
 	url = ../system-integration
   branch = .
 	ignore = dirty
+[submodule "docs/submodules/acumos-r-client"]
+	path = docs/submodules/acumos-r-client
+	url = ../acumos-r-client
+  branch = .
+  ignore = dirty

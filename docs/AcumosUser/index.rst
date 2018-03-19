@@ -23,9 +23,10 @@ Acumos User
    :maxdepth: 1
 
    ../submodules/portal-marketplace/docs/UserGuide
+   ../submodules/design-studio/docs/UserGuide
    ../submodules/on-boarding/docs/OnboardingUserGuide
-   ../submodules/design-studio/docs/UserGuide   
+   ../submodules/acumos-r-client/docs/user-guide
    ../submodules/platform-oam/docs/user-guide
    ../submodules/system-integration/docs/user-guide   
-   ../submodules/test-automation/docs/UserGuide
+
 
