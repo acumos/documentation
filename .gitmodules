@@ -111,5 +111,10 @@
 [submodule "docs/submodules/system-integration"]
 	path = docs/submodules/system-integration
 	url = ../system-integration
-  branch = .
+	branch = .
+	ignore = dirty
+[submodule "docs/submodules/acumos-r-client"]
+	path = docs/submodules/acumos-r-client
+	url = ../proto-viewer
+	branch = .
 	ignore = dirty
