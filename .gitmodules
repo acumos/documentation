@@ -115,6 +115,6 @@
 	ignore = dirty
 [submodule "docs/submodules/acumos-r-client"]
 	path = docs/submodules/acumos-r-client
-	url = ../proto-viewer
+	url = ../acumos-r-client
 	branch = .
 	ignore = dirty
