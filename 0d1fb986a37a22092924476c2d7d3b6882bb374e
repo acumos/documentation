@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f62d86cd_6a01d4a3",
+        "filename": ".gitmodules",
+        "patchSetId": 2
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-20T13:55:47Z",
+      "side": 1,
+      "message": "Missed this error here, should be ../acumos-r-client",
+      "revId": "0d1fb986a37a22092924476c2d7d3b6882bb374e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
