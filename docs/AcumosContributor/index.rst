@@ -15,15 +15,15 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
-================
-Acumos Developer
-================
+==================
+Acumos Contributor
+==================
 
 .. toctree::
    :maxdepth: 2
 
    Architecture
    Settingup
-   DevelopmentGuides
+   component-guides
    DocumentingAcumos
 

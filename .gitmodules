@@ -118,3 +118,8 @@
 	url = ../acumos-r-client
 	branch = .
 	ignore = dirty
+[submodule "docs/submodules/databroker"]
+	path = docs/submodules/databroker
+	url = ../databroker
+	branch = .
+	ignore = dirty
