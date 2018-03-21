@@ -28,6 +28,7 @@ Component Guides
       ../submodules/acumos-python-client/docs/index
       ../submodules/acumos-r-client/docs/index
       ../submodules/common-dataservice/docs/index
+	  ../submodules/databroker/index
       ../submodules/design-studio/docs/index
       ../submodules/face-privacy-filter/docs/index
       ../submodules/federation/docs/index
