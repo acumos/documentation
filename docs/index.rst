@@ -25,7 +25,7 @@ Welcome to Acumos Documentation!
    :maxdepth: 2
    
    Release/Releases
-   AcumosDeveloper/index
+   AcumosContributor/index
    AcumosUser/index
 
 
