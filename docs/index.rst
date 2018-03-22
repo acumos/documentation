@@ -33,6 +33,7 @@ Acumos Portal and Marketplace Users
    ../user-guides/acumos-python-client-user-guide
    ../user-guides/acumos-r-client-user-guide
    ../AcumosUser/portal-admin/user-guide
+   ../AcumosUser/oneclick-deploy/user-guide
 
 
 Acumos Operations
