@@ -32,6 +32,7 @@ Acumos Marketplace Users
    ../user-guides/onboarding-user-guide
    ../user-guides/portal-user-guide
    ../AcumosUser/portal-admin/user-guide
+   ../AcumosUser/oneclick-deploy/user-guide
    ../submodules/system-integration/docs/user-guide
    ../submodules/test-automation/docs/UserGuide
 
