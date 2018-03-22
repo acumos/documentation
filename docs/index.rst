@@ -20,13 +20,39 @@
 Welcome to Acumos Documentation!
 ================================
 
+Acumos Marketplace Users
+------------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    
    Release/Releases
+   ../user-guides/acumos-java-client-user-guide
+   ../user-guides/acumos-r-client-user-guide
+   ../user-guides/design-studio-user-guide
+   ../user-guides/onboarding-user-guide
+   ../user-guides/portal-admin-guide
+   ./portal-admin/user-guide
+   ../submodules/system-integration/docs/user-guide
+   ../submodules/test-automation/docs/UserGuide
+
+
+Acumos Operations
+-----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   ../submodules/platform-oam/docs/user-guide
+   ../submodules/system-integration/docs/user-guide
+
+Acumos Contributors
+-------------------
+
+.. toctree::
+   :maxdepth: 1
+
    AcumosContributor/index
-   AcumosUser/index
 
 
 Indices and Tables
