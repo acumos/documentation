@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ddbb8aa5_23435b3a",
+        "filename": ".gitmodules",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-22T10:04:33Z",
+      "side": 1,
+      "message": "Why is EVERY LINE changed?",
+      "revId": "4024e042561548ca2168ae693e2da6fbd320e2ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b348e0ad_a344b258",
+        "filename": ".gitmodules",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-22T10:04:33Z",
+      "side": 1,
+      "message": "Should not have .git suffix",
+      "revId": "4024e042561548ca2168ae693e2da6fbd320e2ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fb98fcad_9dded309",
+        "filename": "docs/user-guides/acumos-java-client-user-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-22T10:04:33Z",
+      "side": 1,
+      "message": "Why is this committed to the doc repo? Why isn\u0027t it in the acumos java- client project, and linked here?",
+      "revId": "4024e042561548ca2168ae693e2da6fbd320e2ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
