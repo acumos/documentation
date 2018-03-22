@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "d8ce2bfa_e986225a",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-22T21:53:02Z",
+      "side": 1,
+      "message": "I think portal is a better general term for it. All the components are focused on a common platform representing a portal.",
+      "parentUuid": "f7c8c50e_e4d815b6",
+      "revId": "8c343e7e8b72fdae3431baad44e191eedf5594e2",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "06038c2b_63668d7e",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "042a1ffe_3a5c8ce5",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-22T21:53:02Z",
+      "side": 1,
+      "message": "Well, pedantic hat on, a registry holds metadata that references content in repos. Nexus provides both.",
+      "parentUuid": "06038c2b_63668d7e",
+      "range": {
+        "startLine": 268,
+        "startChar": 6,
+        "endLine": 268,
+        "endChar": 12
+      },
+      "revId": "8c343e7e8b72fdae3431baad44e191eedf5594e2",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1550f516_8e9fd9bf",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -53,6 +95,24 @@
       "writtenOn": "2018-03-22T14:16:14Z",
       "side": 1,
       "message": "This is rather dangerous - installers cannot freely change the CDS version.  All components must use the same.",
+      "revId": "8c343e7e8b72fdae3431baad44e191eedf5594e2",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd2447fa_df586c20",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-22T21:53:02Z",
+      "side": 1,
+      "message": "That\u0027s not my understanding. I do not have to change the other components when I switch CDS version unless for some reason they are incompatible. So unless we have a clear dependency chart, how can we claim that only one CDS version will work?",
+      "parentUuid": "1550f516_8e9fd9bf",
       "revId": "8c343e7e8b72fdae3431baad44e191eedf5594e2",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
