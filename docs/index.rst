@@ -29,7 +29,6 @@ Acumos Marketplace Users
    Release/Releases
    ../user-guides/acumos-java-client-user-guide
    ../user-guides/acumos-r-client-user-guide
-   ../user-guides/design-studio-user-guide
    ../user-guides/onboarding-user-guide
    ../user-guides/portal-user-guide
    ../AcumosUser/portal-admin/user-guide
