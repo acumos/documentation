@@ -42,6 +42,8 @@ Acumos Operations
    :maxdepth: 1
 
    ../submodules/platform-oam/docs/user-guide
+   ../AcumosUser/oneclick-deploy/user-guide
+
 
 Acumos Contributors
 -------------------
