@@ -1,125 +1,130 @@
 [submodule "docs/submodules/acumos-azure-client"]
-	path = docs/submodules/acumos-azure-client
-	url = ../acumos-azure-client.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/acumos-azure-client
+        url = ../acumos-azure-client.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/acumos-hippo-cms"]
-	path = docs/submodules/acumos-hippo-cms
-	url = ../acumos-hippo-cms.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/acumos-hippo-cms
+        url = ../acumos-hippo-cms.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/acumos-java-client"]
-	path = docs/submodules/acumos-java-client
-	url = ../acumos-java-client.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/acumos-java-client
+        url = ../acumos-java-client.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/acumos-nexus-client"]
-	path = docs/submodules/acumos-nexus-client
-	url = ../acumos-nexus-client.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/acumos-nexus-client
+        url = ../acumos-nexus-client.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/acumos-python-client"]
-	path = docs/submodules/acumos-python-client
-	url = ../acumos-python-client.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/acumos-python-client
+        url = ../acumos-python-client.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/common-dataservice"]
-	path = docs/submodules/common-dataservice
-	url = ../common-dataservice.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/common-dataservice
+        url = ../common-dataservice.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/design-studio"]
-	path = docs/submodules/design-studio
-	url = ../design-studio.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/design-studio
+        url = ../design-studio.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/face-privacy-filter"]
-	path = docs/submodules/face-privacy-filter
-	url = ../face-privacy-filter.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/face-privacy-filter
+        url = ../face-privacy-filter.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/image-classification"]
-	path = docs/submodules/image-classification
-	url = ../image-classification.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/image-classification
+        url = ../image-classification.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/image-mood-classifier"]
-	path = docs/submodules/image-mood-classifier
-	url = ../image-mood-classifier.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/image-mood-classifier
+        url = ../image-mood-classifier.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/federation"]
-	path = docs/submodules/federation
-	url = ../federation.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/federation
+        url = ../federation.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/generic-model-runner"]
-	path = docs/submodules/generic-model-runner
-	url = ../generic-model-runner.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/generic-model-runner
+        url = ../generic-model-runner.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/on-boarding"]
-	path = docs/submodules/on-boarding
-	url = ../on-boarding.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/on-boarding
+        url = ../on-boarding.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/portal-marketplace"]
-	path = docs/submodules/portal-marketplace
-	url = ../portal-marketplace.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/portal-marketplace
+        url = ../portal-marketplace.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/runtime-orchestrator"]
-	path = docs/submodules/runtime-orchestrator
-	url = ../runtime-orchestrator.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/runtime-orchestrator
+        url = ../runtime-orchestrator.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/model-schema"]
-	path = docs/submodules/model-schema
-	url = ../model-schema.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/model-schema
+        url = ../model-schema.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/validation-security"]
-	path = docs/submodules/validation-security
-	url = ../validation-security.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/validation-security
+        url = ../validation-security.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/vm-predictor"]
-	path = docs/submodules/vm-predictor
-	url = ../vm-predictor.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/vm-predictor
+        url = ../vm-predictor.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/platform-oam"]
-	path = docs/submodules/platform-oam
-	url = ../platform-oam.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/platform-oam
+        url = ../platform-oam.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/python-dcae-model-runner"]
-	path = docs/submodules/python-dcae-model-runner
-	url = ../python-dcae-model-runner.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/python-dcae-model-runner
+        url = ../python-dcae-model-runner.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/test-automation"]
-	path = docs/submodules/test-automation
-	url = ../test-automation.git
-	branch = .
-	ignore = dirty
+        path = docs/submodules/test-automation
+        url = ../test-automation.git
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/proto-viewer"]
-	path = docs/submodules/proto-viewer
-	url = ../proto-viewer
-	branch = .
-	ignore = dirty
+        path = docs/submodules/proto-viewer
+        url = ../proto-viewer
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/system-integration"]
-	path = docs/submodules/system-integration
-	url = ../system-integration
-	branch = .
-	ignore = dirty
+        path = docs/submodules/system-integration
+        url = ../system-integration
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/acumos-r-client"]
-	path = docs/submodules/acumos-r-client
-	url = ../acumos-r-client
-	branch = .
-	ignore = dirty
+        path = docs/submodules/acumos-r-client
+        url = ../acumos-r-client
+        branch = .
+        ignore = dirty
 [submodule "docs/submodules/databroker"]
-	path = docs/submodules/databroker
-	url = ../databroker
-	branch = .
-	ignore = dirty
+        path = docs/submodules/databroker
+        url = ../databroker
+        branch = .
+        ignore = dirty
+[submodule "docs/submodules/openstack-client"]
+        path = docs/submodules/openstack-client
+        url = ../openstack-client
+        branch = .
+        ignore = dirty
