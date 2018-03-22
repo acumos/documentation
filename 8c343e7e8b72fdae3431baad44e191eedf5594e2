@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f7c8c50e_e4d815b6",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-22T14:16:14Z",
+      "side": 1,
+      "message": "Just for clarity, maybe you could write \"Acumos system\" instead of just \"Portal\"?",
+      "revId": "8c343e7e8b72fdae3431baad44e191eedf5594e2",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06038c2b_63668d7e",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-22T14:16:14Z",
+      "side": 1,
+      "message": "\"staging\" not stable.\n\nthis is a bit pedantic, but please label them \"registries\" (not repos) to match LF and Nexus3 terminology.  \n\nJar files live in Nexus2 repositories.  Docker images live in Nexus3 registries.",
+      "range": {
+        "startLine": 268,
+        "startChar": 6,
+        "endLine": 268,
+        "endChar": 12
+      },
+      "revId": "8c343e7e8b72fdae3431baad44e191eedf5594e2",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1550f516_8e9fd9bf",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-22T14:16:14Z",
+      "side": 1,
+      "message": "This is rather dangerous - installers cannot freely change the CDS version.  All components must use the same.",
+      "revId": "8c343e7e8b72fdae3431baad44e191eedf5594e2",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
