@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "202c0835_811672ac",
+        "filename": ".gitmodules",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-22T14:11:30Z",
+      "side": 1,
+      "message": "Replace tabs with spaces",
+      "parentUuid": "ddbb8aa5_23435b3a",
+      "revId": "4024e042561548ca2168ae693e2da6fbd320e2ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b348e0ad_a344b258",
         "filename": ".gitmodules",
         "patchSetId": 2
@@ -47,6 +65,24 @@
       "writtenOn": "2018-03-22T10:04:33Z",
       "side": 1,
       "message": "Why is this committed to the doc repo? Why isn\u0027t it in the acumos java- client project, and linked here?",
+      "revId": "4024e042561548ca2168ae693e2da6fbd320e2ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a0dcddaa_b063cc89",
+        "filename": "docs/user-guides/acumos-java-client-user-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-22T14:11:30Z",
+      "side": 1,
+      "message": "In general the user guides will move to the documentation repo so we can enhance/align them in terms of content, style, usability, accuracy, ... These are external facing docs (not the developer guides or tutorials etc) and need to be managed consistently.",
+      "parentUuid": "fb98fcad_9dded309",
       "revId": "4024e042561548ca2168ae693e2da6fbd320e2ee",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
