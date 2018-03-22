@@ -27,6 +27,6 @@ Acumos User
    ../submodules/on-boarding/docs/OnboardingUserGuide
    ../submodules/acumos-r-client/docs/user-guide
    ../submodules/platform-oam/docs/user-guide
-   ./portal-admin/user-guide   
-
+   ./portal-admin/user-guide
+   ./oneclick-deploy/user-guide
 
