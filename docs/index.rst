@@ -20,20 +20,19 @@
 Welcome to Acumos Documentation!
 ================================
 
-Acumos Marketplace Users
-------------------------
+Acumos Portal and Marketplace Users
+-----------------------------------
 
 .. toctree::
    :maxdepth: 1
    
    Release/Releases
-   ../user-guides/acumos-java-client-user-guide
-   ../user-guides/acumos-r-client-user-guide
-   ../user-guides/onboarding-user-guide
    ../user-guides/portal-user-guide
+   ../user-guides/onboarding-user-guide
+   ../user-guides/acumos-java-client-user-guide
+   ../user-guides/acumos-python-client-user-guide
+   ../user-guides/acumos-r-client-user-guide
    ../AcumosUser/portal-admin/user-guide
-   ../submodules/system-integration/docs/user-guide
-   ../submodules/test-automation/docs/UserGuide
 
 
 Acumos Operations
@@ -43,15 +42,17 @@ Acumos Operations
    :maxdepth: 1
 
    ../submodules/platform-oam/docs/user-guide
-   ../submodules/system-integration/docs/user-guide
 
 Acumos Contributors
 -------------------
+Please visit the wiki to view `Acumos Architecture <https://wiki.acumos.org/display/AC/Architecture>`_ as well as to view the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos. 
 
 .. toctree::
    :maxdepth: 1
 
-   AcumosContributor/index
+   AcumosContributor/component-guides
+   AcumosContributor/docs-contributor-guide
+
 
 
 Indices and Tables

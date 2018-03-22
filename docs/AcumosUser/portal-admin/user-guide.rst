@@ -16,9 +16,9 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-=======================
-Portal Admin User Guide
-=======================
+==================================
+Portal and Marketplace Admin Guide
+==================================
 
 Introduction
 ============
