@@ -106,6 +106,20 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 html_theme = 'classic'
+# theme colors to match the Portal website
+html_theme_options = {
+    "stickysidebar": "true",
+    "relbarbgcolor": "#0f0c13",
+    "relbarlinkcolor": "#cccccc",
+    "sidebarbgcolor": "#681F9F",
+    "sidebarlinkcolor": "#cccccc",
+    "footerbgcolor": "#0f0c13",
+    "footertextcolor": "#cccccc",
+    "textcolor": "#000000",
+    "headtextcolor": "#000000",
+    "linkcolor": "#3a4759",
+    "visitedlinkcolor": "#673dcc"
+}
 
 # extensions = ['sphinxjp.themes.basicstrap']
 # html_theme = 'basicstrap'
