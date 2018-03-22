@@ -58,9 +58,9 @@ It has the following key features:
 
     #. Model Packaging. Models are packaged as Dockerized microservices so
        they can be deployed directly to a variety of environments. As a part
-	   of the onboarding process, protobuf files are created to describe the model
-	   inputs and outputs in a standard format, and a TOSCA file is generated
-	   to allow the model to be accessed in the Design Studio.
+       of the onboarding process, protobuf files are created to describe the model
+       inputs and outputs in a standard format, and a TOSCA file is generated
+       to allow the model to be accessed in the Design Studio.
 
     #. Model Access. Once a model is selected, the Acumos Marketplace
        provides access to that model, either via downloading or by deploying
@@ -74,9 +74,9 @@ It has the following key features:
        and managed (validated, deployed, published) just like simple models.
        
     #. Federation. The Acumos Marketplace supports distributed relationships
-	   with other Acumos peer instances, allowing users to browse and procure
-	   models from remote federated partners. Federation also creates a much 
-	   larger available user pool for data scientists to share their models.
+       with other Acumos peer instances, allowing users to browse and procure
+       models from remote federated partners. Federation also creates a much 
+       larger available user pool for data scientists to share their models.
 
     #. Training. Acumos provides methods to train models. Data sources can
        be discovered and training process can be designed in the Acumos
@@ -235,7 +235,7 @@ To search the Marketplace using Tags, follow these steps:
     .. image:: images/portal/marketplace_tagFiltering.png
        :width: 3.28542in
        :height: 2.15069in
-	   
+       
 
 Filtering by Peer
 -----------------
@@ -312,7 +312,7 @@ Logged-in users may deploy a model's microservice to the Cloud of their choice.
     .. image:: images/portal/models_deployToCloudSteps.png
        :width: 5.24583in
        :height: 3.64167in
-	  
+      
 
 Converting a Model to be Used in ONAP
 -------------------------------------
@@ -347,7 +347,7 @@ Overview for Modelers
 All of the models that a user has onboarded can be viewed from the **My
 Models** Page. Depending on their history, the models may exist in one
 for four sections: MY UNPUBLISHED MODELS, MY MODELS: PUBLISHED TO COMPANY MARKETPLACE,
-MY MODELS: PUBLISHED TO PUBLIC MARKETPLACE, and MY DELETED MODELS	.
+MY MODELS: PUBLISHED TO PUBLIC MARKETPLACE, and MY DELETED MODELS    .
 
 Models published to Company are visible only to account holders on 
 your local Acumos instance. This can be thought of as “inside the instance firewall” – typically viewable by
@@ -379,27 +379,27 @@ The onboarding process via web is accomplished by the following steps:
 #. Select Web On-boarding
 #. Complete all the user steps to onboard your model, including:
 
-	#. Choose Toolkit
-	#. Select **Download client library**
-	#. Select **Upload Model Bundle** and drag your file from the local
-	  machine to the screen and select **Done**
-	#. Add a name for your model using the pencil icon
-	#. All the steps have been done (you will see the number for each
-	  converted to a green check mark), the **Add to Catalog** button
-	  will be enabled
-	#. Select **Add to Catalog.** This will initiate a series of back end
-	  process steps, illuminated as they run, by the cascade from left
-	  to right of the icons on the top of the page. These include
-	  uploading the model and artefacts, creating the microservice that
-	  will run in a docker container, creating a tosca file for your
-	  model so it can be used in the design studio, storing the
-	  artefacts and model and creating the link so you can access your
-	  model in the **private/unpublished** section of your personal
-	  catalog
+    #. Choose Toolkit
+    #. Select **Download client library**
+    #. Select **Upload Model Bundle** and drag your file from the local
+      machine to the screen and select **Done**
+    #. Add a name for your model using the pencil icon
+    #. All the steps have been done (you will see the number for each
+      converted to a green check mark), the **Add to Catalog** button
+      will be enabled
+    #. Select **Add to Catalog.** This will initiate a series of back end
+      process steps, illuminated as they run, by the cascade from left
+      to right of the icons on the top of the page. These include
+      uploading the model and artefacts, creating the microservice that
+      will run in a docker container, creating a tosca file for your
+      model so it can be used in the design studio, storing the
+      artefacts and model and creating the link so you can access your
+      model in the **private/unpublished** section of your personal
+      catalog
 
-	.. image:: images/portal/models_onboardingWeb.png
-	   :width: 4.94306in
-	   :height: 3.08125in
+    .. image:: images/portal/models_onboardingWeb.png
+       :width: 4.94306in
+       :height: 3.08125in
 
 
 My Models Page
@@ -412,29 +412,29 @@ Models are organized by their visibility to others on your **My Models**
 page. They are sorted into the following sections: 
 
 **MY UNPUBLISHED MODELS**
-	Initially, successfully onboarded model will appear in my Models page in
-	the UNPUBLISHED section. These are visible only to you and any
-	collaborators of that model (shared). Partially onboarded models (in
-	process) are also displayed in this section but are shown greyed out
-	until the onboarding process is successfully completed.
+    Initially, successfully onboarded model will appear in my Models page in
+    the UNPUBLISHED section. These are visible only to you and any
+    collaborators of that model (shared). Partially onboarded models (in
+    process) are also displayed in this section but are shown greyed out
+    until the onboarding process is successfully completed.
 
 **MY MODELS: PUBLISHED TO COMPANY MARKETPLACE**
-	Models that have been published to Local, appear in the the LOCAL
-	marketplace and are visible to anyone with an account on the local
-	Acumos Instance.
+    Models that have been published to Local, appear in the the LOCAL
+    marketplace and are visible to anyone with an account on the local
+    Acumos Instance.
 
 **MY MODELS: PUBLISHED TO PUBLIC MARKETPLACE**
-	Models that have been published to Public, appear in the the PUBLIC
-	marketplace and may be viewed by users on Acumos instances that have a
-	federated relationship with your local instance.
+    Models that have been published to Public, appear in the the PUBLIC
+    marketplace and may be viewed by users on Acumos instances that have a
+    federated relationship with your local instance.
 
 **MY DELETED MODELS**
-	Initially, successfully onboarded model will appear in my Models page in
-	the UNPUBLISHED section. These are visible only to the owner of that
-	model and any collaborators of that model (via the "Share Model"
-	process). Partially onboarded models (in process) are also displayed in
-	this section but are shown greyed out until the onboarding process is
-	successfully completed.
+    Initially, successfully onboarded model will appear in my Models page in
+    the UNPUBLISHED section. These are visible only to the owner of that
+    model and any collaborators of that model (via the "Share Model"
+    process). Partially onboarded models (in process) are also displayed in
+    this section but are shown greyed out until the onboarding process is
+    successfully completed.
 
 Clicking on any model image shows the Model Detail page for that model. 
 Managing Your Model
@@ -598,8 +598,8 @@ Each ML Model may support one or more operations – corresponding to the functi
 
 Each operation is represented by two ports – an input port and an output port. An ML model may have more than two ports, if it provides (exposes) multiple operations (aka services).
 
-#.	Input Port - consumes the input message and provides the service, such as prediction or classification or regression to the caller/client. The input port represents the capability of the model. The client that need a service to be performed need to send a request to input or the capability port of the model.
-#.	Output Port – produces the output (response) message. Note that the output produced by an operation (say the Prediction message) need not necessarily be consumed by the caller/client, but in fact needs to be fed to another ML Model which provides another service, such as classification (of the Prediction message). So from a composition perspective, the output port represents a requirement that is satisfied by classification service.
+#.    Input Port - consumes the input message and provides the service, such as prediction or classification or regression to the caller/client. The input port represents the capability of the model. The client that need a service to be performed need to send a request to input or the capability port of the model.
+#.    Output Port – produces the output (response) message. Note that the output produced by an operation (say the Prediction message) need not necessarily be consumed by the caller/client, but in fact needs to be fed to another ML Model which provides another service, such as classification (of the Prediction message). So from a composition perspective, the output port represents a requirement that is satisfied by classification service.
 
 
 Model Ingestion in the Design Studio
@@ -655,10 +655,10 @@ The TGIF.json file represents an ML Model in the Design Studio. Every model shou
 
 The TGIF.json file contains these critical pieces of information:
 
-#)	**Self** – section: This section describes the name and version of the ML model which is displayed on the Design Studio Web UI.
-#)	**Services.provides** – section: This section provides a list of services offered by the ML Model. At present only the name of the operation and JSON representation of its input messages is included here. The information provided in Services.provides and Services.calls section is used for determining the composability of a pair of output and input ports of the ML Models.
-#)	**Services.calls** – section: This section provides a list of output messages of the services offered by the ML Model. As explained earlier, these output messages are consumed by the services provided by other ML Model(s). The name of the operation (same as provided in Services.provides) and JSON representation of its output messages is included here. The information provided in Services.provides and Services.calls section is used for determining the composability of a pair of output and input ports of the ML Models.
-#)	**Artifacts. Uri** – section: This section contains the location of the docker image of the ML Model. This information is used by the Blueprint file to retrieve the docker image of the model in order to deploy it in cloud. 
+#)    **Self** – section: This section describes the name and version of the ML model which is displayed on the Design Studio Web UI.
+#)    **Services.provides** – section: This section provides a list of services offered by the ML Model. At present only the name of the operation and JSON representation of its input messages is included here. The information provided in Services.provides and Services.calls section is used for determining the composability of a pair of output and input ports of the ML Models.
+#)    **Services.calls** – section: This section provides a list of output messages of the services offered by the ML Model. As explained earlier, these output messages are consumed by the services provided by other ML Model(s). The name of the operation (same as provided in Services.provides) and JSON representation of its output messages is included here. The information provided in Services.provides and Services.calls section is used for determining the composability of a pair of output and input ports of the ML Models.
+#)    **Artifacts. Uri** – section: This section contains the location of the docker image of the ML Model. This information is used by the Blueprint file to retrieve the docker image of the model in order to deploy it in cloud. 
 
 
 Model Composition in the Design Studio
@@ -710,11 +710,11 @@ The Design Studio UI, shown below, consists of a Design Canvas with a grid backg
 
 5. Properties Tab: Displays the properties of elements – such as ML Models and Messages inside the Ports. If an ML Model is selected by the user in the Design Canvas, it displays the name, type, owner, provider and tool kit type information. If a Message inside the ML port is selected by the user, it displays the Protobuf message signature – such as the fields of the message, their name, type, tag and role (repeated, optional etc.)
 
-6. Matching Models Tab:	If a requirement (output) port of an ML Model is selected in the Design Canvas, then this tab shows a list of all models that have matching capabilities (in their input ports). The user can then drag the desired model in the Design Canvas and connect the output port to the input port. If a capability (input) port of an ML Model is selected in the Design Canvas, then this tab shows a list of all models that have matching requirements (in their output ports). 
+6. Matching Models Tab:    If a requirement (output) port of an ML Model is selected in the Design Canvas, then this tab shows a list of all models that have matching capabilities (in their input ports). The user can then drag the desired model in the Design Canvas and connect the output port to the input port. If a capability (input) port of an ML Model is selected in the Design Canvas, then this tab shows a list of all models that have matching requirements (in their output ports). 
 
 7. My Solutions: Displays the catalog of composite solutions (built out of basic building blocks) that are marked “Private” to the logged in user. When the user clicks on an existing solution, that solution is displayed in the Design Canvas. The user can then make modification to the solution and save it as a separate solution by providing a new name or new version or both.
 
-8. New:	The user clicks this button to create a new composite solution.
+8. New:    The user clicks this button to create a new composite solution.
 
 9. Clear: The user clicks this button to clear an unsaved solution. 
 

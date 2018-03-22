@@ -15,8 +15,8 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
-Documenting Acumos
-===================
+Documentation Contributor Guide 
+===============================
 This guide describes how to create documentation for the Acumos platform. Acumos repositories create a variety of content depending on the nature of the project. For example projects delivering a platform component may have different types of content than a project that creates libraries for a software development kit. The content from each project may be used together as a reference for that project and/or be used in documents are tailored to a specific user audience and task they are performing.
 
 Much of the content in this document is derived from similar documentation processes used in other Linux Foundation Projects including ONAP, OPNFV and Open Daylight.

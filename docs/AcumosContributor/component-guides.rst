@@ -19,7 +19,7 @@ Component Guides
 ================
 
 .. toctree::
-      :maxdepth: 2
+      :maxdepth: 1
 
       ../submodules/acumos-azure-client/docs/index
       ../submodules/acumos-hippo-cms/docs/index
@@ -39,10 +39,10 @@ Component Guides
       ../submodules/on-boarding/docs/index
       ../submodules/platform-oam/docs/index
       ../submodules/portal-marketplace/docs/index
+      ../submodules/proto-viewer/docs/index
       ../submodules/python-dcae-model-runner/docs/index
       ../submodules/runtime-orchestrator/docs/index
+      ../submodules/system-integration/docs/index
       ../submodules/test-automation/docs/index
       ../submodules/validation-security/docs/index
       ../submodules/vm-predictor/docs/index
-      ../submodules/proto-viewer/docs/index
-      ../submodules/system-integration/docs/index
