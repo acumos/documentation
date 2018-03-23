@@ -151,6 +151,30 @@
     },
     {
       "key": {
+        "uuid": "e907fd19_fd82c80c",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-23T21:50:24Z",
+      "side": 1,
+      "message": "docker compose works on services not containers",
+      "parentUuid": "3f201977_b5c90f62",
+      "range": {
+        "startLine": 58,
+        "startChar": 34,
+        "endLine": 58,
+        "endChar": 42
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0fc6dc74_9c27792b",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -657,6 +681,30 @@
     },
     {
       "key": {
+        "uuid": "dbcaabbd_34da7c71",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-23T21:50:24Z",
+      "side": 1,
+      "message": "No, firefox or other browsers *may* work, it\u0027s just less certain.",
+      "parentUuid": "263d6672_66007c99",
+      "range": {
+        "startLine": 132,
+        "startChar": 21,
+        "endLine": 132,
+        "endChar": 27
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "40e37938_740ed6af",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -720,6 +768,24 @@
     },
     {
       "key": {
+        "uuid": "45489810_7d200584",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-23T21:50:24Z",
+      "side": 1,
+      "message": "Yes it seems so.",
+      "parentUuid": "3bcb4444_13f3ef66",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a2faba33_803f581b",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -731,6 +797,24 @@
       "writtenOn": "2018-03-23T09:55:48Z",
       "side": 1,
       "message": "maybe the ... is not how to encourage confidence in our users",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c500c298_b2c28bc3",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-03-23T21:50:24Z",
+      "side": 1,
+      "message": "I don\u0027t have a definitive list of features. But I will try something less disconcerting...",
+      "parentUuid": "a2faba33_803f581b",
       "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
