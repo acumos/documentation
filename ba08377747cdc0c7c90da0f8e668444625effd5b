@@ -1,0 +1,330 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ac232e0e_b6040f7f",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "We will have to agree to disagree on \"Portal\" here.  That for me is a term from the 2000s when sites like Yahoo tried to be your entry to the web, building a custom home page with web widgets.  Just please make clear this deploys a collection of microservices, one of which is the Portal/Marketplace.",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab5e7dc_505fd2c2",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "FWIW users don\u0027t need the environment variables to view container logs.",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f201977_b5c90f62",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "Suggest using the word \"containers\"",
+      "range": {
+        "startLine": 58,
+        "startChar": 34,
+        "endLine": 58,
+        "endChar": 42
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0fc6dc74_9c27792b",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "Two deployments as described in the next bullet?",
+      "range": {
+        "startLine": 60,
+        "startChar": 48,
+        "endLine": 60,
+        "endChar": 55
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "274898ac_01b127de",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "Two portals?  Suggest making consistent with previous bullet for clarity.",
+      "range": {
+        "startLine": 63,
+        "startChar": 6,
+        "endLine": 63,
+        "endChar": 17
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08b00e85_dfec4b9e",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "please also give version e.g., 1604.  That\u0027s two years old at this point so you might have to add a disclaimer, not yet tested on 17xx.",
+      "range": {
+        "startLine": 76,
+        "startChar": 62,
+        "endLine": 76,
+        "endChar": 68
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a07594e3_a87ac12c",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "Please check the latest actions by the ELK people, who seem to want 16GB just for their 4 containers.",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fb9ed0a0_a9fecf2b",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "What are APIs as used in this sentence?",
+      "range": {
+        "startLine": 82,
+        "startChar": 20,
+        "endLine": 82,
+        "endChar": 24
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9e258787_7bd0117b",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "Another prereq: you have full network access to this deployment host; i.e., all ports are accessible.",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eff9d263_7add77f2",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "Is there a web site link that people could check to find updates; i.e., when more things are working?",
+      "range": {
+        "startLine": 92,
+        "startChar": 15,
+        "endLine": 92,
+        "endChar": 27
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "31b64b9d_8c85e111",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "\"already downloaded\"",
+      "range": {
+        "startLine": 103,
+        "startChar": 57,
+        "endLine": 103,
+        "endChar": 67
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba68dc56_a7fef527",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "EVERYONE will get a browser warning about self-signed certs, right?  For people who are worried, can you list here exactly what subject name, expiration date etc. the self-signed certificate contains?",
+      "range": {
+        "startLine": 131,
+        "startChar": 3,
+        "endLine": 131,
+        "endChar": 5
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "263d6672_66007c99",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "Do you want to list Chrome in the prereq section?",
+      "range": {
+        "startLine": 132,
+        "startChar": 21,
+        "endLine": 132,
+        "endChar": 27
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3bcb4444_13f3ef66",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "is this backslash needed in RST ?",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a2faba33_803f581b",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "maybe the ... is not how to encourage confidence in our users",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0cc66a60_a862443a",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-03-23T09:55:48Z",
+      "side": 1,
+      "message": "just one \"a\" is prolly enuf",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
