@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "a0a36004_6a6b2eab",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "One Click",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 8
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ac232e0e_b6040f7f",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -13,6 +36,75 @@
       "writtenOn": "2018-03-23T09:55:48Z",
       "side": 1,
       "message": "We will have to agree to disagree on \"Portal\" here.  That for me is a term from the 2000s when sites like Yahoo tried to be your entry to the web, building a custom home page with web widgets.  Just please make clear this deploys a collection of microservices, one of which is the Portal/Marketplace.",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "515654a8_21a6cb3c",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "Platform - Platform is used in other docs",
+      "range": {
+        "startLine": 25,
+        "startChar": 47,
+        "endLine": 25,
+        "endChar": 54
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bdcb4059_b084972e",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "Platform",
+      "range": {
+        "startLine": 27,
+        "startChar": 51,
+        "endLine": 27,
+        "endChar": 57
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "10914969_176b171a",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "I don\u0027t think the \u0027?\u0027 is needed here... Also, I decided that we\u0027re following normal capitalization rules for section titles rather than sentence capitalization (like OPNFV and OpenStack). Sp please ensure consistent capitalization in the section titles (or I can edit later)",
+      "range": {
+        "startLine": 36,
+        "startChar": 32,
+        "endLine": 36,
+        "endChar": 33
+      },
       "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
@@ -82,6 +174,29 @@
     },
     {
       "key": {
+        "uuid": "40dc4b7d_474781b0",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "platforms",
+      "range": {
+        "startLine": 60,
+        "startChar": 48,
+        "endLine": 60,
+        "endChar": 55
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "274898ac_01b127de",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -98,6 +213,52 @@
         "startChar": 6,
         "endLine": 63,
         "endChar": 17
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5d20f5f_6f64c99d",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "platforms",
+      "range": {
+        "startLine": 63,
+        "startChar": 6,
+        "endLine": 63,
+        "endChar": 17
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "67e18243_62917f67",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "Step-by-Step Guide",
+      "range": {
+        "startLine": 68,
+        "startChar": 8,
+        "endLine": 68,
+        "endChar": 9
       },
       "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
@@ -128,6 +289,52 @@
     },
     {
       "key": {
+        "uuid": "6222fe21_23dff453",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "maybe just use  16.04.x rather than Xenial?",
+      "range": {
+        "startLine": 76,
+        "startChar": 62,
+        "endLine": 76,
+        "endChar": 68
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "347267d8_1f2cb198",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "Platform",
+      "range": {
+        "startLine": 76,
+        "startChar": 31,
+        "endLine": 76,
+        "endChar": 37
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a07594e3_a87ac12c",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -139,6 +346,29 @@
       "writtenOn": "2018-03-23T09:55:48Z",
       "side": 1,
       "message": "Please check the latest actions by the ELK people, who seem to want 16GB just for their 4 containers.",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "926e02e4_a2ab8f73",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "platform",
+      "range": {
+        "startLine": 77,
+        "startChar": 70,
+        "endLine": 77,
+        "endChar": 76
+      },
       "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
@@ -168,6 +398,29 @@
     },
     {
       "key": {
+        "uuid": "73b9f2bf_10d485d0",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "interact with the Acumos platform and APIs.  \nAnd to Chris\u0027 question, which APIs. There no separate, easily located API documentation. Some APIs are described in component user guides and the Javadoc isn\u0027t necessarily helpful.",
+      "range": {
+        "startLine": 81,
+        "startChar": 63,
+        "endLine": 82,
+        "endChar": 25
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9e258787_7bd0117b",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -179,6 +432,29 @@
       "writtenOn": "2018-03-23T09:55:48Z",
       "side": 1,
       "message": "Another prereq: you have full network access to this deployment host; i.e., all ports are accessible.",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "adf9e03f_97c632f3",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "platform",
+      "range": {
+        "startLine": 91,
+        "startChar": 57,
+        "endLine": 91,
+        "endChar": 63
+      },
       "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
@@ -208,6 +484,30 @@
     },
     {
       "key": {
+        "uuid": "c6c0f466_f37da36c",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "HA!HAHAHAHAHA.   Ok, in all seriousness, I\u0027m trying to pull together release notes that include \"Known Issues and Limitations\" - that page will be accessible from the landing page at docs.acumos.org when it goes live on Monday",
+      "parentUuid": "eff9d263_7add77f2",
+      "range": {
+        "startLine": 92,
+        "startChar": 15,
+        "endLine": 92,
+        "endChar": 27
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "31b64b9d_8c85e111",
         "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
         "patchSetId": 1
@@ -224,6 +524,86 @@
         "startChar": 57,
         "endLine": 103,
         "endChar": 67
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5e1bf0f1_74a6d1ef",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "platform",
+      "range": {
+        "startLine": 107,
+        "startChar": 42,
+        "endLine": 107,
+        "endChar": 48
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6988f6d0_827f583b",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "Screenshots would be nice. If I have time to test this out this weekend, I\u0027ll grab screenshots of the Hippo CMS config steps",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b4d5bd2_a035db2a",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "again, a screenshot would be nice for newbies; not saying it has to be put in before merge",
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "080f6b9e_50ccca50",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "what is this double URL supposed to mean?",
+      "range": {
+        "startLine": 129,
+        "startChar": 38,
+        "endLine": 129,
+        "endChar": 70
       },
       "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
@@ -270,6 +650,52 @@
         "startChar": 21,
         "endLine": 132,
         "endChar": 27
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "40e37938_740ed6af",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "Stopping, Restarting, and Reinstalling",
+      "range": {
+        "startLine": 135,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 35
+      },
+      "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0b8e2b7_a0f469c6",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-03-23T13:32:00Z",
+      "side": 1,
+      "message": "why is the lone quotation mark here? did you mean \"On-Boarding Model\"  ??",
+      "range": {
+        "startLine": 162,
+        "startChar": 17,
+        "endLine": 162,
+        "endChar": 18
       },
       "revId": "ba08377747cdc0c7c90da0f8e668444625effd5b",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
