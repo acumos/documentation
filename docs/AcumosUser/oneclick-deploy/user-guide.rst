@@ -15,16 +15,16 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-==========================
-Oneclick Deploy User Guide
-==========================
+===========================
+One Click Deploy User Guide
+===========================
 
 Introduction
 ============
 
-This user guide describes how to deploy Acumos portals using the
-"oneclick deploy" tools designed for developers or those who want a simple and
-automated way to deploy an all-in-one (AIO) Acumos portal.
+This user guide describes how to deploy Acumos platforms using the
+"One Click deploy" tools designed for developers or those who want a simple and
+automated way to deploy an all-in-one (AIO) Acumos platform.
 
 What is an AIO deploy?
 ----------------------
@@ -33,11 +33,11 @@ The AIO deploy tools build an all-in-one instance of Acumos, with the database,
 Nexus repositories and docker containers all running on a single virtual
 machine or physical host machine.
 
-What's included in the AIO tools?
----------------------------------
+What's included in the AIO tools
+--------------------------------
 
-* oneclick_deploy.sh: the main script that kicks off the deployment, run
-  as “bash oneclick_deploy.sh”.
+* One Click_deploy.sh: the main script that kicks off the deployment, run
+  as “bash One Click_deploy.sh”.
 * acumos-env.sh: environment setup script that is customized as new
   environment parameters get generated (e.g. passwords). Used by various
   scripts in this toolset, to set shell environment variables that they need.
@@ -47,25 +47,25 @@ What's included in the AIO tools?
 * clean.sh: script you can run as “bash clean.sh” to remove the Acumos install,
   to try it again etc.
 * cmn-data-svc-ddl-dml-mysql-1.14.sql: Common Dataservice database setup script.
-  Used by oneclick_deploy.sh. Will be updated as the common-dataservice used by
+  Used by One Click_deploy.sh. Will be updated as the common-dataservice used by
   these tools is upgraded.
 * openssl.cnf: OpenSSL configuration file used in self-signed certificate
   generation.
 * docker-compose.sh: Script called by the other scripts as needed, to take
-  actions on the set of Acumos docker services. Used by oneclick_deploy.sh and
+  actions on the set of Acumos docker services. Used by One Click_deploy.sh and
   clean.sh. You can also call this directly e.g. to tail the service container
   logs. See the script for details.
 * docker-compose.yaml: The docker services that will be acted upon, per the
   options passed to docker-compose.sh.
-* peer-test.sh: Automated deployment of two AIO portals, with federation and
+* peer-test.sh: Automated deployment of two AIO platforms, with federation and
   demo model onboarding. Used to test federation use cases.
 * create-peer.sh: Automated setup of a peer relationship between two Acumos
   AIO deployments. Used by peer-test.sh.
 * create-user.sh: Automated user provisioning and role assignment. Used by
   peer-test.sh to create users for model onboarding, and portal admins for
-  testing federation actions on the Acumos portal.
+  testing federation actions on the Acumos platform.
 
-Step-by-step guide
+Step-by-Step Guide
 ==================
 
 Prerequisites
@@ -73,22 +73,24 @@ Prerequisites
 
 This guide assumes:
 
-* you are deploying all Acumos Portal components on an Ubuntu Xenial
-  desktop/server, with at least 16GB of RAM (recommended). The Acumos portal
+* you are deploying all Acumos platform components on an Ubuntu 16.04.x
+  desktop/server, with at least 16GB of RAM (recommended). The Acumos platform
   as deployed by this script on bare metal consumes currently about 6GB of RAM,
   so may be deployable in hosts with less than 16GB RAM.
-* you are deploying an AIO instance to a host that has a hostname resolvable
-  by DNS or through the hosts file of whatever machine you use to interact the
-  Acumos portal and APIs.
-  * Note this can be another physical host, or a VM running on your workstation,
-  and that for the purpose of the examples in this guide the hostname is
-  assumed to be "acumos".
+* you are deploying an AIO instance to a host that:
+ * has a hostname resolvable by DNS or through the hosts file of whatever
+   machine you use to interact the Acumos web portal (referred to here as the
+   "portal") and platform APIs such as onboarding and federation.
+* Note the target host can be another physical host, or a VM running on your
+  workstation, and that for the purpose of the examples in this guide the
+  hostname is assumed to be "acumos".
+* You have full access to the target host, i.e. all ports are accessible.
 
 Install Process
 ---------------
 
 The notes below provide an overview of the default installation process. Note
-these scripts are a work in progress, and not all Acumos portal functions may
+these scripts are a work in progress, and not all Acumos platform functions may
 work correctly at this time. See "Verified Features" below for a summary of
 what's been verified to work, at least in the test environments where this has
 been used so far.
@@ -98,10 +100,10 @@ been used so far.
  * git clone https://gerrit.acumos.org/r/system-integration
 
 * In the system-integration/AIO folder, run the following command:
- * bash oneclick_deploy.sh
- * The deployment will take 5-20 minutes depending upon whether this is the
-   first time you have run this command before, and have pre-cached the Acumos
-   docker images.
+ * bash One Click_deploy.sh
+ * The deployment will take 5-20 minutes depending upon whether you have run
+   this command before, and thus docker has already downloaded the Acumos docker
+   images. That will speed up subsequent re-deploys.
 
 * When the deployment is complete, you will need to complete one Hippo CMS
   setup step manually, so that all Acumos portal content is displayed
@@ -126,14 +128,14 @@ been used so far.
   following line to your workstation's hosts file:
  * "\<ip address of your AIO host\> acumos"
 
-* You should now be able to browse to [https://acumos](https://acumos), and
+* You should now be able to browse to https://acumos, and
  * register new user accounts, etc
- * If you get a browser warning, just accept the self-signed cert and proceed.
+ * When you get a browser warning, just accept the self-signed cert and proceed.
   * Note: use of the Chrome browser is recommended, as it puts fewer
     roadblocks to accessing sites with self-signed certs.
 
-Stopping, restarting, re-installing
------------------------------------
+Stopping, Restarting, and Reinstalling
+--------------------------------------
 
 You can stop all the Acumos components (e.g. to suspend/shutdown your host)
 without losing their databases via the command:
@@ -149,17 +151,17 @@ You can clean the installation (including all data) and optionally reinstall
 using the sequence below:
 
 * bash clean.sh
-* bash oneclick_deploy.sh
+* bash One Click_deploy.sh
 
 Verified Features
 -----------------
 
-The following Acumos portal workflows and related features have been verified as
+The following Acumos platform workflows and related features have been verified as
 working so far. This list will be updated as more workflows are verified.
 
 * new user registration and login
 * portal web page asset integration through Hippo CMS (e.g. user guides under
-On-Boarding Model")
+  "On-Boarding Model")
 * model onboarding via command line (scikit-learn, python/tensorflow)
 * federated peer relationship creation via portal
 
@@ -184,7 +186,7 @@ automate this are in development, and will be added to Acumos repos soon.
 Federation
 ..........
 
-Oneclick_deploy.sh will automatically create a "self" peer as required by the
+One Click_deploy.sh will automatically create a "self" peer as required by the
 federation-gateway.
 
 If you want to deploy two Acumos AIO instances to test federation, see these
@@ -198,7 +200,7 @@ scripts for info and usage:
    community@lists.acumos.org.
 
 * create-peer.sh: used by peer-test.sh. You can call this script directly to
-  add a peer to an existing Acumos portal.
+  add a peer to an existing Acumos platform.
 
 You can also manually create a federated peer:
 
@@ -235,7 +237,6 @@ Features Pending Verification
 * federated subscription to public marketplace models
 * model launch
 * design studio
-* ...
 
 Additional Notes
 ================
@@ -243,14 +244,14 @@ Additional Notes
 The scripts etc in this repo install Acumos with a default set of values for
 key environment variables. See acumos-env.sh for these defaults. You should be
 able to modify any explicit value (not variables) defined there, but some
-additional steps may be needed for the installed portal to work with the
+additional steps may be needed for the installed platform to work with the
 updated values. For example:
 
-* To use a a non-default domain name for the acumos AIO server
+* To use a non-default domain name for the acumos AIO server
   (default: acumos), change ACUMOS_DOMAIN in acumos-env.sh, and use the chosen
   domain name in the "Install Process" above, in place of "acumos".
 
-* You can install multiple Acumos portals (e.g. to test federation), just be
+* You can install multiple Acumos platforms (e.g. to test federation), just be
   sure to give each a unique domain name as above.
 
 * The Hippo CMS manual config process above can also work for any FQDN, with
