@@ -185,7 +185,7 @@ This tab enables configuration of the following:
 -  EnableOnboarding: option to enable or disable the onboarding feature
    for modelers
 
--  validationText: ***TODO: clarify how this is used***
+-  validationText: If you have Text Check configured as part of your Publishing workflow, a keyword scan will be performed on a model's artifacts. That keyword scan will use the comma separated list of keywords entered in this field.
 
 Federation
 ==========
@@ -254,7 +254,7 @@ federation:
    -  restarting their federation-gateway service, and verifying basic
       connectivity to the peer gateway.
 
-..
+.. note::
 
     See the ***(TODO: link to portal deployment guide)*** for details on
     these steps.
