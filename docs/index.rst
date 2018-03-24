@@ -52,8 +52,8 @@ Please visit the wiki to view `Acumos Architecture <https://wiki.acumos.org/disp
 .. toctree::
    :maxdepth: 1
 
-   ..AcumosContributor/component-guides
-   ..AcumosContributor/docs-contributor-guide
+   AcumosContributor/component-guides
+   AcumosContributor/docs-contributor-guide
 
 
 
