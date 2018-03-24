@@ -1,5 +1,5 @@
 .. ===============LICENSE_START=======================================================
-.. Acumos CC-BY-4.0
+.. Acumos
 .. ===================================================================================
 .. Copyright (C) 2017-2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
 .. ===================================================================================
@@ -8,750 +8,379 @@
 .. you may not use this file except in compliance with the License.
 .. You may obtain a copy of the License at
 ..
-.. http://creativecommons.org/licenses/by/4.0
+..      http://creativecommons.org/licenses/by/4.0
 ..
 .. This file is distributed on an "AS IS" BASIS,
 .. WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
+
+.. _onboarding-user-guide:
+
 ======================
 On-Boarding User Guide
 ======================
 
-1. Introduction
----------------
+Target Users
+============
+Modelers
 
-**This is the User guide for Onboarding.**
+Overview
+========
 
-**1.1 What is Onboarding ?**
+Acumos accommodates the use of a wide range of tools and  technologies in the development of machine learning models, including support for both open source and proprietary toolkits. Models can be easily onboarded and wrapped into containerized microservices which are interoperable with many other components. On-boarding provides an ingestion interface for various  types of models to enter the Acumos Machine Learning (ML) platform. Examples  of models include well-defined objects such as scikit-learn estimators, TensorFlow weights, and arbitrary R functions.
 
-Acumos is intended to enable the use of a wide range of tools and
-technologies in the development of machine learning models including
-support for both open sourced and proprietary toolkits. Models can be
-easily onboarded and wrapped into containerized microservices which are
-interoperable with many other components.
+The solution for accommodating a myriad of different model types is to provide a custom wrapping library for each runtime. The client library encapsulates the complexity surrounding the serialization and deserialization of models. Additionally, the client library creates a common native interface, a wrapper, for invoking the inner model. In order for Acumos to be able to reason about models uniformly, there is a common model interface description that details what the available  model methods are and what they look like. Acumos instantiates ML models as microservices and safely composes them together.
 
-The goal of Onboarding is to provide an ingestion interface for various
-types of models to enter the acumos machine learning platform. Examples
-of models include well-defined objects such as scikit-learn estimators,
-TensorFlow weights, and arbitrary R functions.
+The Acumos on-boarding process generates everything needed to create an executable microservice for your model and add it to the catalog.  Acumos uses Protobuf as a language-agnostic data format to provide a common description of the model data inputs and outputs.
 
-The solution for accommodating a myriad of different model types is to
-provide a custom wrapping library for each runtime. The wrapper will
-encapsulate the complexity surrounding the serialization and
-deserialization of models. Additionally, the wrapper will provide a
-common native interface for invoking the inner model. In order for
-acumos to be able to reason about models uniformly, there will also have
-to be a common model interface description. E.g. what are the available
-model methods, and what do they look like? One goal of acumos is to
-instantiate ML models as microservices and safely compose them together.
-We must collect enough model metadata to enable this.
+The appropriate client library does the first step of the on-boarding process. This includes:
 
-In short, our goals are to:
+#) Introspection to assess the toolkit library versions and determine file types
+#) Creation of a JSON description of the system
+#) Creation of the protobuf file
+#) File push to the Acumos on-boarding server
 
-- Create wrapper libraries that can serialize/deserialize models and provide a standard native interface
 
-- Represent model I/O such that Acumos can generate microservices and validate connections between them.
+Architecture
+============
+High-level flow:
 
-**1.2 Target Users**
+.. image:: images/onboarding/UseCase.png
 
-This guide is targeted towards the open source user community that:
+In the illustrations below, custom transformation functions which consume and produce a native DataFrame are converted to standardized native models. The  transforms are then composed together in Acumos as microservices. This illustration begs the question of how the DataFrame can be  represented abstractly in order to validate this workflow.
 
-1. Intends to understand the backend functionality of the Onboarding.
 
-2. Intends to contribute code to enhance the functionality of the
-Onboarding.
+.. image:: images/onboarding/UG_image3.png
 
-2. Technology & Framework Used
-------------------------------
 
-Technology and Framework used are as follows:
+.. image:: images/onboarding/UG_image4.png
 
--  Java 1.8
 
--  Spring Boot
+.. image:: images/onboarding/UG_image5.png
 
--  Spring REST
 
--  Docker Java Library
+Methods and Semantics
+---------------------
 
-3. Onboarding Architecture & APIs
----------------------------------
-
-**3.1 Onboarding High Level Architecture**
-
-Below is the High Level Architecture for Onboarding
-
-|image0|
-
-Modeler/Data scientist creates model using toolkit. Modeler uses
-Acumos-client-library to push the model to Acumos platform. The client
-library uploads model and metadata file to Acumos onboarding
-server.Onboarding server creates docker image of model and push to nexus
-docker registry.It also creates solution, puts model and metadata
-artifact to repository.
-
-|image1|
-
-The modeller will create model using various technologies (toolkits) and
-use the acumos client library to upload model to platform.Acumos
-Onboarding server exposes REST interface, which is used by client
-library for uploading the model to platform.
-
-**3.2 Onboarding Backend APIs**
-
--**OnboardingWithAuthentication:-**
-
-This API provides the basic authentication prior to Onboard any model.
-
--**dockerizePayload**:-
-
-This API is used for actual Onboarding the Models.
-
-It gets invoked after the successful authentication.
-
-4. Onboarding Methods,Semantics & Model Requirements
-----------------------------------------------------
-
-**4.1 Onboarding Methods and Semantics**
-
-Acumos is a machine learning platform, thus we need to provide certain
-“methods” in our wrapped models that Acumos can invoke in order to
-support various workflows. In a machine learning setting, these methods
-might look like:
+Acumos is a machine learning platform, thus we need to provide certain “methods” in our wrapped models that Acumos can invoke in order to support various workflows. In a machine learning setting, these methods might look like:
 
 - fit(message) -> model state
 
-- Does a full “batch” fit, replacing previous internal model parameters.
-
-- Returns a “model state” object that provides a standard serialization method.
+    - Does a full “batch” fit, replacing previous internal model parameters
+    - Returns a “model state” object that provides a standard serialization method
 
 - partial_fit(message) -> model state
 
-- Does a partial fit, updating internal model parameters.
-
-- Returns a “model state” object that provides a standard serialization method.
+    - Does a partial fit, updating internal model parameters
+    - Returns a “model state” object that provides a standard serialization method
 
 - transform(message) -> message
 
-- Returns an object that provides a standard serialization method.
+    - Returns an object that provides a standard serialization method
 
-Notes:
+On-Boarding a Python Model
+==========================
+The Acumos Python Client library is required for users who want to push their TensorFlow and scikit-learn models to the Acumos Portal. You will use this library for on-boarding all your models. The library creates meta-data by introspection, packages all the necessary information, and then uploads it to Acumos On-Boarding server. The Acumos Python Client library is packaged and available on PyPI. Please see the `PyPI <https://pypi.org/project/acumos/>`_ page for instructions and a tutorial.
 
-- We may choose to combine fit and partial_fit,and provide fit a flag such as partial=True or similar.
+On-Boarding an R Model
+======================
+Prerequisites
+-------------
+Before you begin:
 
-- Wrapped models can provide any number of additional functions, but they will not be semantically meaningful to Acumos.
+#) You must have protobuf 3 installed. Please visit the protobuf repository for more information on how to install protoc. Install version 3 (version 2 will not work).
+#) Your onboarding url is:   XYZ .  Use this url in place of the default url:
 
-- The microservice wrapper may choose to expose additional APIs that are compositions of these methods.
+.. code-block:: bash
 
-- For example,/api/partialFitTransform may invoke partial_fit,persist the model, and return the transformed data.
+    api='http://localhost:8887/v2/models', name='(undefined)'
 
-**4.2 Onboarding Model Wrapper Requirements**
 
-1.Model wrapper must provide an abstract API that supports the fit, partial_fit,and transform methods.
+Installing the Acumos R Client
+------------------------------
+The  install package is available here:
 
-- This abstract API will be invoked by the transport-layer application.
+.. code-block:: bash
 
-2.The fitand partial_fitmethods must accept a Protobuf message and
-return a custom “Model State” object that can be serialized and
-deserialized.
+    install.packages("acumos",,c("http://r.research.att.com","http://rforge.net"))
 
-- The Model State should provide an abstract serialize/deserialize API that is subclassed by concrete applications.
 
-- The Model State provides a way to persist or checkpoint models.
+You need to install all dependent packages from CRAN first.
 
-3.The transform method must accept a Protobuf message and return a
-Protobuf message.
-
-4.Model wrapper must be able to serialize itself to a file.
-
-- The file can contain anything the wrapper needs to deserialize itself.
-
-- E.g. it could be a zip file containing binaries, custom metadata, etc.
-
-5.Model wrapper must provide functionality to deserialize a wrapped
-model from file for native use.
-
-- The transport-layer application would use this API to initially load the model.
-
-- E.g. provide a static function.
-
-**4.3 Onboarding Client Library Requirements**
-
-1.The client library must be able to produce a serialized wrapped model.
-
-2.The client library must be able to produce a valid model metadata file
-version 0.2.0
-
-- https://acumos.atlassian.net/wiki/display/CW/E1+Model+Design
-
-3.The client library must generate new Protobuf files with unique
-package names for custom data types.
-
-4.The client library must upload the serialized wrapped model, model
-metadata file, and any new defined message types to the model upload
-server.
-
-**4.4 Onboarding Metadata Requirements**
-
-1.Each technology owner must create a jsonschema which validates the
-“runtime” object of the model metadata.
-
-- Refer to https://acumos.atlassian.net/wiki/display/CW/E1+Model+Design
-
-- The runtime metadata is used to generate a Docker image with appropriate dependencies installed.
-
-**4.5 Public Model Metadata**
-
-Each model type must provide the same public metadata. The runtime
-dependencies will depend on the implementation, but there will still be
-standardized schemas for Python, Java, R, etc. One breakdown may look
-like:
-
-- Models
-
-- Methods
-
-- I/O specification
-
-- Parameters - e.g. runtime configurable options, or partially applied functions
-
-- Runtime
-
-- Dependencies - e.g. Python requirements.txt or Java pom.xml
-
-- Deployment hints - e.g. # of CPUs, RAM
-
-5. Onboarding Use Case Illustration & Data Formats
---------------------------------------------------
-
-**5.1 Onboarding Use Case Illustration**
-
-Below, custom transformation functions which consume and produce a
-native DataFrame are converted to standardized native models. The
-transforms are then composed together in Acumos as microservices.
-
-This illustration begs the question of how the DataFrame can be
-represented abstractly in order to validate this workflow.
-
-|image2|
-
-|image3|
-
-|image4|
-
-**5.2 Method Description: Data Formats**
-
-Acumos must be able to generate microservices and validate microservice
-compositions. Thus models must provide sufficient metadata to enable
-both. A major challenge is representing native data structures
-abstractly.
-
-The current solution is to use existing web standards to represent data
-while avoiding specifying the underlying transport.
-
-We can use three tiers of specification:
-
-- Media type (e.g. application/json, image/png, video/mp4, etc.)
-
-- If media type is application/json, require a reference to public and frozen jsonschema
-
-- If media type is application/json, optionally allow a “format” which provides additional information
-
-Notes
-
-- An alternative to this approach may be using popular serialization tools such as Protobuf or Avro
-
-**5.3 Method Description: Data Formats: DataFrame**
-
-Let’s consider the DataFrame, a common data structure in machine
-learning, as an example. The DataFrame is a complex data structure; it
-can contain any number of columns and each column can be a different
-data type. How can the two functions below be used together?
-
-The DataFrame structure can be abstractly represented using a schema
-like jsonschema. The schema might define an object with a variable
-number of homogenous columns. However how do you differentiate a
-DataFrame with 3 float columns from a DataFrame with 4 float columns?
-Creating a new schema for each variant of DataFrame would result in an
-explosion of schemas.
-
-By specifying an additional piece of schema-specific information, called
-the format, we can completely specify the input. For example, the 3
-float column DataFrame might be represented with:
-
-- media type: “application/json”
-
-- schema: “acumos.research.att.com/schema/types/DataFrame/v1”
-
-- format: {“columns”: 3, “types”: “float”, “names”: null}
-
-- Or {“columns”: [“float”, “float”, “float”], “names”: [“foo”, “bar”, “baz”]} i.e. multiple schemas can be valid
-
-Notes
-
-- The format would have its own schema, which is co-located with and corresponds to the DataFrame schema.
-
-- E.g. the format schema would exist at acumos.research.att.com/schema/types/DataFrame/v1/format
-
-- While we are using jsonschema to abstractly represent data structures, we do not wish to be married to a particular serialization method.  Ideally we should have enough information to generate specifications for other tools, e.g. Protobuf.
-
-import pandas as pd
-
-def py_func(df: pd.DataFrame) -> pd.DataFrame:
-
-...
-
-import com.foobar.DataFrame;
-
-public DataFrame javaFunc(DataFrame df) {
-
-...
-
-}
-
-6. Docker Image Creation Process Details
-----------------------------------------
-
-The onboarding server exposes REST API for model and metadata upload.
-
-The metadata JSON is validated for valid schema using JSON schema
-validator.
-
-The model metadata is used to get the runtime version information, for
-example python 2.7.This information is used to fetch the runtime
-template. The runtime template contains template for following files:
-
-1.Dockerfile
-
-2.requirements.txt
-
-3.app.py
-
-4.swagger.yaml
-
-The above template files are populated based on metadata JSON uploaded
-by user.
-
-Onboarding server uses docker-java library for model docker image
-creation. Once the docker image is created, the image is tagged and
-pushed to nexus docker registry.
-
-The server uses common data micro-services API to create solution and
-store model and metadata to
-
-artifact repository.
-
-7. Model Validation Workflow
-----------------------------
-
-Following steps needs to be executed as part of model validation
-workflow:
-
--  Onboarding server will expose an REST API for validating the model.  The REST API will take solutionID and metadata JSON containing model features as input parameters.
-
--  The server will fetch the docker image details for the corresponding solution and run the model image.
-
--  The input metadata JSON features will be send to predict API exposed by model docker image and output of predict method will be returned as API output.
-
-8. Onboard any Model By Command line or Web Based Onboarding
-------------------------------------------------------------
-
-The Acumos on-boarding process generates everything needed to create an
-executable microservice for your model and add it to the catalog. Acumos
-uses Protobuf as a language-agnostic data format to provide a common
-description of the model data inputs and outputs.
-
-The client library does the first step of the on-boarding process. This
-includes: (1) introspection to assess the toolkit library versions and
-determine file types, (2) creation of a json description of the system
-(3) creation of the protobuf file, (4) file push to the Acumos
-on-boarding server.
-
-Once your model is on-boarded, it will available in the PRIVATE section
-of the Acumos Marketplace. Tools to manage and publish your model are
-available in the Acumos Portal.
-
-We have to ways to Onboard any Model:
-
-**1. On-Boarding By Command line:**
-
-**2. On-Boarding By Web**
-
-1. **On-Boarding By Command line:**
-
-    Follow the below steps to perform Command based Onboarding for
-    Models Likes H20,TensorFlow,Scikit Learn,R,Java.
-
-Onboarding H20 Model by Command Line:
-
--------------------------------------
-
-This toolkit generates everything to create an executable Acumos
-microservice around H2o models.
-
-Getting Started
-
-The H2o model is exported in the MOJO model format (.zip file) using any
-interface (eg.Python, Flow, R) provided by H2o. To on-board your model,
-you need to download the h2o-genmodel.jar file using any interface
-(eg.Python, Flow, R) provided by H2o. At present, the common data format
-conversion is done in the modeler's local enviornment, so the protoc application is also required.
-
-Before you begin
-
-- We assume you have H2o 3.14.0.2 installed on your machine. If not please take a look at https://www.h2o.ai/download/
-
-- You must have protobuf 3 installed. Please visit the protobuf repository for more information on how to install protoc. Install version 3 (version 2 will not work).
-
-- Your on-boarding url is: XYZ
-
-Installation:
-
-- install protoc
-
-- get client libraries
-
-- Package Model and Push to Acumos
-
-Usage
-
-- Iris example and screen shots
-
-Testing
-
-Creating a model in H2o:
-
-H2o provides different interfaces to create models and use H2o. As an
-example, below we show how to create a model using the Python interface
-of H2o and also using the H2o Flow GUI. You can use the other interfaces
-too which have comparable functions to train a model and download the
-model in a MOJO format.
-
-#### Here is a sample H2o iris example program that shows how a model
-can be created and downloaded as a MOJO using the Python Interface
-.. code-block:: python
-   
-   import h2o
-   
-   import pandas as pd
-   
-   import numpy as np
-   
-   import matplotlib.pyplot as plt
-   
-   import seaborn as sns
-   
-   # for jupyter notebook plotting,
-       matplotlib inline
-   
-   sns.set_context("notebook")
-   
-   h2o.init()
-   
-   # Load data from CSV
-   
-   iris =
-   h2o.import_file('https://raw.githubusercontent.com/h2oai/h2o-3/master/h2o-r/h2o-package/inst/extdata/iris_wheader.csv')
-   
-   Iris data set description
-   
-   
-   
-   1. sepal length in cm
-   
-   2. sepal width in cm
-   
-   3. petal length in cm
-   
-   4. petal width in cm
-   
-   5. class:
-   
-   Iris Setosa
-   
-   Iris Versicolour
-   
-   Iris Virginica
-   
-   iris.head()
-   
-   iris.describe()
-   
-   # training parameters
-   
-   training_columns = ['sepal_len', 'sepal_wid', 'petal_len', 'petal_wid']
-   
-   # response parameter
-   
-   response_column = 'class'
-   
-   # Split data into train and testing
-   
-   train, test = iris.split_frame(ratios=[0.8])
-   
-   train.describe()
-   
-   test.describe()
-   
-   from h2o.estimators import H2ORandomForestEstimator
-   
-   model = H2ORandomForestEstimator(ntrees=50, max_depth=20, nfolds=10)
-   
-   # Train model
-   
-   model.train(x=training_columns, y=response_column, training_frame=train)
-   
-   print (model)
-   
-   # Model performance
-   
-   performance = model.model_performance(test_data=test)
-   
-   print (performance)
-   
-   # Download the model in MOJO format. Also download the h2o-genmodel.jar
-   file
-   
-   modelfile = model.download_mojo(path="/home/deven/Desktop/",
-   get_genmodel_jar=True)
-   
-   predictions=model.predict(test)
-   
-   predictions
-
-2. **On-Boarding By Web:**
-
-We can Onboard the models using Web based Onboarding:
-
-Following are the steps for Web based Onboarding:
-
-Step 1. Choose Toolkit:
-
-To Onboard any model select the Toolkit i.e. the model you want to
-Upload like H20,TenosrFlow,R,Scikit-Learn,etc.
-
-After selecting the Toolkit it will show you the Toolkit name which you
-have selected in first Step.
-
-|image5|
-
-Step2. Download Client Library from Command Line:
-
-In second step it’ll download it will download all the client library
-for Onboarding the Model.
-
-You can tick the checkbox so that Installation of the toolkit library is
-completed.
-
-|image6|
-
-You can also Expand to view Steps to follow:
-
-**H2o Model:**
-
-This toolkit generates everything to create an executable Acumos
-microservice around H2o models.
-
-Getting Started
-
--------------------------------------------------------------------------------------------------------------------
-
-The H2o model is exported in the MOJO model format (.zip file) using any
-interface (eg.Python, Flow, R) provided by H2o. To on-board your model,
-you need to download the h2o-genmodel.jar file using any interface
-(eg.Python, Flow, R) provided by H2o. At present, the common data format
-conversion is done in the modelerâ€™s local enviornment, so the protoc
-application is also required.
-
-**Before you begin**
-
---------------------------------------------------------------------------------------------------------------------
-
-- We assume you have H2o 3.14.0.2 installed on your machine. If not please take a look https://www.h2o.ai/download/
-
-- You must have protobuf 3 installed. Please visit the protobuf repository for more information on how to install protoc. Install version 3 (version 2 will not work).
-
-- Your on-boarding url is: XYZ
-
-**Installation**
-
---------------------------------------------------------------------------------------------------------------------
-
-- install protoc
-
-- get client libraries
-
-- Package Model and Push to acumos
-
-Usage
-
---------------------------------------------------------------------------------------------------------------------
-
-- Iris example and screen shots
-
-Testing
-
---------------------------------------------------------------------------------------------------------------------
-
-Creating a model in H2o:
-
---------------------------------------------------------------------------------------------------------------------
-
-H2o provides different interfaces to create models and use H2o. As an
-example, below we show how to create a model using the Python innterface
-of H2o and also using the H2o Flow GUI. You can use the other interfaces
-too which have comparable functions to train a model and download the
-model in a MOJO format.
-
-#### Here is a sample H2o iris example program that shows how a model
-can be created and downloaded as a MOJO using the Python Interface
-
-import h2o
-
-import pandas as pd
-
-import numpy as np
-
-import matplotlib.pyplot as plt
-
-import seaborn as sns
-
-# for jupyter notebook plotting,
-
-%matplotlib inline
-
-sns.set_context("notebook")
-
-h2o.init()
-
-# Load data from CSV
-
-iris =
-h2o.import_file('https://raw.githubusercontent.com/h2oai/h2o-3/master/h2o-r/h2o-package/inst/extdata/iris_wheader.csv')
-
-Iris data set description
-
+Using the Acumos R Client
 -------------------------
 
-1. sepal length in cm
+Creating a Component
+~~~~~~~~~~~~~~~~~~~~
 
-2. sepal width in cm
+To create a deployment component, use acumos::compose() with the functions to expose. If type specs are not defined, they default to c(x="character").
+The component consists of component.json defining the component and its metadata, component.bin the binary payload and component.proto with the protobuf specs.
+Please consult R documentation page for details, i.e., use ?compose in R or see the `Compose <http://www.rforge.net/doc/packages/acumos/compose.html>`_ page at RForge.
 
-3. petal length in cm
+Deploying a Component
+~~~~~~~~~~~~~~~~~~~~~
+ 
+To run the component you have to create a runtime.json file with at least {"input_port":8100} or similar to define which port the component should listen to. If there are output components there should also be a "output_url" entry to specify where to send the result to. It can be either a single entry or a list if the results are to be sent to multiple components. Example:
 
-4. petal width in cm
+.. code-block:: bash
 
-5. class:
+    {"input_port":8100, "output_url":"http://127.0.0.1:8101/predict"}
 
-Iris Setosa
 
-Iris Versicolour
+With the component files plus runtime.json in place, the component can be run using
 
-Iris Virginica
+.. code-block:: bash
 
-iris.head()
+    R -e 'acumos:::run()'
 
-iris.describe()
 
-# training parameters
+The run() function can be configured to set the component directory and/or locations of the component files if needed. If you don't want to create a file, the runtime parameter also accepts the runtime structure, so you can also use
 
-training_columns = ['sepal_len', 'sepal_wid', 'petal_len', 'petal_wid']
+.. code-block:: bash
 
-# response parameter
+    R -e 'acumos:::run(runtime=list(input_port=8100, output_url="http://127.0.0.1:8101/predict"))'
 
-response_column = 'class'
 
-# Split data into train and testing
+Details: ?run in R or see the `Run <http://www.rforge.net/doc/packages/acumos/run.html>`_ page at RForge.
 
-train, test = iris.split_frame(ratios=[0.8])
 
-train.describe()
+On-Boarding H2o.ai and Generic Java Models
+==========================================
 
-test.describe()
+The Acumos Java Client Library command line utility is used to on-board H2o.ai and Generic Java models. This library creates artifacts from an H2o or Generic Java model and pushes the artifacts to the on-boarding server for the H2o Model runner to be able to use them.
 
-from h2o.estimators import H2ORandomForestEstimator
+High-Level Flow
+---------------
 
-model = H2ORandomForestEstimator(ntrees=50, max_depth=20, nfolds=10)
+#) The Modeler creates a model in H2o and exports it in the MOJO model format (.zip file) using any interface (eg.Python, Flow, R) provided by H2o. For Generic Java, the Modeler creates a model and exports it in the .jar format.
+#) The Modeler runs the JavaClient jar, which creates a Protobuf (default.proto) file for the Model, creates the required metadata.json file and an artifact called modelpackage.zip.
+#) Depending on the choice of the Modeler, she can manually upload these generated artifacts to the Acumos Marketplace via its Web interface. This is Web-based on-boarding. We will see how to do this in this article.
+#) Or the Java client library itself, on-boards the model onto the on-boarding server if the modeler provides the on-boarding server URL. This is CLI-based on-boarding.
 
-# Train model
+The Model Runner the Model Runner provides a wrapper around the ML model, packages it as a containerized microservice and exposes a predict method as a REST endpoint. When the model is onboarded and deployed, this method (REST endpoint) can then be called by other external applications to request predictions off of the model.
 
-model.train(x=training_columns, y=response_column, training_frame=train)
 
-print (model)
+Prerequisities
+--------------
 
-# Model performance
+- Java 1.8
+- The `Java Client <https://nexus.acumos.org/#nexus-search;quick~java-client>`_ jar file
+- The `H2o Generic Model Runner <https://nexus.acumos.org/#nexus-search;h2o-genericjava-modelrunner>`_
 
-performance = model.model_performance(test_data=test)
 
-print (performance)
+Preparing to On-Board your H2o or a Generic Java Model
+------------------------------------------------------
 
-# Download the model in MOJO format. Also download the h2o-genmodel.jar
-file
+Place JavaClient.jar in one folder locally. This is the folder from which you intend to run the jar. After the jar runs, the created artifacts will also be available in this folder. You will use some of these artifacts if you are doing Web-based onboarding. We will see this later. Create an additional supporting folder which will contain all that the JavaClient.jar needs to run. It will contain:
 
-modelfile = model.download_mojo(path="/home/deven/Desktop/",
-get_genmodel_jar=True)
+#) Models - In case of H2o, your model will be a MOJO zip file. In case of Generic Java, your model will be .jar file. We have included sample models for you to play around with.
+#) Protobuf compiler for java version 3.4.0 - Download `protobuf-java-3.4.0.jar <http://central.maven.org/maven2/com/google/protobuf/protobuf-java/3.4.0/>`_ and place it in this folder.
+#) Model runner or Service jar - For H2o rename h2o-genericjava-modelrunner.jar obtained from the 1st section to abcService.jar if your model name is abc. Place it in this folder. Rename the jar as GenericModelService.jar for Generic Java onboarding
+#) csv file used for training the model - Place the csv file (with header having the same column names used for training) you used for training the model here. This is used for autogenerating the .proto file. If you don't have the .proto file, you will have to supply the .proto file yourself in the supporting folder. Make sure you name it default.proto
+#) default.proto - This is only needed if you don't have the csv file used to train the model. In this case, Java Client cannot autogenerate the .proto file. You will have to supply the .proto file yourself in the supporting folder. Make sure you name it default.proto Also make sure, the default.proto file for the model is in the following format. You need to appropriately replace the data and datatypes under DataFrameRow and Prediction according to your model. See the code block below.
+#) application.properties file - Pass the port number on which the service should run in this file
+#) modelConfig.properties - Add this file only in case of Generic Java model onboarding. This file contains the modelMethod and modelClassName of the model.
+#) ModelConfig.properties : Only needed if you are on-boarding a Generic Java model
 
-predictions=model.predict(test)
 
-predictions
+.. code-block::
 
-Once your model is successfully on-boarded, it resides in your private
-catalog. From there you can create the documentation, description and
-tags and other information that will describe your model in the Acumos
-Marketplace. When you are ready, your model can be published either to
-your local instance or the PUBLIC catalog.
+   syntax = "proto3";
+   option java_package = "com.google.protobuf";
+   option java_outer_classname = "DatasetProto";
 
-Step3. In third step you can upload your model bundle respective of the
-toolkit that you have chosen in Step1.
+   message DataFrameRow {
+     string sepal_len = 1;
+     string sepal_wid = 2;
+     string petal_len = 3;
+     string petal_wid = 4;
+   }
 
-The Model bundle has a zip file uploaded which contains below :
+   message DataFrame {
+        repeated DataFrameRow rows = 1;
+   }
+   message Prediction {
+        repeated string prediction= 1;
+   }
 
-1. metadata.json
+   service Model {
+     rpc transform (DataFrame) returns (Prediction);
+   }
 
-2. model.proto
 
-3. model.zip
 
-|image7|
+On-Boarding Your Model
+----------------------
 
-Step4: In last step you need to provide the Model Name that you are
-Onboarding.
+JavaClient.jar is the executable client jar file.
 
-|image8|
+For Web-based on-boarding of H2o models, the parameters to run the client jar are:
 
-After performing these steps the model get Onboarded into nexus server
-with a unique Solution Id.
+#) Current Folder path : Full folder path in which Java client jar is placed and run from.
+#) Pass the authentication url
+#) Model Type for H2o : H
+#) Supporting folder path : Full Folder path of the supporting folder which contains item 
+#) Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
+#) Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
-You can also check this Onboarded Model on Acumos Web based Portal also.
+For CLI-based onabording of H2o models, the parameters to run the client jar are:
 
-\************************************End******************************************\*
+#) On-boarding server url
+#) Pass the authentication url
+#) Model Type for H2o : H
+#) Supporting folder path : Full Folder path of the supporting folder which contains items
+#) Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
+#) Username of the Portal MarketPlace account
+#) Password of the Portal MarketPlace account
+#) Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
-.. |image0| image:: ./images/onboarding/UG_image1.png
-   :width: 6.26806in
-   :height: 1.51389in
-.. |image1| image:: ./images/onboarding/UG_image2.png
-   :width: 5.64583in
-   :height: 5.55208in
-.. |image2| image:: ./images/onboarding/UG_image3.png
-   :width: 6.26806in
-   :height: 0.95556in
-.. |image3| image:: ./images/onboarding/UG_image4.png
-   :width: 6.26806in
-   :height: 0.93542in
-.. |image4| image:: ./images/onboarding/UG_image5.png
-   :width: 6.26806in
-   :height: 0.97847in
-.. |image5| image:: ./images/onboarding/UG_image6.png
-   :width: 5.32292in
-   :height: 4.05208in
-.. |image6| image:: ./images/onboarding/UG_image7.png
-   :width: 4.53125in
-   :height: 2.6875in
-.. |image7| image:: ./images/onboarding/UG_image8.png
-   :width: 6.26806in
-   :height: 3.00486in
-.. |image8| image:: ./images/onboarding/UG_image9.png
-   :width: 6.26806in
-   :height: 2.15764in
+For Web-based on-boarding of Generic models, the parameters to run the client jar are:
+
+#) Current Folder path : Full folder path in which Java client jar is placed and run from.
+#) Pass the authentication url
+#) Model Type for Generic Java : G
+#) Supporting folder path : Full Folder path of the supporting folder which contains items
+#) Name of the model : For Generic Java just the name of the model without the .jar extension. Make sure this matches name of the supplied MOJO model file exactly.
+#) Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
+
+For CLI-based onabording of Generic models, the parameters to run the client jar are:
+
+#) On-boarding server url
+#) Pass the authentication url
+#) Model Type for Generic Java : G
+#) Supporting folder path : Full Folder path of the supporting folder which contains items 
+#) Name of the model : For Generic Java just the name of the model without the .jar extension. Make sure this matches name of the supplied MOJO model file exactly.
+#) Username of the Portal MarketPlace account
+#) Password of the Portal MarketPlace account
+#) Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
+
+
+Example On-Boarding and Folder Structure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. I place my Javaclient.jar in /home/deven/tryoutjavaclient/ folder. This is where I intend to run the jar from. After the jar runs, the created artifacts will also be available in this folder.
+
+
+.. image:: images/java-client/before_running_javaclient.PNG
+
+
+2. I prepare a supporting folder /home/deven/mojoprinter2/all-models like so. It has everything I need to on-board my java model.
+In this case, I am on-boarding samplemodel.zip which is a K-means Clustering H2o model which does partitioning of a large calls dataset.
+
+
+.. image:: images/java-client/supporting_folder.PNG
+
+
+3. I intend to do Web-based on-boarding for my H2o model called samplemodel.zip. And I intend to use the proto file autogeneration capabilities of the Java client.
+So I also pass along the csv file I used to train it. The sample command looks like this:
+
+
+.. image:: images/java-client/running_the_java_client.PNG
+
+
+4. Now I go back to /home/deven/tryoutjavaclient/ (i.e from where I ran the Java client) to find the generated artifacts. I will now manually upload the metadata.json file, modelpackage.zip and the default.proto file to the web interface of the marketplace.
+
+
+.. image:: images/java-client/after_running_java_client.PNG
+
+
+
+Pushing to the Acumos Portal
+----------------------------
+
+If you use Web-based on-boarding:
+
+#) After you run the client, you will see a modeldump.zip file generated in the same folder where we ran the Java Client for
+#) Upload this file in the Portal UI
+#) Enter the model's name. This name should be same as the one you named it when running the jar.
+#) You will be able to see a success method in the Web interface.
+
+If you use CLI-based on-boarding, you don't need to perform the steps outlined just above. The Java client will do it for you. The needed TOSCA artifacts and docker images are produced, and the model is published to the marketplace. You will see a message in the terminal that tells you it was on-boarded succesfully.
+
+You and your teammates can now see, rate, review, comment, collaborate on your model in the Acumos Marketplace. When requested and deployed by a user, your model runs as a dockerized microservice on the infrastructure of your choice and exposes a predict method as a REST endpoint. This method can be called by other external applications to request predictions off of your model.
+
+
+Addendum : Creating a model in H2o
+----------------------------------
+You must have H2o 3.14.0.2 installed on your machine. For instructions on how to install visit the H2o `download page <https://www.h2o.ai/download/>`_.
+
+H2o provides different interfaces to create models and use H2o for eg. Python, Flow GUI, R, etc.
+As an example, below we show how to create a model using the Python innterface of H2o and also using the H2o Flow GUI. You can use the other interfaces too which have comparable functions to train a model and download the model in a MOJO format.
+
+Here is a sample H2o iris example program that shows how a model can be created and downloaded as a MOJO using the Python Interface:
+
+.. code-block:: python
+
+   import h2o
+   import pandas as pd
+   import numpy as np
+   import matplotlib.pyplot as plt
+   import seaborn as sns
+
+   # for jupyter notebook plotting,
+   %matplotlib inline
+   sns.set_context("notebook")
+
+   h2o.init()
+
+   package/inst/extdata/iris_wheader.csv')
+
+   Iris data set description
+   -------------------------
+   1. sepal length in cm
+   2. sepal width in cm
+   3. petal length in cm
+   4. petal width in cm
+   5. class:
+       Iris Setosa
+       Iris Versicolour
+       Iris Virginica
+
+
+   iris.head()
+   iris.describe()
+   # training parameters
+   training_columns = ['sepal_len', 'sepal_wid', 'petal_len', 'petal_wid']
+   #  response parameter
+   response_column = 'class'
+
+   # Split data into train and testing
+   train, test = iris.split_frame(ratios=[0.8])
+   train.describe()
+   test.describe()
+
+   from h2o.estimators import H2ORandomForestEstimator
+   model = H2ORandomForestEstimator(ntrees=50, max_depth=20, nfolds=10)
+
+   # Train model
+   model.train(x=training_columns, y=response_column, training_frame=train)
+
+   print (model)
+
+   # Model performance
+   performance = model.model_performance(test_data=test)
+   print (performance)
+
+   # Download the model in MOJO format. Also download the h2o-genmodel.jar file
+   modelfile = model.download_mojo(path="/home/deven/Desktop/", get_genmodel_jar=True)
+
+   predictions=model.predict(test)
+   predictions
+
+Here is a sample H2o iris example program that shows how a model can be created and downloaded as a MOJO using the H2o Flow GUI.
+
+.. image:: images/java-client/1.png
+
+
+.. image:: images/java-client/2.png
+
+
+.. image:: images/java-client/3.png
+
+
+.. image:: images/java-client/4.png
+
+
+.. image:: images/java-client/5.png
