@@ -36,8 +36,8 @@ machine or physical host machine.
 What's included in the AIO tools
 --------------------------------
 
-* One Click_deploy.sh: the main script that kicks off the deployment, run
-  as “bash One Click_deploy.sh”.
+* oneclick_deploy.sh: the main script that kicks off the deployment, run
+  as “bash oneclick_deploy.sh”.
 * acumos-env.sh: environment setup script that is customized as new
   environment parameters get generated (e.g. passwords). Used by various
   scripts in this toolset, to set shell environment variables that they need.
@@ -47,12 +47,12 @@ What's included in the AIO tools
 * clean.sh: script you can run as “bash clean.sh” to remove the Acumos install,
   to try it again etc.
 * cmn-data-svc-ddl-dml-mysql-1.14.sql: Common Dataservice database setup script.
-  Used by One Click_deploy.sh. Will be updated as the common-dataservice used by
+  Used by onelick_deploy.sh. Will be updated as the common-dataservice used by
   these tools is upgraded.
 * openssl.cnf: OpenSSL configuration file used in self-signed certificate
   generation.
 * docker-compose.sh: Script called by the other scripts as needed, to take
-  actions on the set of Acumos docker services. Used by One Click_deploy.sh and
+  actions on the set of Acumos docker services. Used by oneclick_deploy.sh and
   clean.sh. You can also call this directly e.g. to tail the service container
   logs. See the script for details.
 * docker-compose.yaml: The docker services that will be acted upon, per the
@@ -100,7 +100,7 @@ been used so far.
  * git clone https://gerrit.acumos.org/r/system-integration
 
 * In the system-integration/AIO folder, run the following command:
- * bash One Click_deploy.sh
+ * bash oneclick_deploy.sh
  * The deployment will take 5-20 minutes depending upon whether you have run
    this command before, and thus docker has already downloaded the Acumos docker
    images. That will speed up subsequent re-deploys.
@@ -151,7 +151,7 @@ You can clean the installation (including all data) and optionally reinstall
 using the sequence below:
 
 * bash clean.sh
-* bash One Click_deploy.sh
+* bash oneclick_deploy.sh
 
 Verified Features
 -----------------
@@ -186,7 +186,7 @@ automate this are in development, and will be added to Acumos repos soon.
 Federation
 ..........
 
-One Click_deploy.sh will automatically create a "self" peer as required by the
+oneclick_deploy.sh will automatically create a "self" peer as required by the
 federation-gateway.
 
 If you want to deploy two Acumos AIO instances to test federation, see these
