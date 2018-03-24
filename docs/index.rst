@@ -17,24 +17,25 @@
 .. ===============LICENSE_END=========================================================
 .. Acumos documentation master file
 
+================================
 Welcome to Acumos Documentation!
 ================================
 Acumos is a platform which enhances the development, training and deployment of AI models. Its purpose is to scale up the introduction of AI-based software across a wide range of industrial and commercial problems in order to reach a critical mass of applications.
 
 Acumos Portal and Marketplace Users
------------------------------------
+===================================
 
 .. toctree::
    :maxdepth: 1
 
-   Release/Releases
+   ../release-notes/index
    ../user-guides/portal-user-guide
    ../user-guides/onboarding-user-guide
    ../AcumosUser/portal-admin/user-guide
 
 
 Acumos Operations
------------------
+=================
 
 .. toctree::
    :maxdepth: 1
@@ -45,14 +46,14 @@ Acumos Operations
 
 
 Acumos Contributors
--------------------
+===================
 Please visit the wiki to view `Acumos Architecture <https://wiki.acumos.org/display/AC/Architecture>`_ as well as to view the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
 
 .. toctree::
    :maxdepth: 1
 
-   AcumosContributor/component-guides
-   AcumosContributor/docs-contributor-guide
+   ..AcumosContributor/component-guides
+   ..AcumosContributor/docs-contributor-guide
 
 
 
@@ -60,3 +61,4 @@ Indices and Tables
 ==================
 
 * :ref:`search`
+
