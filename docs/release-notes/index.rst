@@ -40,7 +40,6 @@ Component Release Notes
    ../submodules/acumos-java-client/docs/release-notes
    ../submodules/acumos-nexus-client/docs/release-notes
    ../submodules/acumos-python-client/docs/release-notes
-   ../submodules/runtime-orchestrator/docs/release-notes
    ../submodules/common-dataservice/docs/release-notes
    ../submodules/databroker/docs/release-notes
    ../submodules/design-studio/docs/release-notes
@@ -51,5 +50,6 @@ Component Release Notes
    ../submodules/platform-oam/docs/release-notes
    ../submodules/portal-marketplace/docs/release-notes
    ../submodules/proto-viewer/docs/release-notes
+   ../submodules/runtime-orchestrator/docs/release-notes
    ../submodules/system-integration/docs/release-notes
    ../submodules/validation-security/docs/release-notes

@@ -15,16 +15,17 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
+
+================
 Component Guides
 ================
+Component guides contain a variety of information that is useful to developers who would like to work on the code. Most projects are written in Java, and the Javadoc is available `here <https://javadocs.acumos.org/>`_ .
 
 .. toctree::
       :maxdepth: 1
 
-      ../submodules/acumos-azure-client/docs/index
       ../submodules/acumos-hippo-cms/docs/index
       ../submodules/acumos-java-client/docs/index
-      ../submodules/acumos-nexus-client/docs/index
       ../submodules/acumos-python-client/docs/index
       ../submodules/acumos-r-client/docs/index
       ../submodules/common-dataservice/docs/index
@@ -46,3 +47,4 @@ Component Guides
       ../submodules/test-automation/docs/index
       ../submodules/validation-security/docs/index
       ../submodules/vm-predictor/docs/index
+
