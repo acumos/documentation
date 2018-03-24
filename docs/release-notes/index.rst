@@ -36,20 +36,25 @@ Component Release Notes
 .. toctree::
    :maxdepth: 1
 
+   ../submodules/python-dcae-model-runner/docs/release-notes
    ../submodules/acumos-hippo-cms/docs/release-notes
    ../submodules/acumos-java-client/docs/release-notes
    ../submodules/acumos-nexus-client/docs/release-notes
    ../submodules/acumos-python-client/docs/release-notes
-   ../submodules/runtime-orchestrator/docs/release-notes
    ../submodules/common-dataservice/docs/release-notes
    ../submodules/databroker/docs/release-notes
    ../submodules/design-studio/docs/release-notes
+   ../submodules/face-privacy-filter/docs/release-notes
    ../submodules/federation/docs/release-notes
    ../submodules/generic-model-runner/docs/release-notes
+   ../submodules/image-classification/docs/release-notes
+   ../submodules/image-mood-classifier/docs/release-notes
    ../submodules/model-schema/docs/release-notes
    ../submodules/on-boarding/docs/release-notes
    ../submodules/platform-oam/docs/release-notes
    ../submodules/portal-marketplace/docs/release-notes
    ../submodules/proto-viewer/docs/release-notes
+   ../submodules/runtime-orchestrator/docs/release-notes
    ../submodules/system-integration/docs/release-notes
    ../submodules/validation-security/docs/release-notes
+   ../submodules/vm-predictor/docs/release-notes

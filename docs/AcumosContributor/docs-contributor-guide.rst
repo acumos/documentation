@@ -15,20 +15,28 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
-Documentation Contributor Guide 
+
 ===============================
+Documentation Contributor Guide
+===============================
+
+.. note::
+
+    This is a work in progress. Please help us improve it by contributing to the Docs project!
+
+
 This guide describes how to create documentation for the Acumos platform. Acumos repositories create a variety of content depending on the nature of the project. For example projects delivering a platform component may have different types of content than a project that creates libraries for a software development kit. The content from each project may be used together as a reference for that project and/or be used in documents are tailored to a specific user audience and task they are performing.
 
 Much of the content in this document is derived from similar documentation processes used in other Linux Foundation Projects including ONAP, OPNFV and Open Daylight.
 
 End to End View
----------------
+===============
 Acumos documentation is stored in git repositories, changes are managed with gerrit reviews, and published documents generated when there is a change in any source used to build the documentation.
 
 Authors create source for documents in reStructured Text (RST) that is rendered to HTML and PDF and published on Readthedocs.io. The developer Wiki or other web sites can reference these rendered documents directly allowing projects to easily maintain current release documentation.
 
 Why reStructuredText/Sphinx
----------------------------
+===========================
 In the past, standard documentation methods included ad-hoc Word documents, PDFs, poorly organized Wikis, and other, often closed, tools like Adobe FrameMaker. The rise of DevOps, Agile, and Continuous Integration, however, created a paradigm shift for those who care about documentation because:
 
 1. Documentation must be tightly coupled with code/product releases. In many cases, particularly with open-source products, many different versions of the same code can be installed in various production environments. DevOps personnel must have access to the correct version of documentation.
@@ -42,10 +50,10 @@ Plain-text formatting syntaxes, such as reStructuredText, Markdown, and Textile,
 	c. Documentation can be treated exactly as source code is (e.g. versioned, diff’ed, associated with commit messages that can be included in rendered docs)
 	d. Shallow learning curve
 
-The documentation team chose reStructuredText largely because of Sphinx, a Python-based documentation build system, which uses reStructuredText natively. In a code base as large as Acumos’s, cross-referencing between component documentation was deemed critical. Sphinx and reStructuredText have built-in functionality that makes collating and cross-referencing component documentation easier.
+The documentation team chose reStructuredText largely because of Sphinx, a Python-based documentation build system, which uses reStructuredText natively. In a code base as large as Acumos', cross-referencing between component documentation was deemed critical. Sphinx and reStructuredText have built-in functionality that makes collating and cross-referencing component documentation easier.
 
 Which docs should go where?
----------------------------
+===========================
 Frequently, developers ask where documentation should be created. Should they always use reStructuredText/Sphinx? Not necessarily. Is the wiki appropriate for anything at all? Yes.
 
 It’s really up to the development team. Here is a simple rule:
@@ -59,12 +67,11 @@ Example 1: API documentation is often stored literally as code in the form of fo
 Example 2: A high-level document that describes in general how a particular component interacts with other Acumos components with charts. The wiki would be a better choice for this.
 
 .. image:: ../_static/images/DocTypes.png
-      :width: 1000px
 
-The doc team encourages component teams to store as much documentation as reStructuredText as possible because:
+The Docs team encourages component teams to store as much documentation as reStructuredText as possible because:
 
-The doc team can more easily edit component documentation for grammar, spelling, clarity, and consistency.
+The Docs team can more easily edit component documentation for grammar, spelling, clarity, and consistency.
 A consistent formatting syntax across components will allow the doc team more flexibility in producing different kinds of output.
-The doc team can easily re-organize the documentation.
+The Docs team can easily re-organize the documentation.
 Wiki articles tend to grow stale over time as the people who write them change positions or projects.
 
