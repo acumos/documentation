@@ -107,6 +107,12 @@ todo_include_todos = False
 #
 html_theme = 'classic'
 # theme colors to match the Portal website
+# "#858585" -- acumos.org - this is color of Join 
+# "#3f6aaa" -- acumos.org - this is the hover over color of Join; kind of light blue-grey 
+#    "visitedlinkcolor": "#673dcc" -- this is a light purple
+#    "linkcolor": "#858585", -- this was too light against the white background
+ #   "visitedlinkcolor": "#3f6aaa" 
+# "linkcolor": "#330F4d",  #dark purple from acumos.org -- hard to differentiate in FF
 html_theme_options = {
     "stickysidebar": "true",
     "relbarbgcolor": "#0f0c13",
@@ -115,10 +121,10 @@ html_theme_options = {
     "sidebarlinkcolor": "#cccccc",
     "footerbgcolor": "#0f0c13",
     "footertextcolor": "#cccccc",
-    "textcolor": "#000000",
+    "textcolor": "#000000", #black
     "headtextcolor": "#000000",
-    "linkcolor": "#3a4759",
-    "visitedlinkcolor": "#673dcc"
+    "linkcolor": "#673dcc",  #dark purple from acumos.org
+    "visitedlinkcolor": "#3f6aaa" 
 }
 
 # extensions = ['sphinxjp.themes.basicstrap']

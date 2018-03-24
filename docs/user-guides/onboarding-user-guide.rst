@@ -185,7 +185,7 @@ Place JavaClient.jar in one folder locally. This is the folder from which you in
 #) ModelConfig.properties : Only needed if you are on-boarding a Generic Java model
 
 
-.. code-block::
+.. code:: python
 
    syntax = "proto3";
    option java_package = "com.google.protobuf";
