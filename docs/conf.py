@@ -69,7 +69,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Acumos'
-copyright = u'2017, The Acumos Project. Licensed under CC BY 4.0.'
+copyright = u'2018, The Acumos Project. Licensed under CC BY 4.0.'
 author = u'The Acumos Project. Licensed under CC BY 4.0.'
 
 # The version info for the project you're documenting, acts as replacement for
