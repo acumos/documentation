@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "866565a4_d1193767",
+        "filename": "docs/AcumosUser/on-boarding/index.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-29T20:48:32Z",
+      "side": 1,
+      "message": "should say .. Acumos CC-BY-4.0",
+      "revId": "ba5087d7e3d3dd7947b1f6635e10265e63bd7e25",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c053b34a_7cc48c16",
+        "filename": "docs/AcumosUser/on-boarding/overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-29T20:48:32Z",
+      "side": 1,
+      "message": "should say .. Acumos CC-BY-4.0",
+      "revId": "ba5087d7e3d3dd7947b1f6635e10265e63bd7e25",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca3eb835_8a30ba74",
+        "filename": "docs/AcumosUser/on-boarding/python-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-29T20:48:32Z",
+      "side": 1,
+      "message": "should say .. Acumos CC-BY-4.0",
+      "revId": "ba5087d7e3d3dd7947b1f6635e10265e63bd7e25",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5dcad959_68b9d1b6",
+        "filename": "docs/AcumosUser/on-boarding/r-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-29T20:48:32Z",
+      "side": 1,
+      "message": "should say .. Acumos CC-BY-4.0",
+      "revId": "ba5087d7e3d3dd7947b1f6635e10265e63bd7e25",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
