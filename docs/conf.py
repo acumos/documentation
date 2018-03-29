@@ -114,7 +114,7 @@ html_theme = 'classic'
  #   "visitedlinkcolor": "#3f6aaa" 
 # "linkcolor": "#330F4d",  #dark purple from acumos.org -- hard to differentiate in FF
 html_theme_options = {
-    "stickysidebar": "true",
+    "stickysidebar": "false",
     "relbarbgcolor": "#0f0c13",
     "relbarlinkcolor": "#cccccc",
     "sidebarbgcolor": "#681F9F",
