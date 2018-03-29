@@ -30,8 +30,8 @@ Acumos Portal and Marketplace Users
 
    ../release-notes/index
    ../user-guides/portal-user-guide
-   ../user-guides/onboarding-user-guide
    ../AcumosUser/portal-admin/user-guide
+   ../AcumosUser/on-boarding/index
 
 
 Acumos Operations
