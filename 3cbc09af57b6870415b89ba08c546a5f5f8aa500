@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e954cc0b_1ae4f95f",
+        "filename": "docs/AcumosUser/on-boarding/java-guide.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-30T21:54:02Z",
+      "side": 1,
+      "message": "\"The Model Runner\" is repeated twice",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 33
+      },
+      "revId": "3cbc09af57b6870415b89ba08c546a5f5f8aa500",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1b653ca4_2d9187b5",
+        "filename": "docs/AcumosUser/on-boarding/java-guide.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-30T21:54:02Z",
+      "side": 1,
+      "message": "where are the sample models?",
+      "range": {
+        "startLine": 49,
+        "startChar": 136,
+        "endLine": 49,
+        "endChar": 142
+      },
+      "revId": "3cbc09af57b6870415b89ba08c546a5f5f8aa500",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d2e7ed99_7ba694c6",
+        "filename": "docs/AcumosUser/on-boarding/java-guide.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-30T21:54:02Z",
+      "side": 1,
+      "message": "The Web On-Boarding interface states they assume we have H2o 3.14.0.2 installed ; does the documentation have to state this too? Also when I downloaded from https://www.h2o.ai/download I got version 3.18.0.5, does that matter?",
+      "revId": "3cbc09af57b6870415b89ba08c546a5f5f8aa500",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "76bf631d_724099d5",
+        "filename": "docs/AcumosUser/on-boarding/java-guide.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-30T21:54:02Z",
+      "side": 1,
+      "message": "Is this code block the \"model\".proto file? if so, saying it would be good; if not, what file is it?",
+      "range": {
+        "startLine": 58,
+        "startChar": 16,
+        "endLine": 58,
+        "endChar": 16
+      },
+      "revId": "3cbc09af57b6870415b89ba08c546a5f5f8aa500",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "13933723_e503c288",
+        "filename": "docs/AcumosUser/on-boarding/java-guide.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-03-30T21:54:02Z",
+      "side": 1,
+      "message": "are these parameters used for web based on-boarding? or the CLI instructions? I just didn\u0027t see where all these parameters were used in the Web interface",
+      "range": {
+        "startLine": 89,
+        "startChar": 4,
+        "endLine": 89,
+        "endChar": 39
+      },
+      "revId": "3cbc09af57b6870415b89ba08c546a5f5f8aa500",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
