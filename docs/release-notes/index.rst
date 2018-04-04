@@ -39,7 +39,6 @@ Component Release Notes
    ../submodules/python-dcae-model-runner/docs/release-notes
    ../submodules/acumos-hippo-cms/docs/release-notes
    ../submodules/acumos-java-client/docs/release-notes
-   ../submodules/acumos-nexus-client/docs/release-notes
    ../submodules/acumos-python-client/docs/release-notes
    ../submodules/common-dataservice/docs/release-notes
    ../submodules/databroker/docs/release-notes
