@@ -64,6 +64,8 @@ What's included in the AIO tools
 * create-user.sh: Automated user provisioning and role assignment. Used by
   peer-test.sh to create users for model onboarding, and portal admins for
   testing federation actions on the Acumos platform.
+* bootstrap-models.sh: Model package onboarding via curl. Optionally called by
+  peer-test.sh.
 
 Step-by-Step Guide
 ==================
@@ -113,15 +115,19 @@ been used so far.
  * Browse to http://acumos:9080/cms/console (there's no direct link from the
    CMS home screen)
  * One the left, click the + at "hst:hst" and then also at "hst:hosts"
- * Right-click the "dev-env" entry and select "copy node", and enter the name
-   aio" (you can use any name you want here, it doesn't matter), then click
-   OK"
- * Click the + at the new "aio" entry, and the same for the nodes as they
+ * Click the + at the "dev-env" entry, and the same for the nodes as they
    appear: "com", "azure", "cloudapp", "eastus"
- * Right-click on the "acumos-dev1-vm01-core" entry and select "move node".
-   In the "Move Node" dialog, select the "aio" node, enter "acumos" at "To",
+ * Right-click on the "acumos-dev1-vm01-core" entry and select "Move node".
+   In the "Move Node" dialog, select the "dev-env" node, enter "acumos" at "To",
    and click "OK"
- * On the upper right, select the "Write changes to repository" button
+ * With the "acumos" node selected, click "Add Property" from the toolbar,
+   select "hst:schemeagnostic", click "OK", and click the check box under the
+   new attribute.
+ * Select the "dev-env" node, and replace
+   "acumos-dev1-vm01-core.eastus.cloudapp.azure.com" with "acumos".
+ * Right-click the "com" node above (now superfluous), select "Delete node", and
+   "OK"
+ * On the upper right, select the "Write changes to repository" button and "OK"
 
 * So that the default portal domain name "acumos" will resolve on your
   workstation (from which you will access the portal via your browser), add the
@@ -130,7 +136,7 @@ been used so far.
 
 * You should now be able to browse to https://acumos, and
  * register new user accounts, etc
- * When you get a browser warning, just accept the self-signed cert and proceed.
+ * If you get a browser warning, just accept the self-signed cert and proceed.
   * Note: use of the Chrome browser is recommended, as it puts fewer
     roadblocks to accessing sites with self-signed certs.
 
@@ -164,6 +170,9 @@ working so far. This list will be updated as more workflows are verified.
   "On-Boarding Model")
 * model onboarding via command line (scikit-learn, python/tensorflow)
 * federated peer relationship creation via portal
+* model publication to local marketplace
+* model publication to federated marketplace
+* federated subscription to public marketplace models
 
 Notes on Verified Features
 --------------------------
@@ -192,12 +201,8 @@ federation-gateway.
 If you want to deploy two Acumos AIO instances to test federation, see these
 scripts for info and usage:
 
-* peer-test.sh: installs and peers two Acumos AIO instances, on two hosts
- * NOTE: this script currently leverages a model uploading script
-   "bootstrap.sh" and sample model set that is not yet included in this repo.
-   You can comment out the related section of the script, or send a note to
-   the system-integration repo contributors/committers via email to
-   community@lists.acumos.org.
+* peer-test.sh: installs and peers two Acumos AIO instances, on two hosts, and
+  optionally uploads model packages via curl.
 
 * create-peer.sh: used by peer-test.sh. You can call this script directly to
   add a peer to an existing Acumos platform.
@@ -210,7 +215,7 @@ You can also manually create a federated peer:
 * Under the "SITE ADMIN" page, select "Add Peer", enter these values, and select
   "Done":
  * Peer Name: FQDN of the peer
- * Server FQDN: the DNS-resolvable FQDN or IP address of the peer
+ * Server FQDN: DNS-resolvable FQDN of the peer
  * API Url: http://\<FQDN of the peer\>:\<federation-gateway port from
    acumos-env.sh\>
  * Peer Admin Email: any valid email address
@@ -232,9 +237,6 @@ Features Pending Verification
 
 * model onboarding via web
 * model private sharing with user
-* model publication to local marketplace
-* model publication to federated marketplace
-* federated subscription to public marketplace models
 * model launch
 * design studio
 
