@@ -16,6 +16,24 @@
       "revId": "0c23122ec2930ae0f1bcf10ca43c9ba01cabde07",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0112936e_7acac929",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-04-11T19:26:36Z",
+      "side": 1,
+      "message": "I can\u0027t test the AIO process till I find a Ubuntu system I can use so based on valid rst documentation I\u0027m going to give a +1 and as soon as I get my hands on an Ubuntu system I\u0027ll give more comments if I find anything.",
+      "parentUuid": "d15da1bb_05ccaa40",
+      "revId": "0c23122ec2930ae0f1bcf10ca43c9ba01cabde07",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
     }
   ]
 }
