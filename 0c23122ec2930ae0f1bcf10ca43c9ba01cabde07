@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d15da1bb_05ccaa40",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-04-11T16:51:50Z",
+      "side": 1,
+      "message": "Should the script install apt-get?\nIt looked like everything was running okay till it got to: + sudo apt-get update\nsudo: apt-get: command not found\n++ fail\n++ log \u0027\u0027\n+++ caller 0\n+++ awk \u0027{print $2}\u0027\n++ f\u003dfail\n+++ caller 0\n+++ awk \u0027{print $1}\u0027\n++ l\u003d34\n++ echo\n+++ date\n++ echo \u0027fail:34 (Wed Apr 11 12:30:01 EDT 2018) \u0027\nfail:34 (Wed Apr 11 12:30:01 EDT 2018) \n++ exit 1\n-bash-4.2$ \n\n\n\nI am running this on a vm server in research\n-bash-4.2$ uname -a\nLinux vm-ep-dev3 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux",
+      "revId": "0c23122ec2930ae0f1bcf10ca43c9ba01cabde07",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
