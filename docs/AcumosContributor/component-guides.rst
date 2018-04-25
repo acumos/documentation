@@ -24,9 +24,11 @@ Component guides contain a variety of information that is useful to developers w
 .. toctree::
       :maxdepth: 1
 
+      ../submodules/acumos-azure-client/docs/index
       ../submodules/python-dcae-model-runner/docs/index
       ../submodules/acumos-hippo-cms/docs/index
       ../submodules/acumos-java-client/docs/index
+      ../submodules/acumos-nexus-client/docs/index
       ../submodules/acumos-python-client/docs/index
       ../submodules/acumos-r-client/docs/index
       ../submodules/common-dataservice/docs/index
