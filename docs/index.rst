@@ -29,9 +29,8 @@ Acumos Portal and Marketplace Users
    :maxdepth: 1
 
    ../release-notes/index
-   ../user-guides/portal-user-guide
+   ../AcumosUser/portal-user/index
    ../AcumosUser/portal-admin/user-guide
-   ../AcumosUser/on-boarding/index
 
 
 Acumos Operations
