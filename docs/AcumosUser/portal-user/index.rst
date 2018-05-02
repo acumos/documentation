@@ -16,14 +16,15 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-============================
-Model On-Boarding User Guide
-============================
+=================================
+Portal and Marketplace User Guide
+=================================
 
 .. toctree::
    :maxdepth: 2
 
    overview.rst
-   java-guide.rst
-   python-guide.rst
-   r-guide.rst
+   accounts.rst
+   marketplace/index
+   portal/index
+   design-studio/index
