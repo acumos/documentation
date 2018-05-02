@@ -16,14 +16,19 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-============================
-Model On-Boarding User Guide
-============================
+=================
+Deploying a Model
+=================
 
-.. toctree::
-   :maxdepth: 2
+Logged-in users may deploy a model's microservice to the Cloud of their choice.
 
-   overview.rst
-   java-guide.rst
-   python-guide.rst
-   r-guide.rst
+#. Locate the Model Detail Page for the model of interest
+#. Click on the **Deploy to Cloud** dropdown arrow and select the Cloud
+   of your choice;  note: unsupported Clouds are disabled in the dropdown menu
+#. In this example, select Azure
+#. Complete the information in the detail pop-up
+#. Click **Add** on the bottom right
+
+    .. image:: ../images/portal/models_deployToCloudSteps.png
+       :width: 5.24583in
+       :height: 3.64167in

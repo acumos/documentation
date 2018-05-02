@@ -56,7 +56,7 @@ Place JavaClient.jar in one folder locally. This is the folder from which you in
 
 .. note::
     default.proto code snippet
-    
+
 .. code:: python
 
    syntax = "proto3";
@@ -135,27 +135,27 @@ Example On-Boarding and Folder Structure
 1. I place my Javaclient.jar in /home/deven/tryoutjavaclient/ folder. This is where I intend to run the jar from. After the jar runs, the created artifacts will also be available in this folder.
 
 
-.. image:: images/java-client/before_running_javaclient.PNG
+.. image:: ../images/java-client/before_running_javaclient.PNG
 
 
 2. I prepare a supporting folder /home/deven/mojoprinter2/all-models like so. It has everything I need to on-board my java model.
 In this case, I am on-boarding samplemodel.zip which is a K-means Clustering H2o model which does partitioning of a large calls dataset.
 
 
-.. image:: images/java-client/supporting_folder.PNG
+.. image:: ../images/java-client/supporting_folder.PNG
 
 
 3. I intend to do Web-based on-boarding for my H2o model called samplemodel.zip. And I intend to use the proto file autogeneration capabilities of the Java client.
 So I also pass along the csv file I used to train it. The sample command looks like this:
 
 
-.. image:: images/java-client/running_the_java_client.PNG
+.. image:: ../images/java-client/running_the_java_client.PNG
 
 
 4. Now I go back to /home/deven/tryoutjavaclient/ (i.e from where I ran the Java client) to find the generated artifacts. I will now manually upload the metadata.json file, modelpackage.zip and the default.proto file to the web interface of the marketplace.
 
 
-.. image:: images/java-client/after_running_java_client.PNG
+.. image:: ../images/java-client/after_running_java_client.PNG
 
 
 
@@ -244,16 +244,16 @@ Here is a sample H2o iris example program that shows how a model can be created 
 
 Here is a sample H2o iris example program that shows how a model can be created and downloaded as a MOJO using the H2o Flow GUI.
 
-.. image:: images/java-client/1.png
+.. image:: ../images/java-client/1.png
 
 
-.. image:: images/java-client/2.png
+.. image:: ../images/java-client/2.png
 
 
-.. image:: images/java-client/3.png
+.. image:: ../images/java-client/3.png
 
 
-.. image:: images/java-client/4.png
+.. image:: ../images/java-client/4.png
 
 
-.. image:: images/java-client/5.png
+.. image:: ../images/java-client/5.png
