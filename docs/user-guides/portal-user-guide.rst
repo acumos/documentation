@@ -17,8 +17,6 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-.. _portal-marketplace-user-guide-top:
-
 =================================
 Portal and Marketplace User Guide
 =================================
@@ -35,7 +33,7 @@ tools for people wishing to find, learn about and use (deploy or
 download) models in their own computing environments; and (2) the
 Modeler sections for people wishing to share, describe and market their
 models. Modeler tools are available in several areas of the site, including
-Onboarding, the Design Studio, My Models, and Manage My Model.
+On-boarding, the Design Studio, My Models, and Manage My Model.
 
 The Marketplace and Modeler communities may communicate and interact via the
 commenting and rating tools for users.
@@ -43,9 +41,9 @@ commenting and rating tools for users.
 
 It has the following key features:
 
-    #. Easy Onboarding of Models. The Acumos Portal enables modelers to
-       easily onboard their AI models, document them, and package them into
-       reusable microservices. Newly onboarded models are located in the
+    #. Easy On-boarding of Models. The Acumos Portal enables modelers to
+       easily on-board their AI models, document them, and package them into
+       reusable microservices. Newly on-boarded models are located in the
        PRIVATE/UNPUBLISHED catalog, viewable only by the user. The Modeler
        may publish them to either their Company marketplace (viewable by
        others with logins on their local Acumos instance) or to the PUBLIC
@@ -58,7 +56,7 @@ It has the following key features:
 
     #. Model Packaging. Models are packaged as Dockerized microservices so
        they can be deployed directly to a variety of environments. As a part
-       of the onboarding process, protobuf files are created to describe the model
+       of the on-boarding process, protobuf files are created to describe the model
        inputs and outputs in a standard format, and a TOSCA file is generated
        to allow the model to be accessed in the Design Studio.
 
@@ -183,7 +181,7 @@ and use AI models. In addition to displaying models from the local platform's ca
 
 The Marketplace has three main views: 
 
-- Company: The Company Marketplace only shows models which have been onboarded by local users and published to the local marketplace catalog
+- Company: The Company Marketplace only shows models which have been on-boarded by local users and published to the local marketplace catalog
 - Public: Models in the Public Marketplace are visible to all Acumos instances with a peer relationship
 - ALL:  This choice displays models in both the user's Company and Public Marketplace
 
@@ -328,7 +326,7 @@ in ONAP is shown below:
 Acumos Portal - For Modelers
 ============================
 
-The Acumos Portal is designed to enable Modelers to easily onboard,
+The Acumos Portal is designed to enable Modelers to easily on-board,
 document, and package their AI models into reusable microservices.
 
 A Modeler may test out the Acumos features in a personal
@@ -344,7 +342,7 @@ toolkits, including TensorFlow and R.
 Overview for Modelers
 ---------------------
 
-All of the models that a user has onboarded can be viewed from the **My
+All of the models that a user has on-boarded can be viewed from the **My
 Models** Page. Depending on their history, the models may exist in one
 for four sections: MY UNPUBLISHED MODELS, MY MODELS: PUBLISHED TO COMPANY MARKETPLACE,
 MY MODELS: PUBLISHED TO PUBLIC MARKETPLACE, and MY DELETED MODELS    .
@@ -359,25 +357,23 @@ Private/Unpublished models are visible only to the Modeler. However, a Modeler d
 have the option to share a model with a specific user who has an account
 on the same Acumos instance.
 
-Onboarding Models
+On-Boarding Models
 ------------------
 
-The Acumos onboarding process generates everything needed to create an executable microservice for your model and add it to the catalog.  Acumos uses Protobuf as a language-agnostic data format to provide a common description of the model data inputs and outputs. Any user may onboard a new model to their Company Aucmos instance. Users
-can reach the Onboarding page from HOME, MARKETPLACE or side navigation.
+The Acumos on-boarding process generates everything needed to create an executable microservice for your model and add it to the catalog.  Acumos uses Protobuf as a language-agnostic data format to provide a common description of the model data inputs and outputs. Any user may on-board a new model to their Company Acumos instance. Users can reach the On-Boarding page from HOME, MARKETPLACE or side navigation.
 
-A high-level summary of the onboarding steps and overview of the
-workflow is shown below. 
+A high-level summary of the on-boarding steps and overview of the workflow is shown below.
 
     .. image:: images/portal/models_onboardingJourney.png
        :width: 4.74167in
        :height: 5.24375in
 
-The onboarding process via web is accomplished by the following steps:
+The on-boarding process via web is accomplished by the following steps:
 
 #. From the On-Boarding tab in the left navigation, or from My Models
    page, select **Add New Model**
 #. Select Web On-boarding
-#. Complete all the user steps to onboard your model, including:
+#. Complete all the user steps to on-board your model, including:
 
     #. Choose Toolkit
     #. Select **Download client library**
@@ -412,11 +408,11 @@ Models are organized by their visibility to others on your **My Models**
 page. They are sorted into the following sections: 
 
 **MY UNPUBLISHED MODELS**
-    Initially, successfully onboarded model will appear in my Models page in
+    Initially, successfully on-boarded model will appear in my Models page in
     the UNPUBLISHED section. These are visible only to you and any
-    collaborators of that model (shared). Partially onboarded models (in
+    collaborators of that model (shared). Partially on-boarded models (in
     process) are also displayed in this section but are shown greyed out
-    until the onboarding process is successfully completed.
+    until the on-boarding process is successfully completed.
 
 **MY MODELS: PUBLISHED TO COMPANY MARKETPLACE**
     Models that have been published to Local, appear in the the LOCAL
@@ -429,14 +425,15 @@ page. They are sorted into the following sections:
     federated relationship with your local instance.
 
 **MY DELETED MODELS**
-    Initially, successfully onboarded model will appear in my Models page in
+    Initially, successfully on-boarded model will appear in my Models page in
     the UNPUBLISHED section. These are visible only to the owner of that
     model and any collaborators of that model (via the "Share Model"
-    process). Partially onboarded models (in process) are also displayed in
-    this section but are shown greyed out until the onboarding process is
+    process). Partially on-boarded models (in process) are also displayed in
+    this section but are shown greyed out until the on-boarding process is
     successfully completed.
 
 Clicking on any model image shows the Model Detail page for that model. 
+
 Managing Your Model
 -------------------
 If a model has not been published, the Model Detail page may not show
@@ -512,8 +509,8 @@ either marketplace can be done in any order. There is no requirement to
 publish first to the Company marketplace. The same model can appear in
 both catalogs.
 
-Publishing to Company Marketplace
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Publishing to the Company Marketplace
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The publishing process is summarized here.
 
@@ -549,8 +546,8 @@ Specific steps:
        :width: 5.24583in
        :height: 3.24306in
 
-Publish to Public Marketplace
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Publishing to a Public Marketplace
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Publishing to the Public Marketplace follows the same steps as Publish
 to Company Marketplace.
@@ -608,7 +605,7 @@ Model Ingestion in the Design Studio
 How to Ingest ML Models in Design Studio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to ingest the onboarded ML Models into the Design Studio, the following steps must be performed:
+In order to ingest the on-boarded ML Models into the Design Studio, the following steps must be performed:
 
 #) The models must be on boarded via on boarding mechanism along with their Protobuf files or when the model were on boarded their Protobuf files should have auto generated.
 
@@ -641,7 +638,7 @@ In order to ingest the onboarded ML Models into the Design Studio, the following
 Files Generated for Design Studio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once the models have been onboarded, the Protobuf files associated with the model is used to generate Protbuf.json and TGIF.json files
+Once the models have been on-boarded, the Protobuf files associated with the model is used to generate Protbuf.json and TGIF.json files
 
 Protobuf.json File
 ^^^^^^^^^^^^^^^^^^
