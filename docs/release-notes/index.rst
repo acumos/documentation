@@ -20,6 +20,12 @@
 Release Notes
 =============
 
+Weekly Builds
+=============
+Release notes for weekly builds are on the wiki `here <https://wiki.acumos.org/display/REL/Unstable+Releases>`_.
+
+Weekly builds may be unstable and are not recommended for deployment to a production environment.
+
 Version
 =======
 Acumos 1.0, 26 March 2018
