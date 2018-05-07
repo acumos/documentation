@@ -24,8 +24,6 @@ A high-level summary of the onboarding steps and overview of the
 workflow is shown below:
 
     .. image:: ../images/portal/models_onboardingJourney.png
-       :width: 4.74167in
-       :height: 5.24375in
 
 The onboarding process via web is accomplished by the following steps:
 
@@ -42,5 +40,3 @@ The onboarding process via web is accomplished by the following steps:
     #. Select **Add to Catalog.** This will initiate a series of back end process steps, illuminated as they run, by the cascade from left to right of the icons on the top of the page. These include uploading the model and artifacts, creating the microservice that will run in a docker container, creating a tosca file for your model so it can be used in the design studio, storing the artifacts and model and creating the link so you can access your model in the **private/unpublished** section of your personal catalog
 
     .. image:: ../images/portal/models_onboardingWeb.png
-       :width: 4.94306in
-       :height: 3.08125in

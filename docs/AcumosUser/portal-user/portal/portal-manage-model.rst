@@ -33,16 +33,13 @@ co-owner of the model. This means they have all the same capabilities as
 the original owner. An overview is shown below.
 
     .. image:: ../images/portal/models_shareWithTeamJourney.png
-       :width: 6.48819in
-       :height: 3.98403in
+
 
 The steps to share are as follows:
 
 1. First, select the "Share with Team" tab under "MANAGEMENT OPTIONS"
 
     .. image:: ../images/portal/models_shareWithTeamTab.png
-       :width: 4.26806in
-       :height: 2.02778in
 
 2. Next, where you see "find a user to share with", type in the user ID
    of the person you wish to share with - you will need to get that user
@@ -51,8 +48,7 @@ The steps to share are as follows:
    SHARE button
 
     .. image:: ../images/portal/models_shareWithTeamScreen.png
-       :width: 1.09028in
-       :height: 1.80069in
+
 
 3. Finally, the Sharing Popup will disappear and you can see that your
    model is shared and you have added them as a collaborator for that
@@ -60,8 +56,7 @@ The steps to share are as follows:
    model with
 
     .. image:: ../images/portal/models_shareWithTeamDone.png
-       :width: 3.81736in
-       :height: 2.16111in
+
 
 The new collaborator will receive a notification that a new model has
 been shared with him/her.
@@ -99,8 +94,7 @@ Publishing to the Company Marketplace
 The publishing process is summarized here.
 
     .. image:: ../images/portal/models_publishLocalJourney.png
-       :width: 6.17014in
-       :height: 3.81528in
+
 
 Specific steps:
 
@@ -127,8 +121,7 @@ Specific steps:
    Marketplace
 
     .. image:: ../images/portal/models_publishLocalSteps.png
-       :width: 5.24583in
-       :height: 3.24306in
+
 
 Publishing to the Public Marketplace
 ------------------------------------

@@ -28,8 +28,7 @@ any runtime environment.
 An overview of the user journey for the Design Studio is shown below.
 
     .. image:: ../images/portal/models_compositeDesignStudioJourney.png
-       :width: 6.49583in
-       :height: 4.85833in
+
 
 Architecture
 ============

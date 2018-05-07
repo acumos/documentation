@@ -23,8 +23,7 @@ Downloading a Model
 Logged-in users may download a model bundle from the Model Detail page.
 
     .. image:: ../images/portal/models_downloadFromMPJourney.png
-       :width: 5.76528in
-       :height: 3.76875in
+
 
 The steps to download a model are as follows:
 
@@ -35,5 +34,4 @@ The steps to download a model are as follows:
    folder
 
     .. image:: ../images/portal/models_downloadFromMPSteps.png
-       :width: 4.94236in
-       :height: 3.52292in
+
