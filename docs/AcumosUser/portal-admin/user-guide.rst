@@ -299,7 +299,8 @@ relationship can be defined and validated, with the options:
    listed in the marketplace without pre-validation. ***(TODO: link to
    validation guide)***
 
-.. image:: images/admin-peer-add.png
+
+    .. image:: images/admin-peer-add.png
 
 Actions on peer list entries
 ----------------------------
@@ -316,21 +317,14 @@ list provides various information and actions for peer entries:
    the “Deactivate” icon (|Deactivate|) is clicked. ***TODO: clarify effects
    of activation/deactivation***
 
-.. |Activate| image:: images/admin-activate.png
-   :height: 12
-   :width: 12
+    .. |Activate| image:: images/admin-activate.png
 
-.. |Deactivate| image:: images/admin-deactivate.png
-   :height: 12
-   :width: 12
+    .. |Deactivate| image:: images/admin-deactivate.png
 
-.. |Edit| image:: images/admin-edit.png
-   :height: 12
-   :width: 12
+    .. |Edit| image:: images/admin-edit.png
 
-.. |Delete| image:: images/admin-delete.png
-   :height: 12
-   :width: 12
+    .. |Delete| image:: images/admin-delete.png
+
 
 -  Status change icon: “Activate” icon (|Activate|) when added or
    inactive, or “Deactivate” icon (Deactivate|) when active.
@@ -344,7 +338,7 @@ list provides various information and actions for peer entries:
    currently not set to self. “Remove as Self” when set to self.
    Clicking the current setting will toggle to the other value.
 
-image1s/admin-peer-list.png
+    .. image:: images/admin-peer-list.png
 
 Edit Peer
 ---------
@@ -364,7 +358,7 @@ Selecting “View/Add” in the “Subscriptions” column will bring up a
 dialog for management of subscriptions with the peer. When first added,
 the peer subscriptions list will be empty.
 
-.. image:: images/admin-subscriptions-view.png
+    .. image:: images/admin-subscriptions-view.png
 
 Add Subscription
 ~~~~~~~~~~~~~~~~
@@ -372,7 +366,7 @@ Add Subscription
 Selecting “New Subscription” in the “View/Add Subscriptions” dialog will
 display search options for models in the peer catalog:
 
-.. image:: images/admin-subscription-add.png
+    .. image:: images/admin-subscription-add.png
 
 In the “Model ID” field, to search for a specific model by ID (the ID
 displayed in a browser location field when you are browsing the model,
@@ -380,7 +374,7 @@ e.g. “solutionId=079779dd-6962-4f7e-8655-fe6310242b81”), enter the ID
 (e.g. 079779dd-6962-4f7e-8655-fe6310242b81), and if that model is
 available in the remote marketplace it will appear in the dialog, e.g.:
 
-.. image:: images/admin-subscription-add-bymodel.png
+    .. image:: images/admin-subscription-add-bymodel.png
 
 Other options include:
 
@@ -405,13 +399,13 @@ appear in the dialog, e.g. as below. From here you can select:
 
 -  Clear Catalog: ***TODO: describe***
 
-.. image:: images/admin-subscription-add-search-result.png
+    .. image:: images/admin-subscription-add-search-result.png
 
 To save the subscription as selected above, select the “Add To
 Subscription List” button. The subscription will be added to the list
 for this peer, e.g. as below.
 
-.. image:: images/admin-subscription-list.png
+    .. image:: images/admin-subscription-list.png
 
 To see the details for a subscription, select the “+” icon, which will
 expand the display with details and options, e.g. as below. From here
@@ -425,7 +419,7 @@ you can:
 
 -  Trigger: ***TODO: describe the function***
 
-.. image:: images/admin-subscription-detail-view.png
+    .. image:: images/admin-subscription-detail-view.png
 
 Managing Subscription Requests
 ------------------------------
@@ -434,12 +428,10 @@ The “Requests” tab enables an admin to manage subscription requests.
 *This tab is not fully implemented, but it will enable these options:*
 
 .. |Approve| image:: images/admin-approve.png
-   :height: 12
-   :width: 12
+
 
 .. |Deny| image:: images/admin-deny.png
-   :height: 12
-   :width: 12
+
 
 -  Approve, by selecting the check icon (|Approve|)
 
@@ -447,7 +439,7 @@ The “Requests” tab enables an admin to manage subscription requests.
 
 ***TODO: further explain what happens upon these actions***
 
-.. image:: images/admin-requests.png
+    .. image:: images/admin-requests.png
 
 Configure Workflows
 ===================
@@ -479,18 +471,17 @@ Federated Model Work”, e.g. as below. Options from here:
       enables the step to be deleted, e.g. the Security Scan step as
       optional for the Onboarding work flow
 
-.. |Delete-step| image:: images/admin-delete-bar.png
-   :height: 12
-   :width: 12
+    .. |Delete-step| image:: images/admin-delete-bar.png
 
-.. image:: images/admin-workflows.png
+
+    .. image:: images/admin-workflows.png
 
 Example: Change workflow for On-boarding
 ----------------------------------------
 
 Select the correct workflow and choose the EDIT button.
 
-.. image:: images/admin-workflow-edit.png
+    .. image:: images/admin-workflow-edit.png
 
 The detailed steps are shown, including the optional SECURITY step. If
 the SECURITY step is currently not included, and Admin wishes to add it,
@@ -498,13 +489,13 @@ they click on the **+** symbol for that step.
 
 Adding a Security Step:
 
-.. image:: images/admin-workflow-step-add.png
+    .. image:: images/admin-workflow-step-add.png
 
 Deleting a Security Step: Click on the **“-“** button”.
 
-.. image:: images/admin-workflow-step-delete.png
+    .. image:: images/admin-workflow-step-delete.png
 
 Result: The new security step is shown in the workflow. To implement
 the change, the Admin must select **Assign Workflow** button.
 
-.. image:: images/admin-workflow-assign.png
+    .. image:: images/admin-workflow-assign.png

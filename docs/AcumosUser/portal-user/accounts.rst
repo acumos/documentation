@@ -34,22 +34,18 @@ of the user interface.
 1. Click on Sign Up Now link on Acumos Home screen.
 
     .. image:: images/portal/signUpNow_link.png
-        :width: 3.94653in
-        :height: 2.30972in
+
 
 2. Fill out information in Sign Up window.
 
     .. image:: images/portal/signUp_screen.png
-       :width: 4.09653in
-       :height: 2.40694in
+
 
 3. Click Sign Up on the bottom of the screen.
 
 4. You will be taken back to Acumos Home Screen.
 
     .. image:: images/portal/homeScreen.png
-       :width: 4.42292in
-       :height: 2.58889in
 
 Logging into Acumos
 ===================
@@ -60,8 +56,7 @@ The steps to login to Acumos are as follows:
    Page.
 
     .. image:: images/portal/signIn_screen.png
-       :width: 5.12361in
-       :height: 2.74306in
+
 
 2. Fill in the username and password.
 
@@ -77,15 +72,13 @@ publish a model, either to your Company instance or to the PUBLIC, your
 profile is always available by clicking on your name.
 
     .. image:: images/portal/userProfile_screen.png
-       :width: 3.48125in
-       :height: 2.49236in
+
 
 To set up your user profile, click on your name and choose **Account
 Settings**.
 
     .. image:: images/portal/userProfile_setupScreen.png
-       :width: 3.49375in
-       :height: 2.87708in
+
 
 From time to time, you may wish to be notified if a process, such has
 requesting access to a model, has completed. To set up your notification
@@ -93,5 +86,3 @@ preferences, click on your name and choose **Account Settings, then
 choose Notification Preferences**.
 
     .. image:: images/portal/accountSettingNotificationPrefs.png
-       :width: 4.30069in
-       :height: 2.76806in

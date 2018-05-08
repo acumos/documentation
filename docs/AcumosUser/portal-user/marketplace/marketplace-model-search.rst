@@ -33,8 +33,7 @@ To search the Marketplace by keywords, follow these steps:
    your search criteria
 
     .. image:: ../images/portal/models_keywordSearch.png
-       :width: 3.72639in
-       :height: 2.20417in
+
 
 Filtering by Category
 =====================
@@ -49,8 +48,7 @@ steps:
    Category
 
     .. image:: ../images/portal/marketplace_categoryFiltering.png
-       :width: 2.94306in
-       :height: 2.24306in
+
 
 Filtering by Tag
 ================
@@ -63,8 +61,6 @@ To search the Marketplace using Tags, follow these steps:
    tag
 
     .. image:: ../images/portal/marketplace_tagFiltering.png
-       :width: 3.28542in
-       :height: 2.15069in
 
 
 Filtering by Peer
@@ -77,8 +73,6 @@ To restrict your view to a particular peer, or set of peers, adjust the
 filters for Peer Catalog.
 
     .. image:: ../images/portal/models_federationBrowse.png
-       :width: 3.47847in
-       :height: 2.77222in
 
 
 Accessing Peer Models
@@ -87,6 +81,5 @@ A summary of the user journey for getting access to a peer model is
 shown below.
 
     .. image:: ../images/portal/models_federationJourney.png
-       :width: 5.40208in
-       :height: 3.59861in
+
 

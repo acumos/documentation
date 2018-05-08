@@ -24,5 +24,3 @@ An overview of the user journey to discover and covert a model for use
 in ONAP is shown below:
 
     .. image:: ../images/portal/models_onapJourney.png
-       :width: 6.48819in
-       :height: 4.01597in

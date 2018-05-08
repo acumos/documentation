@@ -30,5 +30,4 @@ Logged-in users may deploy a model's microservice to the Cloud of their choice.
 #. Click **Add** on the bottom right
 
     .. image:: ../images/portal/models_deployToCloudSteps.png
-       :width: 5.24583in
-       :height: 3.64167in
+
