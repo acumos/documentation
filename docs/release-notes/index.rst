@@ -30,6 +30,10 @@ Version
 =======
 Acumos 1.0, 26 March 2018
 
+Supported Browsers, Devices, and Resolutions
+============================================
+Detailed information can be found on the :doc:`supported-browsers` page.
+
 Known Issues and Limitations
 ============================
 - Model validation is limited to Publication of Models and has limited scanning ability
