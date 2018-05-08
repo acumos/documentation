@@ -47,6 +47,10 @@ of the user interface.
 
     .. image:: images/portal/homeScreen.png
 
+.. note::
+    Account creation may be customized on individual Acumos installations. If what you see on your local Acumos instance is different than what is in this guide, please consult your local Acumos Admin for assistance.
+
+
 Logging into Acumos
 ===================
 
@@ -62,6 +66,23 @@ The steps to login to Acumos are as follows:
 
 3. Click Sign in on the bottom of the screen.
 
+.. note::
+    Account log in may be customized on individual Acumos installations. If what you see on your local Acumos instance is different than what is in this guide, please consult your local Acumos Admin for assistance.
+
+Resetting a Password
+====================
+The steps to reset a password are as follows:
+
+1. From the **Sign in** window, click the **Forget Password** link
+
+    .. image:: images/portal/password-forgetPasswordLink.png
+
+2. Enter the email address associated with the account and then press the **Send** button
+
+    .. image:: images/portal/password-resetScreen.png
+
+.. note::
+    Log in and password reset may be customized on individual Acumos installations. If what you see on your local Acumos instance is different than what is in this guide, please consult your local Acumos Admin for assistance.
 
 Setting Profile and Notification Preferences
 ============================================
