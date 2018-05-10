@@ -22,7 +22,7 @@ Release Notes
 
 Weekly Builds
 =============
-Release notes for weekly builds are on the wiki `here <https://wiki.acumos.org/display/REL/Unstable+Releases>`_.
+Release notes for weekly builds are on the wiki `here <https://wiki.acumos.org/display/REL/Weekly+Builds>`_.
 
 Weekly builds may be unstable and are not recommended for deployment to a production environment.
 
