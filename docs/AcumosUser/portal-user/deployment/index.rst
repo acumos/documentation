@@ -16,16 +16,11 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-=================================
-Portal and Marketplace User Guide
-=================================
+===============================
+Solution Deployment User Guides
+===============================
 
 .. toctree::
    :maxdepth: 2
 
-   overview.rst
-   accounts.rst
-   marketplace/index
-   portal/index
-   design-studio/index
-   deployment/index
+   deploy-to-azure.rst
