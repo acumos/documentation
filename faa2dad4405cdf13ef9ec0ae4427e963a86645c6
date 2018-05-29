@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2df7b5b3_b3bad1a4",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-05-29T18:53:44Z",
+      "side": 1,
+      "message": "403 - Sorry, you don\u0027t have permission to access to this page.  If the URL is not yet live, ignore this comment.",
+      "range": {
+        "startLine": 57,
+        "startChar": 37,
+        "endLine": 57,
+        "endChar": 75
+      },
+      "revId": "faa2dad4405cdf13ef9ec0ae4427e963a86645c6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
