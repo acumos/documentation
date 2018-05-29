@@ -54,7 +54,14 @@ Please visit the wiki to view `Acumos Architecture <https://wiki.acumos.org/disp
    AcumosContributor/component-guides
    AcumosContributor/docs-contributor-guide
 
+Acumos AI Challenge
+===================
 
+
+.. toctree::
+   :maxdepth: 1
+
+  ../AcumosUser/portal-user/dev-challenge-getting-started.rst
 
 Indices and Tables
 ==================

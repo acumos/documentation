@@ -157,31 +157,44 @@ If you don't have an existing storage account in the East US region, you will ne
 Create a Network Security Group and Access Rules
 ................................................
 
-A network security group (NSG) is required so that necessary host ports can be opened on the deployed VMs. If you don't have an existing NSG in the East US region, you will need to create one.
-
-To create a new NSG, under "Resource groups":
+A network security group (NSG) is required so that the Acumos platform can configure access to necessary host ports on the deployed VMs. A specific NSG name is required by the Acumos platform. To create this NSG, under "Resource groups":
 
 * select the resource group created above
 * select "+Add"
 * in the search box, enter "Security"
 * in the resulting list, select "Network Security Group"
 * select "Create"
-* enter a "Name"
+* set "Name" to "E6E-NSG"
 * set "Resource group" to "Use existing"
 * from the drop-down list, select the resource group created above
 * select "East US" (this location is currently required by the Acumos platform)
 * select "Create"
 
-To enable the Acumos platform to access VMs it deploys and deploy model microservices, you will need to enable SSH from the Acumos platform to VMs created under your resource group. If you do not already have SSH enabled in an exising NSG, under "Resource groups":
+To enable the Acumos platform to access VMs it deploys, deploy model microservices, and deploy additional components that help orchestrate and connect the models to your data sources, you will need to define NSG rules to open the following TCP ports to the Acumos platform. The Acumos platform will be identified here by IP address; you can get the IP address using a reverse-DNS lookup e.g. 'nslookup marketplace.acumos.org'. Ports that need to be opened, and their purpose, are described below:
+
+* TCP port 22: SSH, enabling the Acumos platform to configure the deployed VM, e.g. install docker and the various microservices and platform components
+* TCP port 8555: Acumos Blueprint Orchestrator, used in Composite Solution deployment
+* TCP port 8556: Acumos DataBroker, a component deployed when a user wants assistance in mapping a data source to the protobuf interface of a deployed model (details will be provided for when this applies and how the user selects it)
+* TCP port 5006: Acumos Probe, a component enabling the user to access and visualize the protobuf interfaces of their deployed solutions
+
+If you need to provide access to your model microservices from outside the Azure virtual network, e.g. to push data to the microservice, you will need to create additional NSG rules to open the following ports to the IP addresses of systems to be connected to the microservices:
+
+* TCP port 8557: microservice #1, i.e. for deployment of a single model microservice ("Simple Solution") or the first microservice in a multi-model deployment ("Composite Solution")
+* TCP port 8558: microservice #2
+* TCP port 8559: microservice #3
+* TCP port 8560: microservice #4
+* and so on
+
+To add NSG rules, under "Resource groups":
 
 * select the resource group created above
-* select your existing NSG or the NSG created above 
+* select NSG "E6E-NSG"
 * select "Inbound security rules"
 * select "+Add"
-* set "Source" to the IP address of the Acumos platform you are using (hint: get the IP address using a reverse-DNS lookup e.g. 'nslookup marketplace.acumos.org')
+* set "Source" to the IP address of the system that needs the access 
 * select "Protocol" "TCP"
-* set "Destination port ranges" to "22"
-* set "Name" to "SSH"
+* set "Destination port ranges" to the specific port or range of ports that applies to the rule
+* set "Name" to whatever helps you remember what the rule is related to
 * select "Add"
 
 Repeat this for any other hosts you want to have access to the VM, and for any other access rules that are needed for your deployed model or applications to be installed on or connected to the deployed VM.
@@ -193,25 +206,18 @@ Create a Virtual Network
 
 A virtual network and subnet is required so that required ports can be opened on the VM in which Acumos will launch your model. Acumos requires a specifically named virtual network and subnet, since it will create interfaces and public IP addresses on that network/subnet.
 
-To create the specified virtual network, under "Virtual networks":
+To create the specified virtual network, under "Resource groups":
 
+* select the resource group created above
 * select "+Add"
-* set "Name" to "acumos-vnet"
-* set "Resource group" to "Use existing"
-* from the drop-down list, select the resource group created above
-* select "East US" (this location is currently required by the Acumos platform)
-* set "Subnet" to "acumos-vnet"
+* enter "Networking" in the search bar and hit enter
+* in the resulting list, select "Virtual network"
 * select "Create"
-
-To create the specified subnet, under "Virtual networks":
-
-* select "acumos-vnet"
-* select "Subnets"
-* select "+Subnet"
-* set "Name" to "acumos-vsubnet"
+* set "Name" to "Acumos-OAM-vnet"
 * set "Resource group" to "Use existing"
 * from the drop-down list, select the resource group created above
 * select "East US" (this location is currently required by the Acumos platform)
+* set "Subnet" to "Acumos-OAM-vsubnet"
 * select "Create"
 
 Associate the NSG to the Subnet
@@ -220,10 +226,11 @@ Associate the NSG to the Subnet
 To ensure the NSG rules created above are applied to the subnet you created, under "Resource groups":
 
 * select the resource group created above
-* select "acumos-vnet"
-* select "acumos-vsubnet"
+* select the virtual network "Acumos-OAM-vnet"
+* select "Subnets"
+* select "Acumos-OAM-vnet"
 * select "Network security group"
-* select "acumos-nsg"
+* select the NSG "E6E-NSG"
 * select "Save"
 
 Deploying Your Model
@@ -251,7 +258,10 @@ At the current time, there is no explicit notification that deployment was compl
 Accessing and Verifying the Deployment
 ======================================
 
-TBD
+The Acumos platform currently creates a single user account on the deployed VM, with these credentials:
+
+* username: dockerUser
+* password: 12NewPA$w0rd!
 
 Cleaning up Azure Resources
 ===========================
