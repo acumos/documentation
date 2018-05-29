@@ -1,0 +1,135 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9b3467aa_a49246c5",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-29T17:22:39Z",
+      "side": 1,
+      "message": "what\u0027s this little dangling character doing here?",
+      "revId": "e6472a8b629d0627a7118842e85f411429bceea5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "63f39c7d_ea17bb82",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-29T17:22:39Z",
+      "side": 1,
+      "message": "perhaps make clear \"we\" is \"The AT\u0026T and TechMahindra team behind the challenge\"",
+      "revId": "e6472a8b629d0627a7118842e85f411429bceea5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0ccebb46_a6936b02",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-29T17:22:39Z",
+      "side": 1,
+      "message": "Submit your model *for judging*.",
+      "revId": "e6472a8b629d0627a7118842e85f411429bceea5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "461a2210_98eb1ea9",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-29T17:22:39Z",
+      "side": 1,
+      "message": "Please check with Paul, Eric, Guy and other Python experts on the need (?) for cython",
+      "revId": "e6472a8b629d0627a7118842e85f411429bceea5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "416f9f54_7233ee7c",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-29T17:22:39Z",
+      "side": 1,
+      "message": "Please add a link here to the doc for constructing the bundle.",
+      "revId": "e6472a8b629d0627a7118842e85f411429bceea5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4afbc0d3_71eda868",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-29T17:22:39Z",
+      "side": 1,
+      "message": "is/are",
+      "range": {
+        "startLine": 127,
+        "startChar": 37,
+        "endLine": 127,
+        "endChar": 39
+      },
+      "revId": "e6472a8b629d0627a7118842e85f411429bceea5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a1574678_b70fe989",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-29T17:22:39Z",
+      "side": 1,
+      "message": "Is this the first mention of protobuf?  Deserves a link to documentation.",
+      "range": {
+        "startLine": 244,
+        "startChar": 67,
+        "endLine": 244,
+        "endChar": 75
+      },
+      "revId": "e6472a8b629d0627a7118842e85f411429bceea5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
