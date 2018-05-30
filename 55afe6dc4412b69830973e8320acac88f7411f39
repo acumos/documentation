@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "17351d17_e8431ad8",
+        "filename": "docs/AcumosUser/portal-user/dev-challenge-getting-started.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-05-30T15:52:15Z",
+      "side": 1,
+      "message": "404 because you don\u0027t have a link; you meant to link to https://wiki.acumos.org/display/EVNT/Acumos+at+ONS+2018  ??",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 52
+      },
+      "revId": "55afe6dc4412b69830973e8320acac88f7411f39",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
