@@ -29,11 +29,15 @@ and links to details about:
 The Acumos Platform
 -------------------
 
-The platform developers will be using is described at http://docs.acumos.org/.
-Since the docs are a work in progress, you can also see the slides presented at
-the `Acumos at ONS 2018 <https://wiki.acumos.org/display/EVNT/Acumos+at+ONS+2018>`_
-launch. Additional usage details are provided below for platform aspects that
-might not be complete/clear from the current docs.
+The platform developers will be using is described at http://docs.acumos.org/
+and https://wiki.acumos.org. Since the docs and wiki are a work in progress, for
+background you can also checkout the slides presented at the project launch on
+the wiki page `Acumos at ONS 2018 <hs+at+ONS+2018>`_. Additional usage details
+are provided below for platform aspects that might not be complete/clear from
+the current docs. Any you can also reach out for support on
+`Stackoverflow (search for acumos) <https://stackoverflow.com/search?q=acumos>`_,
+via the `acumosaidevdiscuss list <https://lists.acumos.org/g/acumosaidevdiscuss>`_,
+or on `Freenode IRC channel #acumos <https://wiki.acumos.org/display/AC/IRC+Basics>`_.
 
 Below is a summary of the platform UI/workflow elements that developers will use
 during the challenge. Other platform UI elements may be used (e.g. the Composite
@@ -98,9 +102,29 @@ with links to the guides for installing each:
 
 * `Java and H2O models <http://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/onboarding-java-guide.html>`_
 * `Python models <https://pypi.org/project/acumos/>`_
-   * Note: if you don't already have cython installed, you will need to install it (pip install cython) before installing the Acumos Python Client
+   * An example client setup script for python models is included in the test-models
+     repo under the `SoupToNuts <https://github.com/acumos/test-models/tree/master/SoupToNuts>`_ folder.
 
 * `R models <http://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/onboarding-r-guide.html>`_
+
+Prepare and Test Your Model Locally
+-----------------------------------
+
+Using the model development environment specific to your type of model toolkit,
+prepare, train, and test your model. If you're just getting started, you can see
+toolkit-specific guides in the `Acumos documentation <http://docs.acumos.org>`_,
+and a python-specific example at the 
+`Acumos documentation on pypi <https://pypi.org/project/acumos/#a-simple-model>`_.
+
+To ensure that users and judges of your
+model will be able to assess its effectiveness:
+
+* develop a demo app that can use your model's protobuf-based API to demonstrate
+  what your model is designed to do. You can read about how Acumos models use protobuf-based APIs `in
+  the Acumos documentation <http://docs.acumos.org/en/latest/search.html?q=protobuf>`_.
+* document how the model is intended to work, how the demo app is installed and
+  configured to use the model, and anything else that you think will be needed
+  to know how to use or assess your model.
 
 Onboard Your Model
 ------------------
@@ -241,8 +265,7 @@ public marketplace. To download a model docker image:
 
 The docker run command includes host-to-container port mapping for port 3330, as
 all Acumos model microservice images are configured to serve their protobuf
-interfaces on HTTP port 3330. You can read about how Acumos uses the protobuf `in
-the Acumos documentation <http://docs.acumos.org/en/latest/search.html?q=protobuf>`_.
+interfaces on HTTP port 3330.
 
 To test the model, use the instructions provided by the model author to
 setup the test app. For your models, this is a good test of whether the guide
