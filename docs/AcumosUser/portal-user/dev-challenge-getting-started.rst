@@ -283,7 +283,30 @@ See the `Deploy Acumos Model to Azure User Guide <http://docs.acumos.org/en/late
 Share Your Model with Other Developers
 --------------------------------------
 
-Instructions to be added.
+You can share models privately with other developers, and work as a team. To
+share a model, under "My Models",
+
+* Select the model you want to share
+* Select "Manage My Model"
+* Select "Share with Team"
+* Under "Find a user to Share with", start typing the user's first name, and
+  a list of registered users with that name will appear
+* Select the user you want to share with
+* Optionally enter a message, and select "Share"
+* Once the model is shared, under "My Models" you will see a small purple "arrow
+  leaving a box" icon over the model tile, indicating that the model has been
+  shared, and the avatars of your team members under "This Model shared with
+  below team members"
+* If a model is shared with you, under "My Models" you will see a similar icon
+  over the model tile, with the arrow entering the box.
+
+Note that once a model is shared, it cannot be unshared, and the developer you
+share it with can manage the model entirely, including updating, publishing,
+sharing, and deleting.
+
+If you collaboratively develop a model, make sure that all team members (or
+their organizations) are attributed as copyright holders in the LICENSE.txt file
+described under `Add Metadata for Your Model`_.
 
 Submit Your Model for Judging
 -----------------------------
