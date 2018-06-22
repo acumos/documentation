@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de22baa7_70c79b14",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-06-22T17:29:00Z",
+      "side": 1,
+      "message": "I\u0027m the docs PTL. Are you pulling the PTLs from a script? or manually entering the PTL name/contact?",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 16
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f410b2d_b6fb79a3",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-06-22T17:29:00Z",
+      "side": 1,
+      "message": "#acumos-docs",
+      "range": {
+        "startLine": 30,
+        "startChar": 16,
+        "endLine": 30,
+        "endChar": 20
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "548d0462_41f34caf",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-06-22T17:29:00Z",
+      "side": 1,
+      "message": "I\u0027m kind of concerned about listing meeting time in UTC, since that UTC time will change when the US clocks change. Might be better to list the time US Eastern, which has been the dominant time zone for Acumos projects.",
+      "range": {
+        "startLine": 32,
+        "startChar": 6,
+        "endLine": 32,
+        "endChar": 23
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "66a3e9e6_591bf594",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-06-22T17:29:00Z",
+      "side": 1,
+      "message": "where did this come from? It looks like a TechM userId. Lorraine\u0027s LF ID is probably lb2391",
+      "range": {
+        "startLine": 45,
+        "startChar": 6,
+        "endLine": 45,
+        "endChar": 22
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eb272280_a55f823f",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-06-22T17:29:00Z",
+      "side": 1,
+      "message": "\u0027America/New York\u0027",
+      "range": {
+        "startLine": 46,
+        "startChar": 15,
+        "endLine": 46,
+        "endChar": 18
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
