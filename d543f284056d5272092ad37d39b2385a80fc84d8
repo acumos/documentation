@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0cbb100c_e3cfc1e7",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-06-22T22:30:48Z",
+      "side": 1,
+      "message": "This was done manually for the PTLs .. Initially I couldn\u0027t find the references of who the PTLs were but I found it now after your review notes in my changes. \n\nAdding them now",
+      "parentUuid": "de22baa7_70c79b14",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 16
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7f410b2d_b6fb79a3",
         "filename": "INFO.yaml",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2018-06-22T17:29:00Z",
       "side": 1,
       "message": "#acumos-docs",
+      "range": {
+        "startLine": 30,
+        "startChar": 16,
+        "endLine": 30,
+        "endChar": 20
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf71ff4b_760d4694",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-06-22T22:30:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7f410b2d_b6fb79a3",
       "range": {
         "startLine": 30,
         "startChar": 16,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "8861feca_25b27c76",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-06-22T22:30:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "548d0462_41f34caf",
+      "range": {
+        "startLine": 32,
+        "startChar": 6,
+        "endLine": 32,
+        "endChar": 23
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "66a3e9e6_591bf594",
         "filename": "INFO.yaml",
         "patchSetId": 1
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "a7860c5e_88f3f9df",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-06-22T22:30:48Z",
+      "side": 1,
+      "message": "This is the LFID that is actually registered in the group",
+      "parentUuid": "66a3e9e6_591bf594",
+      "range": {
+        "startLine": 45,
+        "startChar": 6,
+        "endLine": 45,
+        "endChar": 22
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eb272280_a55f823f",
         "filename": "INFO.yaml",
         "patchSetId": 1
@@ -105,6 +201,30 @@
       "writtenOn": "2018-06-22T17:29:00Z",
       "side": 1,
       "message": "\u0027America/New York\u0027",
+      "range": {
+        "startLine": 46,
+        "startChar": 15,
+        "endLine": 46,
+        "endChar": 18
+      },
+      "revId": "d543f284056d5272092ad37d39b2385a80fc84d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d17c916e_983a2199",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2018-06-22T22:30:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eb272280_a55f823f",
       "range": {
         "startLine": 46,
         "startChar": 15,
