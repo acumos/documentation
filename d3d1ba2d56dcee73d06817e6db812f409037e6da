@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "795d749f_fb44c59e",
+        "filename": "INFO.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-06-25T19:46:30Z",
+      "side": 1,
+      "message": "This is Mukesh\u0027s ID, not Lorraine\u0027s ID.",
+      "range": {
+        "startLine": 40,
+        "startChar": 11,
+        "endLine": 40,
+        "endChar": 21
+      },
+      "revId": "d3d1ba2d56dcee73d06817e6db812f409037e6da",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
