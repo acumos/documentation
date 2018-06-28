@@ -35,7 +35,6 @@ The onboarding process via web is accomplished by the following steps:
     #. Choose Toolkit
     #. Select **Download client library**
     #. Select **Upload Model Bundle** and drag your file from the local machine to the screen and select **Done**
-    #. Add a name for your model using the pencil icon
     #. All the steps have been done (you will see the number for each converted to a green check mark), the **Add to Catalog** button will be enabled
     #. Select **Add to Catalog.** This will initiate a series of back end process steps, illuminated as they run, by the cascade from left to right of the icons on the top of the page. These include uploading the model and artifacts, creating the microservice that will run in a docker container, creating a tosca file for your model so it can be used in the design studio, storing the artifacts and model and creating the link so you can access your model in the **private/unpublished** section of your personal catalog
 
