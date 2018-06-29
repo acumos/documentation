@@ -140,7 +140,6 @@ The following example describes the "ON-BOARDING BY WEB" option:
   the toolkit library is completed" box
 * Select "Upload Model Bundle" and browse or drag/drop the model zip package
   you created using the toolkit library
-* Select "Model Name" and give your model a name
 * Select "On-Board Model" and wait as the workflow icons above go from gray to
   green; the process may take 10 minutes or more to complete
 * Once the process of onboarding is complete, you will see the icon on the right
