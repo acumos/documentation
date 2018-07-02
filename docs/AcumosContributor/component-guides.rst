@@ -41,6 +41,7 @@ Component guides contain a variety of information that is useful to developers w
       ../submodules/image-mood-classifier/docs/index
       ../submodules/model-schema/docs/index
       ../submodules/on-boarding/docs/index
+      ../submodules/openstack-client/docs/index
       ../submodules/platform-oam/docs/index
       ../submodules/portal-marketplace/docs/index
       ../submodules/proto-viewer/docs/index
