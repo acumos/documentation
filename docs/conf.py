@@ -206,6 +206,8 @@ man_pages = [
      [author], 1)
 ]
 
+# suppress_warnings
+suppress_warnings = ['image.nonlocal_uri']
 
 # -- Options for Texinfo output -------------------------------------------
 
