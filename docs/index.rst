@@ -52,7 +52,7 @@ Please visit the wiki to view `Acumos Architecture <https://wiki.acumos.org/disp
    :maxdepth: 1
 
    AcumosContributor/component-guides
-   AcumosContributor/docs-contributor-guide
+   docs-contributor-guide/index
 
 Acumos AI Challenge
 ===================
