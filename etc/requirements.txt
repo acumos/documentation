@@ -1,5 +1,5 @@
 tox
-Sphinx==1.5.3
+Sphinx==1.6.7
 doc8
 docutils
 setuptools
