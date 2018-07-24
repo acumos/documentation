@@ -19,6 +19,10 @@
 Acumos AI Challenge Getting Started Guide
 =========================================
 
+**NOTE:** please access the `Acumos AI DevChallenge site <https://acumos-challenge.org>`_
+using a desktop browser, not a mobile browser. The site has not been designed to
+support mobile browsers.
+
 This guide is intended to help Acumos AI Challenge participants with basic info
 and links to details about:
 
