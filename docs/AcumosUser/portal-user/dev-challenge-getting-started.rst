@@ -156,8 +156,12 @@ In the next steps, you will add a description and documents for your model.
 Add Metadata for Your Model
 ---------------------------
 
-To add metadata (e.g. description, documentation, test data, video, marketplace
-image) for your model:
+You will need to add the following metadata to your model, prior to submission.
+Note that you can add/update this information any number of times, prior to
+submission of your model (as described under `Submit Your Model for Judging`_),
+or afterward (e.g. if you missed an item in this checklist prior to submission).
+
+To add metadata for your model:
 
 * Select "Manage my model"
 * Select "Publish to public marketplace"
@@ -167,8 +171,36 @@ image) for your model:
     "Submit to publication", so you can use this tool to add and update
     your model's metadata until you are ready to submit.
 
-Using the "Submit to publication" dialog, the following metadata needs to be
-added by you to your model, prior to submission:
+A summary checklist of items to add is below, with details of the items
+following:
+
++-------+-------------------+-----------------------------------------+
+| Done? | Item              | Item detail                             |
++=======+===================+=========================================+
+|       | Model Name        | for display in the marketplace          |
++-------+-------------------+-----------------------------------------+
+|       | Model Description | for display in the marketplace          |
++-------+-------------------+-----------------------------------------+
+|       | Model Category    | for searching in the marketplace        |
++-------+-------------------+-----------------------------------------+
+|       | Model Documents   | for download from the marketplace       |
++-------+                   +-----------------------------------------+
+|       |                   | LICENSE.txt                             |
++-------+                   +-----------------------------------------+
+|       |                   | demo video                              |
++-------+                   +-----------------------------------------+
+|       |                   | sample data / test application zip file |
++-------+                   +-----------------------------------------+
+|       |                   | source code zip file                    |
++-------+                   +-----------------------------------------+
+|       |                   | document describing the model, use, etc |
++-------+-------------------+-----------------------------------------+
+|       | Model Tags        | for searching in the marketplace        |
++-------+-------------------+-----------------------------------------+
+|       | Model Image       | for display in the marketplace          |
++-------+-------------------+-----------------------------------------+
+
+Using the "Submit to publication" dialog:
 
 * Select "Model Name" and enter a name for your model
 * Select "Model Description" and enter a description of your model, similar to
