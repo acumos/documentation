@@ -60,12 +60,14 @@ Component Release Notes
    ../submodules/generic-model-runner/docs/release-notes
    ../submodules/image-classification/docs/release-notes
    ../submodules/image-mood-classifier/docs/release-notes
+   ../submodules/microservice-generation/docs/release-notes
    ../submodules/model-schema/docs/release-notes
    ../submodules/on-boarding/docs/release-notes
    ../submodules/platform-oam/docs/release-notes
    ../submodules/portal-marketplace/docs/release-notes
    ../submodules/proto-viewer/docs/release-notes
    ../submodules/runtime-orchestrator/docs/release-notes
+   ../submodules/security-verification/docs/release-notes
    ../submodules/system-integration/docs/release-notes
    ../submodules/validation-security/docs/release-notes
    ../submodules/vm-predictor/docs/release-notes

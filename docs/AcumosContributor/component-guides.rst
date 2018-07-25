@@ -21,6 +21,9 @@ Component Guides
 ================
 Component guides contain a variety of information that is useful to developers who would like to work on the code. Most projects are written in Java, and the Javadoc is available `here <https://javadocs.acumos.org/>`_ .
 
+.. note::
+    Data Scientists who are contributing models should reference the `Portal - For Modelers pages <https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html/>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/latest/AcumosUser/portal-user/index.html/>`_.
+
 .. toctree::
       :maxdepth: 1
 

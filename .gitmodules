@@ -128,3 +128,13 @@
         url = ../openstack-client
         branch = .
         ignore = dirty
+[submodule "docs/submodules/security-verification"]
+	path = docs/submodules/security-verification
+	url = ../security-verification
+	branch = .
+        ignore = dirty
+[submodule "docs/submodules/microservice-generation"]
+	path = docs/submodules/microservice-generation
+	url = ../microservice-generation
+	branch = .
+        ignore = dirty
