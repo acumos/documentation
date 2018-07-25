@@ -24,6 +24,10 @@ Acumos is a platform which enhances the development, training and deployment of 
 
 Acumos Portal and Marketplace Users
 ===================================
+.. note::
+    Data Scientists who are contributing models should reference the `Portal - For Modelers pages <https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/latest/AcumosUser/portal-user/index.html>`_.
+
+
 
 .. toctree::
    :maxdepth: 1
@@ -44,9 +48,12 @@ Acumos Operations
    ../submodules/system-integration/docs/user-guide
 
 
-Acumos Contributors
-===================
+Acumos Contributors to the Platform Code
+========================================
 Please visit the wiki to view `Acumos Architecture <https://wiki.acumos.org/display/AC/Architecture>`_ as well as to view the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
+
+The *Component Guides* section contains a variety of information that is useful to developers who are working on the platform code. Most projects are written in Java, and the Javadoc is available `here <https://javadocs.acumos.org/>`_ .
+
 
 .. toctree::
    :maxdepth: 1
