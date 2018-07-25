@@ -19,7 +19,9 @@
 ================
 Component Guides
 ================
-Component guides contain a variety of information that is useful to developers who would like to work on the code. Most projects are written in Java, and the Javadoc is available `here <https://javadocs.acumos.org/>`_ .
+Component guides contain a variety of information that is useful to developers who are working on the platform code. Most projects are written in Java, and the Javadoc is available `here <https://javadocs.acumos.org/>`_ .
+
+**Data Scientists who are contributing models should follow the `Portal - For Modelers pages <https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html/>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/latest/AcumosUser/portal-user/index.html/>`_.**
 
 .. toctree::
       :maxdepth: 1
@@ -39,6 +41,7 @@ Component guides contain a variety of information that is useful to developers w
       ../submodules/generic-model-runner/docs/index
       ../submodules/image-classification/docs/index
       ../submodules/image-mood-classifier/docs/index
+      ../submodules/microservice-generation/docs/index
       ../submodules/model-schema/docs/index
       ../submodules/on-boarding/docs/index
       ../submodules/openstack-client/docs/index
@@ -46,6 +49,7 @@ Component guides contain a variety of information that is useful to developers w
       ../submodules/portal-marketplace/docs/index
       ../submodules/proto-viewer/docs/index
       ../submodules/runtime-orchestrator/docs/index
+      ../submodules/security-verification/docs/index
       ../submodules/system-integration/docs/index
       ../submodules/test-automation/docs/index
       ../submodules/validation-security/docs/index
