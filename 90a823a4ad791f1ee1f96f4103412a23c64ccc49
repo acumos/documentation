@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fba24c27_5078800b",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-07-30T19:07:20Z",
+      "side": 1,
+      "message": "Why did you use actual specific numbers? You can let RST generate them for you.",
+      "range": {
+        "startLine": 169,
+        "startChar": 2,
+        "endLine": 169,
+        "endChar": 3
+      },
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
