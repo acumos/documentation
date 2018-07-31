@@ -2,6 +2,74 @@
   "comments": [
     {
       "key": {
+        "uuid": "5f028d7d_0e708fd0",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "Name can be \"Generic Model Runner\" only. Link will have actual name as in Gerrit and Nexus.",
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "163a60ed_01cd15df",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "This step is no longer required",
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "18c70b61_7c6fecb6",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "Change to - iii) Model runner or Service jar - For H2O rename downloaded h2o-genericjava-modelrunner.jar as per the 1st section to H2OModelService.jar or to GenericModelService.jar for Java model and Place it in this folder.",
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dd2a435b_b39654a2",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "Correct statement to - If you don\u0027t have sample csv data for training, then you will have to provide the proto file yourself.",
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fba24c27_5078800b",
         "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
         "patchSetId": 2
@@ -19,6 +87,74 @@
         "endLine": 169,
         "endChar": 3
       },
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d15214a3_df54fcfa",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "Change to #. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users.\nhttp://\u003cInstanceServerDetails\u003e/onboarding-app/v2/auth e.g. \"http://onboarding-app:8090/onboarding-app/v2/auth\"",
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc498087_f679f7dd",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "Change to #. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users.\nhttp://\u003cInstanceServerDetails\u003e/onboarding-app/v2/auth e.g. \"http://onboarding-app:8090/onboarding-app/v2/auth\"",
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "90df2c96_11260eed",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "change success method to success message",
+      "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4c34bc79_01386601",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 200
+      },
+      "writtenOn": "2018-07-31T14:05:45Z",
+      "side": 1,
+      "message": "Can add images for showing model on mymodels page and download option.\nSharing these screenshot for java model as part of sample java model doc, can be used here as well",
       "revId": "90a823a4ad791f1ee1f96f4103412a23c64ccc49",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
