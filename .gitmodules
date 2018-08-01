@@ -129,12 +129,22 @@
         branch = .
         ignore = dirty
 [submodule "docs/submodules/security-verification"]
-	path = docs/submodules/security-verification
-	url = ../security-verification
-	branch = .
+		path = docs/submodules/security-verification
+		url = ../security-verification
+		branch = .
         ignore = dirty
 [submodule "docs/submodules/microservice-generation"]
-	path = docs/submodules/microservice-generation
-	url = ../microservice-generation
-	branch = .
+		path = docs/submodules/microservice-generation
+		url = ../microservice-generation
+		branch = .
+        ignore = dirty
+[submodule "docs/submodules/test-models"]
+		path = docs/submodules/test-models
+		url = ../test-models
+		branch = .
+        ignore = dirty
+[submodule "docs/submodules/python-model-runner"]
+		path = docs/submodules/python-model-runner
+		url = ../python-model-runner
+		branch = .
         ignore = dirty
