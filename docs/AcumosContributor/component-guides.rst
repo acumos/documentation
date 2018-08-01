@@ -29,6 +29,7 @@ Component guides contain a variety of information that is useful to developers w
 
       ../submodules/acumos-azure-client/docs/index
       ../submodules/python-dcae-model-runner/docs/index
+      ../submodules/python-model-runner/docs/index
       ../submodules/acumos-hippo-cms/docs/index
       ../submodules/acumos-java-client/docs/index
       ../submodules/acumos-nexus-client/docs/index
@@ -53,6 +54,7 @@ Component guides contain a variety of information that is useful to developers w
       ../submodules/security-verification/docs/index
       ../submodules/system-integration/docs/index
       ../submodules/test-automation/docs/index
+      ../submodules/test-models/docs/index
       ../submodules/validation-security/docs/index
       ../submodules/vm-predictor/docs/index
 
