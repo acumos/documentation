@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c56a794_247b392a",
+        "filename": "docs/release-notes/index.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-08-14T18:16:29Z",
+      "side": 1,
+      "message": "kubernetes-client is the repo name",
+      "revId": "558c0991deabbcc45bc7ad3c91b662cacad6e4d8",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
