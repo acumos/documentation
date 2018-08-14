@@ -43,6 +43,7 @@ Component guides contain a variety of information that is useful to developers w
       ../submodules/generic-model-runner/docs/index
       ../submodules/image-classification/docs/index
       ../submodules/image-mood-classifier/docs/index
+      ../submodules/kubernetes-client/docs/index
       ../submodules/microservice-generation/docs/index
       ../submodules/model-schema/docs/index
       ../submodules/on-boarding/docs/index
