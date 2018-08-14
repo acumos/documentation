@@ -61,6 +61,7 @@ Component Release Notes
    ../submodules/generic-model-runner/docs/release-notes
    ../submodules/image-classification/docs/release-notes
    ../submodules/image-mood-classifier/docs/release-notes
+   ../submodules/kubernetes/docs/release-notes
    ../submodules/microservice-generation/docs/release-notes
    ../submodules/model-schema/docs/release-notes
    ../submodules/on-boarding/docs/release-notes

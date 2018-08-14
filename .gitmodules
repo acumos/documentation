@@ -148,3 +148,8 @@
 		url = ../python-model-runner
 		branch = .
         ignore = dirty
+[submodule "docs/submodules/kubernetes-client"]
+		path = docs/submodules/kubernetes-client
+		url = ../kubernetes-client
+		branch = .
+        ignore = dirty
