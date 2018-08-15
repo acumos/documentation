@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e7a6fb31_992fc06e",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-08-15T15:01:11Z",
+      "side": 1,
+      "message": "this line is no longer relevant and should be removed",
+      "range": {
+        "startLine": 236,
+        "startChar": 2,
+        "endLine": 237,
+        "endChar": 70
+      },
+      "revId": "97cd33cc903991e1c2502867a4bd84894441b7ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ebe5347_5a904fb0",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-08-15T15:01:11Z",
+      "side": 1,
+      "message": "The one-click script does not create an admin user; need to add instructions on how to use the create-user script to add an admin user",
+      "revId": "97cd33cc903991e1c2502867a4bd84894441b7ee",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
