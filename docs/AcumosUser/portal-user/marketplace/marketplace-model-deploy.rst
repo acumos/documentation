@@ -31,3 +31,36 @@ Logged-in users may deploy a model's microservice to the Cloud of their choice.
 
     .. image:: ../images/portal/models_deployToCloudSteps.png
 
+Deploying to Azure
+==================
+
+Microsoft Azure is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through a global network of Microsoft-managed data centers.
+
+Acumos is able to deploy models and composite models easily in an Azure cloud. It creates a new virtual machine and deploys the model in that VM.
+
+A Composite Solution is combination of more than one model. The Model Connector is also deployed with composite  solutions since it is used for communication between models in the VM. Databroker details can be specified for a composite model. If a Databroker image is available in the composite solution, then it will also be deployed.
+
+Upon successful deployment, the user is notified of the model connector endpoint and optionally, the databroker.
+
+
+.. image:: ../images/portal/models_deployToAzureDetails.jpg
+
+
+Fields
+------
+
+#. **Application ID** The ID for  application  during  registrations in Azure Active Directory
+#. **TenantID** The ID of the AAD (Azure Active Directory)  in which  application is created
+#. **Secret key**  Client Secret key for a web application registered with Azure Active Directory
+#. **Subscription Key** Subscription grants access to  Azure services and to the Azure Platform Management Portal
+#. **Resource Group**  Resource groups provide a way to monitor, control access, provision and manage billing for collections of assets that are required to run an application, or used by a client or company department
+#. **Acr Name** Same as ApplicationID
+#. **Storage Account** An Azure storage account provides a unique namespace to store and access Azure Storage data objects. All objects in a storage account are billed together as a group
+
+
+
+
+
+
+
+
