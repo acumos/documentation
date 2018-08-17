@@ -84,7 +84,8 @@ Current Release (Athena)
 The Athena release includes these capabilities that have been implemented/tested:
 
 * single-node (AIO) deployment of the Acumos platform under docker or kubernetes
-* deployment with a new Acumos database
+* deployment with a new Acumos database, or redepoyment with a current database
+  and components compatible with that database version
 * Component services under docker/kubernetes as named below (deployed as
   distinct container-based services), or installed directly on the AIO host:
 
@@ -112,7 +113,7 @@ The Athena release will include these capabilites in development:
   * Deployment in a multi-node configuration under kubernetes
   * Deployment of or integration with a backend Shared-Data-Service (SDS) for
     Persistent Volume Claims (PVC) under kubernetes
-  * Deployment with migration of an existing Acumos database
+  * Deployment with upgrade migration of an existing Acumos database
   * Deployment with integration to pre-existing external components: MariaDB,
     Nexus, proxy, ELK stack
   * Additional platform core components
@@ -167,11 +168,11 @@ This guide assumes:
 Install Process
 ---------------
 
-The notes below provide an overview of the **default** installation process. Note
-these scripts are a work in progress, and not all Acumos platform functions may
-work correctly at this time. See "Verified Features" below for a summary of
-what's been verified to work, at least in the test environments where this has
-been used so far.
+The notes below provide an overview of the installation process. Note these
+scripts are a work in progress, and not all Acumos platform functions may work
+correctly at this time. See "Verified Features" below for a summary of what's
+been verified to work, at least in the test environments where this has been
+used so far.
 
 * Open a shell session (bash recommended) on the host on which (for single AIO
   deployment) or from which (for peer-test deployment) you want to install
@@ -188,9 +189,28 @@ been used so far.
     specify any proxy settings required, or select specific component ports
     other than the default, etc
 
+    * If you are redeploying/restarting the platform, you can preserve the
+      current database and any models you have onboarded, by setting the
+      ACUMOS_CDS_PREVIOUS_VERSION environment variable in acumos-env.sh to the
+      same value as the ACUMOS_CDS_VERSION variable, as shown below:
+
+.. code-block:: bash
+
+  export ACUMOS_CDS_PREVIOUS_VERSION=1.16
+  export ACUMOS_CDS_VERSION=1.16
+..
+
+    * The script will preserve an existing database and all the related
+      credentials (MariaDB, Nexus, CDS, ...) during the deployment, if the
+      ACUMOS_CDS_PREVIOUS_VERSION variable is set. This will also be supported
+      for database upgrade in a coming version (the capability is developed, but
+      not fully tested).
+
   * If you are deploying a single AIO instance, run the following command:
+
     * ``bash oneclick_deploy.sh \<docker|k8s\>``
-    * NOTE: instructions for running the script are included at the top of the script
+    * NOTE: instructions for running the script are included at the top of the
+      script
 
   * If you are deploying two Acumos AIO instances as peers, run the following
     command (NOTE: "under the hood", this uses onclick_deploy.sh):
@@ -202,10 +222,11 @@ been used so far.
 
   * For the above commands specify:
 
-    * "docker" to install all components other than mariadb and the docker-engine under docker-ce
+    * "docker" to install all components other than mariadb and the
+      docker-engine under docker-ce
     * "k8s" to install all components other than mariadb under kubernetes
-    * "\<host1\>"/"\<user1\>" as hostname and user account to install under for the
-      first peer, and "\<host2\>"/"\<user2\>" similarly for the second peer
+    * "\<host1\>"/"\<user1\>" as hostname and user account to install under for
+      the first peer, and "\<host2\>"/"\<user2\>" similarly for the second peer
     * optionally, for "[models]" specify a folder with Acumos models to be
       onboarded under a "test" user account (an admin user, automatically
       created by the peer-test.sh script)
@@ -214,7 +235,8 @@ been used so far.
    this command before and thus docker has already downloaded the Acumos docker
    images. That will speed up subsequent re-deploys.
 
-* When deployment is complete, you should see a message similar to this, stating the URL for the Portal:
+* When deployment is complete, you should see a message similar to this, stating
+  the URL for the Portal:
 
     .. image:: images/oneclick-complete.png
 
@@ -230,7 +252,9 @@ been used so far.
 
     .. image:: images/acumos-cms-login.png
 
- * On the left, click the + at ``hst:hst`` and then also at ``hst:hosts``. Click the + at the ``dev-env`` entry, and the same for the nodes as they appear:  ``com, azure, cloudapp, eastus``
+ * On the left, click the + at ``hst:hst`` and then also at ``hst:hosts``. Click
+   the + at the ``dev-env`` entry, and the same for the nodes as they appear:
+   ``com, azure, cloudapp, eastus``
 
     .. image:: images/acumos-cms-find-host.png
 
@@ -243,7 +267,9 @@ been used so far.
 
     .. image:: images/acumos-cms-move-node-dialog.png
 
- * When the dialog closes, you should see your node renamed and moved under ``dev-env``. You may also want to save your changes by pressing the ``Write changes to repository`` button in the upper right.
+ * When the dialog closes, you should see your node renamed and moved under
+   ``dev-env``. You may also want to save your changes by pressing the
+   ``Write changes to repository`` button in the upper right.
 
     .. image:: images/acumos-cms-move-node-write-changes.png
 
@@ -251,15 +277,21 @@ been used so far.
 
     .. image:: images/acumos-cms-host-add-property-btn.png
 
- * In the ``Add a new Property`` dialog, place your cursor in the ``Name`` field and then select ``hst:schemeagnostic``. click ``OK``.
+ * In the ``Add a new Property`` dialog, place your cursor in the ``Name`` field
+   and then select ``hst:schemeagnostic``. click ``OK``.
 
     .. image:: images/acumos-cms-host-add-property-dialog.png
 
- * Make sure the hostname is selected on the left. Then select the check box under the new attribute. This attribute is essential, as internal to the Acumos platform the Hippo CMS service is accessed via HTTP, but externally, user web browsers access the Acumos portal via HTTPS. Also click the ``Write changes to repository`` button on the upper right.
+ * Make sure the hostname is selected on the left. Then select the check box
+   under the new attribute. This attribute is essential, as internal to the
+   Acumos platform the Hippo CMS service is accessed via HTTP, but externally,
+   user web browsers access the Acumos portal via HTTPS. Also click the
+   ``Write changes to repository`` button on the upper right.
 
     .. image:: images/acumos-cms-host-select-added-property-and-save.png
 
- * Delete the superfluous node. Right-click the ``com`` node, select ``Delete node``.
+ * Delete the superfluous node. Right-click the ``com`` node, select
+   ``Delete node``.
 
     .. image:: images/acumos-cms-delete-node.png
 
@@ -267,15 +299,24 @@ been used so far.
 
     .. image:: images/acumos-cms-delete-node-dialog.png
 
-* Update your local workstation's hosts file so the portal domain name "<hostname>" will resolve on your workstation. Add a line: <ip address of your AIO host> <hostname>. Note: on Ubuntu, the hosts file is at ``/etc/hosts``. The example below is from an Ubuntu laptop with the AIO instance running in a Virtual Box environment.
+* Update your local workstation's hosts file so the portal domain name
+  "<hostname>" will resolve on your workstation. Add a line: <ip address of
+  your AIO host> <hostname>. Note: on Ubuntu, the hosts file is at
+  ``/etc/hosts``. The example below is from an Ubuntu laptop with the
+  AIO instance running in a Virtual Box environment.
 
     .. image:: images/hosts-file.png
 
-* Create an admin user: the oneclick_deploy.sh script **does not** create a default user. However, you can use the ``create-user.sh`` script to create an "Admin" user for the platform. The ``create-user.sh`` script is located in the same directory as the ``oneclick-deploy.sh`` script. Usage instructions are included at the top of the ``create-user.sh`` script. Below is an example of how to create an admin user:
+* Create an admin user: the oneclick_deploy.sh script **does not** create a
+  default user. However, you can use the ``create-user.sh`` script to create
+  an "Admin" user for the platform. The ``create-user.sh`` script is located
+  in the same directory as the ``oneclick-deploy.sh`` script. Usage
+  instructions are included at the top of the ``create-user.sh`` script.
+  Below is an example of how to create an admin user:
 
     .. code-block:: bash
 
-        $ bash create-user.sh admin admin123 Admin Admin admin@admin.net admin
+        $ bash create-user.sh admin Admin123 Admin Admin admin@admin.net Admin
         ...(lots of output)
         $ User creation is complete
 
@@ -303,6 +344,14 @@ minutes for all to be active):
 .. code-block:: bash
 
   sudo bash docker-compose.sh restart
+
+If you deployed under kubernetes, you can also restart the platform, by the
+following command, as long as the generated values in acumos-env.sh (e.g.
+passwords for MariaDB, CDS, Nexus, ...) have not been changed:
+
+.. code-block:: bash
+
+  sudo bash oneclick_deploy.sh k8s
 
 You can clean the installation (including all data) via:
 
