@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6fbcb75e_5d343e09",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-08-19T22:58:17Z",
+      "side": 1,
+      "message": "take this 0 out; it messes up the formatting",
+      "revId": "5c4e1b785088f20db36a7a32ed02f19195452171",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ac778218_4e56f558",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-08-19T22:58:17Z",
+      "side": 1,
+      "message": "not exactly sure what this is suppose to say but it definitely needs to be fixed",
+      "revId": "5c4e1b785088f20db36a7a32ed02f19195452171",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
