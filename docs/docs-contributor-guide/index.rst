@@ -31,16 +31,16 @@ Much of the content in this document is derived from similar documentation proce
 
 Acumos documentation is stored in git repositories, changes are managed with gerrit reviews, and published documents generated when there is a change in any source used to build the documentation.
 
-Authors create source for documents in reStructured Text (RST) that is and published on `docs.acumos.org 
+Authors create source for documents in reStructured Text (RST) that is and published on `docs.acumos.org
 <http://docs.acumos.org/>`_. The Acumos `wiki <http://wiki.acumos.org/>`_ and other web sites can reference these rendered documents directly, allowing projects to easily maintain current release documentation.
 
 
 .. toctree::
    :maxdepth: 2
 
-   rst-and-sphinx.rst
-   rst-vs-wiki.rst
-   rst-dev-tools.rst
-   documenting-apis.rst
+    rst-dev-tools.rst
+    component-docs-guide.rst
+    review-rst-gerrit.rst
+
 
 
