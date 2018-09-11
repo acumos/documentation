@@ -16,10 +16,18 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-.. _swaggerv2doc-example-output:
+.. _review-rst-gerrit:
 
-===================================================
-Example of Rendered Content From api-docs.json File
-===================================================
+============================
+Reviewing RST Docs in Gerrit
+============================
+Once the Acumos Jobbuilder has finished running, you can view the generated HTML output by clicking on the "Logs" link:
 
-.. swaggerv2doc:: ccds-api-docs.json
+    .. image:: images/gerrit-docsjoblinks.png
+
+The "Logs" link open a new page. From there, click the "html" folder link.
+
+    .. image:: images/gerrit-htmlfolder.png
+
+
+Navigate to your generated document pages.

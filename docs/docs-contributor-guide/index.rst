@@ -25,22 +25,37 @@ Documentation Contributor Guide
     This is a work in progress. Please help us improve it by contributing to the Docs project!
 
 
-This guide describes how to create documentation for the Acumos platform. Acumos repositories create a variety of content depending on the nature of the project. For example, projects delivering a platform component may have different types of content from a project that creates libraries for a software development kit. The content from each project may be used together as a reference for that project and/or be used in documents are tailored to a specific user audience and task they are performing.
+This guide describes how to create documentation for the Acumos platform.
+Acumos repositories create a variety of content depending on the nature of the
+project. For example, projects delivering a platform component may have
+different types of content from a project that creates libraries for a software
+development kit. The content from each project may be used together as a
+reference for that project and/or be used in documents are tailored to a
+specific user audience and task they are performing.
 
-Much of the content in this document is derived from similar documentation processes used in other Linux Foundation Projects including ONAP, OPNFV and Open Daylight.
+Much of the content in this document is derived from similar documentation
+processes used in other Linux Foundation Projects including ONAP, OPNFV and
+Open Daylight.
 
-Acumos documentation is stored in git repositories, changes are managed with gerrit reviews, and published documents generated when there is a change in any source used to build the documentation.
+Acumos documentation is stored in git repositories, changes are managed with
+gerrit reviews, and published documents generated when there is a change in any
+source used to build the documentation.
 
-Authors create source for documents in reStructured Text (RST) that is and published on `docs.acumos.org 
-<http://docs.acumos.org/>`_. The Acumos `wiki <http://wiki.acumos.org/>`_ and other web sites can reference these rendered documents directly, allowing projects to easily maintain current release documentation.
+Authors create source for documents in reStructured Text (RST) that is and
+published on `docs.acumos.org
+<http://docs.acumos.org/>`_. The Acumos `wiki <http://wiki.acumos.org/>`_ and
+other web sites can reference these rendered documents directly, allowing
+projects to easily maintain current release documentation.
+
+
 
 
 .. toctree::
    :maxdepth: 2
 
-   rst-and-sphinx.rst
-   rst-vs-wiki.rst
    rst-dev-tools.rst
-   documenting-apis.rst
+   component-docs-guide.rst
+   review-rst-gerrit.rst
+
 
 
