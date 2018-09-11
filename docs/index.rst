@@ -48,18 +48,26 @@ Acumos Operations
    ../submodules/system-integration/docs/user-guide
 
 
-Acumos Contributors to the Platform Code
+Contributors to the Acumos Platform Code
 ========================================
-Please visit the wiki to view `Acumos Architecture <https://wiki.acumos.org/display/AC/Architecture>`_ as well as to view the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
+The Acumos Platform Architecture Guide
+
+.. toctree::
+    :maxdepth: 2
+
+    ../architecture/index
+
 
 The *Component Guides* section contains a variety of information that is useful to developers who are working on the platform code. Most projects are written in Java, and the Javadoc is available `here <https://javadocs.acumos.org/>`_ .
-
 
 .. toctree::
    :maxdepth: 1
 
    AcumosContributor/component-guides
    docs-contributor-guide/index
+
+
+Please visit the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
 
 Acumos AI Challenge
 ===================
