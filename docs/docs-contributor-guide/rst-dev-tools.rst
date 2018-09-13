@@ -16,6 +16,8 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
+.. _rst-tools:
+
 =======================================
 Tools for Creating Documentation in RST
 =======================================
@@ -44,6 +46,7 @@ All Platforms
 
 #. `Emacs <http://www.gnu.org/software/emacs/emacs.html/>`_ with `rst-mode <http://docutils.sourceforge.net/docs/user/emacs.html/>`_ turned on
 #. `PyCharm <https://www.jetbrains.com/pycharm/download/>`_
+#. `Atom <https://atom.io/>`_ with `RST plugins <https://atom.io/packages/search?utf8=%E2%9C%93&q=keyword:rst>`_
 
 Web-based Editors
 -----------------
