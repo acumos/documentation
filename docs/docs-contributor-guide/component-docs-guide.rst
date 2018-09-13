@@ -145,6 +145,7 @@ Current list of templates:
     #. user-guide.rst
 
 The templates themselves also contain guidance on what topics to include in the contents.
+**Please read the contents of the templates!**
 
 
 Writing Guidelines
@@ -246,3 +247,6 @@ Task(s)
     #. Provide information on the expected outcome of a step, especially when it is not obvious.
     #. Break down end-to-end tasks into manageable chunks.
 
+Including Design Diagrams and Images
+------------------------------------
+The `developer-guide.rst template <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/developer-guide.rst>`_ contains information and examples on how to incorporate design diagrams in your guide.
