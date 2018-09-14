@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "42a4fa0b_fa27875c",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-09-14T18:44:23Z",
+      "side": 1,
+      "message": "A curious behavior that I couldn\u0027t find a fix for. The link to Nexus for the Model Runner does not return to the documentation page when the back arrow is selected. It does work for the Java Client",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 98
+      },
+      "revId": "601fc7028196e6eddb9e20103d8dbcbd651037bc",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
