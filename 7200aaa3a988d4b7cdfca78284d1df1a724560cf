@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4ff10560_cf81dc80",
+        "filename": "docs/AcumosUser/portal-user/portal/portal-onboarding-web.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-10-01T14:37:48Z",
+      "side": 1,
+      "message": "This needs to be more explicit in what constitutes a model bundle; please list the required parts and what they contain.",
+      "range": {
+        "startLine": 30,
+        "startChar": 15,
+        "endLine": 32,
+        "endChar": 66
+      },
+      "revId": "7200aaa3a988d4b7cdfca78284d1df1a724560cf",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
