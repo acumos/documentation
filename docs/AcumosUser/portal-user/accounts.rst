@@ -43,9 +43,21 @@ of the user interface.
 
 3. Click Sign Up on the bottom of the screen.
 
-4. You will be taken back to Acumos Home Screen.
+4. You will be taken back to Acumos Home Screen and an account verification email will be sent to the registered email. You cannot sign-in without verifying your email addres. The verification link will be valid from few hours as configured. Once verification link is expired user can regenerate an new email which should be valid for next few hours as configured.
 
     .. image:: images/portal/homeScreen.png
+
+5. Once Account verification email is received click on the link given in the email to activate the account. You will be taken to acumos verification page where you should get the message as "Your Account has been activated. Please sign-in to portal."
+
+    .. image:: images/portal/signUp_verification.png
+
+
+6. After successfull account verification user can click on **sign in** link on the top right corner of the Home.
+
+
+7. If the accoutn verification link is expired then user will get an error message as "The token is invalid or expired. Click below button to regenerate verification email". User can click on **Refresh Token** button which will again forward the verification email with the updated verification link.
+
+    .. image:: images/portal/signUp_Verification_expired.png
 
 .. note::
     Account creation may be customized on individual Acumos installations. If what you see on your local Acumos instance is different than what is in this guide, please consult your local Acumos Admin for assistance.
