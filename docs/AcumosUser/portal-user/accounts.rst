@@ -35,28 +35,34 @@ of the user interface.
 
     .. image:: images/portal/signUpNow_link.png
 
-
-2. Fill out information in Sign Up window.
+2. Fill out information in the Sign Up window and click the **Sign Up** button on the bottom of the screen.
 
     .. image:: images/portal/signUp_screen.png
 
+3. An account verification email will be sent to the email address that you entered. You cannot sign-in without verifying your email address. The verification link will be valid for a finite time period, as configured by the Acumos platform adminstrator.
 
-3. Click Sign Up on the bottom of the screen.
+4. Click on the link in the account verification email to activate your account. Clicking the link will take you to the Acumos verification page, where you should see the following:
 
-4. You will be taken back to Acumos Home Screen.
+    .. image:: images/portal/signUp_verification.png
 
-    .. image:: images/portal/homeScreen.png
+
+5. After successfully verifying your email address, you can log into Acumos. See the :ref:`sign-in` section below.
+
+6. If the account verification link has expired, you will get an error message. Click the **Refresh Token** button to generate a new account verification email.
+
+    .. image:: images/portal/signUp_Verification_expired.png
 
 .. note::
     Account creation may be customized on individual Acumos installations. If what you see on your local Acumos instance is different than what is in this guide, please consult your local Acumos Admin for assistance.
 
+.. _sign-in:
 
 Logging into Acumos
 ===================
 
 The steps to login to Acumos are as follows:
 
-1. Click on the **sign in** link on the top right corner of the Home
+1. Click on the **SIGN IN** link on the top right corner of the Home
    Page.
 
     .. image:: images/portal/signIn_screen.png

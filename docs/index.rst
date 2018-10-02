@@ -53,7 +53,7 @@ Contributors to the Acumos Platform Code
 The Acumos Platform Architecture Guide
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     ../architecture/index
 
