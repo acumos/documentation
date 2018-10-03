@@ -133,8 +133,3 @@ The description and documentation may be different, as needed for a
 different audience. If you wish to use the same presentation for the
 Public model that you have previously published to Company, use the
 checkbox to select that.
-
-The Publishing back end process may be different for publishing to
-Public. The required publication steps for each instance are configured
-by the local Administrator.
-
