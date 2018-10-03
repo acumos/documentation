@@ -83,7 +83,7 @@ general way, so it can be discovered and adapted for use by others.
 
 Acumos provides two separate publishing workflows to meet this need.
 
-There is a facility to simply use the same information if the publication information is the same for both marketplaces. . Also, publishing to
+There is a facility to simply use the same information if the publication information is the same for both marketplaces. Also, publishing to
 either marketplace can be done in any order. There is no requirement to
 publish first to the Company marketplace. The same model can appear in
 both catalogs.
@@ -127,9 +127,15 @@ Publishing to the Public Marketplace
 ------------------------------------
 
 Publishing to the Public Marketplace follows the same steps as Publish
-to Company Marketplace.
+to Company Marketplace except it requires the approval of a user who has the Publisher role.
 
 The description and documentation may be different, as needed for a
 different audience. If you wish to use the same presentation for the
 Public model that you have previously published to Company, use the
 checkbox to select that.
+
+Once approved by a Publisher, the model will be published to the Public MarketPlace. 
+A modeler can also withdraw a model from publication by clicking on **Withdraw Request** from the Publish To Public screen.
+
+    .. image:: ../images/portal/PublishToPublic.png
+
