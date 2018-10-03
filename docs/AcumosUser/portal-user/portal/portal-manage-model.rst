@@ -127,9 +127,15 @@ Publishing to the Public Marketplace
 ------------------------------------
 
 Publishing to the Public Marketplace follows the same steps as Publish
-to Company Marketplace.
+to Company Marketplace except it requires the approval of a user who has the Publisher role.
 
 The description and documentation may be different, as needed for a
 different audience. If you wish to use the same presentation for the
 Public model that you have previously published to Company, use the
 checkbox to select that.
+
+Once approved by a Publisher, the model will be published to the Public MarketPlace. 
+A modeler can also withdraw a model from publication by clicking on **Withdraw Request** from the Publish To Public screen.
+
+    .. image:: ../images/portal/PublishToPublic.png
+
