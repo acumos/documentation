@@ -16,17 +16,15 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-=================================
-Portal and Marketplace User Guide
-=================================
+.. _monitoring:
 
-.. toctree::
-   :maxdepth: 2
+===============
+Site Monitoring
+===============
 
-   overview.rst
-   accounts.rst
-   marketplace/index
-   portal/index
-   publish/publisher-guide.rst
-   design-studio/index
-   deployment/index
+Via the “Site Admin” / “Monitoring” tab, admins will be able to monitor
+various Acumos portal aspects such as user and modeler activity.
+
+This section of Site Admin is in development, and currently presents
+static data. This section will be updated as new features are
+implemented.

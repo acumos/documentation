@@ -16,177 +16,9 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-==================================
-Portal and Marketplace Admin Guide
-==================================
+.. _federation:
 
-Introduction
-============
-
-This user guide  describes how to use the Admin Interface for Acumos portals.
-
-What is Covered by the Admin Interface?
----------------------------------------
-
-The Admin Interface is a web-based tool for a site admin to:
-
-1. Monitor the site activity
-
-2. Manage users and change their roles.
-
-3. Update and edit the site content that is managed by the CMS.
-
-4. Configure the site.
-
-5. Manage Federation relationships: configure peer gateways and set up
-   subscriptions to that peer’s public marketplace.
-
-6. Manage Federation requests for specific models.
-
-7. Configure workflows.
-
-Admin Access to the Acumos Portal
----------------------------------
-
-When a new Acumos Portal is deployed, a default admin user will be
-created in the process of deployment by common-dataservice database
-setup scripts. A default username (“***TBD***\ ”) *and* password
-(“***TBD***\ ”) will be assigned to the admin, and must be changed upon
-first login, as the password will be set to “expired” when created.
-
-Users can be assigned the role of Admin via the Portal UI at “Site
-Admin” / “User Management”. Select the user and pick “admin” under the
-“Change Role To” dropdown. The user will need to logout and back in for
-the “Site Admin” tools to be visible.
-
-The Site Admin Dashboard provides the toolset that admins use to manage
-the Acumos portal. The Site Admin Dashboard can be accessed by site
-admins only. Admins will have the “SITE ADMIN” option on the left of the
-portal UI when they login.
-
-The following sections address each tool under the Site Admin Dashboard.
-
-Site Monitoring
-===============
-
-Via the “Site Admin” / “Monitoring” tab, admins will be able to monitor
-various Acumos portal aspects such as user and modeler activity.
-
-This section of Site Admin is in development, and currently presents
-static data. This section will be updated as new features are
-implemented.
-
-User Management
-===============
-
-This tab lists all user accounts on the portal, and enables:
-
--  Searching for users, and selecting a list of users by role
-
--  Adding a user
-
--  Bulk activation, inactivation, and deletion of users
-
--  Changing the role of a user to one of the defined roles “MLP system
-   user” (normal user) and “admin”
-
--  Creation of new roles that enable use of various portal features
-
-.. image:: images/admin-user-list.png
-
-The following sections describe the dialogs presented under User
-Management.
-
-Add New User
-------------
-
-Selecting the “Add New User” button will present a dialog in which new
-user details can be provided, including:
-
--  First Name (mandatory)
-
--  Last Name (mandatory)
-
--  User Name (mandatory): must be unique, and not already used for some
-   other account
-
--  Email (mandatory): must be a valid format email address, and not
-   already used for some other account
-
--  Password (mandatory): must contain at least eight characters, which
-   should have at least one upper case and one lower case letter,
-   numbers and symbols like, ! # @ $ \* &. If the password is determined
-   to be “weak”, a stronger password must be selected or the “Add”
-   button will not be selectable.
-
--  Role (mandatory): one of the defined roles, by default “MLP System
-   User”, “admin”
-
-An option to send the new user an account creation email is provided.
-The email will be sent from the defined email address of the admin user
-that added the new user.
-
-.. image:: images/admin-user-add.png
-
-Add New Role
-------------
-
-Selecting the “Add New Role” button will present a dialog in which roles
-can be defined, with the options:
-
--  Role Name (mandatory): must be unique, i.e. not already used as a
-   role name
-
--  Role Name (mandatory): Assignment of one or more of the following
-   permissions:
-
-   -  Access to the Design Studio
-
-   -  Access to the Marketplace
-
-   -  Access to Onboarding
-
-***TODO: provide further description of these permissions***
-
-.. image:: images/admin-role-add.png
-
-Site Content
-============
-
-This tab is under development. This section will be updated as new
-features are implemented.
-
-Site Configuration
-==================
-
-This tab enables configuration of the following:
-
--  Logos enabling the portal owner (typically a company or other
-   organization) to brand the site: ***TODO: explain how these are
-   presented***
-
-   -  Co-Branding Logo
-
-   -  Header Logo
-
-   -  Footer Logo
-
--  siteInstanceName: Name for the portal site, used to differentiate the
-   site when users first visit (before login), ala “Explore the
-   <siteInstanceName> Marketplace”, “Discover <siteInstanceName>”, etc.
-
--  ConnectionConfig: set parameters for networking ***(TODO: clarify how
-   these are used)***
-
-   -  socketTimeout
-
-   -  connectionTimeout
-
--  EnableOnboarding: option to enable or disable the onboarding feature
-   for modelers
-
--  validationText: If you have Text Check configured as part of your Publishing workflow, a keyword scan will be performed on a model's artifacts. That keyword scan will use the comma separated list of keywords entered in this field.
-
+==========
 Federation
 ==========
 
@@ -223,7 +55,7 @@ The federation process is outlined below:
 .. image:: images/admin-federate-user-journey.png
 
 Establishing connectivity between peers
----------------------------------------
+=======================================
 
 Peer relationships are initiated and negotiated by peer
 companies/organizations through processes outside the scope of this
@@ -260,10 +92,10 @@ federation:
     these steps.
 
 Creating peer relationships between portals
--------------------------------------------
+===========================================
 
 Enable Federation
-~~~~~~~~~~~~~~~~~
+-----------------
 
 The first step in creating peer relationships to enable federation
 overall, but clicking the slider on the upper-right of the Federation
@@ -272,7 +104,7 @@ when clicked will change to “Enabled”. ***TODO: clarify the effect that
 enabling or disabling federation has on the following processes***
 
 Add Peer
-~~~~~~~~
+--------
 
 Selecting the “Add Peer” button will present a dialog in which a peer
 relationship can be defined and validated, with the options:
@@ -303,7 +135,7 @@ relationship can be defined and validated, with the options:
     .. image:: images/admin-peer-add.png
 
 Actions on peer list entries
-----------------------------
+============================
 
 Once a peer has been added, it is displayed in the list of peers. The
 list provides various information and actions for peer entries:
@@ -341,7 +173,7 @@ list provides various information and actions for peer entries:
     .. image:: images/admin-peer-list.png
 
 Edit Peer
----------
+=========
 
 Selecting the “Edit Peer” icon (|Edit|) will bring up the same dialog
 as “Add Peer” with the addition of the “Verify” button being selectable.
@@ -352,7 +184,7 @@ Selecting the “Verify” button will:
    actions once a verification process is successful/unsuccessful***
 
 Subscriptions
--------------
+=============
 
 Selecting “View/Add” in the “Subscriptions” column will bring up a
 dialog for management of subscriptions with the peer. When first added,
@@ -361,7 +193,7 @@ the peer subscriptions list will be empty.
     .. image:: images/admin-subscriptions-view.png
 
 Add Subscription
-~~~~~~~~~~~~~~~~
+----------------
 
 Selecting “New Subscription” in the “View/Add Subscriptions” dialog will
 display search options for models in the peer catalog:
@@ -422,7 +254,7 @@ you can:
     .. image:: images/admin-subscription-detail-view.png
 
 Managing Subscription Requests
-------------------------------
+==============================
 
 The “Requests” tab enables an admin to manage subscription requests.
 *This tab is not fully implemented, but it will enable these options:*
@@ -440,62 +272,3 @@ The “Requests” tab enables an admin to manage subscription requests.
 ***TODO: further explain what happens upon these actions***
 
     .. image:: images/admin-requests.png
-
-Configure Workflows
-===================
-
-A number of Acumos tasks, such as on-boarding and publishing require the
-user to complete a series of tasks and then initiate a back-end workflow
-to complete the overall task. The workflow can be described as a series
-of steps, all of which must succeed to complete the overall task.
-
-The Admin of a Acumos system may include or omit steps from the back-end
-workflow to customize their local instance.
-
-UI for Workflow Configuration
------------------------------
-
-When “Configure Workflows” is selected, the current set of workflows and
-currently configured steps is displayed. When the Acumos portal is
-deployed, this will include the system default workflows for
-“On-boarding”, “Publishing to Local”, “Publishing To Public” and “Import
-Federated Model Work”, e.g. as below. Options from here:
-
--  Deactivate or Assign any workflow
-
--  Modify any workflow, by adding or deleting optional steps
-
-   -  Grayed-out steps are mandatory and cannot be deleted or modified
-
-   -  Optional steps have a “bar-in-circle” icon (|Delete-step|) which
-      enables the step to be deleted, e.g. the Security Scan step as
-      optional for the Onboarding work flow
-
-    .. |Delete-step| image:: images/admin-delete-bar.png
-
-
-    .. image:: images/admin-workflows.png
-
-Example: Change workflow for On-boarding
-----------------------------------------
-
-Select the correct workflow and choose the EDIT button.
-
-    .. image:: images/admin-workflow-edit.png
-
-The detailed steps are shown, including the optional SECURITY step. If
-the SECURITY step is currently not included, and Admin wishes to add it,
-they click on the **+** symbol for that step.
-
-Adding a Security Step:
-
-    .. image:: images/admin-workflow-step-add.png
-
-Deleting a Security Step: Click on the **“-“** button”.
-
-    .. image:: images/admin-workflow-step-delete.png
-
-Result: The new security step is shown in the workflow. To implement
-the change, the Admin must select **Assign Workflow** button.
-
-    .. image:: images/admin-workflow-assign.png

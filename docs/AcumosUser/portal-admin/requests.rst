@@ -16,17 +16,10 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-=================================
-Portal and Marketplace User Guide
-=================================
+.. _requests:
 
-.. toctree::
-   :maxdepth: 2
+========
+Requests
+========
 
-   overview.rst
-   accounts.rst
-   marketplace/index
-   portal/index
-   publish/publisher-guide.rst
-   design-studio/index
-   deployment/index
+@TODO what is this tab for?
