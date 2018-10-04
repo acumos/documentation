@@ -137,12 +137,12 @@ You can clone the documentation project or download the templates from `Github <
 
 Current list of templates:
 
-    #. api-docs.rst
-    #. developer-guide.rst
-    #. index.rst
-    #. install-guide.rst
-    #. release-notes.rst
-    #. user-guide.rst
+    #. api-docs.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/api-docs.rst>`_ | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/api-docs.html>`_
+    #. developer-guide.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/developer-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/developer-guide.html>`_
+    #. index.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/index.rst>`_  `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/index.html>`_
+    #. install-guide.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/install-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/install-guide.html>`_
+    #. release-notes.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/release-notes.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/release-notes.html>`_
+    #. user-guide.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/user-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/user-guide.html>`_
 
 The templates themselves also contain guidance on what topics to include in the contents.
 **Please read the contents of the templates!**
