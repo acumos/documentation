@@ -24,57 +24,112 @@ Prerequisites
 =============
 Before you begin:
 
-#) You must have protobuf 3 installed. Please visit the protobuf repository for more information on how to install protoc. Install version 3 (version 2 will not work).
-#) Your onboarding url is:   XYZ .  Use this url in place of the default url:
+#) You must have R installed on you system. Please have a look at `cran.r-project.org <https://cran.r-project.org/>`_ 
 
-.. code-block:: bash
+#) You must have protobuf 3 installed on your system (version 2 will not work). Please follow the procedure.
 
-    api='http://localhost:8887/v2/models', name='(undefined)'
+	 git clone https://github.com/google/protobuf.git protobuf
 
+	 cd protobuf
+
+	 ./autogen.sh
+
+	 ./configure --prefix=`pwd`/../`uname -m`-linux-gnu
+
+	 make
+
+	 make install
+
+	 cd ../.. 
+
+#) You must have an Acumos account 
 
 Installing the Acumos R Client
 ==============================
-The  install package is available here:
+
+Within R You need to install and load all dependent packages from CRAN first.
+
+.. code-block:: bash
+
+    install.packages(c("Rcpp","RCurl","RUnit","rmarkdown","knitr","pinp"))
+    library(Rcpp,Rcurl,RUnit,rmarkdown,knitr,pinp)
+
+
+Then Install the Acumos R Client package and RProtobuf package thanks to the following command:
 
 .. code-block:: bash
 
     install.packages("acumos",,c("http://r.research.att.com","http://rforge.net"))
 
 
-You need to install all dependent packages from CRAN first.
+Alternatively, to install from sources:
+
+    git clone git@github.com:s-u/acumos.git or git clone https://github.com/s-u/acumos.git
+
+    R CMD build acumos
+
+    R CMD INSTALL acumos_*.tar.gz
+
 
 Using the Acumos R Client
 =========================
 
-Creating a Component
---------------------
+Model bundle
+------------
 
-To create a deployment component, use acumos::compose() with the functions to expose. If type specs are not defined, they default to c(x="character").
-The component consists of component.json defining the component and its metadata, component.bin the binary payload and component.proto with the protobuf specs.
+To create model bundle, use acumos::compose() with the functions to expose. If type specs are not defined, they default to c(x="character").
+The model bundle consists of component.json defining the component and its metadata, component.bin the binary payload and component.proto with the protobuf specs.
 Please consult R documentation page for details, i.e., use ?compose in R or see the `Compose <http://www.rforge.net/doc/packages/acumos/compose.html>`_ page at RForge.
 
-Deploying a Component
----------------------
- 
-To run the component you have to create a runtime.json file with at least {"input_port":8100} or similar to define which port the component should listen to. If there are output components there should also be a "output_url" entry to specify where to send the result to. It can be either a single entry or a list if the results are to be sent to multiple components. Example:
+The compose function provide the model bundle as an .amc file that is in fact a zip file, you have to unzip it and zip it again to have the .zip extension.
 
 .. code-block:: bash
 
-    {"input_port":8100, "output_url":"http://127.0.0.1:8101/predict"}
+    unzip component.amc
+    zip component.zip component.proto component.bin meta.json
 
+Authentication & upload
+-----------------------
 
-With the component files plus runtime.json in place, the component can be run using
-
-.. code-block:: bash
-
-    R -e 'acumos:::run()'
-
-
-The run() function can be configured to set the component directory and/or locations of the component files if needed. If you don't want to create a file, the runtime parameter also accepts the runtime structure, so you can also use
+Once the model bundle is created, you can use the push() API to upload it in Acumos.
 
 .. code-block:: bash
 
-    R -e 'acumos:::run(runtime=list(input_port=8100, output_url="http://127.0.0.1:8101/predict"))'
+    acumos::push("url","file","username:token")
+
+url is : http://hostname:8090/onboarding-app/v2/models
+
+file : component.zip
+
+username : your Acumos username
+
+token : Authentication token available in the Acumos portal on your profil section
 
 
-Details: ?run in R or see the `Run <http://www.rforge.net/doc/packages/acumos/run.html>`_ page at RForge.
+It exist also another way to authenticate yourself by using the aut() API
+
+.. code-block:: bash
+
+    acumos::auth("url","username","password")
+    
+url is : http://hostname:8090/onboarding-app/v2/auth
+
+username : your Acumos username
+
+password : your Acumos password
+   
+   
+In Respons, you will receive an authentication token to used in the push() API like that
+
+.. code-block:: bash
+
+    acumos::push("url","file","token")
+    
+    
+    
+    
+    
+    
+
+
+
