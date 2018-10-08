@@ -239,6 +239,7 @@ Below is an example of how to denote headings of various levels in RST.
     Section 2 Title
     ===============
 
+See :ref:`section-headers-example` for a rendered example.
 
 Task(s)
 -------
