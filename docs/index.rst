@@ -34,8 +34,7 @@ Acumos Portal and Marketplace Users
 
    ../release-notes/index
    ../AcumosUser/portal-user/index
-   ../AcumosUser/portal-admin/user-guide
-
+   ../AcumosUser/portal-admin/index
 
 Acumos Operations
 =================
