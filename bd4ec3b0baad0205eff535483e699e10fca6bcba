@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ce51ab7_2e8b8fea",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-r-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-08T22:26:27Z",
+      "side": 1,
+      "message": "Is this still valid? I thought username/password were no longer an option",
+      "range": {
+        "startLine": 109,
+        "startChar": 0,
+        "endLine": 120,
+        "endChar": 3
+      },
+      "revId": "bd4ec3b0baad0205eff535483e699e10fca6bcba",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
