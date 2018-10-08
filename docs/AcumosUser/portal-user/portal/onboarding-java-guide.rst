@@ -52,6 +52,7 @@ b. Prepare a supporting folder with the following contents. Items of this folder
  |image1|
 
 It will contain-
+
 i) Models - In case of H2o, your model will be a MOJO zip file.  In case of Generic Java, the model will be a jar file.
 
 ii) Model runner or Service jar - For H2O rename downloaded h2o-genericjava-modelrunner.jar as per the 1st section to H2OModelService.jar or to GenericModelService.jar for Java model and Place it in this folder.
@@ -144,11 +145,12 @@ On-Boarding Your Model
 Java Client jar is the executable client jar file.
 
 For Web-based onboarding of H2o models, the parameters to run the client jar are:
+
 1.	Current Folder path : Folder path where you want the output modeldump.zip file.
 
 2.	Model Type for H2o : H
 
-3.	Supporting folder path : Full Folder path of the supporting folder which contains items
+3.	Supporting folder path : Full Folder path of the supporting folder which contains items.
 
 4.	Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
 
@@ -162,50 +164,48 @@ See example below for how to run the client jar and how the modeldump.zip artifa
  |image3|
  
 
-For CLI-based onabording of H2o models, the parameters to run the client jar are:
+For CLI-based onboarding of H2o models, the parameters to run the client jar are:
 
-1. Onboarding server url
-2.  Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. http://<InstanceServerDetails>/onboarding-app/v2/auth e.g. "http://onboarding-app:8090/onboarding-app/v2/auth"
-3. Model Type for H2o : H
-4. Supporting folder path : Full Folder path of the supporting folder which contains items
+1. Onboarding server url.
+2. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. http://<InstanceServerDetails>/onboarding-app/v2/auth e.g. "http://onboarding-app:8090/onboarding-app/v2/auth" (where onboarding-app is the host name on which Acumos is installed).
+3. Model Type for H2o : H.
+4. Supporting folder path : Full Folder path of the supporting folder which contains items.
 5. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
-6. Username of the Portal MarketPlace account
-7. Password of the Portal MarketPlace account
+6. Username of the Portal MarketPlace account.
+7. Password of the Portal MarketPlace account.
 8. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
 
 For Web-based onboarding of Generic Java models, the parameters to run the client jar are:
 
 1. Current Folder path : Full folder path in which Java client jar is placed and run from.
-2. Model Type for Generic Java : G
-3. Supporting folder path : Full Folder path of the supporting folder which contains items 
+2. Model Type for Generic Java : G.
+3. Supporting folder path : Full Folder path of the supporting folder which contains items.
 4. Name of the model : For Generic Java just the name of the model without the .jar extension. Make sure this matches name of the supplied MOJO model file exactly.
 5. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
-For CLI-based onabording of Generic models, the parameters to run the client jar are:
+For CLI-based onboarding of Generic models, the parameters to run the client jar are:
 
-1. Onboarding server url
-2. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. http://<InstanceServerDetails>/onboarding-app/v2/auth e.g. "http://onboarding-app:8090/onboarding-app/v2/auth"
+1. Onboarding server url.
+2. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. http://<InstanceServerDetails>/onboarding-app/v2/auth e.g. "http://onboarding-app:8090/onboarding-app/v2/auth" (where onboarding-app is the host name on which Acumos is installed).
 3. Model Type for Generic Java : G
-4. Supporting folder path : Full Folder path of the supporting folder which contains items
+4. Supporting folder path : Full Folder path of the supporting folder which contains items.
 5. Name of the model : For Generic Java just the name of the model without the .jar extension. Make sure this matches name of the supplied MOJO model file exactly.
-6. Username of the Portal MarketPlace account
-7. Password of the Portal MarketPlace account
+6. Username of the Portal MarketPlace account.
+7. Password of the Portal MarketPlace account.
 8. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
 
 Pushing to the Acumos Portal
 ============================
 
-- You will be able to get a success message if your model was onboarded successfully.
-- If you use Web-based onboarding,
+- If you used CLI based onboarding, you don't need to perform the a-c steps outlined just below. The Java client has done it for you. You will see a message on the terminal that tells it was onboarded succesfully.
+- If you use Web-based onboarding, you must complete the following steps.
+
 a. After you run the client, you will see a modeldump.zip file generated in the same folder where we ran the Java Client for.
-b. Upload this file in the Web based interface.
+b. Upload this file in the Web based interface (drap and drop). To better know how to on-board a model thanks to the Acumos UI please have a look at `https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/portal-onboarding-web.html`
 c. You will be able to see a success message in the Web interface. you will be able to see a success method in the Web interface.
 
- |image9|
-
-- If you use CLI based onboarding,  you don't need to perform a-c outlined just above. The Java client will do it for you. You will see a message on the terminal that tells it was onboarded succesfully.
 - The needed TOSCA artifacts, docker images are produced and the model is published to the marketplace.
 - You and your teammates can now see, rate, review, comment, collaborate on your model in the Acumos marketplace.
 - When requested and deployed by a user, your model runs as a docker containerised microservice on the infrastructure of your choice and exposes a predict method as a rest endpoint.
