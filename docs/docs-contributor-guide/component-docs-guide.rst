@@ -196,9 +196,11 @@ Headings (Titles)
     #. Use descriptive titles for tables and figures titles; do not number tables or figures; do not (in general) add titles for screen shots
 
 
-Headings in RST
----------------
+Non-Numbered Headings in RST
+----------------------------
 Below is an example of how to denote headings of various levels in RST.
+
+See the :ref:`section-headers-example` for more info.
 
 .. code:: RST
 
@@ -238,6 +240,53 @@ Below is an example of how to denote headings of various levels in RST.
 
     Section 2 Title
     ===============
+
+Automatically Numbered Headings in RST
+--------------------------------------
+RST supports automatic numbering of sections. Place the `` ..sectnum::`` directive
+at the top of your page.
+
+.. code:: RST
+
+    .. sectnum::
+    ==============
+    Document Title
+    ==============
+    -----------------
+    Document Subtitle
+    -----------------
+
+    Section 1 Title
+    ===============
+
+    Section 1.1 Title
+    -----------------
+
+    Section 1.1.1 Title
+    ~~~~~~~~~~~~~~~~~~~
+
+    Section 1.1.1.1 Title
+    ^^^^^^^^^^^^^^^^^^^^^
+
+    Section 1.1.1.1.1 Title
+    '''''''''''''''''''''''
+
+    Section 1.1.1.1.2 Title
+    '''''''''''''''''''''''
+
+    Section 1.2 Title
+    -----------------
+
+    Section 1.2.1 Title
+    ~~~~~~~~~~~~~~~~~~~
+
+    Section 1.2.2 Title
+    ~~~~~~~~~~~~~~~~~~~
+
+    Section 2 Title
+    ===============
+
+See the :ref:`section-headers-numbered-example` for more info.
 
 
 Task(s)
