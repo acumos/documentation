@@ -27,19 +27,19 @@ Document the key things a developer needs to know about your component's APIs. F
 there will only be one logical grouping of APIs. For others there may be more than one grouping.
 
 API Group 1
------------
+===========
 
 Provide a description of what the API does and some examples of how to
 use it.
 
 API Group 2
------------
+===========
 
 Provide a description of what the API does and some examples of how to
 use it.
 
 Including a Swagger File
-------------------------
+========================
 Acumos uses `Swagger <https://swagger.io/>`_ to generate dynamic API docs. However, to read the docs you must have access to the Swagger server running on your Acumos instance. This can be inconvenient, so the Docs project uses a Sphinx plugin called `sphinx-swaggerdoc <https://github.com/unaguil/sphinx-swaggerdoc/>`_, which provides an RST directive to render a ``swagger.json`` file. The sphinx-swaggerdoc extension is defined in the Documentation project's ``conf.py`` file.
 
 You an include your API JSON file either by pointing to a URL or by pointing to a file. This example uses a local file called ``example-swagger.json``.  See the `sphinx-swaggerdoc <https://github.com/unaguil/sphinx-swaggerdoc/>`_ for more examples.
@@ -48,6 +48,8 @@ You an include your API JSON file either by pointing to a URL or by pointing to 
 
     .. swaggerv2doc:: example-swagger.json
 
-See the :ref:`swaggerv2doc-example-output` page for an example of output from the JSON file.
 
+Example of Rendered Content From api-docs.json File
+===================================================
 
+`https://docs.acumos.org/en/latest/docs-contributor-guide/templates/swaggerv2doc-example-output.html <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/swaggerv2doc-example-output.html>`_
