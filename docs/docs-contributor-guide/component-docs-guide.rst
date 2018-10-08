@@ -116,7 +116,6 @@ Required Files
 
 #. ``api-docs.rst`` contains details on the component's API
 
-Note: images/design.png would be an architeture diagram in PNG format; this image would be included in the developer-guide.rst
 
 Optional Files
 --------------
@@ -137,12 +136,12 @@ You can clone the documentation project or download the templates from `Github <
 
 Current list of templates:
 
-    #. api-docs.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/api-docs.rst>`_ | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/api-docs.html>`_
-    #. developer-guide.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/developer-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/developer-guide.html>`_
-    #. index.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/index.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/index.html>`_
-    #. install-guide.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/install-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/install-guide.html>`_
-    #. release-notes.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/release-notes.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/release-notes.html>`_
-    #. user-guide.rst `Github raw <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/user-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/user-guide.html>`_
+    #. `api-docs.rst <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/api-docs.rst>`_ | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/api-docs.html>`_
+    #. `developer-guide.rst  <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/developer-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/developer-guide.html>`_
+    #. `index.rst  <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/index.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/index.html>`_
+    #. `install-guide.rst <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/install-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/install-guide.html>`_
+    #. `release-notes.rst <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/release-notes.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/release-notes.html>`_
+    #. `user-guide.rst <https://raw.githubusercontent.com/acumos/documentation/master/docs/docs-contributor-guide/templates/user-guide.rst>`_  | `rendered <https://docs.acumos.org/en/latest/docs-contributor-guide/templates/user-guide.html>`_
 
 The templates themselves also contain guidance on what topics to include in the contents.
 **Please read the contents of the templates!**
@@ -195,49 +194,125 @@ Headings (Titles)
     #. Use a gerund to begin section titles if it makes sense. Examples: Configuring, Managing, Starting
     #. Use descriptive titles for tables and figures titles; do not number tables or figures; do not (in general) add titles for screen shots
 
+Use the following to create the Document title:
 
-Headings in RST
----------------
+    #. = with overline/underline
+
+Use the following symbols to create headings:
+
+    1. Section 1: * with overline/underline
+    2. Section 1.1: - with underline
+    3. Section 1.1.1: + with underline
+    4. Section 1.1.1.1: ^ with underline
+
+Consider rewriting the content if your document needs more than 4 levels of headings.
+
+Non-Numbered Headings in RST
+++++++++++++++++++++++++++++
 Below is an example of how to denote headings of various levels in RST.
+
+See the :ref:`headers-no-numbers` for how this renders in HTML.
 
 .. code:: RST
 
-    ==============
-    Document Title
-    ==============
-    -----------------
-    Document Subtitle
-    -----------------
+    =================
+    H1 Document Title
+    =================
 
+    ***************
     Section 1 Title
-    ===============
+    ***************
 
     Section 1.1 Title
     -----------------
 
     Section 1.1.1 Title
-    ~~~~~~~~~~~~~~~~~~~
+    +++++++++++++++++++
 
     Section 1.1.1.1 Title
     ^^^^^^^^^^^^^^^^^^^^^
 
-    Section 1.1.1.1.1 Title
-    '''''''''''''''''''''''
+    Section 1.1.1.1 Title2
+    ^^^^^^^^^^^^^^^^^^^^^^
 
-    Section 1.1.1.1.2 Title
-    '''''''''''''''''''''''
+    Another Section at the 1.1.1 Level
+    ++++++++++++++++++++++++++++++++++
+
+    How the Header is Underlined Makes all the Difference
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     Section 1.2 Title
     -----------------
 
     Section 1.2.1 Title
-    ~~~~~~~~~~~~~~~~~~~
+    +++++++++++++++++++
 
     Section 1.2.2 Title
-    ~~~~~~~~~~~~~~~~~~~
+    +++++++++++++++++++
 
+    ***************
     Section 2 Title
-    ===============
+    ***************
+
+    ***************
+    Section 3 Title
+    ***************
+
+Automatically Numbered Headings in RST
+++++++++++++++++++++++++++++++++++++++
+RST supports automatic numbering of sections. Place the sectnum directive
+at the top of your page. See the :ref:`numbered-headers` for how this renders in HTML.
+Note that RST considers the Document Title to be the first Header and will number it!
+
+.. code:: RST
+
+    =================
+    H1 Document Title
+    =================
+
+    .. sectnum::
+    ***************
+    Section 1 Title
+    ***************
+
+    Section 1.1 Title
+    -----------------
+
+    Section 1.1.1 Title
+    +++++++++++++++++++
+
+    Section 1.1.1.1 Title
+    ^^^^^^^^^^^^^^^^^^^^^
+
+    Section 1.1.1.1 Title2
+    ^^^^^^^^^^^^^^^^^^^^^^
+
+    Another Section at the 1.1.1 Level
+    ++++++++++++++++++++++++++++++++++
+
+    How the Header is Underlined Makes all the Difference
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Section 1.2 Title
+    -----------------
+
+    Section 1.2.1 Title
+    +++++++++++++++++++
+
+    Section 1.2.2 Title
+    +++++++++++++++++++
+
+    ***************
+    Section 2 Title
+    ***************
+
+    ***************
+    Section 3 Title
+    ***************
+
+If your guide has enough content, consider breaking it up into chapters, with
+one chapter per RST file. You will need to list each page in your index.rst.
+See :ref:`dev-guide-auto-number` for an example.
 
 
 Task(s)
