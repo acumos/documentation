@@ -63,6 +63,16 @@ E5 - Federation APIs
 E6 - Deployment APIs
 ....................
 
+The Deployment subsystem primarily consumes APIs of external systems such as
+cloud service environments, including Azure, OpenStack, and private kubernetes
+clouds. The developer guides for the "Deployers" that coordinate model
+deployment in those specific environments address the specific APIs consumed by
+those Deployers. See the following for more information:
+
+* `Acumos Azure Client <https://docs.acumos.org/en/latest/submodules/acumos-azure-client/docs/developer-guide.html>`_
+* `Openstack Client <https://docs.acumos.org/en/latest/submodules/openstack-client/docs/developer-guide.html>`_
+* `Kubernetes Client <https://docs.acumos.org/en/latest/submodules/kubernetes-client/docs/deploy-in-private-k8s.html>`_
+
 Internal Interfaces and APIs
 ----------------------------
 
@@ -229,7 +239,7 @@ Other Supporting Components
 ---------------------------
 
 MariaDB
-......
+.......
 
 Nexus
 .....
