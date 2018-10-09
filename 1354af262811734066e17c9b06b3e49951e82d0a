@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "b2600ec9_deb8bc69",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-10-09T17:54:47Z",
+      "side": 1,
+      "message": "That (arch image) would be for another patch.",
+      "parentUuid": "1679f195_25caa405",
+      "range": {
+        "startLine": 29,
+        "startChar": 5,
+        "endLine": 29,
+        "endChar": 60
+      },
+      "revId": "1354af262811734066e17c9b06b3e49951e82d0a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "38a2066b_af0689bb",
         "filename": "docs/architecture/platform_architecture.rst",
         "patchSetId": 1
