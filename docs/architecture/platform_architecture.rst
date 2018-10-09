@@ -48,6 +48,9 @@ External Interfaces and APIs
 E1 - Toolkit Onboarding
 .......................
 
+The various clients used to onboard models call the APIs in the Onboarding service.
+See the :doc:`Onboading App <../../submodules/on-boarding/docs/index>` documentation for details.
+
 E2 - Web APIs
 .............
 
@@ -72,6 +75,14 @@ those Deployers. See the following for more information:
 * `Acumos Azure Client <https://docs.acumos.org/en/latest/submodules/acumos-azure-client/docs/developer-guide.html>`_
 * `Openstack Client <https://docs.acumos.org/en/latest/submodules/openstack-client/docs/developer-guide.html>`_
 * `Kubernetes Client <https://docs.acumos.org/en/latest/submodules/kubernetes-client/docs/deploy-in-private-k8s.html>`_
+
+Microservice Generation
+.......................
+
+The DCAE model API is intended to be used with models dedicated for ONAP. It builds DCAE/ONAP 
+microservice and required artifacts.
+see the :doc:`Microservice Generation <../../submodules/microservice-generation/docs/index>`
+documentation for details.
 
 Internal Interfaces and APIs
 ----------------------------
@@ -144,14 +155,59 @@ Model Onboarding
 Onboarding App
 ..............
 
+The Onboarding app provides an ingestion interface for different types of
+models to enter the Acumos platform.  The solution for accommodating a myriad
+of different model types is to provide a custom wrapping library for each
+runtime. The client libraries encapsulate the complexity surrounding the
+serialization and deserialization of models.
+
+The Onboarding App interacts with the following Acumos platform components and
+supporting services:
+
+* the :doc:`Portal <../../submodules/portal-marketplace/docs/index>`,
+  which calls the Onboarding app during web-based model onboarding
+* the :doc:`Nexus Client <../../submodules/acumos-nexus-client/docs/developer-guide>`,
+  which stores and retrieves model artifacts from the Nexus maven repo
+* the :doc:`Common Data Service Client <../../submodules/common-dataservice/docs/client>`,
+  which stores model attributes
+* the :doc:`Microservice Generation <../../submodules/microservice-generation/docs/index>`, 
+which creates the dockerized microservice
+
+For more information: :doc:`Onboading Documentation <../../submodules/onboarding/docs/index>`.
+
 Java Client
 ...........
 
+The Acumos Java Client is a Java client library used to on-board H2o.ai and
+Generic Java models. This library creates artifacts required by Acumos,
+packages them with the model in a bundle, and pushes the
+model bundle to the onboarding server.
+
+The Java Client interacts with the Onboading app.
+
+For more information: :doc:`Java Client Documentation <../../submodules/acumos-java-client/docs/index>`.
+
 Python Client
 .............
+The Acumos Java Client is a Python client library used to on-board Python
+models and more specifically Scikit learn, TensorFlow and TensorFlow/Keras
+models. It creates artifacts required by Acumos, packages them with the model
+in a bundle, and pushes the model bundle to the onboarding app.
+
+The Python Client interacts with the Onboading app.
+
+For more information: :doc:`Python Client Documentation <../../submodules/acumos-python-client/docs/index>`.
 
 R Client
 ........
+The R client is a R package that contains all the necessary functions to
+create a R model for Acumos. It creates artifacts required by Acumos, packages
+them with the model in a bundle, and pushes the model
+bundle to the onboarding app.
+
+The R Client interacts with the Onboading app.
+
+For more information: :doc:`R Client Documentation <../../submodules/acumos-r-client/docs/index>`.
 
 Design Studio
 -------------
@@ -200,6 +256,11 @@ Common Services
 
 Microservice Generation
 .......................
+
+The Microservice Generation component is in charge of dockerize the model, create the microservice and
+store artifacts in Nexus.
+
+For more information :doc:`Microservice Generation <../../submodules/microservice-generation/docs/index>`.
 
 Nexus Client
 ............
