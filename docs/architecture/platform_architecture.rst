@@ -48,6 +48,38 @@ External Interfaces and APIs
 E1 - Toolkit Onboarding
 .......................
 
+Currently, the onboarding clients (R, Java and Python) use auth() and push() API. The auth() API
+returns a JWT token that is used in the push() API to onboard the models. The auth() API will be
+soon deprecated for the benefit of an API token that users must retrieve in their account settings 
+under the Acumos portal. Then the old "JWT token" will be replaced by "username:API token" in the
+push() API
+
+Authentication API
+
+URL= http://onboarding-app:8090/onboarding-app/V2/auth
+where onboarding-app is the hostname on which Acumos is installed
+
+Method = GET.
+
+input : User_Name, Password.
+
+output : authentication token (JWT token).
+
+Description = Checks User Name & password to provide an authentication token.
+
+
+Push model API
+
+URL=http://onboarding-app:8090/onboarding-app/v2/models
+where onboarding-app is the hostname on which Acumos is installed
+
+Method = POST
+
+data Params = model bundle,"JWT token" or "username:API token" 
+
+Description = Upload the model bundle on the on-boarding server.
+
+
 E2 - Web APIs
 .............
 
@@ -90,6 +122,17 @@ Federation Gateway
 
 Microservice Generation
 .......................
+
+DCAE Model API
+
+URL = http://onboarding-app:8090/onboarding-app/v2/dcae_models
+
+Method : POST
+
+data params : ONAP model
+
+Description : Build DCAE/ONAP microservice and artifact for existing ONAP models.
+
 
 Security Verification
 .....................
@@ -144,14 +187,22 @@ Model Onboarding
 Onboarding App
 ..............
 
+Acumos accommodates the use of differents AI tools and technologies in the development of machine learning models. The On-boarding component provides an ingestion interface for differents types of models to enter the Acumos Machine Learning (ML) platform. Examples of models include well-defined objects such as scikit-learn estimators, TensorFlow weights, and arbitrary R functions. The solution for accommodating a myriad of different model types is to provide a custom wrapping library for each runtime. The client library encapsulates the complexity surrounding the serialization and deserialization of models. Additionally.
+
 Java Client
 ...........
+
+The Acumos Java Client is a java client library used to on-board H2o.ai and Generic Java models. This library creates artifacts required by Acumos, packages them with the model in a bundle (called model bundle) and pushes the model bundle to the on-boarding server. It is also possible to download the model bundle on your local disk and to on-board it by web thanks to the on-boarding UI available in the Acumos portal.
 
 Python Client
 .............
 
+The Acumos Java Client is a Python client library used to on-board Python models and more specifically Scikit learn, TensorFlow and TensorFlow/Keras models. It creates articfacts required by Acumos,  packages them with the model in a bundle (called model bundle) and pushes the model bundle to the on-boarding server. It is also possible to download the model bundle on your local disk and to on-board it by web thanks to the on-boarding UI available in the Acumos portal.
+
 R Client
 ........
+
+The acumos R client is a R package that contains all the necesary functions to create a R model for Acumos. It creates articfacts required by Acumos, packages them with the model in a bundle (called model bundle) and pushes the model bundle to the on-boarding server. It is also possible to download the model bundle on your local disk to on-board it by web thanks to the on-boarding UI available in the Acumos portal.
 
 Design Studio
 -------------
