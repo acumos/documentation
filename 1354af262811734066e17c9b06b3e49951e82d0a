@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1679f195_25caa405",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-10-09T17:47:19Z",
+      "side": 1,
+      "message": "Can we put a current architecture image here?",
+      "range": {
+        "startLine": 29,
+        "startChar": 5,
+        "endLine": 29,
+        "endChar": 60
+      },
+      "revId": "1354af262811734066e17c9b06b3e49951e82d0a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "38a2066b_af0689bb",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-10-09T17:47:19Z",
+      "side": 1,
+      "message": "configuration (spelling)",
+      "range": {
+        "startLine": 187,
+        "startChar": 1,
+        "endLine": 187,
+        "endChar": 12
+      },
+      "revId": "1354af262811734066e17c9b06b3e49951e82d0a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45b9491a_e7312843",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2018-10-09T17:47:19Z",
+      "side": 1,
+      "message": "configuration (spelling)",
+      "range": {
+        "startLine": 231,
+        "startChar": 13,
+        "endLine": 231,
+        "endChar": 25
+      },
+      "revId": "1354af262811734066e17c9b06b3e49951e82d0a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
