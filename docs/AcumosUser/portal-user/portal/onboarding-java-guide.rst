@@ -51,176 +51,152 @@ b. Prepare a supporting folder with the following contents. Items of this folder
 
  |image1|
 
-It will contain-
-i) Models - In case of H2o, your model will be a MOJO zip file.  In case of Generic Java, the model will be a jar file.
+It will contain:
 
-ii) Model runner or Service jar - For H2O rename downloaded h2o-genericjava-modelrunner.jar as per the 1st section to H2OModelService.jar or to GenericModelService.jar for Java model and Place it in this folder.
+    #. Models - In case of H2o, your model will be a MOJO zip file.  In case of Generic Java, the model will be a jar file.
+    #. Model runner or Service jar - For H2O rename downloaded h2o-genericjava-modelrunner.jar as per the first section to H2OModelService.jar or to GenericModelService.jar for Java model and Place it in this folder.
+    #. CSV file used for training the model - Place the csv file (with header having the same column names used for training but without the quotes (“ ”) ) you used for training the model here. This is used for autogenerating the .proto file. If you don’t have the .proto file, you will have to supply the .proto file yourself in the supporting folder. Make sure you name it default.proto.
+    #.  default.proto - This is only needed  If you don't have sample csv data for training, then you will have to provide the proto file yourself. In this case, Java Client cannot autogenerate the .proto file. You will have to supply the .proto file yourself in the supporting folder. Make sure you name it default.proto Also make sure, the default.proto file for the model is in the following format. You need to appropriately replace the data and datatypes under DataFrameRow and Prediction according to your model.
 
-iv) csv file used for training the model - Place the csv file (with header having the same column names used for training but without the quotes (“ ”) ) you used for training the model here. This is used for autogenerating the .proto file. If you don’t have the .proto file, you will have to supply the .proto file yourself in the supporting folder. Make sure you name it default.proto.
+        .. code-block:: python
 
-v)  default.proto - This is only needed  If you don't have sample csv data for training, then you will have to provide the proto file yourself. In this case, Java Client cannot autogenerate the .proto file. You will have to supply the .proto file yourself in the supporting folder. Make sure you name it default.proto Also make sure, the default.proto file for the model is in the following format. You need to appropriately replace the data and datatypes under DataFrameRow and Prediction according to your model.
+           syntax = "proto3";
+           option java_package = "com.google.protobuf";
+           option java_outer_classname = "DatasetProto";
 
+           message DataFrameRow {
+           string sepal_len = 1;
+           string sepal_wid = 2;
+           string petal_len = 3;
+           string petal_wid = 4;
+           }
+           message DataFrame {
+                       repeated DataFrameRow rows = 1;
+           }
+           message Prediction {
+                       repeated string prediction= 1;
+           }
 
-.. code-block:: python
+           service Model {
+           rpc transform (DataFrame) returns (Prediction);
+           }
 
-   syntax = "proto3";
-   option java_package = "com.google.protobuf";
-   option java_outer_classname = "DatasetProto";
+    #. application.properties file - Mention the port number on which the service exposed by the model will finally run on.
 
-   message DataFrameRow {
-   string sepal_len = 1;
-   string sepal_wid = 2;
-   string petal_len = 3;
-   string petal_wid = 4;
-   }
-   message DataFrame {
-               repeated DataFrameRow rows = 1;
-   }
-   message Prediction {
-               repeated string prediction= 1;
-   }
+        .. code-block:: python
 
-   service Model {
-   rpc transform (DataFrame) returns (Prediction);
-   }
+           server.contextPath=/modelrunner
+           # IF WORKING WITH MODEL CONNECTOR AND COMPOSITE SOLUTION, THE #server.contextPath will be /
+           # NOTE: THIS WILL TAKE AWAY SWAGGER
+           # This is the port number you want to run the service on. User may select a convenient port.
+           server.port=8336
 
-vi) application.properties file - Mention the port number on which the service exposed by the model will finally run on.
+           spring.http.multipart.max-file-size=100MB
+           spring.http.multipart.max-request-size=100MB
 
+           # Linux version
 
-.. code-block:: python
+           # if model_type is Generic Java, then default_model will be /models/model.jar
+           # if model_type is H2o, then the default_model will be /models/Model.zip
 
-   server.contextPath=/modelrunner
-   # IF WORKING WITH MODEL CONNECTOR AND COMPOSITE SOLUTION, THE #server.contextPath will be /
-   # NOTE: THIS WILL TAKE AWAY SWAGGER
-   # This is the port number you want to run the service on. User may select a convenient port.
-   server.port=8336
+           #default_model=/models/model.jar
+           default_model=/models/Model.zip
 
-   spring.http.multipart.max-file-size=100MB
-   spring.http.multipart.max-request-size=100MB
+           default_protofile=/models/default.proto
 
-   # Linux version
+           logging.file = ./logs/modelrunner.log
 
-   # if model_type is Generic Java, then default_model will be /models/model.jar
-   # if model_type is H2o, then the default_model will be /models/Model.zip
-   
-   #default_model=/models/model.jar
-   default_model=/models/Model.zip
- 
-   default_protofile=/models/default.proto
+           # The value of model_type can be H or G
+           # if model is Generic java model, then model_type is G.
+           # if model is H2o model, then model_type is H. And the /predict method will use H2O model; otherwise, it will use generic Model
+           # if model_type is not present, then the default is H
 
-   logging.file = ./logs/modelrunner.log
+           #model_type=G
+           model_type=H
+           model_config=/models/modelConfig.properties
 
-   # The value of model_type can be H or G
-   # if model is Generic java model, then model_type is G.
-   # if model is H2o model, then model_type is H. And the /predict method will use H2O model; otherwise, it will use generic Model
-   # if model_type is not present, then the default is H
- 
-   #model_type=G
-   model_type=H
-   model_config=/models/modelConfig.properties
+           # Linux some properties are specific to java generic models
 
-   # Linux some properties are specific to java generic models
+           # The plugin_root path has to be outside of ModelRunner root or the code won't work
+           # Default proto java file, classes and jar
+           # DatasetProto.java will be in $plugin_root\src
+           # DatasetProto$*.classes will be in $plugin_root\classes
+           # pbuff.jar will be in $plugin_root\classes
 
-   # The plugin_root path has to be outside of ModelRunner root or the code won't work
-   # Default proto java file, classes and jar
-   # DatasetProto.java will be in $plugin_root\src
-   # DatasetProto$*.classes will be in $plugin_root\classes
-   # pbuff.jar will be in $plugin_root\classes
+           plugin_root=/tmp/plugins
 
-   plugin_root=/tmp/plugins
+    #. modelConfig.properties - Add this file only in case of Generic Java model onboarding. This file contains the modelMethod and modelClassName of the model.
 
+        .. code-block:: python
 
-
-vii) modelConfig.properties - Add this file only in case of Generic Java model onboarding. This file contains the modelMethod and modelClassName of the model.
-
-modelClassName=org.acumos.ml.XModel
-
-modelMethod=predict
+            modelClassName=org.acumos.ml.XModel
+            modelMethod=predict
 
 
-On-Boarding Your Model
-======================
+Create your modeldump.zip file
+==============================
 
 Java Client jar is the executable client jar file.
 
 For Web-based onboarding of H2o models, the parameters to run the client jar are:
-1.	Current Folder path : Folder path where you want the output modeldump.zip file.
 
-2.	Model Type for H2o : H
+#. Current Folder path : Full folder path in which Java client jar is placed and run from
+#. Model Type : H for H2o, G for Generic Java
+#. Supporting folder path : Full Folder path of the supporting folder which contains items.
+#. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
+#. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
-3.	Supporting folder path : Full Folder path of the supporting folder which contains items
 
-4.	Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
+For CLI-based onboarding, the parameters to run the client jar are:
 
-5.	Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
+#. Onboarding server url.
+#. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. e.g http://<hostname>:8090/onboarding-app/v2/auth
+#. Model Type : H for H2o, G for Generic Java.
+#. Supporting folder path : Full Folder path of the supporting folder which contains items.
+#. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
+#. Username of the Portal MarketPlace account.
+#. Password of the Portal MarketPlace account.
+#. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
 
 See example below for how to run the client jar and how the modeldump.zip artifact appears after its successful run:
 
  |image2|
- 
+
  |image3|
- 
 
-For CLI-based onabording of H2o models, the parameters to run the client jar are:
+Onboarding to the Acumos Portal
+===============================
 
-1. Onboarding server url
-2.  Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. http://<InstanceServerDetails>/onboarding-app/v2/auth e.g. "http://onboarding-app:8090/onboarding-app/v2/auth"
-3. Model Type for H2o : H
-4. Supporting folder path : Full Folder path of the supporting folder which contains items
-5. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
-6. Username of the Portal MarketPlace account
-7. Password of the Portal MarketPlace account
-8. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
+- If you used CLI-based onboarding, you don't need to perform the steps outlined just below. The Java client has done it for you. You will see a message on the terminal that states the model onboarded successfully.
+- If you use Web-based onboarding, you must complete the following steps:
 
+#. After you run the client, you will see a modeldump.zip file generated in the same folder where we ran the Java Client for.
+#. Upload this file in the Web based interface (drap and drop). See :doc:`portal-onboarding-web`
+#. You will be able to see a success message in the Web interface. you will be able to see a success method in the Web interface.
 
-For Web-based onboarding of Generic Java models, the parameters to run the client jar are:
-
-1. Current Folder path : Full folder path in which Java client jar is placed and run from.
-2. Model Type for Generic Java : G
-3. Supporting folder path : Full Folder path of the supporting folder which contains items 
-4. Name of the model : For Generic Java just the name of the model without the .jar extension. Make sure this matches name of the supplied MOJO model file exactly.
-5. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
-
-For CLI-based onabording of Generic models, the parameters to run the client jar are:
-
-1. Onboarding server url
-2. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. http://<InstanceServerDetails>/onboarding-app/v2/auth e.g. "http://onboarding-app:8090/onboarding-app/v2/auth"
-3. Model Type for Generic Java : G
-4. Supporting folder path : Full Folder path of the supporting folder which contains items
-5. Name of the model : For Generic Java just the name of the model without the .jar extension. Make sure this matches name of the supplied MOJO model file exactly.
-6. Username of the Portal MarketPlace account
-7. Password of the Portal MarketPlace account
-8. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
-
-
-Pushing to the Acumos Portal
-============================
-
-- You will be able to get a success message if your model was onboarded successfully.
-- If you use Web-based onboarding,
-a. After you run the client, you will see a modeldump.zip file generated in the same folder where we ran the Java Client for.
-b. Upload this file in the Web based interface.
-c. You will be able to see a success message in the Web interface. you will be able to see a success method in the Web interface.
-
- |image9|
-
-- If you use CLI based onboarding,  you don't need to perform a-c outlined just above. The Java client will do it for you. You will see a message on the terminal that tells it was onboarded succesfully.
-- The needed TOSCA artifacts, docker images are produced and the model is published to the marketplace.
-- You and your teammates can now see, rate, review, comment, collaborate on your model in the Acumos marketplace.
-- When requested and deployed by a user, your model runs as a docker containerised microservice on the infrastructure of your choice and exposes a predict method as a rest endpoint.
-- This method can be called by other external applications to request predictions off of your model.
+The needed TOSCA artifacts and docker images are produced when the model is
+onboarded to the Portal. You and your teammates can now see, rate, review,
+comment, collaborate on your model in the Acumos marketplace. When requested
+and deployed by a user, your model runs as a dockerized microservice
+on the infrastructure of your choice and exposes a predict method as a REST
+endpoint. This method can be called by other external applications to request
+predictions off of your model.
 
 
 
 Addendum : Creating a model in H2o
 ==================================
-You must have H2o 3.14.0.2 installed on your machine. For instructions on how to install visit the H2o `download page <https://www.h2o.ai/download/>`_.
+You must have H2o 3.14.0.2 installed on your machine. For instructions on how to install visit the H2o web site: https://www.h2o.ai/download/.
 
-H2o provides different interfaces to create models and use H2o for eg. Python, Flow GUI, R, etc.
-As an example, below we show how to create a model using the Python innterface of H2o and also using the H2o Flow GUI. You can use the other interfaces too which have comparable functions to train a model and download the model in a MOJO format.
+H2o provides different interfaces to create models and use H2o for eg. Python,
+Flow GUI, R, etc. As an example, below we show how to create a model using the
+Python innterface of H2o and also using the H2o Flow GUI. You can use the other
+interfaces too which have comparable functions to train a model and download
+the model in a MOJO format.
 
-Here is a sample H2o iris example program that shows how a model can be created and downloaded as a MOJO using the Python Interface:
+Here is a sample H2o iris program that shows how a model can be created
+and downloaded as a MOJO using the Python interface:
 
 .. code-block:: python
 
@@ -282,7 +258,7 @@ Here is a sample H2o iris example program that shows how a model can be created 
    predictions
 
 Here is a sample H2o iris example program that shows how a model can be created and downloaded as a MOJO using the H2o Flow GUI.
- 
+
  |image4|
 
  |image5|
