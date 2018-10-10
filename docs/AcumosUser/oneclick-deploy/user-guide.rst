@@ -211,7 +211,7 @@ used so far.
     instructions for running the script are included at the top of the script.
 
 .. code-block:: bash
- 
+
   bash oneclick_deploy.sh <docker|k8s>
 ..
 
@@ -242,65 +242,37 @@ used so far.
   the URL for the Portal:
 
     .. image:: images/oneclick-complete.png
+       :width: 100 %
 
-
-* Before you can access the Portal, you will need to complete one Hippo CMS
-  setup step manually so that all Acumos portal content is displayed
-  correctly. This will be automated in the future, but for now follow these steps on
-  each AIO host (replacing "\<hostname\>" with the applicable name for the host):
+* To enable all Portal content, you will need to complete one manual setup
+  action for the Hippo CMS. Note this action is not required to use the Portal,
+  just to ensure that all Portal-displayed info is presented correctly. Follow
+  these steps on each AIO host (replacing "\<hostname\>" with the applicable
+  name for the host):
 
  * Login to the Hippo CMS console as "admin/admin", at
    http://<hostname>:<ACUMOS_CMS_PORT>/cms/console, where ACUMOS_CMS_PORT is per
    acumos-env.sh; for the default, the address is acumos:30980/cms/console
 
     .. image:: images/acumos-cms-login.png
+       :width: 100 %
 
- * On the left, click the + at ``hst:hst`` and then also at ``hst:hosts``. Click
-   the + at the ``dev-env`` entry, and the same for the nodes as they appear:
-   ``com, azure, cloudapp, eastus``
+ * On the host where you installed the AIO Platform, login to the account you
+   used when installing, and copy the contents of file aio-cms-host.yaml
 
-    .. image:: images/acumos-cms-find-host.png
+ * On the CMS UI at the left, click the + at ``hst:hst`` and then right-click
+   ``hst:hosts``, and select "Yaml Import". In the resulting dialog, paste the
+   copied contents of file aio-cms-host.yaml
 
- * Right-click on the "acumos-dev1-vm01-core" entry and select "Move node".
+    .. image:: images/acumos-cms-yaml-import.png
+       :width: 100 %
 
-    .. image:: images/acumos-cms-move-node-menu.png
-
- * In the ``Move Node`` dialog, select the ``dev-env`` node, enter "<hostname>"
-   at ``To``, and clickc``OK``. The image below uses the default ``acumos`` hostname.
-
-    .. image:: images/acumos-cms-move-node-dialog.png
-
- * When the dialog closes, you should see your node renamed and moved under
-   ``dev-env``. You may also want to save your changes by pressing the
+ * When the dialog closes, you should be able to see a new node "AIO" under
+   ``hst:hosts``. You can now your changes by pressing the
    ``Write changes to repository`` button in the upper right.
 
-    .. image:: images/acumos-cms-move-node-write-changes.png
-
- * With the "<hostname>" node selected, click ``Add Property`` from the toolbar.
-
-    .. image:: images/acumos-cms-host-add-property-btn.png
-
- * In the ``Add a new Property`` dialog, place your cursor in the ``Name`` field
-   and then select ``hst:schemeagnostic``. click ``OK``.
-
-    .. image:: images/acumos-cms-host-add-property-dialog.png
-
- * Make sure the hostname is selected on the left. Then select the check box
-   under the new attribute. This attribute is essential, as internal to the
-   Acumos platform the Hippo CMS service is accessed via HTTP, but externally,
-   user web browsers access the Acumos portal via HTTPS. Also click the
-   ``Write changes to repository`` button on the upper right.
-
-    .. image:: images/acumos-cms-host-select-added-property-and-save.png
-
- * Delete the superfluous node. Right-click the ``com`` node, select
-   ``Delete node``.
-
-    .. image:: images/acumos-cms-delete-node.png
-
- * Select the ``Save immediately`` check box and click ``OK``
-
-    .. image:: images/acumos-cms-delete-node-dialog.png
+    .. image:: images/acumos-cms-write-changes.png
+       :width: 100 %
 
 * Update your local workstation's hosts file so the portal domain name
   "<hostname>" will resolve on your workstation. Add a line: <ip address of
@@ -309,6 +281,7 @@ used so far.
   AIO instance running in a Virtual Box environment.
 
     .. image:: images/hosts-file.png
+       :width: 100 %
 
 * Create an admin user: the oneclick_deploy.sh script **does not** create a
   default user. However, you can use the ``create-user.sh`` script to create
@@ -348,13 +321,51 @@ minutes for all to be active):
 
   sudo bash docker-compose.sh restart
 
-If you deployed under kubernetes, you can also restart the platform, by the
-following command, as long as the generated values in acumos-env.sh (e.g.
+If you deployed under kubernetes, you can also restart the whole platform, by
+the following command, as long as the generated values in acumos-env.sh (e.g.
 passwords for MariaDB, CDS, Nexus, ...) have not been changed:
 
 .. code-block:: bash
 
   sudo bash oneclick_deploy.sh k8s
+
+If you deployed under kubernetes, you can also restart a specific component by
+the name of the deployment. As in the example below, you can use the kubectl
+command to get the deployment names. Note that:
+
+  * the deployment templates as updated by oneclick-deploy.sh (substituting
+    variables as needed) are in the subfolder deploy/kubernetes/deployment
+  * the elasticsearch, logstash, and kibana deployments are all defined in
+    file elk-deployment.yaml, so when recreating any of these, refer to that
+    file in the ``kubectl create -f`` command
+
+.. code-block:: bash
+
+  $ kubectl get deployments -n acumos
+  NAME                DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+  azure-client        1         1         1            1           5d
+  cds                 1         1         1            1           5d
+  cms                 1         1         1            1           5d
+  docker              1         1         1            1           5d
+  dsce                1         1         1            1           5d
+  elasticsearch       1         1         1            1           5d
+  federation          1         1         1            1           5d
+  filebeat            1         1         1            1           5d
+  kibana              1         1         1            1           5d
+  kong                1         1         1            1           5d
+  kubernetes-client   1         1         1            1           3m
+  logstash            1         1         1            1           5d
+  metricbeat          1         1         1            1           5d
+  msg                 1         1         1            1           5d
+  nexus               1         1         1            1           5d
+  onboarding          1         1         1            1           5d
+  portal-be           1         1         1            1           5d
+  portal-fe           1         1         1            1           5d
+
+  $ kubectl delete deployment -n acumos kubernetes-client
+  deployment.extensions "kubernetes-client" deleted
+  $ kubectl create -f deploy/kubernetes/deployment/kubernetes-client-deployment.yaml 
+  deployment.apps "kubernetes-client" created
 
 You can clean the installation (including all data) via:
 
@@ -368,13 +379,75 @@ Verified Features
 The following Acumos platform workflows and related features have been verified as
 working so far. This list will be updated as more workflows are verified.
 
-* new user registration and login
-* model onboarding via command line
-* model onboarding via web
-* federated peer relationship creation via portal
-* model publication to local marketplace
-* model publication to federated marketplace
-* federated subscription to public marketplace models
+The following features are verified as part of the process of deployment or
+post-deployment through the referenced test scripts:
+
+* high-level deployment scenarios under which specific tests are executed
+
+  * Deploy with all-new components
+
+    * leave ACUMOS_CDS_PREVIOUS_VERSION as the default (blank) and execute deployment
+
+  * Redeploy with pre-existing mariadb, nexus, etc
+
+    * set ACUMOS_CDS_PREVIOUS_VERSION to the same value as ACUMOS_CDS_VERSION 
+      in acumos-env.sh and execute deployment
+
+  * Redeploy with upgraded database
+
+    * in acumos-env.sh, set ACUMOS_CDS_PREVIOUS_VERSION to the value of
+      ACUMOS_CDS_VERSION as used in the last deployment, and increment
+      ACUMOS_CDS_VERSION to the next version of the CDS, and execute deployment
+
+* new user registration: `create-user.sh <https://github.com/acumos/system-integration/blob/master/AIO/create-user.sh>`_
+
+  * Create user, via Portal API /api/users/register
+  * Finding role by name, via CDS API /ccds/role
+  * Create role by name, via CDS API /ccds/role
+  * Assign role to user, via /ccds/user
+  * Get role for user, via CDS API /ccds/user/$userId/role/$roleId
+  * Get user account details, via CDS API /ccds/user/$userId
+
+* 'self' peer creation: `oneclick-deploy.sh <https://github.com/acumos/system-integration/blob/master/AIO/oneclick-deploy.sh>`_
+
+  * Create 'self' peer, via CDS API /ccds/peer
+
+* remote peer creation: `create-peer.sh <https://github.com/acumos/system-integration/blob/master/AIO/create-peer.sh>`_
+
+  * Get userId of user, via CDS API /ccds/user
+  * Create peer, via CDS API /ccds/peer
+  * Apply new truststore entry by restarting the Federation service
+  * Subscribe to all solution types at peer, via CDS API /ccds/peer/sub
+  * get list of solutions, via Federation API /solutions
+
+* model onboarding via command line: `bootstrap-models.sh <https://github.com/acumos/system-integration/blob/master/AIO/bootstrap-models.sh>`_
+  and `onboard-model.sh <https://github.com/acumos/test-models/blob/master/tools/onboard-model.sh>`_
+
+  * User authentication and JWT token retrieval, via Onboarding API
+    /onboarding-app/v2/auth
+  * Model onboarding, via Onboarding API /onboarding-app/v2/models
+  * Onboarding of normal models and "Datasource" type models
+
+* manual tests
+
+  * user login
+  * user signup
+  * model onboarding via web
+  * model sharing with another user
+  * model publication to company marketplace
+  * model publication to public marketplace
+  * federated peer relationship creation via portal
+  * federated subscription to public marketplace models
+  * verification of subscribed model presence in public marketplace
+  * creation of composite solution
+  * addition of probe to composite solution
+  * setting Datasource model Category "Data Sources" and Toolkit "Data Broker"
+  * creation of composite solution with Datasource
+  * model deployment in private kubernetes ("deploy to local")
+    * simple model
+    * composite model
+    * composite model with Probe
+    * composite model with Probe and Data Broker
 
 Notes on Verified Features
 --------------------------
@@ -382,18 +455,33 @@ Notes on Verified Features
 User registration and login
 ...........................
 
-Currently there is no default user with the "admin" role, as needed e.g. to
-setup federation (see below). A test script to automate user account creation
-and role assignment has been included in this repo. See create-user.sh for info
-and usage. For an example of this script in use, see peer-test.sh below.
+A test script to automate user account creation and role assignment has been
+included in this repo. See
+`create-user.sh <https://github.com/acumos/system-integration/blob/master/AIO/create-user.sh>`_
+for info and usage. For an example of
+this script in use, see `Federation`_.
 
 Model onboarding via command line
 .................................
 
 Currently this is verified by posting a model package to the onboarding API,
-as toolkit clients will do when installed. A script and set of sample models to
-automate this are in development, and will be added to Acumos repos soon.
+as toolkit clients will do when installed. Two scripts are used for this:
 
+* `bootstrap-models.sh <https://github.com/acumos/system-integration/blob/master/AIO/bootstrap-models.sh>`_
+
+  * onboard all models in a folder; models are in subfolders and include the
+    three essential artifacts, as generated by an onboarding client, or
+    downloaded earlier from an Acumos portal
+
+    * model.zip
+    * metadata.json
+    * a .proto file, either model.proto (normal models) or default.proto
+      (Datasource type models)
+
+* `onboard-model.sh <https://github.com/acumos/test-models/blob/master/tools/onboard-model.sh>`_
+
+  * onboard a specific model (a folder with the files as describe above)
+  
 Federation
 ..........
 
@@ -463,23 +551,6 @@ updated values. For example:
 * You can install multiple Acumos platforms (e.g. to test federation), just be
   sure to give each a unique domain name as above.
 
-* The Hippo CMS manual config process above can also work for any FQDN, with
-  the changes:
-
- * Under "hst:hosts", replace the host domain name elements at each level in
-   the domain name, with the corresponding level name for your chosen FQDN,
-   and move/rename the "acumos-dev1-vm01-core" by selecting to the
-   next-to-last level (e.g. "example", if your FQDN is "acumos.example.com"),
-   and naming the node as the last subdomain name (e.g. "acumos", if your FQDN
-   is "acumos.example.com")
-
 * The latest verified Acumos platform docker images are specified in
   acumos-env.sh. This script will be updated as new versions are released to
   the staging or release registries of the Acumos.org nexus server.
-
-* As of this version, only a clean install is supported by this script, thus
-  for each re-install you will need to recreate users, re-onboard models, etc.
-  Test scripts to simplify this process will be provided asap.
-
-This is an early version of this script. Various workarounds and incompletely
-verified functions may be included.
