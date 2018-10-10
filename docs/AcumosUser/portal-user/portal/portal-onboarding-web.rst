@@ -25,17 +25,15 @@ workflow is shown below:
 
     .. image:: ../images/portal/models_onboardingJourney.png
 
-The onboarding process via web is accomplished by the following steps:
+The on-boarding process via web is accomplished by the following steps:
 
-#. From the On-Boarding tab in the left navigation, or from My Models
-   page, select **Add New Model**
-#. Select Web On-boarding
-#. Complete all the user steps to onboard your model, including:
+prerequisites : You have to create a model bundle in your own environement before start to on-board. Acumos cannot transform your model in a microservice with only the model itself, it needs some other relevant information contained in the model bundle. The model bundle consists of component.json defining the component and its metadata, component.bin the binary payload and component.proto with the protobuf specs. You can retrieve all the information to create your model bundle in the "ON-BOARDING BY WEB" home page
 
-    #. Choose Toolkit
-    #. Select **Download client library**
-    #. Select **Upload Model Bundle** and drag your file from the local machine to the screen and select **Done**
-    #. All the steps have been done (you will see the number for each converted to a green check mark), the **On-board Model** button will be enabled
-    #. Select **On-board Model.** This will initiate a series of back end process steps, illuminated as they run, by the cascade from left to right of the icons on the top of the page. These include uploading the model and artifacts, creating the microservice that will run in a docker container, creating a tosca file for your model so it can be used in the design studio, storing the artifacts and model and creating the link so you can access your model in the **private/unpublished** section of your personal catalog
+Once your model bundle is created, you have to follow these steps.
+
+#. From the Acumos home page, select the "ON-BOARDING MODEL" tab in the left navigation.
+#. Select "ON-BOARDING BY WEB".
+#. Drag & Drop your model bundle.
+#. When the uploading is finished click on "On-Board Model". This will initiate a series of back end process steps, illuminated as they run, by the cascade from left to right of the icons on the top of the page. These include, creating the microservice that will run in a docker container, creating a tosca file for your model so it can be used in the design studio, storing the artifacts and model.
 
     .. image:: ../images/portal/models_onboardingWeb.png
