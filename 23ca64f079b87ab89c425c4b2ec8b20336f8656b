@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8cc0e1a2_f8195a73",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-10T21:49:45Z",
+      "side": 1,
+      "message": "why is this in the microservice generation section? Also, Bryan suggested a high-level, short paragraph describing what the API does. Then add a link to details, which should be in the component documentation.  See https://github.com/acumos/documentation/blob/master/docs/architecture/platform_architecture.rst#e6---deployment-apis  for an example.",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 105,
+        "endChar": 81
+      },
+      "revId": "23ca64f079b87ab89c425c4b2ec8b20336f8656b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "136dccbb_04a3f695",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-10T21:49:45Z",
+      "side": 1,
+      "message": "where is the TOSCA Generator component documentation?",
+      "range": {
+        "startLine": 176,
+        "startChar": 3,
+        "endLine": 176,
+        "endChar": 54
+      },
+      "revId": "23ca64f079b87ab89c425c4b2ec8b20336f8656b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
