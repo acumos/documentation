@@ -60,6 +60,15 @@ E4 - Admin APIs
 E5 - Federation APIs
 ....................
 
+The federation (public) E5 interface is a REST-based API specification.
+Any system that decides to federate needs to implement this interface, which
+assumes a pull-based mechanism.  As such, only the server side is defined by E5.
+The server allows clients to poll to discover solutions, and to retrieve solution
+metadata, solution artifacts and user-provided documents.
+See the following for more information:
+
+* :doc:`Federation Gateway <../../submodules/federation/docs/developer-guide>`
+
 E6 - Deployment APIs
 ....................
 
@@ -79,6 +88,22 @@ Internal Interfaces and APIs
 Common Data Service
 ...................
 
+The Common Data Service provides a storage and query micro service for use by system
+components, backed by a relational database.  The API provides Create, Retrive, Update
+and Delete (CRUD) operations for system data including users, solutions, revisions,
+artifacts and more. The microservice endpoints and objects are documented extensively
+using code annotations that are published via Swagger in a running server, ensuring that
+the documentation is exactly synchronized with the implementation. View this API
+documentation in a running CDS instance at a URL like the following, but consult the
+server's configuration for the exact port number (e.g., "8000") and context path
+(e.g., "ccds") to use::
+
+    http://localhost:8000/ccds/swagger-ui.html
+
+See the following for more information:
+
+* :doc:`Common Data Service <../../submodules/common-dataservice/docs/server>`
+
 Hippo CMS
 .........
 
@@ -87,6 +112,14 @@ Portal Backend
 
 Federation Gateway
 ..................
+
+The federation (local) E5 interface is a REST-based API specification, just like the public
+interface.  This interface provides secure communication services to other components of the
+same Acumos instance, primarily used by the Portal.  The services include querying remote peers
+for their content and fetching that content as needed.
+See the following for more information:
+
+* :doc:`Federation Gateway <../../submodules/federation/docs/design>`
 
 Microservice Generation
 .......................
