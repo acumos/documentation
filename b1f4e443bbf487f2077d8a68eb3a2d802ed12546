@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "be47dd60_9fb54c99",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-11T16:44:20Z",
+      "side": 1,
+      "message": "single \u0027\u003c\u0027 not a double \u0027\u003c\u003c\u0027 like this:\n:doc:`Microservice Generation \u003c../../submodules/microservice-generation/docs/index\u003e`",
+      "range": {
+        "startLine": 84,
+        "startChar": 38,
+        "endLine": 84,
+        "endChar": 40
+      },
+      "revId": "b1f4e443bbf487f2077d8a68eb3a2d802ed12546",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b629aad_15c9d2ab",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-11T16:44:20Z",
+      "side": 1,
+      "message": "I pulled this from the docker-compose.yml (see patch https://gerrit.acumos.org/r/#/c/2982/) so I thought it was a separately deployed service. If that is not true, this line may be removed",
+      "range": {
+        "startLine": 173,
+        "startChar": 2,
+        "endLine": 173,
+        "endChar": 54
+      },
+      "revId": "b1f4e443bbf487f2077d8a68eb3a2d802ed12546",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "142f4656_6673bfa3",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-11T16:44:20Z",
+      "side": 1,
+      "message": "single \u0027\u003c\u0027 not a double \u0027\u003c\u003c\u0027 like this:\n:doc:`Microservice Generation \u003c../../submodules/microservice-generation/docs/index\u003e`",
+      "range": {
+        "startLine": 174,
+        "startChar": 6,
+        "endLine": 174,
+        "endChar": 92
+      },
+      "revId": "b1f4e443bbf487f2077d8a68eb3a2d802ed12546",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
