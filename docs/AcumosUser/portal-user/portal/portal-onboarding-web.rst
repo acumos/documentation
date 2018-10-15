@@ -33,7 +33,7 @@ Once your model bundle is created, you have to follow these steps.
 
 #. From the Acumos home page, select the "ON-BOARDING MODEL" tab in the left navigation.
 #. Select "ON-BOARDING BY WEB".
-#. Drag & Drop your model bundle.
+#. Drag & Drop your model bundle or use the browse function to select it.
 #. When the uploading is finished click on "On-Board Model". This will initiate a series of back end process steps, illuminated as they run, by the cascade from left to right of the icons on the top of the page. These include, creating the microservice that will run in a docker container, creating a tosca file for your model so it can be used in the design studio, storing the artifacts and model.
 
     .. image:: ../images/portal/models_onboardingWeb.png
