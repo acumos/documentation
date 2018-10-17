@@ -57,6 +57,11 @@ E2 - Web APIs
 E3 - OA&M APIs
 ..............
 
+The OA&M subsystem exposes "APIs" provided by the various logging and analytics
+support components described under `Operations, Admin, and Maintenance (OAM)`_.
+These are primarily focused on log formats that Acumnos components will follow
+when saving log files, that are collected by the logging subsystem.
+
 E4 - Admin APIs
 ...............
 
@@ -141,11 +146,44 @@ Security Verification
 Azure Client
 ............
 
+The Azure Client exposes two APIs that are used by the Portal-Markeplace to
+initiate model deployment in the Azure cloud service environment:
+
+* POST /azure/compositeSolutionAzureDeployment
+* POST /azure/singleImageAzureDeployment
+
+The Azure Client API URL is configured for the Portal-Markeplace in the Portal-FE
+component template (docker or kubernetes).
+
+See :doc:`Azure Client API <../../submodules/acumos-azure-client/docs/developer-guide>` for details.
+
 OpenStack Client
 ................
 
+The OpenStack Client exposes two APIs that are used by the Portal-Markeplace to
+initiate model deployment in an OpenStack service environment hosted by Rackspace:
+
+* POST /openstack/compositeSolutionOpenstackDeployment
+* POST /openstack/singleImageOpenstackDeployment
+
+The OpenStack Client API URL is configured for the Portal-Markeplace in the Portal-FE
+component template (docker or kubernetes).
+
+See :doc:`OpenStack Client API <../../submodules/openstack-client/docs/developer-guide>` for details.
+
 Kubernetes Client
 .................
+
+The Kubernetes Client expose one API that is used by the Portal-Markeplace to
+provide the user with a downloadable deployment package for a model to be
+deployed in a private kubernetes service environment:
+
+* GET /getSolutionZip/{solutionId}/{revisionId}
+
+The Kubernetes Client API URL is configured for the Portal-Markeplace in the Portal-FE
+component template (docker or kubernetes).
+
+See :doc:`Kubernetes Client API <../../submodules/kubernetes-client/docs/deploy-in-private-k8s>` for details.
 
 Component Logging
 .................
@@ -156,11 +194,37 @@ ELK Stack
 Nexus
 .....
 
+The Nexus component exposes two APIs enabling Acumos platform components to store
+and access artifacts in various repository types, including:
+
+* Maven (for generic artifacts)
+* docker (as a docker registry), using the
+  `Docker Registry HTTP API V2 <https://docs.docker.com/registry/spec/api/>`_
+
+The Maven repository service is accessed via an API exposed thru the
+`Nexus Client`_ Java library. The docker repository service is accessed via the
+`Docker Registry HTTP API V2 <https://docs.docker.com/registry/spec/api/>`_.
+Both services are configured for clients through URLs and credentials
+defined in the component template (docker or kubernetes).
+
 Docker
 ......
 
+The docker-engine is the primary service provided by `Docker-CE`_, as used in
+Acumos. The docker-engine is accessed by the
+`Docker Engine API <https://docs.docker.com/engine/api/v1.30/>`_.
+
+The docker-engine API URL is configured for Acumos components in the template
+(docker or kubernetes) for the referencing component.
+
 Kong
 ....
+
+`Kong <https://konghq.com/kong-community-edition/>`_ provides a reverse proxy
+service for Acumos platform functions exposed to users, such as the
+Portal-Marketplace UI and APIs, and the Onboarding service APIs.
+The kong proxy service is configured via the
+`Kong Admin API <https://docs.konghq.com/0.14.x/admin-api/>`_.
 
 Core Components
 ===============
@@ -505,17 +569,53 @@ Acumos platform components and tools.
 Operations, Admin, and Maintenance (OAM)
 ----------------------------------------
 
+The Platform-OAM project maintains the repos providing:
+
+* Acumos platform deployment support tools 
+* Logging and Analytics components based upon the
+  "`ELK Stack <https://www.elastic.co/elk-stack>`_", of which Acumos uses the
+  open source versions
+
 System Integration
 ..................
+
+The `System Integration repo <https://github.com/acumos/system-integration>`_
+contains Acumos platform deployment support tools e.g.
+
+* Docker-compose templates for manual platform installation under docker-ce
+* Kubernetes templates for platform deployment in Azure-kubernetes
+* Oneclick / All-In-One (AIO) platform deployment under docker-ce or kubernetes
+
+  * See :doc:` One Click Deploy User Guide <../AcumosUser/oneclick-deploy/user-guide>` 
 
 Filebeat
 ........
 
+`Filebeat <https://www.elastic.co/products/beats/filebeat>`_ is a support
+component for the ELK stack. Filebeat monitors persistent volumes in which
+Acumos components save various log files, and aggregates those files for
+delivery to the Logstash service.
+
 Metricbeat
 ..........
 
+`Metricbeat <https://www.elastic.co/products/beats/metricbeat>`_ is a support
+component for the ELK stack. Metricbeat monitors host and process resources
+and delivers the to the Logstash service.
+
 ELK Stack
 .........
+
+The `ELK Stack <https://www.elastic.co/elk-stack>`_ provides the core services
+that archive, access, and present analytics and logs for operations support
+dashboards. It includes:
+
+* Logstash: a server-side data processing pipeline that ingests data from
+  multiple sources, transforms it, and then sends it to ElasticSearch for storage
+* ElasticSearch: a data storage, search, and analytics engine
+* Kibana: a visualization frontend for ElasticSearch based data
+
+See :doc:`Platform Operations, Administration, and Management (OA&M) User Guide <../../submodules/platform-oam/docs/user-guide.html>` for more info.
 
 Other Supporting Components
 ---------------------------
@@ -523,14 +623,75 @@ Other Supporting Components
 MariaDB
 .......
 
+`MariaDB <https://mariadb.org/>`_ is a relational database system. Acumos
+platform components that directly use MariaDB for database services include:
+
+* Common Data Service, for storage of platform data in the CDS database
+* Portal-Marketplace, for storage of Hippos CMS data
+* ELK stack, for access to platform user analytics
+
+Acumos platform components access the MariaDB service via a URL and credentials
+defined in the component template (docker or kubernetes).
+
 Nexus
 .....
+
+`Nexus <https://help.sonatype.com/repomanager3>`_ (Nexus 3) is used as an
+artifact repository, for
+
+* artifacts related to simple and composite models
+* model microservice docker images
+
+Acumos platform components that directly use Nexus for repository services
+include:
+
+* Design Studio
+* Onboarding
+* Azure Client
+* Microservice Generation
+* Portal-Marketplace
+* Federation
 
 Kong
 ....
 
+The `Kong Community Edition <https://docs.konghq.com/>`_ is an optional
+component used as needed as a reverse proxy for web and API requests to the
+platform. The primary web and API services exposed through the kong proxy are
+
+* the Onboarding service APIs (URL paths based upon /onboarding-app)
+* the Portal-Marketplace web frontend and APIs (all other URL paths)
+
 Docker-CE
 .........
 
+`Docker Community Edition <https://docs.docker.com/install/>`_ is used as a key
+component in the platform for the purposes:
+
+* accessing docker repositories, including the Acumos platform docker repository
+* building docker images
+* launching containers on request of the kubernetes master node
+
+The docker-engine is the main feature of Docker-CE used in Acumos, and is
+deployed:
+
+* for Docker-CE based platform deployments, on one of the platform hosts (e.g.
+  VMs or other machines)
+* for kubernetes based platform deployments, as a containerized service using the
+  `Docker-in-Docker (docker-dind) <https://hub.docker.com/_/docker/>`_ variant
+   of the official docker images
+
 Kubernetes
 ..........
+
+Kubernetes provides a container management environment in which the Acumos
+platform (as a collection of docker image components) and models can be deployed.
+Kubernetes cluster installation tools are provided by the
+`kubernetes-client repo <https://github.com/acumos/kubernetes-client>`_, and can
+be used for establishing a private kubernetres cluster where the Acumos platform
+and models can be deployed. The
+:doc:`Acumos AIO <../../AcumosUser/oneclick-deploy/user-guide>` toolkit can
+deploy the Acumos platform in a private kubernetes cluster. For kubernetes
+clusters hosted by public cloud providers e.g. Azure, Acumos provides kubernetes
+templates for the Acumos platform components in the
+`system-integration <https://github.com/acumos/system-integration>`_ repo.
