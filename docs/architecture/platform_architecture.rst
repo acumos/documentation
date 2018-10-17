@@ -186,11 +186,12 @@ component template (docker or kubernetes).
 
 See :doc:`Kubernetes Client API <../../submodules/kubernetes-client/docs/deploy-in-private-k8s>` for details.
 
-Component Logging
-.................
-
 ELK Stack
 .........
+
+The `ELK Stack <https://www.elastic.co/elk-stack>`_ is used to provide the
+`E3 - OA&M APIs`_ via which components publish standard-format log files for
+aggregation and presentation at operations dashboards.
 
 Nexus
 .....
@@ -574,7 +575,7 @@ The Platform-OAM project maintains the repos providing:
 
 * Acumos platform deployment support tools 
 * Logging and Analytics components based upon the
-  "`ELK Stack <https://www.elastic.co/elk-stack>`_", of which Acumos uses the
+  `ELK Stack <https://www.elastic.co/elk-stack>`_, of which Acumos uses the
   open source versions
 
 System Integration
