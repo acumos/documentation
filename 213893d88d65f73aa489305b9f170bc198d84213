@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "942f2d42_06ab228d",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-17T15:19:23Z",
+      "side": 1,
+      "message": "why is this in quotes - it\u0027s not elsewhere",
+      "range": {
+        "startLine": 60,
+        "startChar": 27,
+        "endLine": 60,
+        "endChar": 33
+      },
+      "revId": "213893d88d65f73aa489305b9f170bc198d84213",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca652180_741b577c",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-17T15:19:23Z",
+      "side": 1,
+      "message": "spelling",
+      "range": {
+        "startLine": 62,
+        "startChar": 48,
+        "endLine": 62,
+        "endChar": 55
+      },
+      "revId": "213893d88d65f73aa489305b9f170bc198d84213",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "287371ac_a72be26f",
+        "filename": "docs/architecture/platform_architecture.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-10-17T15:19:23Z",
+      "side": 1,
+      "message": "since you are correcting the typo... please remove this comma. A comma is not used before a \"that\" clause (but *is* used before a \"which\" clause).",
+      "range": {
+        "startLine": 63,
+        "startChar": 21,
+        "endLine": 63,
+        "endChar": 22
+      },
+      "revId": "213893d88d65f73aa489305b9f170bc198d84213",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
