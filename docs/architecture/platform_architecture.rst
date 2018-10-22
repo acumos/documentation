@@ -32,10 +32,12 @@ Architecture
 Architecture Overview
 =====================
 
-.. image::  images/component-architecture-2017.png
+.. image::  images/acumos-architecture-athena.png
 
-Entity Relationships
-====================
+Component Interactions
+======================
+@TODO THIS NEEDS TO BE UPDATED BUT NOBODY SEEMS TO KNOW WHO OWNS THE ORIGINAL
+
 
 .. image:: images/acumos-architecture-detail.png
 
@@ -141,8 +143,6 @@ See the following for more information:
 Microservice Generation
 .......................
 
-Security Verification
-.....................
 
 Azure Client
 ............
@@ -230,8 +230,6 @@ The kong proxy service is configured via the
 
 Core Components
 ===============
-.. high level description of the components and link to more info
-
 The following sections describe the scope, role, and interaction of the core
 Acumos platform components and component libraries. The sections are organized
 per the Acumos project teams that lead development on the components.
@@ -309,18 +307,46 @@ For more information: :doc:`R Client Documentation <../../submodules/acumos-r-cl
 
 Design Studio
 -------------
+The Design Studio component repository includes the Composition Engine, TOSCA
+Model Generator Client, Generic Data Mapper Service, CSV Data Broker, and SQL
+Data Broker. Additional components are in separate repositories.
 
 Design Studio Composition Engine
 ................................
 
-Data Broker
-...........
+
+TOSCA Model Generator Client
+............................
+
+
+Generic Data Mapper Service
+...........................
+
+
+CSV Data Broker
+...............
+
+
+SQL Data Broker
+...............
+
 
 Runtime Orchestrator ("Model Connector")
 ........................................
+@Deven needs to provide content for this section
+
 
 Proto Viewer ("Probe")
 ......................
+This component allows visualization of messages transferred in protobuf format.
+This is a passive component that shows the messages explicitly delivered to it;
+it does not listen ("sniff") all network traffic searching for protobuf data.
+Displaying the contents of a protobuf message requires the corresponding
+protocol buffer definition (.proto) file, which are fetched from a network
+server, usually a Nexus registry.
+
+
+For more information: :doc:`Proto Viewer Documentation <../../submodules/proto-viewer/docs/index>`.
 
 Deployment
 ----------
@@ -558,8 +584,6 @@ Generic Model Runner
 Python DCAE Model Runner
 ........................
 
-Security Verification
-.....................
 
 Supporting Components
 =====================
