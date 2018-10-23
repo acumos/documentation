@@ -1,0 +1,4 @@
+Project,Component,Version,Location
+Model Onboarding,acumos-java-client,1.11.0, `Nexus <https://nexus.acumos.org/#nexus-search;quick~acumos-java-client>`_
+Model Onboarding,acumos-python-client, 0.7.0,`PyPI <https://pypi.org/project/acumos/>`_
+Model Onboarding,acumos-r-client, 0.2-7,`RForge <http://rforge.net/acumos/>`_
