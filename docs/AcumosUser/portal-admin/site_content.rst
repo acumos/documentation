@@ -22,5 +22,4 @@
 Site Content
 ============
 
-This tab is under development. This section will be updated as new
-features are implemented.
+Admin users should verify that the 'Auth URL' and 'Push URL' values shown on the 'On-Boarding Model' page are correct for the Acumos platform. The values are defined in the component template for the Portal-BE component, and can be updated by modifying the template used to deploy the Portal-BE component, and then removing/re-deploying the Portal-BE component.
