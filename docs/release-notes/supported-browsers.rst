@@ -21,7 +21,7 @@
 Supported Browsers, Devices, and Resolutions
 ============================================
 
-.. csv-table:: 
+.. csv-table::
     :header: "Browser", "Versions", "Desktop/Laptop Resolutions"
     :widths: 33, 33, 33
     :align: left
@@ -34,7 +34,7 @@ Supported Browsers, Devices, and Resolutions
 |
 |
 
-.. csv-table:: 
+.. csv-table::
     :header: "Device", "Portrait", "Landscape"
     :widths: 60, 20, 20
     :align: left
