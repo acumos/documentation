@@ -16,60 +16,13 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-=============
-Release Notes
-=============
-
-Weekly Builds
-=============
-Release notes for weekly builds are on the wiki `here <https://wiki.acumos.org/display/REL/Weekly+Builds>`_.
-
-Weekly builds may be unstable and are not recommended for deployment to a production environment.
-
-Version
-=======
-Acumos 1.0, 26 March 2018
-
-Supported Browsers, Devices, and Resolutions
-============================================
-Detailed information can be found on the :doc:`supported-browsers` page.
-
-Known Issues and Limitations
-============================
-- Model validation is limited to Publication of Models and has limited scanning ability
-- Model microservice Cloud deployment is limited to Azure and OpenStack
-
-
-Component Release Notes
-=======================
+========
+Releases
+========
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   ../submodules/acumos-azure-client/docs/release-notes
-   ../submodules/python-dcae-model-runner/docs/release-notes
-   ../submodules/python-model-runner/docs/release-notes
-   ../submodules/acumos-hippo-cms/docs/release-notes
-   ../submodules/acumos-java-client/docs/release-notes
-   ../submodules/acumos-nexus-client/docs/release-notes
-   ../submodules/acumos-python-client/docs/release-notes
-   ../submodules/common-dataservice/docs/release-notes
-   ../submodules/databroker/docs/release-notes
-   ../submodules/design-studio/docs/release-notes
-   ../submodules/face-privacy-filter/docs/release-notes
-   ../submodules/federation/docs/release-notes
-   ../submodules/generic-model-runner/docs/release-notes
-   ../submodules/image-classification/docs/release-notes
-   ../submodules/image-mood-classifier/docs/release-notes
-   ../submodules/kubernetes-client/docs/release-notes
-   ../submodules/microservice-generation/docs/release-notes
-   ../submodules/model-schema/docs/release-notes
-   ../submodules/on-boarding/docs/release-notes
-   ../submodules/platform-oam/docs/release-notes
-   ../submodules/portal-marketplace/docs/release-notes
-   ../submodules/proto-viewer/docs/release-notes
-   ../submodules/runtime-orchestrator/docs/release-notes
-   ../submodules/security-verification/docs/release-notes
-   ../submodules/system-integration/docs/release-notes
-   ../submodules/validation-security/docs/release-notes
-   ../submodules/vm-predictor/docs/release-notes
+    release-athena
+    weekly-builds
+    component-release-notes
