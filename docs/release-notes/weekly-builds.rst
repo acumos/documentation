@@ -16,22 +16,9 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-==================================
-Portal and Marketplace Admin Guide
-==================================
+=============
+Weekly Builds
+=============
+Release notes for weekly builds are on the wiki `here <https://wiki.acumos.org/display/REL/Weekly+Builds>`_.
 
-.. toctree::
-   :maxdepth: 2
-   :numbered:
-
-   intro.rst
-   monitoring.rst
-   user_management.rst
-   site_content.rst
-   site_configuration.rst
-   federation.rst
-   requests.rst
-   configure_workflows.rst
-   addendum/index
-
-
+Weekly builds may be unstable and are not recommended for deployment to a production environment.
