@@ -16,13 +16,9 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-========
-Releases
-========
+=============
+Weekly Builds
+=============
+Release notes for weekly builds are on the wiki `here <https://wiki.acumos.org/display/REL/Weekly+Builds>`_.
 
-.. toctree::
-    :maxdepth: 1
-
-    release-athena
-    weekly-builds
-    component-release-notes
+Weekly builds may be unstable and are not recommended for deployment to a production environment.
