@@ -36,8 +36,31 @@ Architecture Overview
 
 Component Interactions
 ======================
-@TODO THIS NEEDS TO BE UPDATED BUT NOBODY SEEMS TO KNOW WHO OWNS THE ORIGINAL
 
+The following diagram shows the major dependencies among components of the
+Acumos architecture, and with external actors. The arrow represent dependency,
+e.g. upon APIs, user interfaces, etc. The arrows are directed at the provider
+of the dependency. Some dependencies are so common that they aren't shown
+directly, for diagram clarity. These include:
+
+* collection of logs from all components
+* dependency upon the Common Data Service (shown as a single block of components)
+
+The types of components/actors in the diagram are categorized as:
+
+* Core Component: components that are developed/packaged by the Acumos project,
+  and provide/enable core functions of the Acumos platform as a service
+* Supplemental Component: components that are integrated from upstream projects,
+  in some cases packaged as Acumos images, and provide supplemental/optional
+  support functions for the platform. These functions may be provided by other
+  components, or omitted from the platform deployment.
+* Platform Dependency: upstream components that are required, to support
+  key platform functions such as relational database and docker image creation.
+  The examples shown (Nexus and Docker) may be replaced with other components
+  that are API-compatible, and may be pre-existing, or shared with other
+  applications.
+* External Dependency: external systems/services that are required for the
+  related Acumos function to be fully usable
 
 .. image:: images/acumos-architecture-detail.png
 
@@ -588,19 +611,21 @@ Python DCAE Model Runner
 ........................
 
 
-Supporting Components
-=====================
+Supplemental Components
+=======================
 .. high level description of the components and link to more info
 
-The following sections describe the scope, role, and interaction of supporting
-Acumos platform components and tools.
+The following sections describe the scope, role, and interaction of components
+that supplement the Acumos platform as deployed components and tools. These
+components and tools are developed and/or packaged by the Acumos project to
+provide supplemental support for the platform.
 
 Operations, Admin, and Maintenance (OAM)
 ----------------------------------------
 
 The Platform-OAM project maintains the repos providing:
 
-* Acumos platform deployment support tools 
+* Acumos platform deployment support tools
 * Logging and Analytics components based upon the
   `ELK Stack <https://www.elastic.co/elk-stack>`_, of which Acumos uses the
   open source versions
@@ -646,8 +671,13 @@ dashboards. It includes:
 
 See :doc:`Platform Operations, Administration, and Management (OA&M) User Guide <../../submodules/platform-oam/docs/user-guide.html>` for more info.
 
-Other Supporting Components
----------------------------
+External Components
+-------------------
+
+The following sections describe the scope, role, and interaction of
+externally-developed components that are deployed (some, optionally) as part of
+the Acumos platform or as container runtime environmments in which the Acumos
+platform is deployed.
 
 MariaDB
 .......
