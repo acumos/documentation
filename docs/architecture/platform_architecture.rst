@@ -588,19 +588,21 @@ Python DCAE Model Runner
 ........................
 
 
-Supporting Components
-=====================
+Supplemental Components
+=======================
 .. high level description of the components and link to more info
 
-The following sections describe the scope, role, and interaction of supporting
-Acumos platform components and tools.
+The following sections describe the scope, role, and interaction of components
+that supplement the Acumos platform as deployed components and tools. These
+components and tools are developed and/or packaged by the Acumos project to
+provide supplemental support for the platform.
 
 Operations, Admin, and Maintenance (OAM)
 ----------------------------------------
 
 The Platform-OAM project maintains the repos providing:
 
-* Acumos platform deployment support tools 
+* Acumos platform deployment support tools
 * Logging and Analytics components based upon the
   `ELK Stack <https://www.elastic.co/elk-stack>`_, of which Acumos uses the
   open source versions
@@ -646,8 +648,13 @@ dashboards. It includes:
 
 See :doc:`Platform Operations, Administration, and Management (OA&M) User Guide <../../submodules/platform-oam/docs/user-guide.html>` for more info.
 
-Other Supporting Components
----------------------------
+External Components
+-------------------
+
+The following sections describe the scope, role, and interaction of
+externally-developed components that are deployed (some, optionally) as part of
+the Acumos platform or as container runtime environmments in which the Acumos
+platform is deployed.
 
 MariaDB
 .......
