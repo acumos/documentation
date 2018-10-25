@@ -307,28 +307,53 @@ For more information: :doc:`R Client Documentation <../../submodules/acumos-r-cl
 
 Design Studio
 -------------
-The Design Studio component repository includes the Composition Engine, TOSCA
-Model Generator Client, Generic Data Mapper Service, CSV Data Broker, and SQL
-Data Broker. Additional components are in separate repositories.
+The Design Studio component repository includes following components : 
+	- Composition Engine
+	- TOSCA Model Generator Client
+	- Generic Data Mapper Service
+	- Data Broker (CSV and SQL)
+
+	For more details :doc:`Click here <../../submodules/design-studio/docs/index>`
+	
+Additional components are in separate repositories.
 
 Design Studio Composition Engine
 ................................
 
+	In Acumos Portal UI we have seperate tabl named : Design Studio.  The Design Studio UI invokes Composition Engine API to:
+
+	1.	Create machine learning applications, hereafter referred to as composite solutions, out of the basic building blocks – the individual Machine Learning (ML) models contributed by the open source user community.
+
+	2.	Validate the composite solutions.
+
+	3.	Generate the blueprint of the composite solution for deployment on the target cloud.
+	
+	:doc:`Design Studio Composition Engine <../../submodules/design-studio/docs/design-studio-user-guide>` is Spring Boot based backend component which expose REST API's, required to carry out CRUD operation on composite solution. 
+	
+	
 
 TOSCA Model Generator Client
 ............................
 
-
+	TOSCA Model Generator Client is an library, included in On-boarding module for generating the artifacts which are required in Design Studio UI to perform operation on ML model viz., drag-drop, display input output ports, display meta data, etc. While on boarding the ML model, **On Boarding** module invokes TOSCA Model Generator Client library to generate following artifacts : **TGIF.json** & **Protobuf.json**.  These artifact are pushed to Nexus Repository and corresponding Artifact details are linked to the respective Solution version. 
+	
+	
 Generic Data Mapper Service
 ...........................
 
+	:doc:`Generic Data Mapper Service <../../submodules/design-studio/docs/gdmservice-user-guide>` is one the tool provided by Design Studio.  Generic Data Mapper allow user to connect two ML model 'A' and 'B' where the number of : output fields of model 'A' and input fields of model 'B' are same.  User is allowed to connect the fields of model 'A' to required field of model 'B'. The Datamapper performs data type transformations between Protobuf data types.
+	To use Datamapper User should be well aware of the output value of each field of model 'A' and expected input value of each field of model 'B' to get desired final output.
 
-CSV Data Broker
-...............
+Data Broker 
+.............
 
-
-SQL Data Broker
-...............
+	The :doc: `DataBroker<../../submodules/design-studio/docs/index>` is a tool provided by Design Studio. Databroker retrieves the data from the different types of Data Sources like Database, File systems (UNIX, HDFS Data Brokers, etc.), Router Data Broker, Zip Archives. Under Data Sources palette we can see these kind of data brokers. At High Level Data broker retrieves and converts the data into protobuf format. 
+	
+	Currently Design Studio support following Databroker : 
+	
+	**1. CSV DataBroker** : CSV DataBroker is used if source data resides in text file as a comma (,) separated fields. 
+	**2. SQL DataBroker** : SQL DataBroker is used if source data is SQL Data base. Currently MYSQL database is supported. 
+	
 
 
 Runtime Orchestrator
