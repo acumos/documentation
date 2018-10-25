@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a6c3fdb6_d241ef72",
+        "filename": "docs/release-notes/manifest-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-10-25T21:26:35Z",
+      "side": 1,
+      "message": "Acumos is also deployable on Centos 7 and later versions of Ubuntu.",
+      "range": {
+        "startLine": 21,
+        "startChar": 9,
+        "endLine": 21,
+        "endChar": 10
+      },
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "231394cb_36ba0481",
+        "filename": "docs/release-notes/manifest-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-10-25T21:26:35Z",
+      "side": 1,
+      "message": "https://nexus3.acumos.org/#browse/browse:docker.release",
+      "range": {
+        "startLine": 27,
+        "startChar": 10,
+        "endLine": 27,
+        "endChar": 11
+      },
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf56aad7_4b18c183",
+        "filename": "docs/release-notes/manifest-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-10-25T21:26:35Z",
+      "side": 1,
+      "message": "Yes, that makes sense",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 88
+      },
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "02509e5f_c040e021",
+        "filename": "docs/release-notes/release-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-10-25T21:26:35Z",
+      "side": 1,
+      "message": "This issue has been fixed",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 63
+      },
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ecf523d_81335b81",
+        "filename": "docs/release-notes/release-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-10-25T21:26:35Z",
+      "side": 1,
+      "message": "I suggest add another bullet ala \"See the \u003clink\u003e on the Acumos wiki for post-release updates, e.g. workarounds for known issues.\"",
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7477b62e_72976811",
+        "filename": "docs/release-notes/release-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-10-25T21:26:35Z",
+      "side": 1,
+      "message": "Make this a link to https://identity.linuxfoundation.org/",
+      "range": {
+        "startLine": 93,
+        "startChar": 55,
+        "endLine": 93,
+        "endChar": 74
+      },
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
