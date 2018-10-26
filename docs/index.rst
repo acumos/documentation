@@ -68,14 +68,6 @@ The *Component Guides* section contains a variety of information that is useful 
 
 Please visit the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
 
-Acumos AI Challenge
-===================
-
-
-.. toctree::
-   :maxdepth: 1
-
-  ../AcumosUser/portal-user/dev-challenge-getting-started.rst
 
 Indices and Tables
 ==================
