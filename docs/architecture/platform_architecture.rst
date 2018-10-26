@@ -330,28 +330,60 @@ For more information: :doc:`R Client Documentation <../../submodules/acumos-r-cl
 
 Design Studio
 -------------
-The Design Studio component repository includes the Composition Engine, TOSCA
-Model Generator Client, Generic Data Mapper Service, CSV Data Broker, and SQL
-Data Broker. Additional components are in separate repositories.
+The Design Studio component repository includes following components: 
+
+* Composition Engine
+* TOSCA Model Generator Client
+* Generic Data Mapper Service
+* Data Broker (CSV and SQL)
+
+For more information: :doc:`Design Studio Documentation <../../submodules/design-studio/docs/index>`
+	
+Additional components are in separate repositories.
 
 Design Studio Composition Engine
 ................................
 
+The Acumos Portal UI has a Design Studio that invokes the Composition Engine API to:
+
+#. Create machine learning applications (composite solutions) out of the basic building blocks – the individual Machine Learning (ML) models contributed by the user community
+#. Validate the composite solutions
+#. Generate the blueprint of the composite solution for deployment on the target cloud
+	
+The :doc:`Design Studio Composition Engine 
+<../../submodules/design-studio/docs/design-studio-user-guide>` is Spring Boot 
+backend component which exposes REST APIs required to carry out CRUD operations 
+on composite solutions.
+
 
 TOSCA Model Generator Client
 ............................
+The TOSCA Model Generator Client is a library used by the Onboarding component 
+to generate artifacts (TGIF.json, Protobuf.json) that are required by the Design Studio UI to perform 
+operations on ML models, such as drag-drop, display input output ports, display meta 
+data, etc. 
 
-
+	
 Generic Data Mapper Service
 ...........................
+The Generic Data Mapper Service enables users to connect two ML models 'A' and 'B' 
+where the number of output fields of model 'A' and input fields of model 'B' 
+are the same.  The user is able to connect the field of model 'A' to required field 
+of model 'B'. The Data Mapper performs data type transformations between 
+Protobuf data types. 
 
 
-CSV Data Broker
-...............
+Data Broker 
+...........
+At a high level, a Data Broker retrieves and converts the data into protobuf 
+format. The Data Brokers retrieve data from the different types of sources like 
+database, file systems (UNIX, HDFS Data Brokers, etc.), Router Data Broker, and 
+zip archives.
 
+The Design Studio provides the following Databrokers: 
 
-SQL Data Broker
-...............
+#. CSV DataBroker: used if source data resides in text file as a comma (,) separated fields. 
+#. SQL DataBroker: used if source data is SQL Data base. Currently MYSQL database is supported. 
 
 
 Runtime Orchestrator
