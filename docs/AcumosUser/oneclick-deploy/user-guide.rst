@@ -15,10 +15,6 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-===========================
-One Click Deploy User Guide
-===========================
-
 Introduction
 ============
 

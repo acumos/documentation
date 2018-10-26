@@ -52,6 +52,7 @@ projects to easily maintain current release documentation.
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    rst-dev-tools.rst
    component-docs-guide.rst
