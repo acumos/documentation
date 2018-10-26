@@ -11,23 +11,16 @@
 .. http://creativecommons.org/licenses/by/4.0
 ..
 .. This file is distributed on an "AS IS" BASIS,
-.. WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-==================
-Architecture Guide
-==================
+===========================
+One Click Deploy User Guide
+===========================
 
 .. toctree::
    :maxdepth: 2
    :numbered:
-
-   intro.rst
-   scope.rst
-   requirements.rst
-   platform_architecture.rst
-   platform_flows.rst
-
-
+   
+   user-guide
