@@ -42,7 +42,7 @@ Acumos Operations
 .. toctree::
    :maxdepth: 1
 
-   ../AcumosUser/oneclick-deploy/user-guide
+   ../AcumosUser/oneclick-deploy/user-guide/index
    ../submodules/platform-oam/docs/user-guide
    ../submodules/system-integration/docs/user-guide
 
@@ -68,14 +68,6 @@ The *Component Guides* section contains a variety of information that is useful 
 
 Please visit the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
 
-Acumos AI Challenge
-===================
-
-
-.. toctree::
-   :maxdepth: 1
-
-  ../AcumosUser/portal-user/dev-challenge-getting-started.rst
 
 Indices and Tables
 ==================

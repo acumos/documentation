@@ -22,6 +22,7 @@ Portal and Marketplace Admin Guide
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    intro.rst
    monitoring.rst
