@@ -26,5 +26,79 @@ Platform Flow
 .. publishing models to a catalog
 .. deploying finished solutions to a runtime environment
 
+User Journeys
+-------------
 
+Following are some illustrative "user journey" diagrams for common Acumos
+workflows.
 
+.. figure:: images/flows/acumos-platform-user-flow.png
+   :scale: 100 %
+   :alt: Acumos Platform User Flow
+
+   ** Acumos Platform User Flow **
+
+.. figure:: images/flows/user-sign-up.png
+   :scale: 100 %
+   :alt: Model User Signup Flow
+
+   ** Acumos User Signup Flow **
+
+.. figure:: images/flows/user-login.png
+   :scale: 100 %
+   :alt: Model User Login Flow
+
+   ** Acumos User Login Flow **
+
+Component Interaction
+---------------------
+
+Following are some illustrative diagrams for common Acumos component interactions.
+
+.. figure:: images/flows/model-detail.png
+   :scale: 100 %
+   :alt: Model Detail Flow
+
+   ** Acumos Model Detail Flow **
+
+.. figure:: images/flows/catalog-flow.png
+   :scale: 100 %
+   :alt: Acumos Catalog Flow
+
+   ** Acumos Catalog Flow **
+
+Inter-Component Message Flows
+-----------------------------
+
+Following are some actual message flows between Acumos components. Some
+URI parameters have been abstracted to reduce the complexity of the flows.
+
+.. figure:: images/flows/onboard-web.svg
+   :scale: 100 %
+   :alt: Web Onboarding
+
+   ** Web Onboarding **
+
+.. figure:: images/flows/onboard-cli.svg
+   :scale: 100 %
+   :alt: CLI Onboarding
+
+   ** CLI Onboarding **
+
+.. figure:: images/flows/publish.svg
+   :scale: 100 %
+   :alt: Model Publishing
+
+   ** Model Publishing **
+
+.. figure:: images/flows/federation-subscriber.svg
+   :scale: 100 %
+   :alt: Request for Published Solution Subscription, at Subscribing Platform
+
+   ** Request for Published Solution Subscription, at Subscribing Platform **
+
+.. figure:: images/flows/federation-publisher.svg
+   :scale: 100 %
+   :alt: Request for Published Solution Subscription, at Publishing Platform
+
+   ** Request for Published Solution Subscription, at Publishing Platform **
