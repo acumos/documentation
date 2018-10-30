@@ -27,4 +27,7 @@ The Design Studio: For Composers
    ds-model-ingestion.rst
    ds-model-composition.rst
    ds-ui-tour.rst
+   databroker.rst
+   gdmservice.rst
+   split-join.rst
 
