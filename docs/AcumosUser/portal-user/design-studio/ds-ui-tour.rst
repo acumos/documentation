@@ -25,9 +25,9 @@ The Design Studio UI, shown below, consists of a Design Canvas with a grid backg
     .. image:: ../images/design-studio/DesignStudioUserInterface.png
 
 
-1. Models Tab: Displays the catalog of the ML Models – the basic building blocks used for creating composite solutions. The models are currently classified under four categories – Classification, Prediction, Regression and Others.
+1. Models Tab: Displays the catalog of the ML Models – the basic building blocks used for creating composite solutions. The models are currently classified under four categories – Classification, Prediction, Regression and Others
 
-2. Solutions Tab: Displays the catalog of composite solutions (built out of basic building blocks) that have either Public or Company visibility.
+2. Solutions Tab: Displays the catalog of composite solutions (built out of basic building blocks) that have either “Public” visibility or belong to the logged in persons “Organization”
 
 3. Data Transformation Tools: A set of useful data transformation utilities are displayed here. Currently there is a Data Mapper which performs mapping between some basic Protobuf data types, such as int32, string, float, double and bool. An Aggregator is another utility that is planned to be deployed there.
 
@@ -44,9 +44,9 @@ The Design Studio UI, shown below, consists of a Design Canvas with a grid backg
 
 9. Clear: The user clicks this button to clear an unsaved solution.
 
-10. Save: The user clicks this button to save a new composite solution or save changes to an existing solution. The user is prompted to provide the name, version and a description of the solution. The user can make modification to the solution and save it as a separate solution by providing a new name or new version or both. 
+10. Save: The user clicks this button to save a new composite solution or save changes to an existing solution. The user is prompted to provide the name, version and a description of the solution. The user can make modification to the solution and save it as a separate solution by providing a new name or new version or both.
 
-11. Validate: The user clicks this button to validate a composite solution created in the Design Canvas. Both the success and error messages are displayed in the Validation Console. If the solution is valid then a Blueprint.json file is created which is used to deploy the solution in the target cloud. 
+11. Validate: The user clicks this button to validate a composite solution created in the Design Canvas. Both the success and error messages are displayed in the Validation Console. If the solution is valid then a Blueprint.json file is created which is used to deploy the solution in the target cloud.
 
 12. Design Canvas: This is where the users drags one or more ML Models – the basic building blocks to create a composite solution or if the user clicks on an existing solution in Solutions or My Solutions tab, it is displayed in the Design Canvas.
 
@@ -55,12 +55,12 @@ The Design Studio UI, shown below, consists of a Design Canvas with a grid backg
 Ports of the Model
 ==================
 
-A model may have multiple ports. A Requirement (output) port is represented by a filled-in circle and a Capability (input) port is represented by an empty circle. The matching pair of ports are represented by identical icons inside their ports, such as diamonds, rectangles, triangles, + sign, etc. 
+A model may have multiple ports. A Requirement (output) port is represented by a filled-in circle and a Capability (input) port is represented by an empty circle. The matching pair of ports are represented by identical icons inside their ports, such as diamonds, rectangles, triangles, + sign, etc.
 
 Composition Based on Port Matching
 ----------------------------------
 
-The Design Canvas is the place where the user performs model composition based on the port matching criterion discussed earlier. The Design Canvas ensure that only matching ports are connected via a link. It does not allow non matching ports to be connected, thereby facilitating the design – time validation of the composite solution. 
+The Design Canvas is the place where the user performs model composition based on the port matching criterion discussed earlier. The Design Canvas ensure that only matching ports are connected via a link. It does not allow non matching ports to be connected, thereby facilitating the design – time validation of the composite solution.
 
 How to name the ML Model
 ------------------------
@@ -70,7 +70,7 @@ A model name is automatically generated when a model is dragged from the “Mode
 How to name the Link
 --------------------
 
-Double click on the link – a text box appears, type the name of the link. 
+Double click on the link – a text box appears, type the name of the link.
 
 On Click of the Model
 ---------------------
@@ -80,7 +80,7 @@ The model properties such as its name, owner, company, toolkit (Scikit, TensorFl
 On Click of the Link
 --------------------
 
-The link properties such as its name appears in the Property box. 
+The link properties such as its name appears in the Property box.
 
 On Hover over a Port
 --------------------

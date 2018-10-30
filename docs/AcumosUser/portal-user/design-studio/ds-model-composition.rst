@@ -22,8 +22,8 @@ Model Composition
 
 The main function of the Design Studio is to compose the ML Models to produce a meaningful application.
 
-Criterion for Model Composition
-===============================
+Criteria for Model Composition
+==============================
 
 Currently the Design Studio implements a simple model composition strategy based on matching the output message of the output port of one ML Model to the input message of the input port of another ML Model.
 
