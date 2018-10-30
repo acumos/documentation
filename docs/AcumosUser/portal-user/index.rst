@@ -22,6 +22,7 @@ Portal and Marketplace User Guide
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    overview.rst
    accounts.rst
