@@ -40,6 +40,7 @@ Common Services
 * :doc:`Nexus Client <../submodules/acumos-nexus-client/docs/index>`
 * :doc:`Python DCAE Model Runner <../submodules/python-dcae-model-runner/docs/index>`
 * :doc:`Python Model Runner <../submodules/python-model-runner/docs/index>`
+* :doc:`Security Verification of Models <../submodules/security-verification/docs/index>`
 
 Design Studio
 -------------
