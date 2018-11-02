@@ -25,6 +25,7 @@ Portal and Marketplace Admin Guide
    :numbered:
 
    intro.rst
+   onboard-ds-toolkits.rst
    monitoring.rst
    user_management.rst
    site_content.rst
