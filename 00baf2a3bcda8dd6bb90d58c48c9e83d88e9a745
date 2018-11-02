@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "83cbea43_ebbd6e9d",
+        "filename": "docs/release-notes/manifest-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-02T15:08:33Z",
+      "side": 1,
+      "message": "Has the testing team verified this? or is this from running your AIO script on Centos, Ubuntu 17/18?",
+      "parentUuid": "a6c3fdb6_d241ef72",
+      "range": {
+        "startLine": 21,
+        "startChar": 9,
+        "endLine": 21,
+        "endChar": 10
+      },
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "231394cb_36ba0481",
         "filename": "docs/release-notes/manifest-athena.rst",
         "patchSetId": 2
@@ -105,6 +129,24 @@
       "writtenOn": "2018-10-25T21:26:35Z",
       "side": 1,
       "message": "I suggest add another bullet ala \"See the \u003clink\u003e on the Acumos wiki for post-release updates, e.g. workarounds for known issues.\"",
+      "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c59c0a40_2e2e6e5c",
+        "filename": "docs/release-notes/release-athena.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-02T15:08:33Z",
+      "side": 1,
+      "message": "There is no section on the Acumos wiki for that",
+      "parentUuid": "3ecf523d_81335b81",
       "revId": "00baf2a3bcda8dd6bb90d58c48c9e83d88e9a745",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
