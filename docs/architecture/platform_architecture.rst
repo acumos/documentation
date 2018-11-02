@@ -79,6 +79,11 @@ See the :doc:`Onboading App <../../submodules/on-boarding/docs/index>` documenta
 E2 - Web APIs
 .............
 
+The portal Web API (E2) are the interface for the users to upload their models to the platform. It 
+provides means to share AI microservices along with information on how they perform. See the following for more information:
+
+* :doc:`Portal Web API <../../submodules/portal-marketplace/docs/developer-guide>`
+
 E3 - OA&M APIs
 ..............
 
@@ -90,6 +95,10 @@ collected by the logging subsystem.
 
 E4 - Admin APIs
 ...............
+
+The Admin API (E4) provides the interfaces to configure the site global parameters. See the following for more information:
+
+* :doc:`Portal Marketplace <../../submodules/portal-marketplace/docs/developer-guide>`
 
 E5 - Federation APIs
 ....................
@@ -263,11 +272,23 @@ Portal and User Experience
 Portal Frontend
 ...............
 
+The Portal Frontend is designed to make it easy to discover, explore, and use AI models. It is completely built on 
+angularJs and HTML. It uses portal backend APIs to fetch the data and display.
+
 Portal Backend
 ..............
 
-Hippo CMS
-.........
+Provides REST endpoints and Swagger documentation. Portal backend is built on Spring Boot which exposes the endpoints to
+manage the models.
+
+For more information: :doc:`Portal Backend Documentation <../../submodules/portal-marketplace/docs/developer-guide>`
+
+Acumos Hippo CMS
+................
+
+Acumos Hippo CMS is a content management system which is used to store the images of the text descriptions for the Acumos instance.
+
+For more information: :doc:`Acumos Hippo CMS Documentation <../../submodules/acumos-hippo-cms/docs/developer-guide>`
 
 Model Onboarding
 ----------------
