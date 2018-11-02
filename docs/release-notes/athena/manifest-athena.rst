@@ -26,7 +26,7 @@ Platform Components
 ===================
 The components that comprise the Acumos Platform are released as Docker images on `Nexus <https://nexus3.acumos.org/#browse/browse:docker.release>`_.
 
-Individual component release notes may be accessed from the :doc:`component-release-notes` page.
+Individual component release notes may be accessed from the :doc:`../component-release-notes` page.
 
 
 Core Components
@@ -35,7 +35,7 @@ Core Components
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: core-components.csv
+   :file: ../core-components.csv
 
 Model Execution Components
 --------------------------
@@ -43,7 +43,7 @@ Model Execution Components
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: model-execution.csv
+   :file:../model-execution.csv
 
 
 
@@ -68,7 +68,7 @@ These supporting libraries are released as Java JAR files and referenced as libr
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: libraries.csv
+   :file: ../libraries.csv
 
 
 Modeler Client Libraries
@@ -78,7 +78,7 @@ These libraries are used by modelers on their local workstations to prepare mode
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: clients.csv
+   :file: ../clients.csv
 
 Model Runners
 =============
@@ -86,4 +86,4 @@ Model Runners
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: model-runners.csv
+   :file: ../model-runners.csv
