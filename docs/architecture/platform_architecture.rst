@@ -313,7 +313,7 @@ supporting services:
   which stores model attributes
 * the :doc:`Microservice Generation <../../submodules/microservice-generation/docs/index>`, which creates the dockerized microservice
 
-For more information: :doc:`Onboading Documentation <../../submodules/onboarding/docs/index>`.
+For more information: :doc:`Onboading Documentation <../../submodules/on-boarding/docs/index>`.
 
 Java Client
 ...........
@@ -722,7 +722,7 @@ dashboards. It includes:
 * ElasticSearch: a data storage, search, and analytics engine
 * Kibana: a visualization frontend for ElasticSearch based data
 
-See :doc:`Platform Operations, Administration, and Management (OA&M) User Guide <../../submodules/platform-oam/docs/user-guide.html>` for more info.
+See :doc:`Platform Operations, Administration, and Management (OA&M) User Guide <../../submodules/platform-oam/docs/user-guide>` for more info.
 
 External Components
 -------------------

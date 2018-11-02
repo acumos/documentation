@@ -17,13 +17,40 @@
 .. ===============LICENSE_END=========================================================
 .. Acumos documentation master file
 
-================================
-Welcome to Acumos Documentation!
-================================
-Acumos is a platform which enhances the development, training and deployment of AI models. Its purpose is to scale up the introduction of AI-based software across a wide range of industrial and commercial problems in order to reach a critical mass of applications.
+====================
+Acumos Documentation
+====================
+Acumos AI is a platform and open source framework that makes it easy to build,
+share, and deploy AI apps. Acumos standardizes the infrastructure stack and
+components required to run an out-of-the-box general AI environment. This frees
+data scientists and model trainers to focus on their core competencies and
+accelerates innovation.
 
-Acumos Portal and Marketplace Users
-===================================
+Acumos Releases
+===============
+
+Platform
+--------
+.. toctree::
+    :maxdepth: 3
+
+    ../release-notes/athena/index
+
+
+Component and Weekly
+--------------------
+
+
+.. toctree::
+   :maxdepth: 2
+
+   ../release-notes/index
+
+
+
+
+Acumos Portal and Marketplace User Guides
+=========================================
 .. note::
     Data Scientists who are contributing models should reference the `Portal - For Modelers pages <https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/latest/AcumosUser/portal-user/index.html>`_.
 
@@ -32,12 +59,11 @@ Acumos Portal and Marketplace Users
 .. toctree::
    :maxdepth: 1
 
-   ../release-notes/index
    ../AcumosUser/portal-user/index
    ../AcumosUser/portal-admin/index
 
-Acumos Operations
-=================
+Acumos Operational User Guides
+==============================
 
 .. toctree::
    :maxdepth: 1
@@ -49,24 +75,33 @@ Acumos Operations
 
 Contributors to the Acumos Platform Code
 ========================================
-The Acumos Platform Architecture Guide
+
+Platform Architecture
+---------------------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     ../architecture/index
 
 
-The *Component Guides* section contains a variety of information that is useful to developers who are working on the platform code. Most projects are written in Java, and the Javadoc is available `here <https://javadocs.acumos.org/>`_ .
+Component Guides
+----------------
+The *Component Guides* section contains a variety of information that is useful to developers who are working on the platform code. Most projects are written in Java, with the Javadoc available `here <https://javadocs.acumos.org/>`_ .
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   AcumosContributor/component-guides
-   docs-contributor-guide/index
+   ../AcumosContributor/component-guides
 
 
-Please visit the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
+Documentation Guide
+-------------------
+
+:doc:`docs-contributor-guide/index`
+
+
+Please also visit the `Developer wiki <https://wiki.acumos.org/display/AC/Developer+Wiki>`_, which includes sections on how to contribute to Acumos.
 
 
 Indices and Tables

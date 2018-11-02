@@ -25,8 +25,6 @@ Athena is the first release of the Acumos platform.
 * Release Version: 1.0.0
 * Release Date: 7 November 2018
 
-:doc:`Component Manifest <manifest-athena>`
-
 Release Highlights
 ==================
 Portal and Marketplace
@@ -68,7 +66,7 @@ Platform Operation, Administration, and Management
 
 Supported Browsers, Devices, and Resolutions
 ============================================
-Detailed information can be found on the :doc:`supported-browsers` page.
+Detailed information can be found on the :doc:`../supported-browsers` page.
 
 
 Known Issues and Limitations
@@ -83,17 +81,13 @@ Design Studio
 -------------
 
 * At least one model must be published to the Company Marketplace in order for the Design Studio UI to load
-* Design Studio Data Broker, Splitter, and Collator functionality requires that specific toolkit models be on-boarded; see the :doc:`../AcumosUser/portal-admin/addendum/onboard-ds-toolkits` section in the Portal and Marketplace Admin Guide for details.
+* Design Studio Data Broker, Splitter, and Collator functionality requires that specific toolkit models be on-boarded; see the :doc:`../../AcumosUser/portal-admin/addendum/onboard-ds-toolkits` section in the Portal and Marketplace Admin Guide for details.
 
 Portal Marketplace UI
 ---------------------
 
 * Manage Themes - selecting themes - the instruction in the modal dialog states "Choose your tags..." but if you select more than one tag, the error message "You cannot select more than one tag" is displayed; only single tag selection is supported at this time
-* ON-BOARDING MODEL page contains incorrect URLs:
-
-    * **To know more about on-boarding, please have a look at** : https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html should be https://docs.acumos.org/en/athena/AcumosUser/portal-user/portal/index.html
-    * **Create an R model bundle** should take the user to https://docs.acumos.org/en/athena/AcumosUser/portal-user/portal/onboarding-r-guide.html
-
+* ON-BOARDING MODEL page contains incorrect URLs: **To know more about on-boarding, please have a look at** : https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html should be https://docs.acumos.org/en/athena/AcumosUser/portal-user/portal/index.html
 * Web On-boarding: Quit(X) is not working during and after uploading of files for web on-boarding
 * Deploy to Local: Help link displayed in the pop-up window does not work
 * Notification: Solution name is not displayed in the notification after a user published the model to the Company Marketplace
@@ -113,16 +107,16 @@ Installation
 Acumos provides a one-click installation script for deploying to Ubuntu 16.04
 development environments. Both docker-compose and Kubernetes options are
 supported. Please see the :doc:`One Click Deploy User Guide
-<../AcumosUser/oneclick-deploy/user-guide>` for details.
+<../../AcumosUser/oneclick-deploy/user-guide>` for details.
 
 Documentation
 =============
 The Acumos Athena release provides multiple points of documentation:
 
- * A high level :doc:`Platform Architecture Guide <../architecture/index>` of how components
+ * A high level :doc:`Platform Architecture Guide <../../architecture/index>` of how components
    relate to each other
  * A collection of documentation provided
-   by :doc:`each component <../AcumosContributor/component-guides>`
+   by :doc:`each component <../../AcumosContributor/component-guides>`
  * The `Acumos wiki <https://wiki.acumos.org>`_ remains a good source of
    information on meeting plans and notes from committees, project teams and
    community events
