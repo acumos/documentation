@@ -16,12 +16,12 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-=============
-Release Notes
-=============
+==========================
+Athena Release, 7 Nov 2018
+==========================
 
 .. toctree::
-    :maxdepth: 4
+    :maxdepth: 2
 
-    component-release-notes
-    weekly-builds
+    release-athena
+    manifest-athena
