@@ -62,11 +62,11 @@ This project maintains clients for deploying models to different environments.
 * :doc:`OpenStack Client <../submodules/openstack-client/docs/index>`
 
 
-Model Onboarding
-----------------
+Model On-Boarding
+-----------------
 
 * :doc:`Java Client <../submodules/acumos-java-client/docs/index>`
-* :doc:`Onboading <../submodules/on-boarding/docs/index>`
+* :doc:`On-boarding <../submodules/on-boarding/docs/index>`
 * :doc:`Python Client <../submodules/acumos-python-client/docs/index>`
 * :doc:`R Client <../submodules/acumos-r-client/docs/index>`
 

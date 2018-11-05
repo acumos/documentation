@@ -76,11 +76,11 @@ Onboarding
 ----------
 
 * Java Client: command-line on-boarding does not support API token but does support JWT
+* R Client: command-line on-boarding does not support API token but does support JWT
 
 Design Studio
 -------------
 
-* At least one model must be published to the Company Marketplace in order for the Design Studio UI to load
 * Design Studio Data Broker, Splitter, and Collator functionality requires that specific toolkit models be on-boarded; see the :doc:`../../AcumosUser/portal-admin/addendum/onboard-ds-toolkits` section in the Portal and Marketplace Admin Guide for details.
 
 Portal Marketplace UI
@@ -91,10 +91,14 @@ Portal Marketplace UI
 * Web On-boarding: Quit(X) is not working during and after uploading of files for web on-boarding
 * Deploy to Local: Help link displayed in the pop-up window does not work
 * Notification: Solution name is not displayed in the notification after a user published the model to the Company Marketplace
-* Publishing a Model
+* Publishing a Model to Company or Public Marketplace
 
-    * A newly added tag is not displayed on the model tiles on the Marketplace and Manage My Model pages when a user publishes a model
+    * A newly added tag is not displayed on the model tiles on the Marketplace and Manage My Model pages when a user publishes a model; workaround: to add a new tag -- **after** the model has been published, you need to go back to Publish to Company or Publish to Public and type in the tag name and then click someplace else on the screen for the tag to be added to the model (tag is still not added to drop-down list)
     * Status is not moving for states when a model is published to Company
+
+* Publish Request
+
+    * Filter is applied to entire list but existing page breaks are maintained even if filter results are less than selected number of records/page; workaround: select to show more requests/page than number of requests in the list
 
 
 

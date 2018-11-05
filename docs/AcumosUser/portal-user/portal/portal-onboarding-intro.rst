@@ -19,10 +19,23 @@
 ==========================
 Model On-Boarding Overview
 ==========================
+Acumos accommodates the use of a wide range of tools and  technologies in the 
+development of machine learning models, including support for both open source 
+and proprietary toolkits. Models can be easily onboarded and wrapped into 
+containerized microservices which are interoperable with many other components. 
+On-boarding provides an ingestion interface for various  types of models to 
+enter the Acumos Machine Learning (ML) platform. Examples  of models include 
+well-defined objects such as scikit-learn estimators, TensorFlow weights, and 
+arbitrary R functions.
 
-Acumos accommodates the use of a wide range of tools and  technologies in the development of machine learning models, including support for both open source and proprietary toolkits. Models can be easily onboarded and wrapped into containerized microservices which are interoperable with many other components. On-boarding provides an ingestion interface for various  types of models to enter the Acumos Machine Learning (ML) platform. Examples  of models include well-defined objects such as scikit-learn estimators, TensorFlow weights, and arbitrary R functions.
-
-The solution for accommodating a myriad of different model types is to provide a custom wrapping library for each runtime. The client library encapsulates the complexity surrounding the serialization and deserialization of models. Additionally, the client library creates a common native interface, a wrapper, for invoking the inner model. In order for Acumos to be able to reason about models uniformly, there is a common model interface description that details what the available  model methods are and what they look like. Acumos instantiates ML models as microservices and safely composes them together.
+The solution for accommodating a myriad of different model types is to provide 
+a custom wrapping library for each runtime. The client library encapsulates the 
+complexity surrounding the serialization and deserialization of models. 
+Additionally, the client library creates a common native interface, a wrapper, 
+for invoking the inner model. In order for Acumos to be able to reason about 
+models uniformly, there is a common model interface description that details 
+what the available  model methods are and what they look like. Acumos 
+instantiates ML models as microservices and safely composes them together.
 
 Architecture
 ============
@@ -63,12 +76,15 @@ Acumos is a machine learning platform, thus we need to provide certain “method
 
 On-Boarding Client Libraries
 ============================
+The Acumos on-boarding process generates everything needed to create an 
+executable microservice for your model and add it to the catalog.  Acumos uses 
+Protobuf as a language-agnostic data format to provide a common description of 
+the model data inputs and outputs.
 
-The Acumos on-boarding process generates everything needed to create an executable microservice for your model and add it to the catalog.  Acumos uses Protobuf as a language-agnostic data format to provide a common description of the model data inputs and outputs.
+Acumos supports on-boarding Python, Java, and R models. The appropriate client 
+library does the first step of the on-boarding process. This includes:
 
-Acumos support on-boarding Python, Java, and R models. The appropriate client library does the first step of the on-boarding process. This includes:
-
-#) Introspection to assess the toolkit library versions and determine file types
-#) Creation of a JSON description of the system
-#) Creation of the protobuf file
-#) File push to the Acumos on-boarding server
+#. Introspection to assess the toolkit library versions and determine file types
+#. Creation of a JSON description of the system
+#. Creation of the protobuf file
+#. File push to the Acumos on-boarding server
