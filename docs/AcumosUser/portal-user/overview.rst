@@ -20,6 +20,10 @@
 Platform Overview
 =================
 
+    .. image:: images/portal/acumos_homePage.png
+       :scale: 50%
+
+
 The Portal is a web-based tool designed for users who wish to either explore and use
 machine learning models or data scientists who build models and wish to
 share them with a larger community.
@@ -72,16 +76,14 @@ It has the following key features:
        models from remote federated partners. Federation also creates a much
        larger available user pool for data scientists to share their models.
 
-    #. Training. Acumos provides methods to train models. Data sources can
-       be discovered and training process can be designed in the Acumos
-       Training Studio. (This work is in progress and not available in
-       release 1.0.)
-
 
 Users are welcomed to Acumos on the home page, showing a carousel
-highlighting Acumos features and uses. Other parts of the page show
+highlighting Acumos features and uses. Other parts of the page may show
 featured or trending models, upcoming Acumos events and illustrations of
 how Acumos can help customize solutions in many domains.
+The Acumos homepage is customizable, so your home page may differ from what is described here.
 
-Note: Users do not need to be logged into Acumos or have an account to see the
-Home and Marketplace pages but users must be logged in to download or deploy models.
+.. note::
+    Users do not need to be logged into Acumos or have an account to see the Home and Marketplace pages, but users must be logged in to download or deploy models.
+
+    

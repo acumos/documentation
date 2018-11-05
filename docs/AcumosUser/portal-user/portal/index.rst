@@ -24,10 +24,12 @@ The Portal - For Modelers
    :maxdepth: 2
 
    portal-overview.rst
+    portal-notifications.rst
    portal-onboarding-intro.rst
-   onboarding-r-guide.rst
-   onboarding-python-guide.rst
    onboarding-java-guide.rst
+   onboarding-python-guide.rst
+   onboarding-r-guide.rst
    portal-onboarding-web.rst
    portal-my-models.rst
    portal-manage-model.rst
+

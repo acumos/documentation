@@ -20,11 +20,11 @@
 Overview
 ========
 
-The Acumos Portal is designed to enable Modelers to easily onboard,
+The Acumos Portal is designed to enable Modelers to easily on-board,
 document, and package their AI models into reusable microservices.
 
 A Modeler may test out the Acumos features in a personal
-**private/unpublished** section of the Marketplace. Additionally, a Modeler may publish
+private/unpublished section of the Marketplace. Additionally, a Modeler may publish
 the models to the Company Marketplace or to the Public Marketplace for wider distribution.
 
 Modelers are typically subject-matter experts in their fields, so Acumos
@@ -33,11 +33,17 @@ models come from a wide range of domains and applications.
 Models may be written in a number of popular programming languages or
 toolkits, including TensorFlow and R.
 
-All of the models that a user has onboarded can be viewed from the **My
-Models** Page. Depending on their history, the models may exist in one
+All of the models that a user has on-boarded can be viewed from the :doc:`My
+Models <portal-my-models>` page. Depending on their history, the models may exist in one
 for four sections: MY UNPUBLISHED MODELS, MY MODELS: PUBLISHED TO COMPANY MARKETPLACE,
 MY MODELS: PUBLISHED TO PUBLIC MARKETPLACE, and MY DELETED MODELS    .
 
-Models published to Company are visible only to account holders on your local Acumos instance. This can be thought of as “inside the instance firewall” – typically viewable by close collaborators. Models published to Public are available to outside Acumos instances. The set of peers that may have access to Public models is determined by your local Administrator.
+Models published to Company are visible only to account holders on your local 
+Acumos instance. This can be thought of as “inside the instance firewall” 
+– typically viewable by close collaborators. Models published to Public are 
+available to outside Acumos instances. The set of peers that may have access to 
+Public models is determined by your local Administrator.
 
-Private/Unpublished models are visible only to the Modeler. However, a Modeler does have the option to share a model with a specific user who has an account on the same Acumos instance.
+Private/Unpublished models are visible only to the Modeler. However, a Modeler 
+does have the option to share a model with a specific user who has an account 
+on the same Acumos instance.

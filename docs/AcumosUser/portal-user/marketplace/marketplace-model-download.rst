@@ -1,7 +1,7 @@
 .. ===============LICENSE_START=======================================================
 .. Acumos CC-BY-4.0
 .. ===================================================================================
-.. Copyright (C) 2017-2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
+.. Copyright (C) 2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
 .. ===================================================================================
 .. This Acumos documentation file is distributed by AT&T and Tech Mahindra
 .. under the Creative Commons Attribution 4.0 International License (the "License");
@@ -30,8 +30,6 @@ The steps to download a model are as follows:
 #. Select the Download button from the Model Detail page
 #. Select the model file you wish to download. The bottom file is the
    complete zip file
-#. Once the download is complete, it can be found in the local downloads
-   folder
 
     .. image:: ../images/portal/models_downloadFromMPSteps.png
 

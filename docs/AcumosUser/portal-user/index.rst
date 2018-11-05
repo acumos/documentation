@@ -22,7 +22,6 @@ Portal and Marketplace User Guide
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
 
    overview.rst
    accounts.rst
@@ -30,4 +29,3 @@ Portal and Marketplace User Guide
    portal/index
    publish/publisher-guide.rst
    design-studio/index
-   deployment/index
