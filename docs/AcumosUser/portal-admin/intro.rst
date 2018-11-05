@@ -24,8 +24,8 @@ Introduction
 
 This user guide  describes how to use the Admin Interface for Acumos portals.
 
-What is Covered by the Admin Interface?
----------------------------------------
+What is Covered by the Admin Interface
+--------------------------------------
 
 The Admin Interface is a web-based tool for a site admin to:
 
@@ -50,7 +50,7 @@ Admin Access to the Acumos Portal
 When a new Acumos Portal is deployed, a default admin user will be
 created in the process of deployment by common-dataservice database
 setup scripts. A default username (“***TBD***\ ”) *and* password
-(“***TBD***\ ”) will be assigned to the admin, and must be changed upon
+(“***TBD***\ ”) will be assigned to the admin and must be changed upon
 first login, as the password will be set to “expired” when created.
 
 Users can be assigned the role of Admin via the Portal UI at “Site
