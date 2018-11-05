@@ -27,11 +27,11 @@ Models are organized by their visibility to others on your **My Models**
 page. They are sorted into the following sections: 
 
 **MY UNPUBLISHED MODELS**
-    Initially, successfully onboarded model will appear in my Models page in
+    Initially, successfully on-boarded model will appear in my Models page in
     the UNPUBLISHED section. These are visible only to you and any
-    collaborators of that model (shared). Partially onboarded models (in
+    collaborators of that model (shared). Partially on-boarded models (in
     process) are also displayed in this section but are shown greyed out
-    until the onboarding process is successfully completed.
+    until the on-boarding process is successfully completed.
 
 **MY MODELS: PUBLISHED TO COMPANY MARKETPLACE**
     Models that have been published to Local, appear in the the LOCAL
@@ -44,11 +44,19 @@ page. They are sorted into the following sections:
     federated relationship with your local instance.
 
 **MY DELETED MODELS**
-    Initially, successfully onboarded model will appear in my Models page in
+    Initially, successfully on-boarded model will appear in my Models page in
     the UNPUBLISHED section. These are visible only to the owner of that
     model and any collaborators of that model (via the "Share Model"
-    process). Partially onboarded models (in process) are also displayed in
-    this section but are shown greyed out until the onboarding process is
+    process). Partially on-boarded models (in process) are also displayed in
+    this section but are shown greyed out until the on-boarding process is
     successfully completed.
 
+
+    .. image:: ../images/portal/models_myModelsPage.png
+       :width: 75%
+
+1. Access the **My Models** page from the outer left menu
+2-6. This functionality works the same way it does on the main Marketplace page. Please see the :doc:`../marketplace/marketplace-intro` for details.
+
 Clicking on any model image shows the Model Detail page for that model.
+

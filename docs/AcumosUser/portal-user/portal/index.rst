@@ -31,3 +31,4 @@ The Portal - For Modelers
    portal-onboarding-web.rst
    portal-my-models.rst
    portal-manage-model.rst
+   portal-notifications.rst

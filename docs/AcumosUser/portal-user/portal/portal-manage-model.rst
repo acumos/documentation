@@ -19,9 +19,18 @@
 ================
 Managing a Model
 ================
+The Model Detail page may not show very much information if the model has not 
+been published. To add a description, documents and details from the My Models 
+page, click on any model image to show the Model Detail page for that model. 
+From the Model Detail Page, click on the **Manage My Model** button at the top. 
 
-If a model has not been published, the Model Detail page may not show
-very much information. To add a description, documents and details from the My Models page, click on any model image to show the Model Detail page for that model. From the Model Detail Page, click on the Manage My Model button at the top. A new page loads with MANAGEMENT OPTIONS on the left.
+    .. image:: ../images/portal/models_manageMyModelBtn.png
+       :width: 50%
+
+A new page loads with MANAGEMENT OPTIONS on the left.
+
+    .. image:: ../images/portal/models_manageMyModel.png
+       :width: 50%
 
 
 Sharing a Model with a Team
@@ -33,36 +42,41 @@ co-owner of the model. This means they have all the same capabilities as
 the original owner. An overview is shown below.
 
     .. image:: ../images/portal/models_shareWithTeamJourney.png
+       :width: 50%
 
 
 The steps to share are as follows:
 
-1. First, select the "Share with Team" tab under "MANAGEMENT OPTIONS"
+1. First, select the **Share with Team** tab under **MANAGEMENT OPTIONS**
 
     .. image:: ../images/portal/models_shareWithTeamTab.png
 
-2. Next, where you see "find a user to share with", type in the user ID
-   of the person you wish to share with - you will need to get that user
-   ID from them. The UI will show suggestions, based on the characters
+2. Next, where you see **Find a user to Share with**, type in the user ID
+   of the person with whom you wish to share. You will need to get that user
+   ID from them. The UI will show suggestions based on the characters
    you have typed. Once you have located the correct person, select the
-   SHARE button
+   **Share** button
 
     .. image:: ../images/portal/models_shareWithTeamScreen.png
 
 
-3. Finally, the Sharing Popup will disappear and you can see that your
-   model is shared and you have added them as a collaborator for that
-   model. Click on each icon to see who you are currently sharing a
-   model with
+3. The **Share with Team** will update. You will see that your
+   model is shared and you have added collaborators. 
 
     .. image:: ../images/portal/models_shareWithTeamDone.png
 
 
-The new collaborator will receive a notification that a new model has
+The collaborator will receive a notification that a new model has
 been shared with him/her.
 
-If you wish to remove the sharing rights from someone, simply click on
-the small "X" next to his/her icon.
+Manage Authors
+==============
+Model owners have the ability to add the details of additional authors.
+
+    .. image:: ../images/portal/models_manageAuthors.png
+
+After you fill in the required fields, click **Add author**.
+
 
 Publishing a Model
 ==================
@@ -105,11 +119,11 @@ Specific steps:
    users will understand and wish to use it
 #. Click on Model Category. Select a Category and Toolkit type from the
    dropdown box
-#. Select Model Documents and add any useful documents, such as release
+#. Select **Model Documents** and add any useful documents, such as release
    notes or detailed instructions that will help your users
-#. Click on Model Tags. Either select one of the system tags or add your
+#. Click on **Model Tags**. Either select one of the system tags or add your
    own. Any tags you add will become available for other users to select
-   as well
+   as well. **NOTE** due to a bug, if you want to add a new tag, do not enter or tab in the field; type in the tag name and then click someplace else on the screen for the tag to be added
 #. You have completed the first step for publishing. Now click on
    **Submit for Publication**. This will launch a series of back end
    steps that will prepare your model for publication
@@ -134,8 +148,11 @@ different audience. If you wish to use the same presentation for the
 Public model that you have previously published to Company, use the
 checkbox to select that.
 
-Once approved by a Publisher, the model will be published to the Public MarketPlace. 
-A modeler can also withdraw a model from publication by clicking on **Withdraw Request** from the Publish To Public screen.
+        .. image:: ../images/portal/models_publish-public.png
+           :width: 75%
 
-    .. image:: ../images/portal/PublishToPublic.png
+A modeler can also withdraw a model from publication by clicking on **Withdraw Request** from the **Publish To Public Marketplace** screen.
 
+    .. image:: ../images/portal/models_publish-withdraw.png
+
+Once approved by a Publisher, the model will be published to the Public Marketplace.

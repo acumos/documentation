@@ -91,10 +91,14 @@ Portal Marketplace UI
 * Web On-boarding: Quit(X) is not working during and after uploading of files for web on-boarding
 * Deploy to Local: Help link displayed in the pop-up window does not work
 * Notification: Solution name is not displayed in the notification after a user published the model to the Company Marketplace
-* Publishing a Model
+* Publishing a Model to Company or Public Marketplace
 
-    * A newly added tag is not displayed on the model tiles on the Marketplace and Manage My Model pages when a user publishes a model
+    * A newly added tag is not displayed on the model tiles on the Marketplace and Manage My Model pages when a user publishes a model; workaround: to add a new tag, do not enter or tab in the field; type in the tag name and then click someplace else on the screen for the tag to be added to the model (tag is still not added to drop-down list)
     * Status is not moving for states when a model is published to Company
+
+* Publish Request
+
+    * Filter is applied to entire list but existing page breaks are maintained even if filter results are less than selected number of records/page; workaround: select to show more requests/page than number of requests in the list
 
 
 

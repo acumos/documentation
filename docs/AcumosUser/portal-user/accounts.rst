@@ -39,7 +39,7 @@ of the user interface.
 
     .. image:: images/portal/signUp_screen.png
 
-3. An account verification email will be sent to the email address that you entered. You cannot sign-in without verifying your email address. The verification link will be valid for a finite time period, as configured by the Acumos platform adminstrator.
+3. An account verification email will be sent to the email address that you entered. You cannot sign-in without verifying your email address. The verification link will be valid for a finite time period, as configured by the Acumos Platform Administrator.
 
 4. Click on the link in the account verification email to activate your account. Clicking the link will take you to the Acumos verification page, where you should see the following:
 
@@ -70,7 +70,7 @@ The steps to login to Acumos are as follows:
 
 2. Fill in the username and password.
 
-3. Click Sign in on the bottom of the screen.
+3. Click **Sign in** on the bottom of the screen.
 
 .. note::
     Account log in may be customized on individual Acumos installations. If what you see on your local Acumos instance is different than what is in this guide, please consult your local Acumos Admin for assistance.
@@ -93,19 +93,17 @@ The steps to reset a password are as follows:
 Setting Profile and Notification Preferences
 ============================================
 
-Your User Profile is designed to give your users a view of your work,
-interests and a quick reference to some of your other work. When you
-publish a model, either to your Company instance or to the PUBLIC, your
+Your User Profile is designed to give your users a view of your work. When you
+publish a model, either to your Company instance or to the Public, your
 profile is always available by clicking on your name.
 
-    .. image:: images/portal/userProfile_screen.png
-
-
-To set up your user profile, click on your name and choose **Account
-Settings**.
+To update your user profile, click on your name in the upper right corner and
+then choose **Account Settings**.
 
     .. image:: images/portal/userProfile_setupScreen.png
 
+1) The API Token is used to onboard models from the command line
+2) When you change your email address, you will be automatically logged out of the application and must log in again
 
 From time to time, you may wish to be notified if a process, such has
 requesting access to a model, has completed. To set up your notification
