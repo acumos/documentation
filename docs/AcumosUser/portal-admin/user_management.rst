@@ -34,6 +34,9 @@ This tab lists all user accounts on the portal and enables:
 
 -  Creation of new roles that restrict use of various portal features
 
+.. note::
+    A user may be **deactivated** but not **deleted**
+
 System Roles
 ============
 .. csv-table::

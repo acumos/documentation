@@ -54,6 +54,10 @@ The federation process is outlined below:
 
 .. image:: images/admin-federate-user-journey.png
 
+Configuring an Acumos Instance for Federation
+=============================================
+Instructions are in the :doc:`../../../submodules/federation/docs/config`.
+
 Establishing connectivity between peers
 =======================================
 
@@ -86,10 +90,7 @@ federation:
    -  restarting their federation-gateway service, and verifying basic
       connectivity to the peer gateway.
 
-.. note::
 
-    See the ***(TODO: link to portal deployment guide)*** for details on
-    these steps.
 
 Creating peer relationships between portals
 ===========================================

@@ -21,10 +21,7 @@
 ===============
 Site Monitoring
 ===============
-
-Via the “Site Admin” / “Monitoring” tab, admins will be able to monitor
-various Acumos portal aspects such as user and modeler activity.
-
-This section of Site Admin is in development, and currently presents
-static data. This section will be updated as new features are
-implemented.
+Site monitoring requires the installation of the ELK stack components. Please
+see the :doc:`../../../submodules/platform-oam/docs/user-guide` for
+installation instructions as well as how to access the Kibana dashboards from
+the **Monitoring** tab.
