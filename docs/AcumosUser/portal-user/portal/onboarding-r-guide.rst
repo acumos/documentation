@@ -19,6 +19,8 @@
 ======================
 On-Boarding an R Model
 ======================
+.. note::
+    R Client v0.2-7 was tested with the Acumos Athena platform release
 
 Prerequisites
 =============

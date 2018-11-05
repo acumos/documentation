@@ -1,7 +1,7 @@
 .. ===============LICENSE_START=======================================================
 .. Acumos CC-BY-4.0
 .. ===================================================================================
-.. Copyright (C) 2017-2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
+.. Copyright (C) 2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
 .. ===================================================================================
 .. This Acumos documentation file is distributed by AT&T and Tech Mahindra
 .. under the Creative Commons Attribution 4.0 International License (the "License");
@@ -16,11 +16,16 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-===============================
-Solution Deployment User Guides
-===============================
+======================
+Managing Notifications
+======================
 
-.. toctree::
-   :maxdepth: 2
+Users who are logged in can click the notifications icon to display system messages.
 
-   deploy-to-azure.rst
+    .. image:: ../images/portal/notification_icon.png
+
+Click the **Read all Messages** button to display the **Manage Notifications** page.
+
+    .. image:: ../images/portal/notification_list.png
+
+From the **Manage Notifications** page, messages may be filtered, marked as read, or deleted.
