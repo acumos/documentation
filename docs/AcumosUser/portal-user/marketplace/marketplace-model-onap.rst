@@ -25,14 +25,19 @@ in ONAP is shown below:
 
     .. image:: ../images/portal/models_onapJourney.png
 
-The conversion of a model in ONAP can be accomplished by the following steps:
+The conversion of a model for ONAP can be accomplished by the following steps:
 
-#. If the model is compatible to ONAP then on model detail page user can see the button as **Build for ONAP**.
+If the model is compatible with ONAP, **Build for ONAP** button will be
+displayed on the **Model Details** page. Select **Build for ONAP** - this takes
+you to a new page.
 
-    .. image:: ../images/portal/onap_model_detail_option.png
+    .. image:: ../images/portal/models_onap_model_detail_option.png
+       :width: 75%
 
-#. Select **Build for ONAP**.
-#. Select **Add Model Name** to give the converted model a different name or select the checkbox to skip the step.
-#. Select **On-Board Model.** This will initiate a series of back end process steps, illuminated as they run, by the cascade from left to right of the icons on the top of the page. Once the process is completed you can access your model in the **private/unpublished** section of your personal catalog
 
-    .. image:: ../images/portal/convert_to_onap.png
+
+1. Select **Add Model Name** to give the converted model a different name
+2. OR you can select the **Keep Model Name As It Is** checkbox to keep the model's current name; note: if you select to keep the model's name, both  **Add Model Name** and **Keep Model Name As It Is** are disabled
+3. Once you have performed steps 1 or 2, select **On-Board Model.** This will initiate a series of back end process steps, illuminated as they run by the cascade from left to right of the icons on the top of the page. Once the process is completed you can access your model in the **MY UNPUBLISHED MODELS** section of your personal catalog
+
+    .. image:: ../images/portal/models_convertToOnap.png

@@ -24,7 +24,6 @@ The Marketplace - For Consumers
    :maxdepth: 2
 
    marketplace-intro.rst
-   marketplace-model-search.rst
    marketplace-model-details.rst
    marketplace-model-deploy.rst
    marketplace-model-onap.rst

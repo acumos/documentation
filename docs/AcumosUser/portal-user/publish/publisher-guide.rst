@@ -40,26 +40,21 @@ From the **Publish Request** page, a Publisher is able to view requests to
 publish models to the Public Marketplace, view model details by clicking on a
 request, approve a request, and decline a request.
 
-
-The list of Currents Requests is sortable by column header.
-
-The number of requests displayed is configurable using the "Showing" option in the lower left corner.
-
     .. image:: ../images/publish/publish-request-list.png
+       :width: 75%
 
-Filtering Requests
-==================
-Enter filter criteria into the **Filter** text box in the upper right corner.
-
+1. Enter filter criteria into the **Filter** text box in the upper right corner
+2. Change the number of requests/page
+3. Page navigation
 
 
 Approving or Declining a Request
 ================================
-#. Click on Model Name to view the details of that specific model. 
+#. Click on Model Name to view the details of that specific model.
 
     .. image:: ../images/publish/Model_Detail.png
 
-#. After reviewing the model details, approve or decline the request by clicking on the button **Approve Publication** or **Decline Publication** buttons on the top right corner of the screen.
+#. After reviewing the model details, approve or decline the request by clicking on the button **Approve Publication** or **Decline Publication** buttons on the top right corner of the screen. Note that a Publisher may not approve or decline his/her own model.
 
     .. image:: ../images/publish/approve_request.png
 
