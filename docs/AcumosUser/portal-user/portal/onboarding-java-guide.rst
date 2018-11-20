@@ -138,27 +138,47 @@ It will contain:
 Create your modeldump.zip file
 ==============================
 
-Java Client jar is the executable client jar file.
+.. Java Client jar is the executable client jar file.
 
-For Web-based onboarding of H2o models, the parameters to run the client jar are:
+It exists two ways to onboard a model, by CLI (command Line Interface) and by Web (drag and drop directly on the Acumos portal Web onboarding page). If you used CLI you need to be authenticated, currently it exists two ways to be authenticated : authentication by jwt token or authentication by api token. The jwt token is provided by the auth_url API while the api token is available on the acumos portal in the user setings. We strongly recommend to use api token as the jwt token method will be disable.
 
-#. Current Folder path : Full folder path in which Java client jar is placed and run from
-#. Model Type : H for H2o, G for Generic Java
-#. Supporting folder path : Full Folder path of the supporting folder which contains items.
-#. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
-#. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
+Changes in application.properties file
+
+1.	Pass the model file name
+2.	Model Type - H or G  (H for H2O model and G for Generic java model)
+3.	push_url – respective url on which user wants to onboard the model
+4.	auth_url – auth url  (for jwt token authentication)
+5.	token_type – apitoken (for api based token authentication), jwttoken(for jwt token based authentication)
+6.	token_file – Path where token file is present 
+i.	dump_path – path where modeldump needs to be save
+
+Pass the following argument as an input to run the JavaClient.jar file
+
+1.	H/G – H for H2O model and G for Generic java model
+2.	Supporting folder path – pass the path where modelrunner, model file, application.properties and data file are present
+3.	ModelName – The name of model file
+4.	DataFile – name of the data file present in supporting folder(optional in case if you have .proto file)
+5.	OnboardingType - pass WebOnboard if needed modeldump for webbased onboarding. For onboarding through client keep it blank(Optional)
+ 
+.. For Web-based onboarding of H2o models, the parameters to run the client jar are:
+
+.. #. Current Folder path : Full folder path in which Java client jar is placed and run from
+.. #. Model Type : H for H2o, G for Generic Java
+.. #. Supporting folder path : Full Folder path of the supporting folder which contains items.
+.. #. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
+.. #. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
 
-For CLI-based onboarding, the parameters to run the client jar are:
+.. For CLI-based onboarding, the parameters to run the client jar are:
 
-#. Onboarding server url.
-#. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. e.g http://<hostname>:8090/onboarding-app/v2/auth
-#. Model Type : H for H2o, G for Generic Java.
-#. Supporting folder path : Full Folder path of the supporting folder which contains items.
-#. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
-#. Username of the Portal MarketPlace account.
-#. Password of the Portal MarketPlace account.
-#. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
+.. #. Onboarding server url.
+.. #. Pass the authentication API url for onboarding - This API returns jwtToken for authenticated users. e.g http://<hostname>:8090/onboarding-app/v2/auth
+.. #. Model Type : H for H2o, G for Generic Java.
+.. #. Supporting folder path : Full Folder path of the supporting folder which contains items.
+.. #. Name of the model : For h2o just the name of the model without the .zip extension. Make sure this matches name of the supplied MOJO model file exactly.
+.. #. Username of the Portal MarketPlace account.
+.. #. Password of the Portal MarketPlace account.
+.. #. Input csv file : csv file that was used for training the model. Include the .csv extension in the csv file name. This will be used to autogenerate the default.proto file. This parameter will be empty if you yourself have supplied a default.proto for your model.
 
 
 See example below for how to run the client jar and how the modeldump.zip artifact appears after its successful run:
