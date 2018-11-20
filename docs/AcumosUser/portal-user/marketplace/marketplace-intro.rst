@@ -96,10 +96,12 @@ Searching by Keyword
 ====================
 To search the Marketplace by keywords, follow these steps:
 
-#. Fill in the keyword search on the top left inner menu
-#. Select the magnifying glass icon near the search box
-#. The result of your query is shown – with only the models that meet
+#. Enter keywords in the search field on the top left inner menu
+#. The result of your query is shown, with only the models that meet
    your search criteria
+
+This search feature looks for keyword matches in the following fields:
+name, description, author, publisher and model ID.
 
 Filtering by Category
 =====================
