@@ -94,11 +94,13 @@ Preferred themes are displayed on the left side of the UI.
 
 Searching by Keyword
 ====================
-To search the Marketplace by keywords, follow these steps:
+You can search models in the marketplace to find keyword matches in the
+following fields: name, description, author, publisher, solution ID and
+revision ID.  To search the Marketplace by keywords, follow these steps:
 
-#. Fill in the keyword search on the top left inner menu
-#. Select the magnifying glass icon near the search box
-#. The result of your query is shown – with only the models that meet
+#. Enter keywords in the search field near the top of the left navigation bar
+#. Hit return or click the search icon to start the search
+#. The result of your query is shown, with only the models that meet
    your search criteria
 
 Filtering by Category
