@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d6c53354_d61315e4",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 132
+      },
+      "writtenOn": "2018-11-26T21:24:52Z",
+      "side": 1,
+      "message": "tab to be removed",
+      "revId": "877992e4e929920c25c8eb2e606a89362be50e22",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "61235f3a_7b2d0580",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 132
+      },
+      "writtenOn": "2018-11-26T21:24:52Z",
+      "side": 1,
+      "message": "Trailing white space",
+      "revId": "877992e4e929920c25c8eb2e606a89362be50e22",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1be9a1ed_c8c326d5",
+        "filename": "docs/AcumosUser/portal-user/portal/onboarding-java-guide.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 132
+      },
+      "writtenOn": "2018-11-26T21:24:52Z",
+      "side": 1,
+      "message": "trailing white space",
+      "revId": "877992e4e929920c25c8eb2e606a89362be50e22",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
