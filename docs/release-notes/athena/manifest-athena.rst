@@ -28,7 +28,6 @@ The components that comprise the Acumos Platform are released as Docker images o
 
 Individual component release notes may be accessed from the :doc:`../component-release-notes` page.
 
-
 Core Components
 ---------------
 
@@ -43,8 +42,7 @@ Model Execution Components
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file:../model-execution.csv
-
+   :file: ../model-execution.csv
 
 
 Third Party Software
