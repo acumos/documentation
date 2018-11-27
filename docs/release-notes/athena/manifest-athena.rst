@@ -28,7 +28,6 @@ The components that comprise the Acumos Platform are released as Docker images o
 
 Individual component release notes may be accessed from the :doc:`../component-release-notes` page.
 
-
 Core Components
 ---------------
 
