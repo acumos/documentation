@@ -3,6 +3,6 @@ DataBroker,Data Broker,databroker-zipbroker,0.0.1
 Design Studio,CSV Data Broker,csvdatabroker,1.4.0
 Design Studio,Model Runner,h2o-genericjava-modelrunner,2.2.3
 Design Studio,Proto Viewer (Probe),acumos-proto-viewer,1.5.7
-Design Studio,Runtime Orchestrator (Model Connector) ,blueprint-orchestrator,2.0.11
+Design Studio,Runtime Orchestrator (Model Connector),blueprint-orchestrator,2.0.11
 Design Studio,SQL Data Broker,sqldatabroker,1.2.0
 Model Onboarding,Onboarding Base – R,onboarding-base-r,1.0.0
