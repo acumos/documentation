@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ded010b8_dd7d475a",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-27T18:21:21Z",
+      "side": 1,
+      "message": "what is \u0027anyrestarting\u0027",
+      "range": {
+        "startLine": 188,
+        "startChar": 29,
+        "endLine": 188,
+        "endChar": 32
+      },
+      "revId": "c598b1a06dc7c1880378b3208b9d7b9d792b1821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "35e8b3bd_db273437",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 259,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-27T18:21:21Z",
+      "side": 1,
+      "message": "\u0027right-clickany\u0027 ??",
+      "range": {
+        "startLine": 259,
+        "startChar": 66,
+        "endLine": 259,
+        "endChar": 80
+      },
+      "revId": "c598b1a06dc7c1880378b3208b9d7b9d792b1821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5428caf3_af24c6f3",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-27T18:21:21Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 286,
+        "startChar": 65,
+        "endLine": 286,
+        "endChar": 75
+      },
+      "revId": "c598b1a06dc7c1880378b3208b9d7b9d792b1821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9cc298ce_1e2926c5",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 480,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-27T18:21:21Z",
+      "side": 1,
+      "message": "??",
+      "range": {
+        "startLine": 480,
+        "startChar": 42,
+        "endLine": 480,
+        "endChar": 49
+      },
+      "revId": "c598b1a06dc7c1880378b3208b9d7b9d792b1821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5d5d526e_b25d1df8",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 506,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-27T18:21:21Z",
+      "side": 1,
+      "message": "??",
+      "range": {
+        "startLine": 506,
+        "startChar": 32,
+        "endLine": 506,
+        "endChar": 44
+      },
+      "revId": "c598b1a06dc7c1880378b3208b9d7b9d792b1821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5fa78d5f_94efcb71",
+        "filename": "docs/AcumosUser/oneclick-deploy/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 524,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-27T18:21:21Z",
+      "side": 1,
+      "message": "??",
+      "range": {
+        "startLine": 524,
+        "startChar": 67,
+        "endLine": 524,
+        "endChar": 76
+      },
+      "revId": "c598b1a06dc7c1880378b3208b9d7b9d792b1821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
