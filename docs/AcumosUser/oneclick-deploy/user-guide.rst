@@ -185,7 +185,7 @@ used so far.
     specify any proxy settings required, or select specific component ports
     other than the default, etc
 
-    * If you are redeploying/restarting the platform, you can preserve the
+    * If you are redeploying/anyrestarting the platform, you can preserve the
       current database and any models you have onboarded, by setting the
       ACUMOS_CDS_PREVIOUS_VERSION environment variable in acumos-env.sh to the
       same value as the ACUMOS_CDS_VERSION variable, as shown below:
@@ -256,7 +256,7 @@ used so far.
  * On the host where you installed the AIO Platform, login to the account you
    used when installing, and copy the contents of file aio-cms-host.yaml
 
- * On the CMS UI at the left, click the + at ``hst:hst`` and then right-click
+ * On the CMS UI at the left, click the + at ``hst:hst`` and then right-clickany
    ``hst:hosts``, and select "Yaml Import". In the resulting dialog, paste the
    copied contents of file aio-cms-host.yaml
 
@@ -283,7 +283,7 @@ used so far.
   default user. However, you can use the ``create-user.sh`` script to create
   an "Admin" user for the platform. The ``create-user.sh`` script is located
   in the same directory as the ``oneclick-deploy.sh`` script. Usage
-  instructions are included at the top of the ``create-user.sh`` script.
+  instructions are included at the top of the ``create-user.sh`` script.any
   Below is an example of how to create an admin user:
 
     .. code-block:: bash
@@ -299,6 +299,72 @@ used so far.
  * if you deployed a peer-test set of Acumos portals, log into the "test" user
    account with password per peer-test.sh (see line with "bash create-user.sh")
  * If you get a browser warning, just accept the self-signed cert and proceed.
+
+Updating Configuration and Components
+-------------------------------------
+
+As described in `Install Process`_ and `Stopping, Restarting, and Reinstalling`_,
+you can redeploy the whole platform without losing current data (e.g. users and
+models), by changing the values in acumos-env.sh (as updated by an earlier
+install process) as needed, leaving the rest as-is, and re-executing the
+deployment command you used for the previous deployment.
+
+However, this process is not guaranteed to be fail-proof, and if you are
+concerned about the ability to recover database items that may be lost, it is
+recommended that you first backup the databases or export data from them. Some
+tools have been developed for this, e.g.
+
+* `dump-model.sh <https://github.com/acumos/test-models/blob/master/tools/dump-model.sh>`_:
+  this tool is intended to enable export of all artifacts related to one or
+  more models by solution/revision
+
+The following types of redeployment are regularly tested as part of the AIO
+toolset development:
+
+* updating the configuration
+
+  * values in acumos-env.sh, or values in the component templates etc, can be
+    modified and re-applied by redeploying the components. Note however that
+    some values may not work with previous data, as the related components
+    are not redeployed/reconfigured. For example, the following values should
+    not be changed without a clean redeploy:
+
+    * domain name of the Acumos platform
+
+      * ACUMOS_DOMAIN
+
+    * CDS settings
+
+      * ACUMOS_CDS_PASSWORD
+
+    * Nexus settings
+
+      * ACUMOS_NEXUS_ADMIN_USERNAME
+      * ACUMOS_NEXUS_ADMIN_PASSWORD
+      * ACUMOS_RO_USER
+      * ACUMOS_RO_USER_PASSWORD
+      * ACUMOS_RW_USER
+      * ACUMOS_RW_USER_PASSWORD
+
+    * server certificate credentials
+
+      * ACUMOS_KEYPASS
+
+* upgrading a specific component or set of components
+
+  * components can be upgraded, e.g. for testing or to move to a new
+    `release assembly <https://wiki.acumos.org/display/REL/Weekly+Builds>`_.
+    However, ensure that you have addressed any component template changes,
+    as described by the release notes for the new component versions.
+
+* upgrading the CDS database version
+
+  * CDS version changes sometimes result in a new version of the CDS database
+    schema. Version upgrades are supported by the AIO toolset, given that there
+    is an available mysql upgrade script in the common-dataservice repo. Scripts
+    are provided for an incremental update only; see the
+    `CDS github mirror <https://github.com/acumos/common-dataservice/tree/master/cmn-data-svc-server/db-scripts>`_
+    for examples of the available scripts.
 
 Stopping, Restarting, and Reinstalling
 --------------------------------------
@@ -323,7 +389,7 @@ passwords for MariaDB, CDS, Nexus, ...) have not been changed:
 
 .. code-block:: bash
 
-  sudo bash oneclick_deploy.sh k8s
+  bash oneclick_deploy.sh k8s
 
 If you deployed under kubernetes, you can also restart a specific component by
 the name of the deployment. As in the example below, you can use the kubectl
@@ -360,7 +426,7 @@ command to get the deployment names. Note that:
 
   $ kubectl delete deployment -n acumos kubernetes-client
   deployment.extensions "kubernetes-client" deleted
-  $ kubectl create -f deploy/kubernetes/deployment/kubernetes-client-deployment.yaml 
+  $ kubectl create -f deploy/kubernetes/deployment/kubernetes-client-deployment.yaml
   deployment.apps "kubernetes-client" created
 
 You can clean the installation (including all data) via:
@@ -371,6 +437,7 @@ You can clean the installation (including all data) via:
 
 Verified Features
 -----------------
+new user registration
 
 The following Acumos platform workflows and related features have been verified as
 working so far. This list will be updated as more workflows are verified.
@@ -410,7 +477,7 @@ post-deployment through the referenced test scripts:
 
 * remote peer creation: `create-peer.sh <https://github.com/acumos/system-integration/blob/master/AIO/create-peer.sh>`_
 
-  * Get userId of user, via CDS API /ccds/user
+  * Get userId of user, via CDS API /ccds/userany
   * Create peer, via CDS API /ccds/peer
   * Apply new truststore entry by restarting the Federation service
   * Subscribe to all solution types at peer, via CDS API /ccds/peer/sub
@@ -436,10 +503,11 @@ The following manual tests are regularly verified as part of AIO testing:
 * federated subscription to public marketplace models
 * verification of subscribed model presence in public marketplace
 * creation of composite solution
-* addition of probe to composite solution
+* addition of probe to composite solutionany
 * setting Datasource model Category "Data Sources" and Toolkit "Data Broker"
 * creation of composite solution with Datasource
 * model deployment in private kubernetes ("deploy to local")
+
   * simple model
   * composite model
   * composite model with Probe
@@ -453,7 +521,7 @@ User registration and login
 
 A test script to automate user account creation and role assignment has been
 included in this repo. See
-`create-user.sh <https://github.com/acumos/system-integration/blob/master/AIO/create-user.sh>`_
+`create-user.sh <https://github.com/acumos/system-integration/blob/manyaster/AIO/create-user.sh>`_
 for info and usage. For an example of
 this script in use, see `Federation`_.
 
@@ -477,7 +545,7 @@ as toolkit clients will do when installed. Two scripts are used for this:
 * `onboard-model.sh <https://github.com/acumos/test-models/blob/master/tools/onboard-model.sh>`_
 
   * onboard a specific model (a folder with the files as describe above)
-  
+
 Federation
 ..........
 
