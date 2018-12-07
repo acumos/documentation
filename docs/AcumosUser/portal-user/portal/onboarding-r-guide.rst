@@ -26,21 +26,23 @@ Prerequisites
 =============
 Before you begin:
 
-#) You must have R installed on you system. Please have a look at `cran.r-project.org <https://cran.r-project.org/>`_
+#) You must have the following packages installed in your system : protobuf-compiler, protobuf-c-compiler, libprotobuf-c-dev,
+libprotobuf-dev,libprotoc-dev
+
+#) You must have an Acumos account
 
 #) You must have protobuf 3 installed on your system (version 2 will not work).
 
    .. code:: bash
 
-    git clone https://github.com/google/protobuf.git protobuf
-    cd protobuf
-    ./autogen.sh
-    ./configure --prefix=`pwd`/../`uname -m`-linux-gnu
-    make
-    make install
-    cd ../..
-
-#) You must have an Acumos account
+      git clone https://github.com/google/protobuf.git protobuf
+      cd protobuf
+      ./autogen.sh
+      ./configure --prefix=`pwd`/../`uname -m`-linux-gnu
+      make
+      make install
+      
+#) You must have R installed on you system. Please have a look at `cran.r-project.org <https://cran.r-project.org/>`_
 
 Installing the Acumos R Client
 ==============================
@@ -49,14 +51,15 @@ Within R you need to install and load all dependent packages from CRAN first.
 
 .. code:: bash
 
-    install.packages(c("Rcpp","RCurl","RUnit","rmarkdown","knitr","pinp"))
+    install.packages(c("Rcpp","RCurl","RUnit","rmarkdown","knitr","pinp","xml2"))
     library(Rcpp,Rcurl,RUnit,rmarkdown,knitr,pinp)
 
 
 Then Install the Acumos R Client package and RProtobuf package thanks to the following command:
 
 .. code:: bash
-
+    
+    install.packages("RProtoBuf") 
     install.packages("acumos",,c("http://r.research.att.com","http://rforge.net"))
 
 
