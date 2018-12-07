@@ -38,7 +38,9 @@ Before you begin:
     ./configure --prefix=`pwd`/../`uname -m`-linux-gnu
     make
     make install
-    cd ../..
+
+#) You must have the following packages installed in your system : protobuf-compiler, protobuf-c-compiler, libprotobuf-c-dev,
+libprotobuf-dev,libprotoc-dev
 
 #) You must have an Acumos account
 
@@ -56,7 +58,7 @@ Within R you need to install and load all dependent packages from CRAN first.
 Then Install the Acumos R Client package and RProtobuf package thanks to the following command:
 
 .. code:: bash
-
+    install.packages("RProtoBuf") 
     install.packages("acumos",,c("http://r.research.att.com","http://rforge.net"))
 
 
