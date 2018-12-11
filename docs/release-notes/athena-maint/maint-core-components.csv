@@ -1,0 +1,17 @@
+Project,Component,Artifact,Version
+"Catalog, Data Model, and Data Management",Common Data Service (CDS) – server,common-dataservice,1.18.4
+"Catalog, Data Model, and Data Management",Federation,federation-gateway,1.18.7
+Common Services,Microservice Generation,microservice-generation,1.8.2
+Deployment,Azure Client,acumos-azure-client,1.2.22
+Deployment,Kubernetes Client,kubernetes-client,1.1.0
+Deployment,OpenStack Client,openstack-client,1.1.22
+Design Studio,Composition Engine,ds-compositionengine,1.40.2
+Model Onboarding,Onboarding,onboarding-app,1.39.0
+OA&M,Elasticsearch,acumos-elasticsearch,1.18.2
+OA&M,Filebeat,acumos-filebeat,1.18.2
+OA&M,Kibana,acumos-kibana,1.18.2
+OA&M,Logstash,acumos-logstash,1.18.2
+OA&M,Metricbeat,acumos-metricbeat,1.18.2
+Portal,Hippo CMS,acumos-cms-docker,1.3.5
+Portal,Portal Backend,acumos-portal-be,1.16.6
+Portal,Portal Frontend,acumos-portal-fe,1.16.6
