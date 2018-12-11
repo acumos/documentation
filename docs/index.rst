@@ -34,6 +34,11 @@ Platform
 .. toctree::
     :maxdepth: 3
 
+    ../release-notes/athena-maint/index
+
+.. toctree::
+    :maxdepth: 1
+
     ../release-notes/athena/index
 
 
