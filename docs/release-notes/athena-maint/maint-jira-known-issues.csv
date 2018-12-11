@@ -1,0 +1,16 @@
+Issue Type,Issue key,Component/s,Summary
+Bug,ACUMOS-1932,portal-marketplace,IST: Solution name is not displaying in the notification when user published the model to company marketplace
+Bug,ACUMOS-1928,on-boarding,<IST> <Onboarding> API token Authentication is not working for R model which is onboarded through CLI
+Bug,ACUMOS-1924,portal-marketplace,Edit Peer dialog always sets self status to false
+Bug,ACUMOS-1912,portal-marketplace,IST2: Comment Count is getting zero from tiles when user change the view on marketplace screen
+Story,ACUMOS-1904,portal-marketplace,IST2: Publish request entry is displaying for a deleted model.
+Bug,ACUMOS-1903,portal-marketplace,IST2: When onboarding of a model fail user is not getting both logs by the link provided on the notification bell icon 
+Bug,ACUMOS-1889,portal-marketplace,IST2: Web Onboarding: Quit(X) is not working during and after uploading of files
+Bug,ACUMOS-1885,portal-marketplace,IST2 - Status is not moving for states when model is published
+Bug,ACUMOS-1883,common-dataservice,CDS add method to get user unread notification count
+Bug,ACUMOS-1882,portal-marketplace,Portal manage-my-models page shows status Not Started altho deploy to cloud process is completed
+Bug,ACUMOS-1803,portal-marketplace,IST2: View Comment box(tool tip) getting cut down for blank text on publish  request screen
+Bug,ACUMOS-1775,portal-marketplace,Portal publish-approve screen does not allow viewing comments after approve/decline
+Bug,ACUMOS-1626,portal-marketplace,IST: Author Name is not displaying when user added the success story
+Bug,ACUMOS-1531,portal-marketplace,IST2: Manage My Model: Document: Same Document is not getting selected if user cancel first time
+Bug,ACUMOS-516,platform-oam,<IST> <OA&M > Logs are not displayed on IST Logcollector when accessed through application
