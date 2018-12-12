@@ -1,4 +1,5 @@
 Issue Type,Issue key,Component/s,Summary
+Bug,ACUMOS-2109,common-dataservice,Need update sql script to populate first-author metadata for Athena in DB
 Bug,ACUMOS-2102,portal-marketplace,IST2: Different name is displaying on the model tile on marketplace and manage my model screen for multiple user
 Bug,ACUMOS-2074,portal-marketplace,Portal marketplace tile has unnecessary constant text
 Story,ACUMOS-2073,portal-marketplace,Portal require author and default to user when publishing to any catalog

@@ -20,6 +20,10 @@
 Athena Maintenance Release, 12 December 2018
 ============================================
 
+    .. note::
+        There is a *required* database upgrade to populate Authorship data. Please see `User and Author Data Upgrade for CDS 1.18.x <https://docs.acumos.org/en/athena/submodules/common-dataservice/docs/upgrade.html>`_ for instructions.
+
+
 .. toctree::
     :maxdepth: 2
 
