@@ -12,9 +12,9 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-===============
-Athena Manifest
-===============
+===========================
+Athena Maintenance Manifest
+===========================
 
 Operating System
 ================
@@ -34,7 +34,7 @@ Core Components
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: core-components.csv
+   :file: maint-core-components.csv
 
 Model Execution Components
 --------------------------
@@ -42,7 +42,7 @@ Model Execution Components
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: model-execution.csv
+   :file: maint-model-execution.csv
 
 
 Third Party Software
@@ -66,7 +66,7 @@ These supporting libraries are released as Java JAR files and referenced as libr
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: libraries.csv
+   :file: maint-libraries.csv
 
 
 Modeler Client Libraries
@@ -76,7 +76,7 @@ These libraries are used by modelers on their local workstations to prepare mode
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: clients.csv
+   :file: maint-clients.csv
 
 Model Runners
 =============
@@ -84,4 +84,4 @@ Model Runners
 .. csv-table::
    :header-rows: 1
    :align: left
-   :file: model-runners.csv
+   :file: maint-model-runners.csv

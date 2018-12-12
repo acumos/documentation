@@ -1,0 +1,13 @@
+Issue Type,Issue key,Component/s,Summary
+Bug,ACUMOS-2102,portal-marketplace,IST2: Different name is displaying on the model tile on marketplace and manage my model screen for multiple user
+Bug,ACUMOS-2074,portal-marketplace,Portal marketplace tile has unnecessary constant text
+Story,ACUMOS-2073,portal-marketplace,Portal require author and default to user when publishing to any catalog
+Bug,ACUMOS-2056,portal-marketplace,"Portal displays incorrect person detail on tile, shows Admin instead of author"
+Bug,ACUMOS-2008,portal-marketplace,On-Boarding Model contains links to docs.acumos.org/en/latest instead of docs.acumos.org/en/athena
+Bug,ACUMOS-1988,portal-marketplace,ADC-Staging - Logged in user not matching name on black bar
+Story,ACUMOS-1953,portal-marketplace,Portal don't show first-time user Tag/Theme selection dialog
+Bug,ACUMOS-1933,portal-marketplace,"IST: Newly Added tag is not displaying on the model tiles (marketplace , manage my model) when user published the model"
+Bug,ACUMOS-1916,on-boarding,<IST2> <Onboarding> API token authentication not working for Java model when onboarded through CLI
+Story,ACUMOS-1818,portal-marketplace,Portal improve power of Marketplace left-side seach-by-keyword field
+Bug,ACUMOS-1653,portal-marketplace,IST2: Deploy to Local : Download packages and help is not working on the popup
+
