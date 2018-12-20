@@ -40,7 +40,7 @@ Before you begin:
       ./configure --prefix=`pwd`/../`uname -m`-linux-gnu
       make
       make install
-      
+
 #) You must have R installed on you system. Please have a look at `cran.r-project.org <https://cran.r-project.org/>`_
 
 Installing the Acumos R Client
@@ -53,12 +53,11 @@ Within R you need to install and load all dependent packages from CRAN first.
     install.packages(c("Rcpp","RCurl","RUnit","rmarkdown","knitr","pinp","xml2"))
     library(Rcpp,Rcurl,RUnit,rmarkdown,knitr,pinp)
 
-
 Then Install the Acumos R Client package and RProtobuf package thanks to the following command:
 
 .. code:: bash
-    
-    install.packages("RProtoBuf") 
+
+    install.packages("RProtoBuf")
     install.packages("acumos",,c("http://r.research.att.com","http://rforge.net"))
 
 
@@ -79,18 +78,21 @@ Model bundle
 
 To create the model bundle, use acumos::compose() with the functions to expose.
 If type specs are not defined, they default to c(x="character"). The model
-bundle consists of component.json defining the component and its metadata,
-component.bin the binary payload, and component.proto with the protobuf specs.
+bundle (named component.amc) is in fatc a zip file that contains three distinct files :
+
+#) meta.json defining the component and their metadata,
+#) component.bin the binary payload,
+#) and component.proto with the protobuf specs.
+
+
 Please consult R documentation page for details, i.e., use ?compose in R or see
 the `Compose <http://www.rforge.net/doc/packages/acumos/compose.html>`_ page at
 RForge.
 
-The compose function provide the model bundle as an .amc file that is in fact a zip file, you have to unzip it and zip it again to have the .zip extension.
-
-.. code-block:: bash
-
-    unzip component.amc
-    zip component.zip component.proto component.bin meta.json
+If you used R under windows you could meet an issue using the acumos::compose() function due to some
+problems between R under windows and zip. If RTools is not installed on your windows environment,
+the model bundle will not be created. So please follows the installation procedure of
+ `Rtools <https://stackoverflow.com/questions/29129681/create-zip-file-error-running-command-had-status-127>`_
 
 Authentication and upload
 -------------------------
@@ -99,9 +101,9 @@ Once the model bundle is created, you can use the push() API to upload it in Acu
 
 .. code-block:: bash
 
-    acumos::push("url","file","username:token")
+    acumos::push("https://url","file","username:token")
 
-url is : http://hostname:8090/onboarding-app/v2/models
+url can be found in the ON-BOARDING MODEL page of your Acumos portal and looks like : "hotsname:port/onboarding-app/v2/models"
 
 file : component.zip
 
@@ -109,21 +111,20 @@ username : your Acumos username
 
 token : Authentication token available in the Acumos portal in your profile section
 
-
 You can also authenticate yourself by using the auth() API:
 
 .. code-block:: bash
 
     acumos::auth("url","username","password")
 
-url is : http://hostname:8090/onboarding-app/v2/auth
+url can be found in the ON-BOARDING MODEL page of your Acumos portal and lokks like "hostname:port/onboarding-app/v2/auth"
 
 username : your Acumos username
 
 password : your Acumos password
 
 
-In the Response, you will receive an authentication token to be used in the push() API:
+In the Response, you will receive an authentication token to be used in the acumos::push() function :
 
 .. code-block:: bash
 
