@@ -164,11 +164,10 @@ This guide assumes:
 Install Process
 ---------------
 
-The notes below provide an overview of the installation process. Note these
-scripts are a work in progress, and not all Acumos platform functions may work
-correctly at this time. See "Verified Features" below for a summary of what's
-been verified to work, at least in the test environments where this has been
-used so far.
+The notes below provide an overview of the installation process.
+See `Verified Features`_ below for a summary of what's
+been verified to work in the test environments where this has been
+used.
 
 * Open a shell session (bash recommended) on the host on which (for single AIO
   deployment) or from which (for peer-test deployment) you want to install
@@ -599,6 +598,21 @@ Features Pending Verification
 * model private sharing with user
 * model launch
 * design studio
+
+Logs Location
+=============
+Logs are located inside the Docker containers. To access logs for the Portal:
+
+    .. codeblock: bash
+
+        docker ps | grep portal
+        docker exec  -it  {container_id_value}  /bin/sh
+
+The logs will be located inside containers at:
+
+* /maven/logs/portal-be/   debug.log , error.log , access.log , application.log  (for backend)
+* /maven/ logs/portal-fe/   debug.log , error.log ,application.log  (for UI)
+
 
 Additional Notes
 ================
