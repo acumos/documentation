@@ -68,6 +68,7 @@ Acumos Portal and Marketplace User Guides
    :maxdepth: 1
 
    ../AcumosUser/portal-user/index
+   ../AcumosUser/portal-publisher/index
    ../AcumosUser/portal-admin/index
 
 Acumos Operational User Guides
