@@ -17,14 +17,11 @@
 .. ===============LICENSE_END=========================================================
 
 =================================
-Portal and Marketplace User Guide
+Portal and Marketplace Publisher Guide
 =================================
 
 .. toctree::
    :maxdepth: 3
-
-   overview.rst
-   accounts.rst
-   marketplace/index
-   portal/index
-   design-studio/index
+    
+   publish/publisher-guide.rst
+  
