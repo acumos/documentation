@@ -292,7 +292,7 @@ used.
         $ User creation is complete
 
 
-* You should now be able to browse to https://<hostname>, and
+* You should now be able to browse to the Acumos platform by going to https://<hostname>:30443, and
 
  * register new user accounts, etc
  * if you deployed a peer-test set of Acumos portals, log into the "test" user
