@@ -77,7 +77,7 @@ Acumos Operational User Guides
 .. toctree::
    :maxdepth: 1
 
-   ../AcumosUser/oneclick-deploy/index
+   ../submodules/system-integration/docs/oneclick-deploy/index
    ../submodules/platform-oam/docs/user-guide
    ../submodules/system-integration/docs/user-guide
 
