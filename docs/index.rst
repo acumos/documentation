@@ -57,8 +57,8 @@ Component and Weekly
 
 
 
-Acumos Portal and Marketplace User Guides
-=========================================
+Portal and Marketplace User Guides
+==================================
 .. note::
     Data Scientists who are contributing models should reference the `Portal - For Modelers pages <https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/latest/AcumosUser/portal-user/index.html>`_.
 
@@ -72,8 +72,30 @@ Acumos Portal and Marketplace User Guides
    ../AcumosUser/portal-admin/index
    ../submodules/design-studio/docs/design-studio-user-guide/index
 
-Acumos Operational User Guides
-==============================
+
+Model On-Boarding Guides
+========================
+Java
+----
+:doc:`../submodules/acumos-java-client/docs/end-user-guide/onboarding-java-guide`
+
+Python
+------
+The Acumos Python Client library is required for users who want to push their
+TensorFlow and scikit-learn models to the Acumos Portal. You will use this
+library for on-boarding all your models. The library creates meta-data by
+introspection, packages all the necessary information, and then uploads it to
+Acumos On-Boarding server. The Acumos Python Client library is packaged an
+available on PyPI. Please see the `PyPI <https://pypi.org/project/acumos/>`_
+page for instructions and a tutorial.
+
+R
+-
+:doc:`../submodules/acumos-r-client/docs/onboarding-r-guide`
+
+
+Operational User Guides
+=======================
 
 .. toctree::
    :maxdepth: 1
