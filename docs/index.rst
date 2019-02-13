@@ -70,6 +70,7 @@ Acumos Portal and Marketplace User Guides
    ../AcumosUser/portal-user/index
    ../AcumosUser/portal-publisher/index
    ../AcumosUser/portal-admin/index
+   ../submodules/design-studio/docs/design-studio-user-guide/index
 
 Acumos Operational User Guides
 ==============================
