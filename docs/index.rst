@@ -72,6 +72,29 @@ Acumos Portal and Marketplace User Guides
    ../AcumosUser/portal-admin/index
    ../submodules/design-studio/docs/design-studio-user-guide/index
 
+Model On-Boarding Guides
+========================
+Java
+----
+The Acumos Java Client Library command line utility is used to on-board H2o.ai and Generic Java models. This library creates artifacts from an H2o or Generic Java model and pushes the artifacts to the on-boarding server for the H2o Model runner to be able to use them.
+
+:doc:`Java Model On-Boarding Guide <../submodules/acumos-java-client/docs/end-user-guide/onboarding-java-guide>`
+
+Python
+------
+The Acumos Python Client library is required for users who want to push their
+TensorFlow and scikit-learn models to the Acumos Portal. You will use this
+library for on-boarding all your models. The library creates meta-data by
+introspection, packages all the necessary information, and then uploads it to
+Acumos On-Boarding server. The Acumos Python Client library is packaged an
+available on PyPI. Please see the `PyPI <https://pypi.org/project/acumos/>`_
+page for instructions and a tutorial.
+
+R
+-
+:doc:`R Model On-Boarding Guide <../submodules/acumos-r-client/docs/onboarding-r-guide>`
+
+
 Acumos Operational User Guides
 ==============================
 
