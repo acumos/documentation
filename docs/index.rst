@@ -1,4 +1,4 @@
- .. ===============LICENSE_START=======================================================
+.. ===============LICENSE_START=======================================================
 .. Acumos CC-BY-4.0
 .. ===================================================================================
 .. Copyright (C) 2017-2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
@@ -57,20 +57,14 @@ Component and Weekly
 
 
 
-Acumos Portal and Marketplace User Guides
-=========================================
-.. note::
-    Data Scientists who are contributing models should reference the `Portal - For Modelers pages <https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/latest/AcumosUser/portal-user/index.html>`_.
+Portal and Marketplace User Guides
+==================================
 
+* :doc:`Portal and Marketplace User Guide <../submodules/portal-marketplace/docs/user-guides/portal-user/index>`
+* :doc:`Portal and Marketplace Publisher Guide <../submodules/portal-marketplace/docs/user-guides/portal-publisher/index>`
+* :doc:`Portal and Marketplace Admin Guide <../submodules/portal-marketplace/docs/user-guides/portal-admin/index>`
+* :doc:`Design Studio User Guide <../submodules/design-studio/docs/design-studio-user-guide/index>`
 
-
-.. toctree::
-   :maxdepth: 1
-
-   ../AcumosUser/portal-user/index
-   ../AcumosUser/portal-publisher/index
-   ../AcumosUser/portal-admin/index
-   ../submodules/design-studio/docs/design-studio-user-guide/index
 
 Model On-Boarding Guides
 ========================
@@ -79,8 +73,8 @@ Model On-Boarding Guides
 * R: :doc:`R Model On-Boarding Guide <../submodules/acumos-r-client/docs/onboarding-r-guide>`
 
 
-Acumos Operational User Guides
-==============================
+Operational User Guides
+=======================
 
 .. toctree::
    :maxdepth: 1
