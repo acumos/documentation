@@ -1,4 +1,4 @@
-.. ===============LICENSE_START=======================================================
+ .. ===============LICENSE_START=======================================================
 .. Acumos CC-BY-4.0
 .. ===================================================================================
 .. Copyright (C) 2017-2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
@@ -71,6 +71,17 @@ Acumos Portal and Marketplace User Guides
    ../AcumosUser/portal-publisher/index
    ../AcumosUser/portal-admin/index
    ../submodules/design-studio/docs/design-studio-user-guide/index
+
+Model On-Boarding Guides
+========================
+H2o.ai and Generic Java Models: :doc:`Java Model On-Boarding Guide <../submodules/acumos-java-client/docs/end-user-guide/onboarding-java-guide>`
+
+Python: The Acumos Python Client library is packaged and
+available on PyPI. Please see the `PyPI <https://pypi.org/project/acumos/>`_
+page for instructions and a tutorial.
+
+R: :doc:`R Model On-Boarding Guide <../submodules/acumos-r-client/docs/onboarding-r-guide>`
+
 
 Acumos Operational User Guides
 ==============================
