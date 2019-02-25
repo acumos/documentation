@@ -60,7 +60,7 @@ Component and Weekly
 Acumos Portal and Marketplace User Guides
 =========================================
 .. note::
-    Data Scientists who are contributing models should reference the `Portal - For Modelers pages <https://docs.acumos.org/en/latest/AcumosUser/portal-user/portal/index.html>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/latest/AcumosUser/portal-user/index.html>`_.
+    Data Scientists who are contributing models should reference the `Portal - For Modelers pages <https://docs.acumos.org/en/athena/AcumosUser/portal-user/portal/index.html>`_ of the `Portal and Marketplace User Guide <https://docs.acumos.org/en/athena/AcumosUser/portal-user/index.html>`_.
 
 
 
