@@ -40,7 +40,7 @@ Common Services
 * :doc:`Nexus Client <../submodules/acumos-nexus-client/docs/index>`
 * :doc:`Python DCAE Model Runner <../submodules/python-dcae-model-runner/docs/index>`
 * :doc:`Python Model Runner <../submodules/python-model-runner/docs/index>`
-* :doc:`Security Verification of Models <../submodules/security-verification/security-verification-service/docs/index>`
+* :doc:`Security Verification of Models <../submodules/security-verification/docs/index>`
 
 Design Studio
 -------------
@@ -65,10 +65,10 @@ This project maintains clients for deploying models to different environments.
 Model On-Boarding
 -----------------
 
-* :doc:`Java Client <../submodules/acumos-java-client/docs/index>`
 * :doc:`On-boarding <../submodules/on-boarding/docs/index>`
-* :doc:`Python Client <../submodules/acumos-python-client/docs/index>`
-* :doc:`R Client <../submodules/acumos-r-client/docs/index>`
+* :doc:`On-boarding Java Client <../submodules/acumos-java-client/docs/index>`
+* :doc:`On-boarding Python Client <../submodules/acumos-python-client/docs/index>`
+* :doc:`On-boarding R Client <../submodules/acumos-r-client/docs/index>`
 
 Portal and Marketplace
 ----------------------
@@ -94,3 +94,5 @@ Example Models
 * :doc:`Image Classification <../submodules/image-classification/docs/index>`
 * :doc:`Image Mood Classifier <../submodules/image-mood-classifier/docs/index>`
 * :doc:`VM Predictor <../submodules/vm-predictor/docs/index>`
+
+
