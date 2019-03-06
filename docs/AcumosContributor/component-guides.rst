@@ -40,7 +40,7 @@ Common Services
 * :doc:`Nexus Client <../submodules/acumos-nexus-client/docs/index>`
 * :doc:`Python DCAE Model Runner <../submodules/python-dcae-model-runner/docs/index>`
 * :doc:`Python Model Runner <../submodules/python-model-runner/docs/index>`
-* :doc:`Security Verification of Models <../submodules/security-verification/security-verification-service/docs/index>`
+* :doc:`Security Verification of Models <../submodules/security-verification/docs/index>`
 
 Design Studio
 -------------
@@ -94,3 +94,5 @@ Example Models
 * :doc:`Image Classification <../submodules/image-classification/docs/index>`
 * :doc:`Image Mood Classifier <../submodules/image-mood-classifier/docs/index>`
 * :doc:`VM Predictor <../submodules/vm-predictor/docs/index>`
+
+
