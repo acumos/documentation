@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dd983973_dd5f6f8c",
+        "filename": "docs/index.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2019-03-28T17:28:37Z",
+      "side": 1,
+      "message": "Remove the extension",
+      "range": {
+        "startLine": 74,
+        "startChar": 110,
+        "endLine": 74,
+        "endChar": 114
+      },
+      "revId": "198c2d0b7d8b0c29f5e027b130f3fd9b855cbaac",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
