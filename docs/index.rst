@@ -72,6 +72,7 @@ Model On-Boarding Guides
 * Python: The Acumos Python Client library is packaged and available on PyPI. Please see the `PyPI <https://pypi.org/project/acumos/>`_ page for instructions and a tutorial.
 * R: :doc:`R Model On-Boarding Guide <../submodules/acumos-r-client/docs/onboarding-r-guide>`
 * ONNX and PFA: :doc:`ONNX and PFA On-Boarding Guide <../submodules/on-boarding/docs/onboarding-ONNX-PFA-guide>`
+* Pre-dockerized models and model URI: :doc:`Pre-dockerized models and models URI On-boarding Guide <../submodules/on-boarding/docs/onboarding-pre_dockerised_and_URI_guide>`
 
 Operational User Guides
 =======================
