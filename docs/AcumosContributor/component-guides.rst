@@ -35,11 +35,14 @@ Catalog, Data Model, and Data Management
 Common Services
 ---------------
 
+* `H2O Model Builder <../submodules/model-builder/h2o-model-builder/docs/index>`_
+* `H2O Model Runner <../submodules/model-runner/h2o-model-runner/docs/index>`_
 * :doc:`H2O Java Model Runner <../submodules/generic-model-runner/docs/index>`
 * :doc:`Microservice Generation <../submodules/microservice-generation/docs/index>`
 * :doc:`Nexus Client <../submodules/acumos-nexus-client/docs/index>`
 * :doc:`Python DCAE Model Runner <../submodules/python-dcae-model-runner/docs/index>`
 * :doc:`Python Model Runner <../submodules/python-model-runner/docs/index>`
+* `RDS Model Runner <../submodules/model-runner/rds-model-runner/docs/index>`_
 * :doc:`Security Verification of Models <../submodules/security-verification/security-verification-service/docs/index>`
 
 Design Studio
@@ -49,6 +52,7 @@ Model Generator Client, Generic Data Mapper Service, CSV Data Broker, and SQL
 Data Broker. Additional components are in separate repositories.
 
 * :doc:`Design Studio <../submodules/design-studio/docs/index>`
+* `ML Workbench <../submodules/workbench/docs/index>`_
 * :doc:`Proto Viewer ("Probe") <../submodules/proto-viewer/docs/index>`
 * :doc:`Runtime Orchestrator ("Model Connector") <../submodules/runtime-orchestrator/docs/index>`
 
@@ -60,6 +64,7 @@ This project maintains clients for deploying models to different environments.
 * :doc:`Azure Client <../submodules/acumos-azure-client/docs/index>`
 * :doc:`Kubernetes Client <../submodules/kubernetes-client/docs/index>`
 * :doc:`OpenStack Client <../submodules/openstack-client/docs/index>`
+* `Predictor Management <../submodules/model-deployments/predictor-management/docs/index>`_
 
 
 Model On-Boarding

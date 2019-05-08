@@ -129,27 +129,54 @@
         branch = .
         ignore = dirty
 [submodule "docs/submodules/security-verification"]
-		path = docs/submodules/security-verification
-		url = ../security-verification
-		branch = .
+        path = docs/submodules/security-verification
+        url = ../security-verification
+        branch = .
         ignore = dirty
 [submodule "docs/submodules/microservice-generation"]
-		path = docs/submodules/microservice-generation
-		url = ../microservice-generation
-		branch = .
+        path = docs/submodules/microservice-generation
+        url = ../microservice-generation
+        branch = .
         ignore = dirty
 [submodule "docs/submodules/test-models"]
-		path = docs/submodules/test-models
-		url = ../test-models
-		branch = .
+        path = docs/submodules/test-models
+        url = ../test-models
+        branch = .
+        ignore = dirty
+        branch = .
         ignore = dirty
 [submodule "docs/submodules/python-model-runner"]
-		path = docs/submodules/python-model-runner
-		url = ../python-model-runner
-		branch = .
+        path = docs/submodules/python-model-runner
+        url = ../python-model-runner
+        branch = .
         ignore = dirty
 [submodule "docs/submodules/kubernetes-client"]
-		path = docs/submodules/kubernetes-client
-		url = ../kubernetes-client
-		branch = .
+        path = docs/submodules/kubernetes-client
+        url = ../kubernetes-client
+        branch = .
+        ignore = dirty
+[submodule "docs/submodules/workbench"]
+        path = docs/submodules/workbench
+        url = ../workbench.git
+        branch = .
+        ignore = dirty
+[submodule "docs/submodules/model-builder/h2o-model-builder"]
+        path = docs/submodules/model-builder/h2o-model-builder
+        url = ../model-builder/h2o-model-builder.git
+        branch = .
+        ignore = dirty
+[submodule "docs/submodules/model-deployments/predictor-management"]
+        path = docs/submodules/model-deployments/predictor-management
+        branch = .
+        ignore = dirty
+        url = ../model-deployments/predictor-management.git
+[submodule "docs/submodules/model-runner/h2o-model-runner"]
+        path = docs/submodules/model-runner/h2o-model-runner
+        url = ../model-runner/h2o-model-runner.git
+        branch = .
+        ignore = dirty
+[submodule "docs/submodules/model-runner/rds-model-runner"]
+        path = docs/submodules/model-runner/rds-model-runner
+        url = ../model-runner/rds-model-runner.git
+        branch = .
         ignore = dirty
