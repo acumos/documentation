@@ -20,6 +20,7 @@
 ====================
 Acumos Documentation
 ====================
+
 Acumos AI is a platform and open source framework that makes it easy to build,
 share, and deploy AI apps. Acumos standardizes the infrastructure stack and
 components required to run an out-of-the-box general AI environment. This frees
