@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f72f2bc7_8374476c",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-05-29T11:54:21Z",
+      "side": 1,
+      "message": "repeated lines? please clean up",
+      "range": {
+        "startLine": 145,
+        "startChar": 8,
+        "endLine": 147,
+        "endChar": 22
+      },
+      "revId": "d7e4978eba2c063bda1136ce2ec6ed1e93e462e6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bd585430_dab7ee40",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-05-29T11:54:21Z",
+      "side": 1,
+      "message": "a small matter, but would you please clean up the whitespace indentation?  Either use all spaces or all tabs, just be consistent, thanks.",
+      "range": {
+        "startLine": 159,
+        "startChar": 0,
+        "endLine": 159,
+        "endChar": 1
+      },
+      "revId": "d7e4978eba2c063bda1136ce2ec6ed1e93e462e6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8f10f405_3514c31d",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-05-29T11:54:21Z",
+      "side": 1,
+      "message": "please remove the .git suffix - we didn\u0027t use that previously",
+      "range": {
+        "startLine": 160,
+        "startChar": 19,
+        "endLine": 160,
+        "endChar": 23
+      },
+      "revId": "d7e4978eba2c063bda1136ce2ec6ed1e93e462e6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7b5a6543_721a1170",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-05-29T11:54:21Z",
+      "side": 1,
+      "message": "pls remove .git suffix",
+      "range": {
+        "startLine": 165,
+        "startChar": 7,
+        "endLine": 165,
+        "endChar": 45
+      },
+      "revId": "d7e4978eba2c063bda1136ce2ec6ed1e93e462e6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "773671d4_ff1fd2c9",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-05-29T11:54:21Z",
+      "side": 1,
+      "message": "pls be consistent in order: path/url/branch/ignore.  Also remove .git suffix",
+      "range": {
+        "startLine": 172,
+        "startChar": 4,
+        "endLine": 172,
+        "endChar": 5
+      },
+      "revId": "d7e4978eba2c063bda1136ce2ec6ed1e93e462e6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4633e2e8_04524781",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-05-29T11:54:21Z",
+      "side": 1,
+      "message": "see above",
+      "range": {
+        "startLine": 175,
+        "startChar": 39,
+        "endLine": 175,
+        "endChar": 43
+      },
+      "revId": "d7e4978eba2c063bda1136ce2ec6ed1e93e462e6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a8f1698_bec458bf",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-05-29T11:54:21Z",
+      "side": 1,
+      "message": "see above",
+      "range": {
+        "startLine": 180,
+        "startChar": 39,
+        "endLine": 180,
+        "endChar": 43
+      },
+      "revId": "d7e4978eba2c063bda1136ce2ec6ed1e93e462e6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
