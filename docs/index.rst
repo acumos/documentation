@@ -30,13 +30,17 @@ accelerates innovation.
 Acumos Releases
 ===============
 
-Platform
---------
     .. note::
         **Athena Maintenance Release** There is a required database upgrade to populate Authorship data. Please see `User and Author Data Upgrade for CDS 1.18.x <https://docs.acumos.org/en/athena/submodules/common-dataservice/docs/upgrade.html>`_ for instructions.
-
+Platform
+--------
 .. toctree::
     :maxdepth: 3
+
+    ../release-notes/boreas/index
+
+.. toctree::
+    :maxdepth: 1
 
     ../release-notes/athena-maint/index
 
