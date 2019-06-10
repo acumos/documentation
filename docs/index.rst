@@ -102,6 +102,7 @@ Platform Architecture
 
 Component Guides
 ----------------
+
 The *Component Guides* section contains a variety of information that is useful to developers who are working on the platform code. Most projects are written in Java, with the Javadoc available `here <https://javadocs.acumos.org/>`_ .
 
 .. toctree::
