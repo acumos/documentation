@@ -1,5 +1,7 @@
 Project,Component,JAR,Version
-Design Studio,Generic Data Mapper Service,gdmservice,1.2.0
-Design Studio,TOSCAGeneratorClient,TOSCAModelGeneratorClient,1.33.1
-"Catalog, Data Model, and Data Management ",Common Data Service Client,cmn-data-svc-client,1.18.2|1.18.3|1.18.4
+Design Studio,Generic Data Mapper Service,gdmservice,TDB
+Design Studio,TOSCAGeneratorClient,TOSCAModelGeneratorClient,2.0.0
+"Catalog, Data Model, and Data Management ",Common Data Service Client,cmn-data-svc-client,2.2.2|2.2.2|2.2.2
 Common Services,Nexus Client,acumos-nexus-client,2.2.1
+Security-Verification,License-Manager,License-Manager-Client-Library,0.0.9
+Acumos-Java-Client,Acumos-Java-Client,java_client,2.1.0
