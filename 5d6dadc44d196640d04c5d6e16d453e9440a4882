@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "55dad99a_d3a4686a",
+        "filename": "docs/index.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2019-06-14T21:43:16Z",
+      "side": 1,
+      "message": "This link did not process as a link because it is a https link and needs an underscore after it: `Python Model On-Boarding Guide \u003chttps://pypi.org/project/acumos/\u003e`_  no space between the tick mark and the underscore.",
+      "range": {
+        "startLine": 75,
+        "startChar": 47,
+        "endLine": 75,
+        "endChar": 82
+      },
+      "revId": "5d6dadc44d196640d04c5d6e16d453e9440a4882",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
