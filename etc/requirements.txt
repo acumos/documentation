@@ -1,7 +1,7 @@
 tox
 Sphinx==1.6.7
 doc8
-docutils
+docutils==0.14
 setuptools
 six
 sphinx_rtd_theme
