@@ -62,8 +62,9 @@ Deployment
 ----------
 This project maintains clients for deploying models to different environments.
 
-* :doc:`Azure Client <../submodules/acumos-azure-client/docs/index>`
+* :doc:`Deployment Client <../submodules/deployment-client/docs/index>`
 * :doc:`Kubernetes Client <../submodules/kubernetes-client/docs/index>`
+* :doc:`Azure Client <../submodules/acumos-azure-client/docs/index>`
 * :doc:`OpenStack Client <../submodules/openstack-client/docs/index>`
 * :doc:`Predictor Management <../submodules/model-deployments/predictor-management/docs/index>`
 
