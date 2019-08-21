@@ -4,11 +4,11 @@ project_creation_date: '2017-11-17'
 project_category: ''
 lifecycle_state: 'Incubation'
 project_lead: &acumos_documentation_ptl
-    name: 'Aimee Ukasick'
-    email: 'aimeeu@research.att.com'
-    company: 'ATT'
-    id: 'aimeeu'
-    timezone: 'America/Chicago'
+    name: 'Akashdeep Srivastava'
+    email: 'AS00493574@techmahindra.com'
+    company: 'Tech Mahindra'
+    id: 'Echelon'
+    timezone: 'India/Pune'
 primary_contact: *acumos_documentation_ptl
 issue_tracking:
     type: 'jira'
