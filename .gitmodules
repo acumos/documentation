@@ -178,3 +178,13 @@
         url = ../model-runner/rds-model-runner
         branch = .
         ignore = dirty
+[submodule "docs/submodules/license-manager"]
+        path = docs/submodules/license-manager
+        url = ../license-manager
+        branch = .
+        ignore = dirty
+[submodule "docs/submodules/license-usage-manager"]
+        path = docs/submodules/license-usage-manager
+        url = ../license-usage-manager
+        branch = .
+        ignore = dirty
