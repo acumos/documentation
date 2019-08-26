@@ -44,7 +44,8 @@ Common Services
 * :doc:`Python Model Runner <../submodules/python-model-runner/docs/index>`
 * :doc:`RDS Model Runner <../submodules/model-runner/rds-model-runner/docs/index>`
 * :doc:`Security Verification of Models <../submodules/security-verification/security-verification-service/docs/index>`
-* :doc:`License Manager Client Library<../submodules/security-verification/license-manager-client-library/docs/index>`
+* :doc:`License Manager Client Library<../submodules/license-manager/docs/index>`
+* :doc:`License Usage Manager<../submodules/license-usage-manager/docs/index>`
 
 Design Studio
 -------------
