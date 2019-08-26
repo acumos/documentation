@@ -54,8 +54,9 @@ Data Broker. Additional components are in separate repositories.
 Deployment
 ----------
 
-* :doc:`Azure Client <../submodules/acumos-azure-client/docs/release-notes>`
+* :doc:`Deployment Client <../submodules/deployment-client/docs/release-notes>`
 * :doc:`Kubernetes Client <../submodules/kubernetes-client/docs/release-notes>`
+* :doc:`Azure Client <../submodules/acumos-azure-client/docs/release-notes>`
 * :doc:`OpenStack Client <../submodules/openstack-client/docs/release-notes>`
 
 
@@ -92,4 +93,3 @@ Example Models
 * :doc:`Image Classification <../submodules/image-classification/docs/release-notes>`
 * :doc:`Image Mood Classifier <../submodules/image-mood-classifier/docs/release-notes>`
 * :doc:`VM Predictor <../submodules/vm-predictor/docs/release-notes>`
-
