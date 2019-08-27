@@ -1,3 +1,4 @@
+more-itertools==5.0.0
 tox
 Sphinx==1.6.7
 doc8
