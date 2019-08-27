@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3396fff5_69abe82e",
+        "filename": ".gitmodules",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 51
+      },
+      "writtenOn": "2019-08-27T21:29:59Z",
+      "side": 1,
+      "message": "tabs are frowned upon in gerrit; please change the tabs to spaces in lines 182, 183, 187 and 188",
+      "range": {
+        "startLine": 182,
+        "startChar": 1,
+        "endLine": 182,
+        "endChar": 39
+      },
+      "revId": "8305e1657f3f4bc8e097da95ff5c879bf2284032",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
