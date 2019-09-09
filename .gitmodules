@@ -163,6 +163,11 @@
         url = ../model-builder/h2o-model-builder
         branch = .
         ignore = dirty
+[submodule "docs/submodules/model-deployments/deployment-client"]
+        path = docs/submodules/model-deployments/deployment-client
+        branch = .
+        ignore = dirty
+        url = ../model-deployments/deployment-client
 [submodule "docs/submodules/model-deployments/predictor-management"]
         path = docs/submodules/model-deployments/predictor-management
         branch = .
