@@ -32,7 +32,7 @@ Architecture
 Architecture Overview
 =====================
 
-.. image::  images/acumos-architecture-athena.png
+.. image::  images/acumos-architecture.png
 
 Component Interactions
 ======================
