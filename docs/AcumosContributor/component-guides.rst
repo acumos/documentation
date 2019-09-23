@@ -77,6 +77,7 @@ Model On-Boarding
 * :doc:`On-boarding <../submodules/on-boarding/docs/index>`
 * :doc:`Python Client <../submodules/acumos-python-client/docs/index>`
 * :doc:`R Client <../submodules/acumos-r-client/docs/index>`
+* :doc:`C++ Client <../submodules/acumos-c-client/docs/index>`
 
 Portal and Marketplace
 ----------------------
