@@ -73,8 +73,8 @@ This project maintains clients for deploying models to different environments.
 Model On-Boarding
 -----------------
 
-* :doc:`Java Client <../submodules/acumos-java-client/docs/index>`
 * :doc:`On-boarding <../submodules/on-boarding/docs/index>`
+* :doc:`Java Client (Generic, H20, spark) <../submodules/acumos-java-client/docs/index>`
 * :doc:`Python Client <../submodules/acumos-python-client/docs/index>`
 * :doc:`R Client <../submodules/acumos-r-client/docs/index>`
 * :doc:`C++ Client <../submodules/acumos-c-client/docs/index>`
