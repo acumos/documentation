@@ -71,11 +71,12 @@ Portal and Marketplace User Guides
 
 Model On-Boarding Guides
 ========================
-* H2o.ai and Generic Java Models: :doc:`Java Model On-Boarding Guide <../submodules/acumos-java-client/docs/onboarding-java-guide>`
+* Java (Generic, H2o.ai, Spark): :doc:`Java Model On-Boarding Guide <../submodules/acumos-java-client/docs/onboarding-java-guide>`
 * Python: `Python Model On-Boarding Guide <https://pypi.org/project/acumos/>`_
 * R: :doc:`R Model On-Boarding Guide <../submodules/acumos-r-client/docs/onboarding-r-guide>`
 * ONNX and PFA: :doc:`ONNX and PFA On-Boarding Guide <../submodules/on-boarding/docs/onboarding-ONNX-PFA-guide>`
 * Pre-dockerized models and model URI: :doc:`Pre-dockerized models and models URI On-boarding Guide <../submodules/on-boarding/docs/onboarding-pre_dockerised_and_URI_guide>`
+* C++: :doc:`C++ Model On-Boarding guide <../submodules/acumos-c-client/docs/onboarding-Cpp-guide>`
 
 Operational User Guides
 =======================
