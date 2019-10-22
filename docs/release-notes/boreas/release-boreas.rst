@@ -69,7 +69,7 @@ For `Acumos Multi Node Installation <https://wiki.acumos.org/display/AC/Acumos+I
 
 Acumos provides a one-click installation script for deploying to Ubuntu 16.04
 development environments. Both docker-compose and Kubernetes options are
-supported. Please see the :doc:`One Click Deploy User Guide <../submodules/system-integration/docs/oneclick-deploy/index>`_ for details.
+supported. Please see the :doc:`One Click Deploy User Guide <../../submodules/system-integration/docs/oneclick-deploy/index>`_ for details.
 
 Supported Browsers, Devices, and Resolutions
 ============================================
