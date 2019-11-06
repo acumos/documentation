@@ -105,7 +105,6 @@ Platform Architecture
 
     ../architecture/index
 
-
 Component Guides
 ----------------
 
@@ -115,7 +114,6 @@ The *Component Guides* section contains a variety of information that is useful 
    :maxdepth: 2
 
    ../AcumosContributor/component-guides
-
 
 Documentation Guide
 -------------------
