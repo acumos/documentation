@@ -22,31 +22,33 @@ Clio Release Notes
 Clio is the third release of the Acumos platform.
 
 * Release Name: Clio
-* Release Version: 
+* Release Version: 3.0.0
 * Release Date: 13 November 2019
-* Wiki: 
+* Wiki: `Clio Release Notes <https://wiki.acumos.org/display/REL/Acumos_Clio_Release>`_
 
 Release Highlights
 ==================
 
-- `Model On Boarding/ Common Services <https://docs.acumos.org/en/clio/AcumosContributor/component-guides.html>`_
+- `Model On Boarding <https://docs.acumos.org/en/clio/submodules/on-boarding/docs/index.html>`_ / `Common Services <https://docs.acumos.org/en/clio/AcumosContributor/component-guides.html#common-services>`_
     - Onboarding & Microservice Generation of Spark/Java and C/C++ client
 
-- `Design Studio/ Machine Learning Workbench <https://docs.acumos.org/en/clio/AcumosContributor/component-guides.html>`_
+- `Design Studio <https://docs.acumos.org/en/clio/submodules/design-studio/docs/index.html>`_ /`Machine Learning Workbench <https://docs.acumos.org/en/clio/submodules/workbench/docs/index.html>`_
     - Enterprise Design Tools Integration to support plug-gable framework  
     - Framework extended to support no-SQL database (Couch DB) 
     - Web component support for plug-gable framework
-        - Project Predictor Mapping, Model Asset Mapping & Collaboration    
+        - Project Predictor Mapping, Model Asset Mapping & Collaboration
+		
 - `Federation <https://docs.acumos.org/en/clio/submodules/portal-marketplace/docs/user-guides/portal-admin/federation.html>`_
     - ONAP model Integration with Acumos AI Marketplace 
     - O-RAN Integration
-- `License Management <https://docs.acumos.org/en/clio/AcumosContributor/component-guides.html>`_
+	
+- `License Management <https://docs.acumos.org/en/clio/submodules/license-manager/docs/index.html>`_
     - License Usage Manager (LUM) – manage license compliance for Acumos models
     - License Entitlement/RTU – support license agreements using standard Open Digital Rights Language
     - License Profile – ability to identify models as commercial
     - IP Asset Protection Rights - Model Activity Tracking & Reporting  
 
-- `Deployment <https://docs.acumos.org/en/clio/AcumosContributor/component-guides.html>`_
+- `Deployment <https://docs.acumos.org/en/clio/submodules/model-deployments/deployment-client/docs/index.html>`_
     - Jenkins as a workflow engine as a stand alone or on-demand Kubernetes service
 
 Installation
