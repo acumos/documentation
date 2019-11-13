@@ -1,0 +1,6 @@
+Project,Component,JAR,Version
+Acumos-Java-Client,Acumos-Java-Client,java_client,3.1.0
+"Catalog, Data Model, and Data Management ",Common Data Service Client,cmn-data-svc-client,3.0.0
+Design Studio,Generic Data Mapper Service,gdmservice,TDB
+Design Studio,TOSCAGeneratorClient,TOSCAModelGeneratorClient,2.0.0
+License-Manager,License-Manager,License-Manager-Client-Library,1.4.0

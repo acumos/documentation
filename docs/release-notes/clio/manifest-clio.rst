@@ -20,4 +20,63 @@
 Clio Manifest
 ===============
 
-TBD
+Operating System
+================
+The multi-node installation of Acumos was tested on Ubuntu 16.04 LTS.
+
+The One Click installation has been run on Centos 7 and Ubuntu 16, 17, and 18.
+
+Platform Components
+===================
+The components that comprise the Acumos Platform are released as Docker images on `Nexus <https://nexus3.acumos.org/#browse/browse:docker.release>`_.
+
+Individual component release notes may be accessed from the :doc:`../component-release-notes` page.
+
+Core Components
+---------------
+
+.. csv-table::
+   :header-rows: 1
+   :align: left
+   :file: core-components.csv
+
+Model Execution Components
+--------------------------
+
+.. csv-table::
+   :header-rows: 1
+   :align: left
+   :file: model-execution.csv
+
+
+Third Party Software
+--------------------
+
+.. csv-table::
+    :header: "Software", "Version"
+    :widths: 50, 50
+    :align: left
+
+    `MariaDB <https://mariadb.org/>`_, 10.2
+    `Kong <https://konghq.com/kong-community-edition/>`_, 0.11.0
+    `Nexus Repository OSS <https://www.sonatype.com/nexus-repository-oss>`_, 3.x
+    `Docker-CE <https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository>`_, 18.06.1-ce for Ubuntu 16.04
+
+Supporting Libraries Used by Platform Components
+================================================
+These supporting libraries are released as Java JAR files and referenced as libraries by various platform components.
+
+.. csv-table::
+   :header-rows: 1
+   :align: left
+   :file: libraries.csv
+
+
+Modeler Client Libraries
+========================
+These libraries are used by modelers on their local workstations to prepare models for onboarding.
+
+.. csv-table::
+   :header-rows: 1
+   :align: left
+   :file: clients.csv
