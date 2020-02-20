@@ -75,7 +75,7 @@ Model On-Boarding
 
 * :doc:`On-boarding <../submodules/on-boarding/docs/index>`
 * :doc:`Java Client (Generic, H20, spark) <../submodules/acumos-java-client/docs/index>`
-* :doc:`Python Client <../submodules/acumos-python-client/docs/index>`
+* :doc:`Python Client, recommended version for CLIO release is 0.8.0 <../submodules/acumos-python-client/docs/index>`
 * :doc:`R Client <../submodules/acumos-r-client/docs/index>`
 * :doc:`C++ Client <../submodules/acumos-c-client/docs/index>`
 
