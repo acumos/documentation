@@ -41,7 +41,7 @@ The following diagram shows the major dependencies among components of the
 Acumos architecture, and with external actors. The arrow represent dependency,
 e.g. upon APIs, user interfaces, etc. The arrows are directed at the provider
 of the dependency. Some dependencies are so common that they aren't shown
-directly, for diagram clarity. These include:
+directly, for diagram clarity. These include: 
 
 * collection of logs from all components
 * dependency upon the Common Data Service (shown as a single block of components)
