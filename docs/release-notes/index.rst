@@ -21,7 +21,7 @@ Release Notes
 =============
 
 .. toctree::
-    :maxdepth: 4
+    :maxdepth: 5
 
     component-release-notes
     weekly-builds

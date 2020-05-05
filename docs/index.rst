@@ -71,6 +71,7 @@ Portal and Marketplace User Guides
 * :doc:`Portal and Marketplace User Guide <../submodules/portal-marketplace/docs/user-guides/portal-user/index>`
 * :doc:`Portal and Marketplace Publisher Guide <../submodules/portal-marketplace/docs/user-guides/portal-publisher/index>`
 * :doc:`Portal and Marketplace Admin Guide <../submodules/portal-marketplace/docs/user-guides/portal-admin/index>`
+* :doc:`Portal and Marketplace License Admin User Role Guide <../submodules/portal-marketplace/docs/user-guides/portal-LicenseAdminUser/index>`
 * :doc:`Design Studio User Guide <../submodules/design-studio/docs/design-studio-user-guide/index>`
 
 
