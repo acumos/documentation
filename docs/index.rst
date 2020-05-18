@@ -33,7 +33,12 @@ Acumos Releases
 Platform
 --------
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 4
+
+    ../release-notes/demeter/index
+
+.. toctree::
+    :maxdepth: 1
 
     ../release-notes/clio/index
 
