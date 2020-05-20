@@ -1,0 +1,10 @@
+Project,Component,JAR,Version
+Acumos-Java-Client,Acumos-Java-Client,java_client,4.2.0
+"Catalog, Data Model, and Data Management ",Common Data Service Client,cmn-data-svc-client,3.1.1
+Design Studio,Generic Data Mapper Service,gdmservice,TDB
+Design Studio,TOSCAGeneratorClient,TOSCAModelGeneratorClient,2.0.8
+License-Manager,License-Manager,License-Manager-Client-Library,1.5.1
+Acumos R Client,Acumos-r-client,acumos-r-client,0.3.0
+Acumos C Client,Acumos-c-client,acumos-c-client,1.2
+Acumos Python Client,Acumos-python-client,acumos-python-client,0.9.5
+Python Model Runner,Python-model-runner,python-model-runner,0.2.4
