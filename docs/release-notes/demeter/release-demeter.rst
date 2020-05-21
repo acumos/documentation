@@ -22,34 +22,35 @@ Demeter Release Notes
 Demeter is the fourth release of the Acumos platform.
 
 * Release Name: Demeter
-* Release Version: 4.0.0
-* Release Date: 30 May 2020
-* Wiki: `Clio Release Notes <https://wiki.acumos.org/display/REL/Acumos_Clio_Release>`_
+* Release Version: TBD
+* Release Date: 22 May 2020
+* Wiki: `Demeter Release Notes <TBD>`_
 
 Release Highlights
 ==================
 
-- `Model On Boarding <https://docs.acumos.org/en/clio/submodules/on-boarding/docs/index.html>`_ / `Common Services <https://docs.acumos.org/en/clio/AcumosContributor/component-guides.html#common-services>`_
-    - Onboarding & Microservice Generation of Spark/Java and C/C++ client
+- Cloud Enablement:
+	- Containerized platform deployment incorporating cloud native functions, horizontal scaling, and implementation flexibility
 
-- `Design Studio <https://docs.acumos.org/en/clio/submodules/design-studio/docs/index.html>`_ /`Machine Learning Workbench <https://docs.acumos.org/en/clio/submodules/workbench/docs/index.html>`_
-    - Enterprise Design Tools Integration to support plug-gable framework  
-    - Framework extended to support no-SQL database (Couch DB) 
-    - Web component support for plug-gable framework
-        - Project Predictor Mapping, Model Asset Mapping & Collaboration
-		
-- `Federation <https://docs.acumos.org/en/clio/submodules/portal-marketplace/docs/user-guides/portal-admin/federation.html>`_
-    - ONAP model Integration with Acumos AI Marketplace 
-    - O-RAN Integration
-	
-- `License Management <https://docs.acumos.org/en/clio/submodules/license-manager/docs/index.html>`_
-    - License Usage Manager (LUM) – manage license compliance for Acumos models
-    - License Entitlement/RTU – support license agreements using standard Open Digital Rights Language
-    - License Profile – ability to identify models as commercial
-    - IP Asset Protection Rights - Model Activity Tracking & Reporting  
+- On Boarding:
+	- CLI message response with the Acumos Docker model
+	- Support for Pre-dockerized and Dockerized model URI with protobuf file to render models usable in Design studio.
 
-- `Deployment <https://docs.acumos.org/en/clio/submodules/model-deployments/deployment-client/docs/index.html>`_
-    - Jenkins as a workflow engine as a stand alone or on-demand Kubernetes service
+- Licensing:
+	- Activity tracking and reporting – License usage manager (LUM) maintains logs of model usage
+	- Integration of License module with Portal UI.
+
+- Training:
+	- Bidirectional communication over the federation link between subscriber and supplier instances to support ML life cycle management and continuous learning
+
+- ML Work Bench
+
+   - Predictor Manager:
+	- The Predictor Manager manages the model deployment, visualization of deployment metadata and association to a project.
+
+   - Data source: 
+	- The Data Source feature allows user to create and associate project data with a model to create, update, and delete data set used for training, validation and testing.
+
 
 Installation
 ============
