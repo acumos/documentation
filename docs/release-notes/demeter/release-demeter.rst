@@ -16,9 +16,9 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-=====================
+==================
 Demeter Release Notes
-=====================
+==================
 Demeter is the fourth release of the Acumos platform.
 
 * Release Name: Demeter
