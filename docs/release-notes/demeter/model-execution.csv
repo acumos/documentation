@@ -1,7 +1,7 @@
 Project,Component,Artifact,Version
 Design Studio,SQL Data Broker,sqldatabroker,1.2.0
 Design Studio,CSV Data Broker,csvdatabroker,1.4.0
-Model Onboarding,Onboarding Base – R,onboarding-base-r,1.0.0
+Model Onboarding,Onboarding Base – R,onboarding-base-r,1.2.0
 Design Studio,Runtime Orchestrator (Model Connector),blueprint-orchestrator,2.0.13
 Design Studio,Model Runner,h2o-genericjava-modelrunner,2.2.3
 DataBroker,Data Broker,databroker-zipbroker,1.0.0
