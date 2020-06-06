@@ -10,9 +10,9 @@ License-Manager,License-Manager,acumos/license-rtu-editor,0.1.6
 License-Manager,License-Manager,acumos/license-profile-editor,0.0.13
 License-Usage-Manager,License-Usage-Manager,acumos/lum-server,1.3.4
 License-Usage-Manager,License-Usage-Manager,acumos/lum-db,1.3.4
-Model Onboarding,Onboarding,acumos/onboarding-app,4.6.2
+Model Onboarding,Onboarding,acumos/onboarding-app,4.6.3
 OA&M,Elasticsearch,acumos/acumos-elasticsearch,4.0.3
-OA&M,elk-client,acumos/elk-client,4.0.3
+OA&M,Elk-client,acumos/elk-client,4.0.3
 OA&M,Filebeat,acumos/acumos-filebeat,4.0.3
 OA&M,Kibana,acumos/acumos-kibana,4.0.3
 OA&M,Logstash,acumos/acumos-logstash,4.0.3
@@ -34,6 +34,6 @@ Workbench,Pipeline-Service,acumos/pipeline-service,2.0.5
 Workbench,Model-Service,acumos/model-service,2.0.4
 Workbench,Predictor-Service,acumos/predictor-service,1.0.5
 Workbench,Datasource-service,acumos/datasource-service,1.0.0
-Workbench,Datasource-service,acumos/datasource-webcomponent,3.0.0
+Workbench,Datasource-webcomponent,acumos/datasource-webcomponent,3.0.0
 Workbench,Datasource-catalog-webcomponent,acumos/datasource-catalog-webcomponent,3.0.0
 Deployment,Deployment-client,acumos/deployment-client,1.0.8
