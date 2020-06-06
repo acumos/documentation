@@ -22,9 +22,9 @@ Demeter Release Notes
 Demeter is the fourth release of the Acumos platform.
 
 * Release Name: Demeter
-* Release Version: TBD
-* Release Date: 22 May 2020
-* Wiki: `Demeter Release Notes <TBD>`_
+* Release Version: 4.0
+* Release Date: 10 June 2020
+* Wiki: `Demeter Release Notes <https://wiki.acumos.org/display/REL/Acumos_Demeter_Release>`_
 
 Release Highlights
 ==================
@@ -43,7 +43,7 @@ Release Highlights
 - Training:
 	- Bidirectional communication over the federation link between subscriber and supplier instances to support ML life cycle management and continuous learning
 
-- ML Work Bench
+- ML Work Bench:
 
    - Predictor Manager:
 	- The Predictor Manager manages the model deployment, visualization of deployment metadata and association to a project.
@@ -51,6 +51,8 @@ Release Highlights
    - Data source: 
 	- The Data Source feature allows user to create and associate project data with a model to create, update, and delete data set used for training, validation and testing.
 
+- Portal:
+	- Integration of License module with Portal
 
 Installation
 ============
