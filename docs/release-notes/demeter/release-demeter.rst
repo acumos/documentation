@@ -57,11 +57,10 @@ Release Highlights
 Installation
 ============
 
-For `Acumos Multi Node Installation <https://wiki.acumos.org/display/AC/Acumos+Installation>`_ .
+Acumos provides a a Zero to Acumos (Z2A) installation process for deploying to Ubuntu 20.04
+development environments.  The Z2A installation covers the case of starting with a VM or the case of starting from an existing Kubernetes installation.  The Z2A was built as a modular design leveraging installation already existing for componets that Acumos depents on (Nexus/Mariad DB/etc.)  The mind set is for any Acumos dependancy you may use your own or use the defalt that is part of the Z2A installation.
 
-Acumos provides a one-click installation script for deploying to Ubuntu 16.04
-development environments. Both docker-compose and Kubernetes options are
-supported. Please see the :doc:`One Click Deploy User Guide <../../submodules/system-integration/docs/oneclick-deploy/index>` for details.
+To get begin `Start_Here <https://docs.acumos.org/en/latest/submodules/system-integration/docs/z2a/start-here.html>`
 
 Supported Browsers, Devices, and Resolutions
 ============================================
