@@ -57,8 +57,8 @@ Release Highlights
 Installation
 ============
 
-Acumos provides a a Zero to Acumos (Z2A) installation process for deploying to Ubuntu 20.04
-development environments.  The Z2A installation covers the case of starting with a VM or the case of starting from an existing Kubernetes installation.  The Z2A was built as a modular design leveraging installation already existing for componets that Acumos depents on (Nexus/Mariad DB/etc.)  The mind set is for any Acumos dependancy you may use your own or use the defalt that is part of the Z2A installation.
+Acumos provides a Zero to Acumos (Z2A) installation process for deploying to Ubuntu 20.04
+development environments.  The Z2A installation covers the case of starting with a VM or the case of starting from an existing Kubernetes installation.  The Z2A was built as a modular design leveraging installation already existing for components that Acumos depends on (Nexus/MariaDB/etc.)  The mindset is for any Acumos dependency you may use your own or use the defalt that is part of the Z2A installation.
 
 To get begin `Start_Here <https://docs.acumos.org/en/latest/submodules/system-integration/docs/z2a/start-here.html>`
 
