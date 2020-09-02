@@ -1,4 +1,5 @@
 # UUID                                                                          	Group Name
 #
+0d646cdeb10e90e8063b673ac73fc701a24e96da                                        	saml/acumos-gerrit-documentation-committers
 42f0c83244389e408b42fa668348002012ecba46                                        	GitHub Replication
 ldap:cn=acumos-gerrit-documentation-committers,ou=Groups,dc=freestandards,dc=org	ldap/acumos-gerrit-documentation-committers
