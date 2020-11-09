@@ -59,9 +59,13 @@ Installation
 
 For `Acumos Multi Node Installation <https://wiki.acumos.org/display/AC/Acumos+Installation>`_ .
 
+<<<<<<< HEAD   (ee2294 Update git submodules)
 Acumos provides a one-click installation script for deploying to Ubuntu 16.04
 development environments. Both docker-compose and Kubernetes options are
 supported. Please see the :doc:`One Click Deploy User Guide <../../submodules/system-integration/docs/oneclick-deploy/index>` for details.
+=======
+To get begin `Start_Here <https://docs.acumos.org/en/latest/submodules/system-integration/docs/z2a/start-here.html>`_
+>>>>>>> CHANGE (d92468 updates for Z2A documentaion)
 
 Supported Browsers, Devices, and Resolutions
 ============================================
