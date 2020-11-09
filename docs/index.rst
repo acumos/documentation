@@ -95,7 +95,7 @@ Operational User Guides
 .. toctree::
    :maxdepth: 1
 
-   ../submodules/system-integration/docs/oneclick-deploy/index
+   ../submodules/system-integration/docs/z2a/start-here
    ../submodules/platform-oam/docs/user-guide
    ../submodules/system-integration/docs/user-guide
 
