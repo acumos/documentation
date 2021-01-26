@@ -78,6 +78,7 @@ Model On-Boarding
 * :doc:`Python Client, recommended version for CLIO release is 0.8.0 <../submodules/acumos-python-client/docs/index>`
 * :doc:`R Client <../submodules/acumos-r-client/docs/index>`
 * :doc:`C++ Client <../submodules/acumos-c-client/docs/index>`
+* :doc:`Onnx Client, <../submodules/acumos-onnx-client/docs/index>`
 
 Portal and Marketplace
 ----------------------
