@@ -194,7 +194,12 @@
         branch = .
         ignore = dirty
 [submodule "docs/submodules/acumos-c-client"]
-	url = ../acumos-c-client.git
+	url = ../acumos-c-client
         branch = .
         ignore = dirty
 	path = docs/submodules/acumos-c-client
+[submodule "docs/submodules/acumos-onnx-client"]
+        path = docs/submodules/acumos-onnx-client
+        url = ../acumos-onnx-client
+        branch = .
+        ignore = dirty
