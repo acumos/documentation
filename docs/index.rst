@@ -35,6 +35,11 @@ Platform
 .. toctree::
     :maxdepth: 4
 
+    ../release-notes/elpis/index
+
+.. toctree::
+    :maxdepth: 1
+
     ../release-notes/demeter/index
 
 .. toctree::
