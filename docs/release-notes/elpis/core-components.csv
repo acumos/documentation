@@ -1,0 +1,39 @@
+Project,Component,Artifact,Version
+"Catalog, Data Model, and Data Management",Common Data Service (CDS) – server,acumos/common-dataservice,3.1.1
+"Catalog, Data Model, and Data Management",Federation,acumos/federation-gateway,3.2.2
+Common Services,Microservice Generation,acumos/microservice-generation,5.0.4
+Deployment,Azure Client,acumos/acumos-azure-client,3.0.5
+Deployment,Kubernetes Client,acumos/kubernetes-client,3.0.3
+Deployment,OpenStack Client,acumos/openstack-client,3.0.3
+Design Studio,Composition Engine,acumos/ds-compositionengine,3.0.6
+License-Manager,License-Manager,acumos/license-rtu-editor,0.1.6
+License-Manager,License-Manager,acumos/license-profile-editor,0.0.13
+License-Usage-Manager,License-Usage-Manager,acumos/lum-server,1.3.4
+License-Usage-Manager,License-Usage-Manager,acumos/lum-db,1.3.4
+Model Onboarding,Onboarding,acumos/onboarding-app,5.0.0
+OA&M,Elasticsearch,acumos/acumos-elasticsearch,4.0.3
+OA&M,Elk-client,acumos/elk-client,4.0.3
+OA&M,Filebeat,acumos/acumos-filebeat,4.0.3
+OA&M,Kibana,acumos/acumos-kibana,4.0.3
+OA&M,Logstash,acumos/acumos-logstash,4.0.3
+OA&M,Metricbeat,acumos/acumos-metricbeat,4.0.3
+Portal,Portal Backend,acumos/acumos-portal-be,5.0.2
+Portal,Portal Frontend,acumos/acumos-portal-fe,5.0.2
+Security-Verification,Security-Verification,acumos/security-verification,1.2.2
+Workbench,Dashboard-Webcomponent,acumos/dashboard-webcomponent,3.0.0
+Workbench,Home-Webcomponent,acumos/home-webcomponent,3.0.0
+Workbench,Notebook-Catalog-Webcomponent,acumos/notebook-catalog-webcomponent,2.0.9
+Workbench,Notebook-Webcomponent,acumos/notebook-webcomponent,2.0.9
+Workbench,Project-Webcomponent,acumos/project-webcomponent,3.0.0
+Workbench,Project-Catalog-Webcomponent,acumos/project-catalog-webcomponent,2.0.9
+Workbench,Pipeline-Catalog-Webcomponent,acumos/pipeline-catalog-webcomponent,2.0.9
+Workbench,Pipeline-Webcomponent,acumos/pipeline-webcomponent,2.0.9
+Workbench,Project-Service,acumos/project-service,2.0.5
+Workbench,Notebook-Service,acumos/notebook-service,2.0.5
+Workbench,Pipeline-Service,acumos/pipeline-service,2.0.5
+Workbench,Model-Service,acumos/model-service,2.0.4
+Workbench,Predictor-Service,acumos/predictor-service,1.0.5
+Workbench,Datasource-service,acumos/datasource-service,1.0.0
+Workbench,Datasource-webcomponent,acumos/datasource-webcomponent,3.0.0
+Workbench,Datasource-catalog-webcomponent,acumos/datasource-catalog-webcomponent,3.0.0
+Deployment,Deployment-client,acumos/deployment-client,1.0.8
