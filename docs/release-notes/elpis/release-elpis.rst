@@ -24,7 +24,7 @@ Elpis is the fifth release of the Acumos platform.
 * Release Name: Elpis
 * Release Version: 5.0
 * Release Date: 08 July 2021
-* Wiki: `Demeter Release Notes <https://wiki.acumos.org/display/REL/Acumos_Elpis_Release>`_
+* Wiki: `Elpis Release Notes <https://wiki.acumos.org/display/REL/Acumos_Elpis_Release>`_
 
 Release Highlights
 ==================
