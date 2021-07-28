@@ -23,19 +23,48 @@ Elpis is the fifth release of the Acumos platform.
 
 * Release Name: Elpis
 * Release Version: 5.0
-* Release Date: 12 July 2021
+* Release Date: 02 August 2021
 * Wiki: `Elpis Release Notes <https://wiki.acumos.org/display/REL/Acumos_Elpis_Release>`_
 
 Release Highlights
 ==================
 
-- Automation of Model Deployment:
-	- Model Deployment automation using Acumos triggered Jenkins jobs
+- Automation of Model Deployment with your own CI tool:
+	- Elpis Release is a first step towards a fully automated process from model on-boarding to model deployment. It is now possible to connect Acumos with your own CI tool (Jenkins) in order to trigger Jenkins jobs that could be used in the future to deploy your acumos model
 
+- On-boarding:
+        - Add "deploy" parameter in on-boarding API 
+        - Allow the use of a SWAGGER interface for R models
 
-- ONNX Client Enhancement:
-	- Model bundle dump without  use of configuration file
-	- License profile addition  when obdr by CLI.
+- Micro-service :
+        - Speed up the Micro-service creation of R models thanks to enhancement of on-boarding-base-r image
+        - Use of Json and swager URI with R models
+        - Fix MS generation failure after on-boarding
+        - Create deployment backend
+
+- Portal-Marketplace:
+        - Take into account "deploy" parameter in synchronous and asynchronous microservice generation
+        - Create a new Admin page to fullfill Jenkins server parameters
+
+- onboarding python client:
+        - Add deploy parameter
+        - Fix type issue with python 3.9
+
+- onboarding R client:
+        - Add deploy parameter
+        - Allow the use of Json and Swagger UI
+
+- onboarding java client:
+        - Add deploy parameter
+        - Update old dependancies
+
+- onboarding C++ client:
+        - Add deploy parameter
+
+- onboarding ONNX Client:
+        - Add deploy parameter
+	- Model bundle dump without use of configuration file
+	- License profile addition when onboarding by CLI.
 
 
 Installation
