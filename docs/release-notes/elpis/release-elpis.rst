@@ -23,19 +23,19 @@ Elpis is the fifth release of the Acumos platform.
 
 * Release Name: Elpis
 * Release Version: 5.0
-* Release Date: 12 July 2021
+* Release Date: 02 August 2021
 * Wiki: `Elpis Release Notes <https://wiki.acumos.org/display/REL/Acumos_Elpis_Release>`_
 
 Release Highlights
 ==================
 
-- Automation of Model Deployment:
-	- Model Deployment automation using Acumos triggered Jenkins jobs
+- Automation of Model Deployment with your own CI tool:
+	- Elpis Release is a first step towards a fully automated process from model on-boarding to model deployment. It is now possible to connect Acumos with your own CI tool (Jenkins) in order to trigger Jenkins jobs that could be used in the future to deploy your acumos model
 
 
 - ONNX Client Enhancement:
 	- Model bundle dump without  use of configuration file
-	- License profile addition  when obdr by CLI.
+	- License profile addition  when onboarding by CLI.
 
 
 Installation
